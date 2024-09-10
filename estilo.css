@@ -1,0 +1,864 @@
+html{
+    overflow-x: hidden;
+}
+
+.home{
+    overflow-x: hidden;
+    width:100%;
+    overflow-y: hidden;
+}
+
+
+.menucontainer{
+    margin-top: 2em;
+    margin-bottom: 6em;
+    text-align: center;
+}
+
+#item{
+    min-height:450px; 
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-image: url(https://github.com/bolognaindustries/industrialheritage/blob/main/images/background1.jpg);
+    background-color: #000000 !important;
+}
+
+.btn-secondary{
+    background-color: #000000 !important;
+    border-color: #000000 !important;
+    font-size: 13px !important;
+}
+
+#butrow{
+    margin-top: 55px;
+    max-height: 25px;
+    display:inline-table;
+    line-height: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.navbar-toggleable-md .navbar-collapse {         
+       -webkit-justify-content: flex-end;
+       justify-content: flex-end;  
+} 
+.navbar{
+    background-color:#000000;
+}
+
+.navbar-header{
+    align-content: flex-start;    
+}
+
+
+#divfacciata{
+    background-color: #000000;
+    color: honeydew;
+    font-size: 130%;
+    padding-left: 12%;
+    padding-right: 12%;
+    text-align: center;
+    min-height:150px; 
+}
+
+#item1{
+    align-content: center;
+    min-height:15em; 
+    background-size:cover;
+    margin-top: 1em;
+    padding-top: 1em;
+    padding: 0em;
+    padding-left: 1em;
+    padding-right: 1em;
+    
+}
+
+
+
+#item2{
+    min-height:10em; 
+    background-size:cover;
+    margin-top: 1em;
+    margin: 1em;
+    
+}
+
+#item4{
+    align-content: center;
+    min-height:15em; 
+    background-size:cover;
+    margin-top: 2em;
+    padding-top: 1em;
+    padding: 2em;
+    
+}
+
+#item5{
+    align-content: center;
+    min-height:15em; 
+    background-size:cover;
+    margin-top: 2em;
+    padding-top: 1em;
+    padding: 2em;
+    
+}
+
+.nav-item.active> a:hover, .dropdown> a:hover {
+    color:wheat; /*ma perché sta roba non funziona?*/
+    background-color: #000000;
+    
+}
+
+.dropdown-menu> a:hover{
+    background-color: #000000;
+}
+
+.navbar-custom{
+    background-color: #000000;
+    color: antiquewhite;
+}
+
+.nav-item{
+    color:aliceblue; 
+    background-color: #CF6F4C;
+}
+
+.navbar-nav > li > .dropdown-menu {
+    color: #000000;
+    background-color: #ff9370;}
+
+#covertextbox{
+    color: honeydew;
+    margin-top: 2em;
+    padding: 1em;
+
+}
+
+#covertitle{
+    text-align:center;
+    font-family: 'Satisfy', cursive;
+    font-size: 6vw;
+}
+
+@media (max-width: 500px) {
+    #covertitle{
+        font-size: 45px;
+
+}
+  }
+
+
+.pagetitle {
+    text-align:center;
+    font-family: 'Satisfy', cursive;
+    font-size: 150%;
+}
+
+.pagetitlecontainer{
+    padding-top: 1em;
+    margin-top: 1em;
+    font-size: 2em;
+    text-align: center;
+}
+
+.pagesubtitlecontainer{
+    margin-top: 0em;
+    padding-top: 1em;
+    font-size: 30px;
+}
+
+.pagesubtitle{
+    text-align:center;
+    font-family: 'Satisfy', cursive;
+    font-size: 100%;
+}
+
+#coversubtitle{
+    text-align: center;
+    font-size: 3vw;
+    align-content: flex-end;
+    color: #f9a589;
+    text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
+    font-weight: bolder;
+
+}
+#coversubtitle a{
+    text-align: center;
+    font-size: 3vw;
+    align-content: flex-end;
+    color: #f9a589;
+}
+
+/*non riesco a cambiare il clore del testo nella navbar*/
+
+.navbar-brand{
+    object-position: center;
+    color: white;
+    background-color: #000000;
+    border-radius: 4%;
+    margin:0px;
+    padding: 3px;
+}
+
+.navbar-light{
+    color: aliceblue;
+}
+
+.dropdown-menu{
+    color: white;
+}
+
+.nav.navbar-nav li a{
+color: white;
+}
+
+.navbar-nav{
+    color: aliceblue; 
+}
+/*!!!!!!! nessuno di questi funziona*/
+p{
+    margin-top: 1em;
+    padding: 1em;
+}
+
+.card-text{
+    padding: 0em;
+    max-height:inherit;
+    margin:0em;
+    text-align:center;
+    font-size: 90%;
+    max-width: inherit;
+    font-stretch: extra-condensed;
+    font-style: normal;
+    flex-wrap: wrap;
+    
+}
+
+strong{
+    color: #000000;
+}
+
+a.btn{
+    color: #000000;
+    font-size: 20px;
+}
+
+a.btn:hover{
+    color: black;
+    font-size: 20px;
+}
+
+.card-title{
+    font-family: Satisfy, cursive;
+    display: inline-block;
+    margin: auto;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    font-size: 25px;
+}
+
+a {
+    color: honeydew;
+}
+a:hover{
+    color: #7f3434;
+}
+
+#cardUT{
+    padding: 1em;
+    margin: 1em;
+    color: #E9D4D8;
+    background-color: #B6433E;
+    border-radius: 10px;
+    height: 7em;
+    width: 80%;
+    
+}
+
+#cardLTS{
+    padding: 1em;
+    margin: 1em;
+    color: #D8CAC2;
+    background-color: #CF6F4C;
+    border-radius: 10px;
+    height: 7em;
+    width: 80%;
+}
+
+#cardAS{
+    padding: 1em;
+    margin: 1em;
+    color: #E1DED4;
+    background-color: #420001;
+    border-radius: 10px;
+    height: 7em;
+    width: 80%;
+}
+
+#cardCT{
+    padding: 1em;
+    margin: 1em;
+    color: #CBD4DA;
+    background-color: #335A61;
+    border-radius: 10px;
+    height: 7em;
+    width: 80%;
+}
+
+#cardAndrea{
+    padding: 1em;
+    margin: 1em;
+    color: #E9D4D8;
+    background-color: #B6433E;
+    border-radius: 10px;
+    
+}
+
+#cardArianna{
+    padding: 1em;
+    margin: 1em;
+    color: #D8CAC2;
+    background-color: #CF6F4C;
+    border-radius: 10px;
+    
+}
+
+#cardBenedetta{
+    padding: 1em;
+    margin: 1em;
+    color: #E1DED4;
+    background-color: #420001;
+    border-radius: 10px;
+    
+}
+
+
+#cardAmanda{
+    padding: 1em;
+    margin: 1em;
+    color: #CBD4DA;
+    background-color: #335A61;
+    border-radius: 10px;
+    
+}
+
+
+#footerdiv{
+    background-color: #CF6F4C;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+#footercol1{
+    align-content: center;
+}
+
+#footercol2{
+    align-content: center;
+    padding:1em;
+    margin: 1em;
+}
+
+#footercol2 a{
+    color: darkred;
+    word-break: break-all;
+}
+
+#footercol3{
+    align-content: center;
+    padding:1em;
+    margin: 1em;
+}
+
+.footercoltext{
+    font-size: 85%
+}
+
+
+/*così immagini non superano dimensione loro div*/
+div img {
+    height: 100%;
+    width: 100%;
+}
+
+#logo{
+    max-height:100px;
+    max-width: 130px;
+}
+
+.crnotice{
+    text-align:center;
+    font-family: 'Satisfy', cursive;
+    color: honeydew;
+    font-size: 85%;
+}
+
+.footersectionheader{
+    color: honeydew;
+    text-align:center;
+
+}
+
+#footercol1{
+    margin-top: 20px;
+    padding-top:20px;    
+}
+
+.pagination {
+    display: inline-block;
+    margin: auto;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.pagination a {
+  color: black;
+  float:left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.pagination a.active {
+  background-color: #CF6F4C;
+  color: white;
+}
+
+.pagination a:hover:not(.active) {background-color: #EDCABD;}
+
+.pagination a {
+  border-radius: 5px;
+}
+
+.pagination a.active {
+  border-radius: 5px;
+}
+
+.card-body{
+    padding:0.25rem;
+}
+
+
+
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    background: #7386D5;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+#sidebar.active {
+    margin-left: -250px;
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: #6d7fcc;
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+    border-bottom: 1px solid #47748b;
+}
+
+#sidebar ul p {
+    color: #fff;
+    padding: 10px;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+
+#sidebar ul li a:hover {
+    color: #7386D5;
+    background: #fff;
+}
+
+#sidebar ul li.active>a,
+a[aria-expanded="true"] {
+    color: #fff;
+    background: #6d7fcc;
+}
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+/*.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+}
+*/
+
+
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -250px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+}
+
+#Documentation {
+    margin: auto;
+    font-size: 1rem; 
+}
+
+#Documentation .palettecolor {
+    max-width: 5%;
+    margin: 2%;
+}
+#Documentation img {
+    width:100%;
+    height:100%;
+    max-width: 300px; 
+    max-height: auto;
+}
+
+#Documentation figure {
+    margin: 2%;
+    text-align: center;
+    max-width: 30%;
+}
+#Documentation figure figcaption {
+    display: block;
+}
+#Documentation h1, #Documentation h3 {
+    text-align: left; 
+    color: #CF6F4C;
+}
+
+.button-displayer {
+    text-align: center;
+    background-color: #CF6F4C;
+    border-radius: 50px;
+    padding: 0;
+    margin-left: 10%;
+    margin-right: 10%;
+    border: 2px solid black;
+    box-shadow: 5px 5px #B6433E;
+}
+.anchorButton {
+    margin: auto;
+    border: 1px solid black;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 24px; 
+    cursor: pointer; 
+    width: 20%; 
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 3%;
+    border-radius: 10px;
+    box-shadow: 5px 4px #B6433E;
+  }
+@media (max-width: 500px) {
+    .anchorButton {
+        width: 30%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+}
+.ButtonGospel {
+    background-color: #e0d1b6;
+    color: #5c2507;
+    transform: translateY(4px);
+}
+.ButtonGospel:hover {
+    background-color: #5c2507 ;
+    color: gold;
+    transform: scale(1.1);
+    transition: all .2s ease-in-out;
+}
+
+/**/
+.Button2040 {
+    background-color: #E485F8;
+    color: white;
+    transform: translateY(4px);
+}
+
+.Button2040:hover {
+    background-color: white ;
+    color: #E485F8;
+    transform: scale(1.1);
+    transition: all .2s ease-in-out;
+}
+/**/
+.ButtonArt {
+    background-color: #83aa6b;
+    color: #b6470d;
+    transform: translateY(4px);
+}
+.ButtonArt:hover {
+    background-color: #b6470d ;
+    color: #83aa6b;
+    transform: scale(1.1);
+    transition: all .2s ease-in-out;
+}
+/**/
+
+.Button2025{
+    background-color: #f7f7f7 ;
+    color: #333333;
+    transform: translateY(4px);
+}
+.Button2025:hover {
+    background-color: #333333 ;
+    color: #f7f7f7;
+    transform: scale(1.1);
+    transition: all .2s ease-in-out;
+}
+
+/**/
+
+.ButtonTele{
+    background-color: blue ;
+    color: black;
+    transform: translateY(4px);
+}
+.ButtonTele:hover {
+    background-color: yellow ;
+    color: red;
+    transform: scale(1.1);
+    transition: all .2s ease-in-out;
+}
+
+/**/
+
+.ButtonGalilei{
+    background-color: #FBF9C9 ;
+    color: #333333;
+    transform: translateY(4px);
+}
+.ButtonGalilei:hover {
+    background-color: #333333 ;
+    color: #FBF9C9;
+    transform: scale(1.1);
+    transition: all .2s ease-in-out;
+}
+
+/**/
+
+.Button1999{
+    background-color: yellow ;
+    color: black;
+    transform: translateY(4px);
+}
+.Button1999:hover {
+    background-color: black ;
+    color: white;
+    transform: scale(1.1);
+    transition: all .2s ease-in-out;
+}
+
+/**/
+
+.ButtonBau{
+    background-color: #006699 ;
+    color: #ffcc00;
+    transform: translateY(4px);
+}
+.ButtonBau:hover {
+    background-color: #ff3333 ;
+    color: #f7f7f7;
+    transform: scale(1.1);
+    transition: all .2s ease-in-out;
+}
+
+/**/
+
+/*DOCUMENTATION BUTTONS*/
+
+/*
+
+#GospelStyle + div h2, #GospelStyle + div h3 {
+    color: gold;
+    font-family: serif;
+}
+
+#Style2040 + div h2, #Style2040 + div h3 {
+    color: #f7f7f7; 
+    text-shadow: 2px 2px 5px #E485F8;
+}
+
+#ArtNouveauStyle + div h2, #ArtNouveauStyle + div h3{
+    font-family: serif;
+    color: #83aa6b;
+    text-shadow: 1px 1px #b6470d;
+}
+#Style2025 + div h2, #Style2025 + div h3{
+    color: gray; 
+    text-shadow: 1px 1px black;
+}
+#Teletext + div h2, #Teletext + div h3{
+    color: black; 
+    text-shadow: 1px 1px 1px blue;
+}
+#Galilei + div h2, #Galilei + div h3{
+    font-family: serif;
+    text-shadow: 1px 1px #333333 ;
+    color: #FBF9C9;
+}
+#Millennium + div h2, #Millennium + div h3{
+    color: yellow;
+    text-shadow: 1px 1px 1px black;
+}
+#Bauhaus + div h2, #Bauhaus + div h3 {
+    text-shadow: 2px 2px #006699 ;
+    color: #ffcc00;
+}
+*/
+
+.anchor {
+    display: block;
+    visibility: hidden;
+  }
+
+
+
+/*BOTTONI PER SALIRE IN CIMA*/
+#button_scroll {
+    display: inline-block;
+    background-size: cover;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    border-radius: 4px;
+    border: 2px solid gold; 
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, 
+      opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+    overflow: visible;
+
+  }
+  #button_scroll::after {
+    font-size: 3em;
+    color: #fff;
+  }
+  #button_scroll:hover {
+    cursor: pointer;
+    background-color: #333;
+  }
+  #button_scroll:active {
+    background-color: #555;
+  }
+  #button_scroll.show {
+    opacity: 1;
+    visibility: visible;
+  }
+@media (min-width: 500px) {
+    #button_scroll {
+      margin: 30px;
+      overflow: visible;
+    }
+  }
+
+.homepage figure,.homepage img{
+    max-width: 200px;
+    margin: auto;
+    padding: 3px !important;
+    display:block !important;
+}
+
+.homepage{
+    word-wrap: break-word;
+}
+/*documentation fixing*/
+
+.homepage figure.palettecolor,.homepage img.palettecolor{
+    max-width: 100px;
+    margin: auto;
+    display: inline;
+}
+    
+.menucontainer{
+    margin-top: 2em;
+    margin-bottom: 6em;
+    text-align: center;
+}
+
+div .dropdown-menu{
+    background-color: #FF9370;
+color: #ffffff}
+
+div .dropdown-menu a{
+    color: #ffffff}
+
+.menubtn{
+    background-color: #420001;
+    color:#ffffff;
+    margin:2px;
+}
+
+img.palettecolor{
+    max-width: 100px;
+}
+
+
+#item6 div{
+    margin-top: 3em;
+    margin-bottom: 3em;  
+}
+
+#item6 li{
+    color:#420001;
+}
+
+#item6 div a{
+    color: #CF6F4C;
+    font-weight: bolder;
+}
+
+#item6 div img{
+    margin:1em;
+    border-radius: 5%;
+    margin: auto;
+}
+
+img.palettecolor{
+    border: 1px solid #cf6f4c;
+    margin: 30px;
+}
+
+#item6 div h1{
+    text-align: center;
+    color: #961D07;
+    font-weight: bolder;
+}
+
+#item6 div h2, #item6 div h3{
+    text-align: center;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+.palettecontainer{
+    display: flex;
+    max-width: inherit;
+    flex-wrap: wrap;
+}
+
