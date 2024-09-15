@@ -1,0 +1,49 @@
+/*media queries*/
+    /*small screens*/
+
+
+    /*bigger screens*/
+
+
+
+
+
+/*background image*/
+.background-image {
+    background-image: url(images/black_&_white_image.jpeg);
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+/* specifics for the navbar in general */
+.navbar {
+    font-family: 'Cooper Hewitt', sans-serif;
+    font-weight: bold;
+    background-color: transparent;
+    padding: 20px 0;
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+
+/*logo and text*/
+.navbar-brand img {
+    height: 60px;
+    width: auto;
+  }
+
+.navbar-brand span {
+    font-family: 'Cooper Hewitt', sans-serif;
+    font-size: 1rem;
+    margin-left: 9%;
+}
+
+/* Separator between links */
+.vr {
+
+    padding-left: 1px;
+    padding-right: 1px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
