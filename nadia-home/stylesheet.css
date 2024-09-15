@@ -1,28 +1,105 @@
 /*media queries*/
     /*small screens*/
+    @media (max-width: 786px) {
+      .background-image .title-container {
+          text-align: center;
+          padding-top: 25%;
+      }
+      .background-image #home-title {
+          font-size: 9vw;
+          -webkit-text-stroke: 2px white;
+          color: transparent;
+      }
+      .background-image #home-subtitle {
+          font-size: 5vw;
+      }
 
+      .background-image .title-container p{
+        font-size: 3vw;
+      }
+
+      .background-image .button_container {
+        white-space: nowrap;
+        margin-top: 8%;
+      }
+
+      .carousel {
+        margin-top: 5%;
+      }
+
+      .custom-text {
+        overflow-wrap: break-word;
+      }
+
+      .carousel-control-next {
+        padding-bottom: 120px;
+        padding-left: 6%;
+      }
+      .carousel-control-prev {
+        padding-top: 120px;
+        padding-right: 6%;
+      }
+    }
 
     /*bigger screens*/
+    @media (min-width: 1025px) {
+      .background-image .title-container {
+          text-align: right;
+          padding-right: 5%;
+          padding-top: 15%;
+          padding-left: 3%;
+      }
+      #home-title {
+          font-size: 5vw;
+          color: transparent;
+          -webkit-text-stroke: 3px white;
+      }
+      #home-subtitle {
+          font-size: 3vw;
+          color: #ffffff;
+          margin-bottom: 1%;
+      }
 
+      .title-container p {
+          font-size: 2vw;
+      }
 
+      .section1 #home-title {
+        font-size: 3vw;
+      }
 
+      .section1 #home-subtitle {
+        font-size: 2vw;
+      }
 
+      .section2 {
+        height: 100vh;
+      }
+
+      .custom-text {
+        white-space: nowrap;
+      }
+
+      .carousel {
+        margin-top: 7%;
+      }
+  }
 
 /*background image*/
 .background-image {
+    background-size: cover;
     background-image: url(images/black_&_white_image.jpeg);
     position: relative;
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 /* specifics for the navbar in general */
-.navbar {
+.navbar { 
     font-family: 'Cooper Hewitt', sans-serif;
     font-weight: bold;
     background-color: transparent;
-    padding: 20px 0;
     margin-left: 3%;
     margin-right: 3%;
   }
@@ -41,9 +118,159 @@
 
 /* Separator between links */
 .vr {
-
     padding-left: 1px;
     padding-right: 1px;
     margin-left: 20px;
     margin-right: 20px;
   }
+
+/*title and subtitle*/
+.title-container {
+  font-family: 'Cooper Hewitt', sans-serif; 
+  color: white;
+}
+
+.title-container #home-title {
+  font-weight: bold;
+  -webkit-text-stroke: 2px white;
+  color: transparent;
+}
+
+.title-container #home-subtitle {
+  font-weight: bold;
+}
+
+/*"see more" btn*/
+.button_container {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.btn a {
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Cooper Hewitt', sans-serif;
+  font-weight: bold;
+}
+
+/*background of the rest of the page*/
+.rest-of-the-page {
+  background-color: black;
+}
+
+/*section 1 "explore the items"*/
+.section1 {
+  background-color: black;
+  height: 100vh;
+}
+
+.section1 .title-container {
+  padding-top: 7%;
+  padding-left: 5% ;
+}
+
+.path-container{
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+}
+
+.path {
+  display: inline-block;
+  justify-content: center;
+  text-align: center;
+  margin: 30px;
+}
+
+.path-link {
+  font-size: 20px;
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  transition: transform 0.3s ease;
+  font-weight: bold;
+}
+
+.path-link:hover {
+  transform: scale(1.05);
+}
+
+.path-img {
+  width: 200px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.path-text {
+  display: block;
+  font-size: 19px;
+  font-weight: bold;
+}
+
+/*dividing line*/
+hr {
+  width: 90%; 
+  margin: 0 auto;
+  color: white;
+  border-top: 2px solid white;
+}
+
+/*section 2: "explore the museum*/
+
+.section2 .title-container {
+  text-align: right;
+  margin-right: 5%;
+  margin-top: 7%;
+}
+.section2 #home-title {
+  font-size: 3vw;
+}
+
+.section2 #home-subtitle {
+  font-size: 2vw;
+}
+
+/*carousel*/
+.carousel {
+  width: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.custom-prev {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+.custom-next {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.custom-arrow {
+  font-size: 20px;
+}
+
+.carousel-control-next {
+  margin-right: -20%;
+  background-color: transparent;
+  border: none;
+}
+
+.carousel-control-prev {
+  margin-left: -25%;
+  background-color: transparent;
+  border: none;
+}
+
+.custom-text {
+  margin-left: 15px;
+  margin-right: 15px;
+  font-size: 14px;
+  font-family: 'Cooper Hewitt', sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
