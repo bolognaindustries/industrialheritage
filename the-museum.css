@@ -1,0 +1,431 @@
+/*media queries*/
+    /*small screens*/
+    @media (max-width: 786px) {
+      .background-image .title-container {
+          text-align: center;
+          padding-top: 25%;
+      }
+      .background-image #home-title {
+          font-size: 9vw;
+          -webkit-text-stroke: 2px white;
+          color: transparent;
+      }
+      .background-image #home-subtitle {
+          font-size: 5vw;
+      }
+
+      .background-image .title-container p{
+        font-size: 3vw;
+      }
+
+      .background-image .button_container {
+        white-space: nowrap;
+        margin-top: 8%;
+      }
+
+      .carousel {
+        margin-top: 5%;
+      }
+
+      .custom-text {
+        overflow-wrap: break-word;
+      }
+
+      .carousel-control-next {
+        padding-bottom: 120px;
+        padding-left: 6%;
+      }
+      .carousel-control-prev {
+        padding-top: 120px;
+        padding-right: 6%;
+      }
+    }
+
+    /*bigger screens*/
+    @media (min-width: 1025px) {
+      .background-image .title-container {
+          text-align: right;
+          padding-right: 5%;
+          padding-top: 15%;
+          padding-left: 3%;
+      }
+      #home-title {
+          font-size: 5vw;
+          color: transparent;
+          -webkit-text-stroke: 3px white;
+      }
+      #home-subtitle {
+          font-size: 3vw;
+          color: #ffffff;
+          margin-bottom: 1%;
+      }
+
+      .title-container p {
+          font-size: 2vw;
+      }
+
+      .section1 #home-title {
+        font-size: 3vw;
+      }
+
+      .section1 #home-subtitle {
+        font-size: 2vw;
+      }
+
+      .section2 {
+        height: 100vh;
+      }
+
+      .custom-text {
+        white-space: nowrap;
+      }
+
+      .carousel {
+        margin-top: 7%;
+      }
+  }
+
+/*background image*/
+body {
+  background-color: black;
+}
+
+.section1 {
+  height: 100vh;
+}
+
+/* specifics for the navbar in general */
+.navbar { 
+    font-family: 'Cooper Hewitt', sans-serif;
+    font-weight: bold;
+    background-color: transparent;
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+
+/*logo and text*/
+.navbar-brand img {
+    height: 60px;
+    width: auto;
+  }
+
+.navbar-brand span {
+    font-family: 'Cooper Hewitt', sans-serif;
+    font-size: 1rem;
+    margin-left: 9%;
+}
+
+/* Separator between links */
+.vr {
+    padding-left: 1px;
+    padding-right: 1px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+/*title and subtitle*/
+.title-container {
+  font-family: 'Cooper Hewitt', sans-serif; 
+  color: white;
+}
+
+.title-container #home-title {
+  font-weight: bold;
+  -webkit-text-stroke: 2px white;
+  color: transparent;
+}
+
+.title-container #home-subtitle {
+  font-weight: bold;
+}
+
+/*"see more" btn*/
+.section1 .button_container {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 32%;
+}
+
+.section1 .btn a {
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Cooper Hewitt', sans-serif;
+  font-weight: bold;
+}
+
+/*background of the rest of the page*/
+.rest-of-the-page {
+  background-color: black;
+}
+
+/*section 1 "explore the items"*/
+.section2 {
+  background-color: black;
+  height: 100vh;
+}
+
+.left-container {
+  position: relative;
+  width: 350px;
+  height: 100vh;
+  background: #0D0D0D;
+}
+
+.section2 .title-container {
+  padding-top: 7%;
+  padding-left: 5%;
+}
+
+.section2 img {
+  max-width: 85%;
+  height: auto;
+  margin-top: 5%;
+  margin-left: 10%;
+}
+
+.left-container .title {
+  display: inline-block;
+  justify-content: center;
+  text-align: left;
+  margin-left: 10%;
+  margin-top: 15%;
+  margin-bottom: 10%;
+  color: white;
+  font-size: 20px;
+  line-height: 33px;
+}
+
+.left-container p {
+  font-size: 15px;
+  color: white;
+  margin-right: 10%;
+  margin-left: 10%;
+
+}
+
+.left-container ol {
+  font-size: 17px;
+  color: white;
+  margin-right: 10%;
+  margin-left: 5%;
+  line-height: 35px;
+}
+
+.right-container .title {
+  justify-content: center;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  margin-top: 5%;
+}
+
+/*see the list of items btn*/
+
+.left-container .button-container {
+  position: absolute;
+  bottom: 20px;
+  right: 180px;
+  white-space: nowrap;
+}
+
+.left-container .btn a {
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Cooper Hewitt', sans-serif;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+/*map and numbers*/
+
+.map-container {
+  position: relative;
+  width: auto;
+}
+
+.number {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  color: #8CB758;
+  text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.preview {
+  position: absolute;
+  display: none;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+}
+
+#preview1 {
+  top: 200px;
+  left: 200px;
+}
+
+#preview2 {
+  top: 212px;
+  left: 250px;
+}
+
+#preview3 {
+  top: 212px;
+  left: 200px;
+}
+
+#preview4 {
+  top: 200px;
+  left: 170px;
+}
+
+#preview5 {
+  top: 200px;
+  left: 420px;
+}
+
+#preview6 {
+  top: 200px;
+  left: 650px;
+}
+
+#preview7 {
+  top: 200px;
+  left: 200px;
+}
+
+#preview8 {
+  top: 150px;
+  left: 350px;
+}
+
+.floor-btn-container {
+  position: relative;
+}
+
+.floor-btn {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #656564;
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  cursor: pointer;
+}
+
+
+/*footer*/
+footer {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer .row {
+  margin-left: -5%;
+  margin-right: -5%
+}
+
+footer .title-container {
+    text-align: left;
+    margin-right: 2%;
+    margin-top: 7%;
+}
+
+footer #home-title {
+font-weight: bold;
+-webkit-text-stroke: 2px white;
+color: transparent;
+position: relative;
+font-size: 3vw;
+z-index: 100;
+}
+
+footer #home-subtitle {
+font-size: 2vw;
+}
+
+footer h4 {
+font-size: 24px;
+font-weight: bold;
+text-transform: uppercase;
+letter-spacing: 1.5px;
+text-align: left;
+color: white;
+}
+
+#museum-logo {
+position: relative;
+width: 325px;
+height: auto;
+display: block;
+margin-top: 10%;
+left: -10%;
+top: -10%;
+z-index: 10;
+}
+
+.contacts p, footer .affiliations p {
+line-height: 1.5;
+margin-bottom: 20px;
+text-align: left;
+color: white;
+font-weight: bold;
+}
+
+footer p {
+font-size: 17px;
+font-weight: normal;
+text-align: left;
+font-family: 'Cooper Hewitt', sans-serif;
+}
+
+.contacts, .affiliations {
+margin-top: 19%;
+}
+
+.contacts {
+  margin-left: 7%;
+}
+
+.affiliations {
+  margin-left: 4%;
+}
+
+.contacts h4 {
+  margin-bottom: 10%;
+}
+
+.affiliations h4 {
+  margin-bottom: 7%;
+}
+
+.social-icons-container {
+  margin-top: 10%;
+  position: relative;
+  left: 55%;
+}
+
+.social-icons {
+  width: 9%;
+  height: auto;
+  margin-left: 3%;
+}
+
+/*footer*/
