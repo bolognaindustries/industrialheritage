@@ -94,34 +94,58 @@ body {
   height: 100vh;
 }
 
-/* specifics for the navbar in general */
+/*navbar*/
 .navbar { 
-    font-family: 'Cooper Hewitt', sans-serif;
-    font-weight: bold;
-    background-color: transparent;
-    margin-left: 3%;
-    margin-right: 3%;
-  }
-
-/*logo and text*/
-.navbar-brand img {
-    height: 60px;
-    width: auto;
-  }
-
-.navbar-brand span {
-    font-family: 'Cooper Hewitt', sans-serif;
-    font-size: 1rem;
-    margin-left: 9%;
+  font-family: 'Cooper Hewitt', sans-serif;
+  font-weight: bold;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 6px;
+  padding-bottom: 0;
 }
 
-/* Separator between links */
+.navbar-brand img {
+  height: 60px;
+  width: auto;
+}
+
+.navbar-brand span {
+  font-family: 'Cooper Hewitt', sans-serif;
+  font-size: 1rem;
+  margin-left: 9%;
+}
+
 .vr {
-    padding-left: 1px;
-    padding-right: 1px;
-    margin-left: 20px;
-    margin-right: 20px;
-  }
+  padding-left: 1px;
+  padding-right: 1px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.nav-item {
+line-height: 2px;
+}
+
+.link-lines {
+  background-color: white;
+  height: 3px;
+  width: 0;
+  transition: width 0.3s ease;
+  opacity: 1;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4px;
+}
+
+.nav-item:hover .link-lines {
+width: 60%;
+}
+
+.navbar-nav .nav-link {
+  margin-top: 0;
+  padding-top:30px;
+}
+/*navbar*/
 
 /*title and subtitle*/
 .title-container {
@@ -159,273 +183,312 @@ body {
   background-color: black;
 }
 
-/*section 1 "explore the items"*/
-.section2 {
-  background-color: black;
-  height: 100vh;
-}
+/*section 2 "explore the items"*/
+  .section2 {
+    background-color: black;
+    height: 100vh;
+  }
 
-.left-container {
-  position: relative;
-  width: 350px;
-  height: 100vh;
-  background: #0D0D0D;
-}
+  .left-container {
+    position: relative;
+    width: 350px;
+    height: 100vh;
+    background: #0D0D0D;
+  }
 
-.section2 .title-container {
-  padding-top: 7%;
-  padding-left: 5%;
-}
+  .section2 .title-container {
+    padding-top: 7%;
+    padding-left: 5%;
+  }
 
-.section2 img {
-  max-width: 85%;
-  height: auto;
-  margin-top: 5%;
-  margin-left: 10%;
-}
+  .section2 img {
+    max-width: 85%;
+    height: auto;
+    margin-top: 5%;
+    margin-left: 10%;
+  }
 
-.left-container .title {
-  display: inline-block;
-  justify-content: center;
-  text-align: left;
-  margin-left: 10%;
-  margin-top: 15%;
-  margin-bottom: 10%;
-  color: white;
-  font-size: 20px;
-  line-height: 33px;
-}
+  .left-container .title {
+    display: inline-block;
+    justify-content: center;
+    text-align: left;
+    margin-left: 10%;
+    margin-top: 15%;
+    margin-bottom: 10%;
+    color: white;
+    font-size: 20px;
+    line-height: 33px;
+  }
 
-.left-container p {
-  font-size: 15px;
-  color: white;
-  margin-right: 10%;
-  margin-left: 10%;
+  .left-container p {
+    font-size: 15px;
+    color: white;
+    margin-right: 10%;
+    margin-left: 10%;
 
-}
+  }
 
-.left-container ol {
-  font-size: 17px;
-  color: white;
-  margin-right: 10%;
-  margin-left: 5%;
-  line-height: 35px;
-}
+  .left-container ol {
+    font-size: 17px;
+    color: white;
+    margin-right: 10%;
+    margin-left: 5%;
+    line-height: 35px;
+  }
 
-.right-container .title {
-  justify-content: center;
-  text-align: center;
-  color: white;
-  font-size: 20px;
-  margin-top: 5%;
-}
+  .right-container .title {
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    margin-top: 5%;
+  }
+
+  .row {
+    max-width: 100%;
+  }
+
+  .list-of-items a {
+    text-decoration: none;
+    color: white;
+  }
+/*section 2 "explore the items"*/
+
+
+
+/*see the list of items btn*/
+  #button-list {
+    position: absolute;
+    bottom: 20px;
+    right: 153px;
+    white-space: nowrap;
+  }
+  #button-description {
+    position: absolute;
+    bottom: 20px;
+    right: 200px;
+    white-space: nowrap;
+  }
+
+  .left-container .btn a {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Cooper Hewitt', sans-serif;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
 
 /*see the list of items btn*/
 
-.left-container .button-container {
-  position: absolute;
-  bottom: 20px;
-  right: 180px;
-  white-space: nowrap;
-}
-
-.left-container .btn a {
-  color: #fff;
-  text-decoration: none;
-  font-family: 'Cooper Hewitt', sans-serif;
-  font-weight: bold;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-}
 
 /*map and numbers*/
+  .map-container {
+    position: relative;
+    width: auto;
+  }
 
-.map-container {
-  position: relative;
-  width: auto;
-}
+  .maps h3 {
+    text-decoration: underline;
+    text-underline-offset: 15px;
+  }
 
-.number {
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  background-color: white;
-  color: #8CB758;
-  text-align: center;
-  border-radius: 50%;
-  cursor: pointer;
-  font-size: 20px;
-  font-weight: bold;
+  .number {
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    background-color: white;
+    color: #8CB758;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-.preview {
-  position: absolute;
-  display: none;
-  width: 300px;
-  height: 300px;
-  text-align: center;
-}
+  .number a {
+    text-decoration: none;
+    color: #8CB758;
+  }
 
-#preview1 {
-  top: 200px;
-  left: 200px;
-}
+  .preview {
+    position: absolute;
+    display: none;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+  }
 
-#preview2 {
-  top: 212px;
-  left: 250px;
-}
+  #preview1 {
+    top: 200px;
+    left: 200px;
+  }
 
-#preview3 {
-  top: 212px;
-  left: 200px;
-}
+  #preview2 {
+    top: 212px;
+    left: 250px;
+  }
 
-#preview4 {
-  top: 200px;
-  left: 170px;
-}
+  #preview3 {
+    top: 212px;
+    left: 200px;
+  }
 
-#preview5 {
-  top: 200px;
-  left: 420px;
-}
+  #preview4 {
+    top: 200px;
+    left: 170px;
+  }
 
-#preview6 {
-  top: 200px;
-  left: 650px;
-}
+  #preview5 {
+    top: 200px;
+    left: 420px;
+  }
 
-#preview7 {
-  top: 200px;
-  left: 200px;
-}
+  #preview6 {
+    top: 200px;
+    left: 650px;
+  }
 
-#preview8 {
-  top: 150px;
-  left: 350px;
-}
+  #preview7 {
+    top: 200px;
+    left: 200px;
+  }
 
-.floor-btn-container {
-  position: relative;
-}
+  #preview8 {
+    top: 150px;
+    left: 350px;
+  }  
 
-.floor-btn {
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: #656564;
-  display: flex;
-  flex-direction: column;
-}
+  .item {
+    cursor: pointer;
+  }
+/*map and numbers*/
 
-.item {
-  cursor: pointer;
-}
+/*map buttons*/
+  .map-btn-container {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    gap: 20px;
+    width: 50px;
+    margin-top: 24%;
+    margin-left: 3%;
+  }
+
+  .btn-map {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #2A2928;  
+    cursor: pointer;  
+  }
+
+  .btn-map.active {
+    background-color: white;
+  }
+/*map buttons*/
 
 
 /*footer*/
-footer {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-}
+  footer {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-footer .row {
-  margin-left: -5%;
-  margin-right: -5%
-}
+  footer .row {
+    margin-left: -5%;
+    margin-right: -5%
+  }
 
-footer .title-container {
-    text-align: left;
-    margin-right: 2%;
-    margin-top: 7%;
-}
+  footer .title-container {
+      text-align: left;
+      margin-right: 2%;
+      margin-top: 7%;
+  }
 
-footer #home-title {
-font-weight: bold;
--webkit-text-stroke: 2px white;
-color: transparent;
-position: relative;
-font-size: 3vw;
-z-index: 100;
-}
-
-footer #home-subtitle {
-font-size: 2vw;
-}
-
-footer h4 {
-font-size: 24px;
-font-weight: bold;
-text-transform: uppercase;
-letter-spacing: 1.5px;
-text-align: left;
-color: white;
-}
-
-#museum-logo {
-position: relative;
-width: 325px;
-height: auto;
-display: block;
-margin-top: 10%;
-left: -10%;
-top: -10%;
-z-index: 10;
-}
-
-.contacts p, footer .affiliations p {
-line-height: 1.5;
-margin-bottom: 20px;
-text-align: left;
-color: white;
-font-weight: bold;
-}
-
-footer p {
-font-size: 17px;
-font-weight: normal;
-text-align: left;
-font-family: 'Cooper Hewitt', sans-serif;
-}
-
-.contacts, .affiliations {
-margin-top: 19%;
-}
-
-.contacts {
-  margin-left: 7%;
-}
-
-.affiliations {
-  margin-left: 4%;
-}
-
-.contacts h4 {
-  margin-bottom: 10%;
-}
-
-.affiliations h4 {
-  margin-bottom: 7%;
-}
-
-.social-icons-container {
-  margin-top: 10%;
+  footer #home-title {
+  font-weight: bold;
+  -webkit-text-stroke: 2px white;
+  color: transparent;
   position: relative;
-  left: 55%;
-}
+  font-size: 3vw;
+  z-index: 100;
+  }
 
-.social-icons {
-  width: 9%;
+  footer #home-subtitle {
+  font-size: 2vw;
+  }
+
+  footer h4 {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  text-align: left;
+  color: white;
+  }
+
+  #museum-logo {
+  position: relative;
+  width: 325px;
   height: auto;
-  margin-left: 3%;
-}
+  display: block;
+  margin-top: 10%;
+  left: -10%;
+  top: -10%;
+  z-index: 10;
+  }
 
+  .contacts p, footer .affiliations p {
+  line-height: 1.5;
+  margin-bottom: 20px;
+  text-align: left;
+  color: white;
+  font-weight: bold;
+  }
+
+  footer p {
+  font-size: 17px;
+  font-weight: normal;
+  text-align: left;
+  font-family: 'Cooper Hewitt', sans-serif;
+  }
+
+  .contacts, .affiliations {
+  margin-top: 19%;
+  }
+
+  .contacts {
+    margin-left: 7%;
+  }
+
+  .affiliations {
+    margin-left: 4%;
+  }
+
+  .contacts h4 {
+    margin-bottom: 10%;
+  }
+
+  .affiliations h4 {
+    margin-bottom: 7%;
+  }
+
+  .social-icons-container {
+    margin-top: 10%;
+    position: relative;
+    left: 55%;
+  }
+
+  .social-icons {
+    width: 9%;
+    height: auto;
+    margin-left: 3%;
+  }
 /*footer*/

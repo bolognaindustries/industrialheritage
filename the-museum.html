@@ -12,62 +12,74 @@
     <body>
         <!--section1-->
         <div class="section1">
-            <nav class="navbar navbar-expand-lg bg-trasparent" data-bs-theme="dark">
+            <!--navbar-->
+            <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
                 <div class="container-fluid">
-                    <!--logo and institution name-->
+                    <!--title and logo-->
                     <a class="navbar-brand" href="index.html">
                       <img src="images/LOGO.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-center"><span>INDUSTRIAL HERITAGE</span>
                     </a>
+                    <!--title and logo-->
                     <!--toggle for mobile view-->
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                       <span class="navbar-toggler-icon"></span>
                     </button>
+                    <!--toogle for mobile view-->
                     <!--links-->
                     <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                       <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
                         <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+                          <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                          <hr class="link-lines">
                         </li>
-          
+
                         <li>
                           <div class="vr d-none d-lg-block text-light opacity-100"></div>
                         </li>
-          
+
                         <li class="nav-item">
                           <a class="nav-link active" href="#">THE GALLERY</a>
+                          <hr class="link-lines">
                         </li>
-          
+
                         <li>
                           <div class="vr d-none d-lg-block text-light opacity-100"></div>
                         </li>
-          
+
                         <li class="nav-item">
                           <a class="nav-link active" href="#">THE PROJECT</a>
+                          <hr class="link-lines">
                         </li>
-          
+
                         <li>
                           <div class="vr d-none d-lg-block text-light opacity-100" text-light></div>
                         </li>
-          
+
                         <li class="nav-item">
-                          <a class="nav-link active" href="#">THE MUSEUM</a>
+                          <a class="nav-link active" href="the-museum.html">THE MUSEUM</a>
+                          <hr class="link-lines">
                         </li>
-          
+
                         <li>
                           <div class="vr d-none d-lg-block text-light opacity-100"></div>
                         </li>
-          
+
                         <li class="nav-item">
                           <a class="nav-link active" href="#">ABOUT US</a>
+                          <hr class="link-lines">
                         </li>
                       </ul>
+                      <!--links-->
                   </div>
-
             </nav>
+            <!--navbar-->
 
+            <!--button-->
             <div class="button_container mx-auto col-2 text-center"></div>
+            <!--button-->
         </div>
         <!--section1-->
+
         <!--section2-->
         <div class="section2">
             <!--row-->
@@ -75,7 +87,9 @@
                 <!--1st column-->
                 <div class="col-6 col-md-4 left-container">
                     <!--1st alternative-->
-                    <div class="floor-description">
+
+                    <!--Ground Floor-->
+                    <div class="floor-description" id="description1">
                         <h3 class="title">GROUND FLOOR: MEDIEVAL INDUSTRY</h3>
                         <p id="floor-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis egestas justo, eget pellentesque nibh. 
                         <br>
@@ -87,30 +101,79 @@
                         Cras tincidunt congue ligula, pharetra rutrum metus ornare quis. Nunc finibus arcu vitae placerat ultrices. Maecenas vel odio condimentum, facilisis ante nec, dictum justo. 
                         </p>
                     </div>
+                    <!--Ground Floor-->
+
+                    <!--First Floor-->
+                    <div class="floor-description" id="description2" style="display:none;">
+                      <h3 class="title">FIRST FLOOR: MEDIEVAL INDUSTRY</h3>
+                      <p id="floor-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis egestas justo, eget pellentesque nibh. 
+                      <br>
+                      <br> 
+                      Nunc urna odio, convallis varius elit quis, volutpat eleifend lorem. 
+                      Mauris vestibulum velit non lectus fringilla venenatis. Fusce id risus vitae lectus auctor sollicitudin ut vitae magna. 
+                      <br>
+                      <br>      
+                      Cras tincidunt congue ligula, pharetra rutrum metus ornare quis. Nunc finibus arcu vitae placerat ultrices. Maecenas vel odio condimentum, facilisis ante nec, dictum justo. 
+                      </p>
+                    </div>
+                    <!--First Floor-->
+
                     <!--1st alternative-->
 
+
                     <!--2nd  alternative-->
-                    <div id="list-of-items" style="display: none;">
+
+                    <!--ground floor list-->
+                    <div class="list-of-items" id="list1" style="display: none;">
+                      <h3 class="title">GROUND FLOOR ITEMS</h3>
                         <ol>
-                            <li class="item" id="item1" data-preview="preview1" data-number="number1" data-url="">Terracotta Mould</li>
-                            <li class="item" id="item2" data-preview="preview2" data-number="number2" data-url="">Melted Brick</li>
-                            <li class="item" id="item3" data-preview="preview3" data-number="number3" data-url="">Aldini Steam Engine</li>
-                            <li class="item" id="item4" data-preview="preview4" data-number="number4" data-url="">Gear Cutter</li>
-                            <li class="item" id="item5" data-preview="preview5" data-number="number5" data-url="">Power Hammer</li>
-                            <li class="item" id="item6" data-preview="preview6" data-number="number6" data-url="">Steam Turbine</li>
-                            <li class="item" id="item7" data-preview="preview7" data-number="number7" data-url="">Shaping Machine</li>
-                            <li class="item" id="item8" data-preview="preview8" data-number="number8" data-url="">Steam Hammer and Vacuum Pump</li>
+                            <li class="item" id="item1" data-preview="preview1" data-number="number1" data-url=""><a href="items.html?slide=1">Terracotta Mould</a></li>
+                            <li class="item" id="item2" data-preview="preview2" data-number="number2" data-url=""><a href="items.html?slide=2">Melted Brick</a></li>
+                            <li class="item" id="item3" data-preview="preview3" data-number="number3" data-url=""><a href="items.html?slide=14">Aldini Steam Machine</a></li>
+                            <li class="item" id="item4" data-preview="preview4" data-number="number4" data-url=""><a href="items.html?slide=15">Hoffmann Kiln</a></li>
+                            <li class="item" id="item5" data-preview="preview5" data-number="number5" data-url=""><a href="items.html?slide=12">Power Hammer</a></li>
+                            <li class="item" id="item6" data-preview="preview6" data-number="number6" data-url=""><a href="items.html?slide=13">Shaping Machine</a></li>
+                            <li class="item" id="item7" data-preview="preview7" data-number="number7" data-url=""><a href="items.html?slide=10">Hydraulic Pump</a></li>
+                            <li class="item" id="item8" data-preview="preview8" data-number="number8" data-url=""><a href="items.html?slide=11">Steam Hammer and Vacuum Pump</a></li>
+                            <li class="item" id="item9" data-preview="preview9" data-number="number9" data-url=""><a href="items.html?slide=6">Cube Brodo Packaging Machine</a></li>
                         </ol>
                     </div>
+                    <!--ground floor list-->
+
+                    <!--first floor list-->
+                    <div class="list-of-items" id="list2" style="display: none;">
+                      <h3 class="title">FIRST FLOOR ITEMS</h3>
+                      <ol>
+                          <li class="item" id="item10" data-preview="preview10" data-number="number10"><a href="items.html?slide=5">Chocolate Packing Machine</a></li>
+                          <li class="item" id="item11" data-preview="preview11" data-number="number11"><a href="items.html?slide=4">Tortellini Machine</a></li>
+                          <li class="item" id="item12" data-preview="preview12" data-number="number12"><a href="items.html?slide=3">Gelato Machine</a></li>
+                          <li class="item" id="item13" data-preview="preview13" data-number="number13"><a href="items.html?slide=8">Slik Mill Model</a></li>
+                          <li class="item" id="item14" data-preview="preview14" data-number="number14"><a href="items.html?slide=7">Silk Loom Model</a></li>
+                          <li class="item" id="item15" data-preview="preview15" data-number="number15"><a href="items.html?slide=9">Silk</a></li>
+                      </ol>
+                    </div>
+                    <!--first floor list-->
+
                     <!--2nd alternative-->
 
-                    <!--button-->
-                    <div class="button-container mx-auto col-2 text-center">
+                    <!--button change to list-->
+                    <div class="button-container-left mx-auto col-2 text-center" id="button-list">
                         <button id="btn" type="button" class="btn btn-block btn-transparent px-4"><a id="list-btn" href="#section1">See the list of items
                         <br>
                         <i id="long-arrow" class="fa-solid fa-arrow-right-long"></i></a></button>
                     </div>
-                    <!--button-->
+                    <!--button change to list-->
+
+                    <!--button change to description-->
+                    <div class="button-container-left mx-auto col-2 text-center" id="button-description" style="display: none;">
+                      <button id="btn" type="button" class="btn btn-block btn-transparent px-4"><a id="list-btn" href="#section1">Read the floor description
+                      <br>
+                      <i id="long-arrow" class="fa-solid fa-arrow-right-long"></i></a></button>
+                    </div>
+                    <!--button change to description-->
+
+
+
                 </div>
                 <!--1st column-->
 
@@ -118,7 +181,7 @@
                 <div class="col-sm-6 col-md-8 right-container">
 
                     <!--map 1st alternative-->
-                    <div id="map-container1" style="display: block;">
+                    <div class="maps" id="map-container1" style="display: block;">
                         
                         <div class="title"><h3>GROUND FLOOR</h3>
                         </div>
@@ -126,40 +189,38 @@
                         <div class="map-container">
                             <img src="images/groundfloormapgray.png" alt="Museum Map" class="map">
                                 <!--numbers on the map-->
-                                <div class="number" id="number1" data-preview="preview1" data-item="item1" data-url="" style="top: 170px; left: 100px;">1</div>
-                                <div class="number" id="number2" data-preview="preview2" data-item="item2" data-url="" style="top: 140px; left: 265px;">2</div>
-                                <div class="number" id="number3" data-preview="preview3" data-item="item3" data-url="" style="top: 185px; left: 190px;">3</div>
-                                <div class="number" id="number4" data-preview="preview4" data-item="item4" data-url="" style="top: 140px; left: 410px;">4</div>
-                                <div class="number" id="number5" data-preview="preview5" data-item="item5" data-url="" style="top: 140px; left: 615px;">5</div>
-                                <div class="number" id="number6" data-preview="preview6" data-item="item6" data-url="" style="top: 137px; left: 705px;">6</div>
-                                <div class="number" id="number7" data-preview="preview7" data-item="item7" data-url="" style="top: 190px; left: 475px;">7</div>
-                                <div class="number" id="number8" data-preview="preview8" data-item="item8" data-url="" style="top: 335px; left: 720px;">8</div>
+                                <div class="number" id="number1" data-preview="preview1" data-item="item1" data-url="" style="top: 55px; left: 445px;"><a href="items.html?slide=1">1</a></div>
+                                <div class="number" id="number2" data-preview="preview2" data-item="item2" data-url="" style="top: 160px; left: 325px;"><a href="items.html?slide=2">2</a></div>
+                                <div class="number" id="number3" data-preview="preview3" data-item="item3" data-url="" style="top: 210px; left: 190px;"><a href="items.html?slide=14">3</a></div>
+                                <div class="number" id="number4" data-preview="preview4" data-item="item4" data-url="" style="top: 232px; left: 550px;"><a href="items.html?slide=15">4</a></div>
+                                <div class="number" id="number5" data-preview="preview5" data-item="item5" data-url="" style="top: 170px; left: 480px;"><a href="items.html?slide=12">5</a></div>
+                                <div class="number" id="number6" data-preview="preview6" data-item="item6" data-url="" style="top: 140px; left: 600px;"><a href="items.html?slide=13">6</a></div>
+                                <div class="number" id="number7" data-preview="preview7" data-item="item7" data-url="" style="top: 160px; left: 720px;"><a href="items.html?slide=10">7</a></div>
+                                <div class="number" id="number8" data-preview="preview8" data-item="item8" data-url="" style="top: 280px; left: 735px;"><a href="items.html?slide=11">8</a></div>
+                                <div class="number" id="number9" data-preview="preview9" data-item="item9" data-url="" style="top: 400px; left: 550px;"><a href="items.html?slide=6">9</a></div>
                                 <!--numbers on the map-->
 
                                 <!--hidden previews-->
                                 <div class="preview" id="preview1">
-                                <img src="images/terracotta-mould.png" alt="Terracotta Mold">
+                                  <img src="images/terracotta-mould.png" alt="Terracotta Mold">
                                 </div>
                                 <div class="preview" id="preview2">
-                                <img src="images/melted-brick.png" alt="Melted Brick">
+                                  <img src="images/melted-brick.png" alt="Melted Brick">
                                 </div>
                                 <div class="preview" id="preview3">
-                                <img src="images/aldini-steam-engine.png" alt="Aldini Steam Engine">
+                                  <img src="images/aldini-steam-engine.png" alt="Aldini Steam Engine">
                                 </div>
                                 <div class="preview" id="preview4">
-                                <img src="images/gear-cutter.png" alt="Gear Cutter">
-                                </div>
-                                <div class="preview" id="preview5">
-                                <img src="images/power-hammer.png" alt="Power Hammer">
+                                  <img src="images/gear-cutter.png" alt="Hoffmann Kiln">
                                 </div>
                                 <div class="preview" id="preview6">
-                                <img src="images/steam-turbine.png" alt="Steam Turbine">
+                                  <img src="" alt="Shaping Machine">
                                 </div>
                                 <div class="preview" id="preview7">
-                                <img src="" alt="Shaping Machine">
+                                  <img src="images/steam-turbine.png" alt="Hydraulic Pump">
                                 </div>
                                 <div class="preview" id="preview8">
-                                <img src="images/steam-hammer&vacuum-pump.png" alt="Steam Hammer and Vacuum Pump">
+                                  <img src="images/steam-hammer&vacuum-pump.png" alt="Steam Hammer and Vacuum Pump">
                                 </div>
                                 <!--hidden previews-->
                         </div>
@@ -168,50 +229,42 @@
                     <!--map 1st alternative-->
 
                     <!--2nd alternative-->
-                    <div id="map-container2" style="display: none;">
+                    <div class="maps" id="map-container2" style="display: none;">
                         
                         <div class="title"><h3>FIRST FLOOR</h3>
                         </div>
 
                         <div class="map-container">
-                            <img src="images/groundfloormapgray.png" alt="Museum Map" class="map">
+                            <img src="images/firstfloormapgray.png" alt="Museum Map" class="map">
 
                                 <!--numbers on the map-->
-                                <div class="number" id="number1" data-preview="preview1" data-item="item1" data-url="" style="top: 170px; left: 100px;">1</div>
-                                <div class="number" id="number2" data-preview="preview2" data-item="item2" data-url="" style="top: 140px; left: 265px;">2</div>
-                                <div class="number" id="number3" data-preview="preview3" data-item="item3" data-url="" style="top: 185px; left: 190px;">3</div>
-                                <div class="number" id="number4" data-preview="preview4" data-item="item4" data-url="" style="top: 140px; left: 410px;">4</div>
-                                <div class="number" id="number5" data-preview="preview5" data-item="item5" data-url="" style="top: 140px; left: 615px;">5</div>
-                                <div class="number" id="number6" data-preview="preview6" data-item="item6" data-url="" style="top: 137px; left: 705px;">6</div>
-                                <div class="number" id="number7" data-preview="preview7" data-item="item7" data-url="" style="top: 190px; left: 475px;">7</div>
-                                <div class="number" id="number8" data-preview="preview8" data-item="item8" data-url="" style="top: 335px; left: 720px;">8</div>
+                                <div class="number" id="number10" data-preview="preview10" data-item="item10" style="top: 370px; left: 500px;"><a href="items.html?slide=5">1</a></div>
+                                <div class="number" id="number11" data-preview="preview11" data-item="item11" style="top: 225px; left: 500px;"><a href="items.html?slide=4">2</a></div>
+                                <div class="number" id="number12" data-preview="preview12" data-item="item12" style="top: 270px; left: 340px;"><a href="items.html?slide=3">3</a></div>
+                                <div class="number" id="number13" data-preview="preview13" data-item="item13" style="top: 210px; left: 240px;"><a href="items.html?slide=8">4</a></div>
+                                <div class="number" id="number14" data-preview="preview14" data-item="item14" style="top: 250px; left: 100px;"><a href="items.html?slide=7">5</a></div>
+                                <div class="number" id="number15" data-preview="preview15" data-item="item15" style="top: 110px; left: 150px;"><a href="items.html?slide=9">6</a></div>
                                 <!--numbers on the map-->
 
                                 <!--hidden previews-->
-                                <div class="preview" id="preview1">
-                                <img src="images/terracotta-mould.png" alt="Terracotta Mold">
+                                <div class="preview" id="preview10">
+                                <img src="images/6color.png" alt="Chocolate Packing Machine">
                                 </div>
-                                <div class="preview" id="preview2">
-                                <img src="images/melted-brick.png" alt="Melted Brick">
+                                <div class="preview" id="preview11">
+                                <img src="images/4color.png" alt="Tortellini Machine">
                                 </div>
-                                <div class="preview" id="preview3">
-                                <img src="images/aldini-steam-engine.png" alt="Aldini Steam Engine">
+                                <div class="preview" id="preview12">
+                                <img src="images/3color.png" alt="Gelato Machine">
                                 </div>
-                                <div class="preview" id="preview4">
-                                <img src="images/gear-cutter.png" alt="Gear Cutter">
+                                <div class="preview" id="preview13">
+                                <img src="images/8color.png" alt="Silk Mill Model">
                                 </div>
-                                <div class="preview" id="preview5">
-                                <img src="images/power-hammer.png" alt="Power Hammer">
+                                <div class="preview" id="preview14">
+                                <img src="images/7color.png" alt="Silk Loom Model">
                                 </div>
-                                <div class="preview" id="preview6">
-                                <img src="images/steam-turbine.png" alt="Steam Turbine">
-                                </div>
-                                <div class="preview" id="preview7">
-                                <img src="" alt="Shaping Machine">
-                                </div>
-                                <div class="preview" id="preview8">
-                                <img src="images/steam-hammer&vacuum-pump.png" alt="Steam Hammer and Vacuum Pump">
-                                </div>
+                                <div class="preview" id="preview15">
+                                <img src="images/9color.png" alt="Silk">
+                                </div>                               
                                 <!--hidden previews-->
                         </div>
 
@@ -221,9 +274,9 @@
                 <!--2nd column-->
 
                 <!--3rd column-->
-                <div class="d-grid gap-2 col-6 mx-auto button-container">
-                    <button></button>
-                    <button></button>
+                <div class="map-btn-container">
+                    <div class="btn-map" id="btn-map-1"></div>
+                    <div class="btn-map" id="btn-map-2"></div>
                 </div>
                 <!--3rd column-->
             </div>

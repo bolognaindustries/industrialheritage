@@ -6,56 +6,56 @@ body{
 
 
 /*navbar*/
-.navbar { 
-    font-family: 'Cooper Hewitt', sans-serif;
-    font-weight: bold;
-    padding-left: 3%;
-    padding-right: 3%;
-    padding-top: 6px;
-    padding-bottom: 0;
-  }
+    .navbar { 
+        font-family: 'Cooper Hewitt', sans-serif;
+        font-weight: bold;
+        padding-left: 3%;
+        padding-right: 3%;
+        padding-top: 6px;
+        padding-bottom: 0;
+    }
 
-.navbar-brand img {
-    height: 60px;
-    width: auto;
-}
+    .navbar-brand img {
+        height: 60px;
+        width: auto;
+    }
 
-.navbar-brand span {
-    font-family: 'Cooper Hewitt', sans-serif;
-    font-size: 1rem;
-    margin-left: 9%;
-}
+    .navbar-brand span {
+        font-family: 'Cooper Hewitt', sans-serif;
+        font-size: 1rem;
+        margin-left: 9%;
+    }
 
-.vr {
-    padding-left: 1px;
-    padding-right: 1px;
-    margin-left: 20px;
-    margin-right: 20px;
-}
+    .vr {
+        padding-left: 1px;
+        padding-right: 1px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
 
-.nav-item {
-line-height: 2px;
-}
+    .nav-item {
+    line-height: 2px;
+    }
 
-.link-lines {
-    background-color: white;
-    height: 3px;
-    width: 0;
-    transition: width 0.3s ease;
-    opacity: 1;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 4px;
-}
+    .link-lines {
+        background-color: white;
+        height: 3px;
+        width: 0;
+        transition: width 0.3s ease;
+        opacity: 1;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 4px;
+    }
 
-.nav-item:hover .link-lines {
-width: 60%;
-}
+    .nav-item:hover .link-lines {
+    width: 60%;
+    }
 
-.navbar-nav .nav-link {
-    margin-top: 0;
-    padding-top:30px;
-}
+    .navbar-nav .nav-link {
+        margin-top: 0;
+        padding-top:30px;
+    }
 /*navbar*/
 
 
@@ -114,21 +114,21 @@ width: 60%;
 /*carousel*/
 
 /*titles*/
-.section1 .item-title-container {
-    text-align: center;
-    margin-top: 4%;
-}
+    .section1 .item-title-container {
+        text-align: center;
+        margin-top: 4%;
+    }
 
-.section1 .item-title {
-    position: relative;
-    text-align: center;
-    color: black;
-    font-size: 25px;
-    font-weight: 600;
-    text-decoration: underline;
-    text-underline-offset: 15px;
-    text-decoration-thickness: 3px;
-}
+    .section1 .item-title {
+        position: relative;
+        text-align: center;
+        color: black;
+        font-size: 25px;
+        font-weight: 600;
+        text-decoration: underline;
+        text-underline-offset: 15px;
+        text-decoration-thickness: 3px;
+    }
 /*titles*/
 
 /*info*/
@@ -158,7 +158,7 @@ width: 60%;
 
     .info-table-big {
         left: 70%;
-        position: fixed;
+        position: absolute;
         top: 15%;
         width: 30%;
         height: auto;
@@ -278,136 +278,132 @@ width: 60%;
 /*lines and dots that change with the carousel*/
 
 /*section2*/
-.top-line {
-    height: 3px;
-    background-color: black;
-    width: 90px;
-    margin-left: 9%;
-    opacity: 100;
-    margin-bottom: 0;
-    margin-top: 7%;
-}
+    .top-line {
+        height: 3px;
+        background-color: black;
+        width: 90px;
+        margin-left: 9%;
+        opacity: 100;
+        margin-bottom: 0;
+        margin-top: 7%;
+    }
 
-.top-container {
-    display: flex;
-    margin-left: 9%;
-    margin-right: 9%;
-    max-width: 85%;
-    justify-content: space-between;
-}
-
-.section2 .item-title-container {
-    align-items: start;
-    color: black;
-    max-width: 50%;
-    margin-bottom: 7%;
-}
-
-.section2 .item-title {
-    font-weight: bolder;
-    font-size: 40px;
-    line-height: 50px;
-    margin-top: 15px;
-}
-
-.item-definition-container {
-    display: none;
-    margin-top: 2%;
-    margin-left: auto;
-    max-width: 50%;
-}
-
-.item-definition-container p {
-    font-family: 'Cooper Hewitt', sans-serif;
-    font-weight: 600;
-    text-align: right;
-}
-
-
-    /*opening different descriptions*/
-    .description {
+    .top-container {
         display: flex;
+        margin-left: 9%;
+        margin-right: 9%;
+        max-width: 85%;
         justify-content: space-between;
-        max-width: 85%;
-        margin-left: 9%;
-        margin-right: 9%;
-        cursor: pointer;
     }
 
-    .description-line {
-        height: 2px;
-        background-color: black;
-        margin-left: 9%;
-        margin-right: 9%;
-        max-width: 85%;
-        opacity: 100;
-        margin-bottom: 0;
-        margin-top: 0;
-    }
-
-    .inside-line {
-        height: 2px;
-        background-color: black;
-        width: 100%;
-        opacity: 100;
-        margin-bottom: 0;
-        margin-top: 0;
-    }
-
-    
-    .description-text {
-        font-weight: 600;
-        margin-top: 2%;
-        margin-bottom: 2%;
-        margin-left: 20%;
-
-    }
-
-    .description-number {
-        font-size: 45px;
-        font-weight: bold;
-        margin-left: 1%;
+    .section2 .item-title-container {
+        align-items: start;
         color: black;
-        margin-bottom: 2%;
+        max-width: 50%;
+        margin-bottom: 7%;
     }
 
-    .description-icon {
-        font-size: 30px;
-        transform: rotate(45deg);
-        color: black;
-        margin-left: auto;
-        margin-right: 4%;
-        margin-top: 1%;
-        cursor: pointer;
+    .section2 .item-title {
+        font-weight: bolder;
+        font-size: 40px;
+        line-height: 50px;
+        margin-top: 15px;
     }
 
-    .description-paragraphs {
-        margin-left: 9%;
-        margin-right: 9%;
-        max-width: 85%;
-    }
-
-    .description-paragraph {
+    .item-definition-container {
         display: none;
-        padding-top: 3%;
-        padding-bottom: 3%;
+        margin-top: 2%;
+        margin-left: auto;
+        max-width: 50%;
     }
+
+    .item-definition-container p {
+        font-family: 'Cooper Hewitt', sans-serif;
+        font-weight: 600;
+        text-align: right;
+    }
+
+
     /*opening different descriptions*/
+        .description {
+            display: flex;
+            justify-content: space-between;
+            max-width: 85%;
+            margin-left: 9%;
+            margin-right: 9%;
+            cursor: pointer;
+        }
 
+        .description-line {
+            height: 2px;
+            background-color: black;
+            margin-left: 9%;
+            margin-right: 9%;
+            max-width: 85%;
+            opacity: 100;
+            margin-bottom: 0;
+            margin-top: 0;
+        }
 
+        .inside-line {
+            height: 2px;
+            background-color: black;
+            width: 100%;
+            opacity: 100;
+            margin-bottom: 0;
+            margin-top: 0;
+        }
 
+        
+        .description-text {
+            font-weight: 600;
+            margin-top: 2%;
+            margin-bottom: 2%;
+            margin-left: 20%;
 
+        }
+
+        .description-number {
+            font-size: 45px;
+            font-weight: bold;
+            margin-left: 1%;
+            color: black;
+            margin-bottom: 2%;
+        }
+
+        .description-icon {
+            font-size: 30px;
+            transform: rotate(45deg);
+            color: black;
+            margin-left: auto;
+            margin-right: 4%;
+            margin-top: 1%;
+            cursor: pointer;
+        }
+
+        .description-paragraphs {
+            margin-left: 9%;
+            margin-right: 9%;
+            max-width: 85%;
+        }
+
+        .description-paragraph {
+            display: none;
+            padding-top: 3%;
+            padding-bottom: 3%;
+        }
+    /*opening different descriptions*/
 
 /*section2*/
 
 
 /*footer*/
-footer {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: black;
-  }
+    footer {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: black;
+    }
   
   footer .row {
     margin-left: -5%;
@@ -494,10 +490,11 @@ footer {
     margin-top: 10%;
     position: relative;
     left: 55%;
+    max-width: 290px;
   }
   
   .social-icons {
-    width: 9%;
+    width: 13%;
     height: auto;
     margin-left: 3%;
   }

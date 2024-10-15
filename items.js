@@ -26,6 +26,9 @@ function updateSlide() {
     dots.forEach(function(dot) {
         dot.classList.remove("active");
     });
+    infosBig.forEach(function(infoBig) {
+        infoBig.style.display = "none";
+    });
     
     //hiding everything at the beginning
 
@@ -33,9 +36,11 @@ function updateSlide() {
     slides[currentSlide].style.display = "block";
     titles1[currentSlide].style.display = "block";
     dots[currentSlide].classList.add("active");
+    infoSmall.style.display = "block";
 
     showBigTitle();
     showRightParagraph();
+    bringTheCarouselBack();
     //show everything for the current slide
 }
 
@@ -136,11 +141,8 @@ if(isInfoOpen) {
 
     bringTheCarouselBack();
     infoSmall.style.display = "block";
-    
 }
 //section1
-
-
 
 //section2
 var titles2 = document.querySelectorAll(".section2 .item-title");
@@ -186,28 +188,25 @@ function showRightParagraph() {
     })
     paragraphs[currentSlide].style.display = "block"
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //section2
 
+
+//connecting the map items and number to the slides in the carousel
+function getSlideFromURL() {
+
+    var slideParams = new URLSearchParams(window.location.search);
+    return slideParams.get("slide");
+}
+
+function getTheCorrectSlide() {
+    var slideNumbers = getSlideFromURL();
+    if (slideNumbers) {
+        currentSlide = slideNumbers - 1;
+        updateSlide();
+        updateLine();
+    }
+}
+//connecting the map items and number to the slides in the carousel
 
 
 
@@ -215,3 +214,4 @@ function showRightParagraph() {
 updateSlide();
 showBigTitle();
 showRightParagraph();
+window.onload = getTheCorrectSlide;
