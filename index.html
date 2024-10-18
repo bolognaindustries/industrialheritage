@@ -39,7 +39,7 @@
                   </li>
     
                   <li class="nav-item">
-                    <a class="nav-link active" href="#">THE GALLERY</a>
+                    <a class="nav-link active" href="katya-gallery/gallery.html">THE GALLERY</a>
                     <hr class="link-lines">
                   </li>
     
@@ -90,7 +90,7 @@
       <!--button-->
       <div class="button-container mx-auto col-2 text-center">
           <button type="button" class="btn btn-block btn-transparent px-4">
-              <a href="#section1">SEE MORE
+              <a href="#target-section">SEE MORE
                   <br>
                   <i class="fa-solid fa-chevron-down"></i>
               </a>
@@ -101,7 +101,7 @@
   <!--section 1: title, background image and the title-->
 
   <!-- black background-->
-  <div class="background">
+  <div class="background" id="target-section">
     <!--section 2: paths--> 
     <div class="section2">
         <!--title-->
@@ -163,16 +163,17 @@
         <!--carousel-->
         <div class="carousel">
           <div class="floor-title">
-            <h4>GROUND FLOOR</h4>
+            <h4 id="floor-title1">GROUND FLOOR</h4>
+            <h4 id="floor-title2" style="display: none;">FIRST FLOOR</h4>
           </div>
           
           <div id="myCarousel" class="carousel slide carousel-fade">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="images/mapgroundcut.png" class="d-block w-100" alt="Ground Floor">
+                <img src="images/mapgroundcut.png" class="d-block w-100" id="img1" alt="Ground Floor">
               </div>
               <div class="carousel-item justify-content-center">
-                <img src="images/map2floorcut.png" class="d-block w-100" alt="First Floor">
+                <img src="images/map2floorcut.png" class="d-block w-100" id="img2" alt="First Floor">
               </div>
             </div>
             

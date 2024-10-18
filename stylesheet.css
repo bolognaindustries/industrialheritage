@@ -160,7 +160,7 @@
     /*title and subtitle*/
 
     /*"see more" btn*/
-    .button_container {
+    .button-container {
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
@@ -272,6 +272,8 @@ hr {
     .floor-title {
         text-align: center;
         color: white;
+        text-decoration: underline;
+        text-underline-offset: 15px;
     }
       
     .carousel {
@@ -405,16 +407,17 @@ margin-top: 19%;
 
 
 .social-icons-container {
+  max-width: 200px;
   margin-top: 10%;
   position: relative;
-  left: 55%;
+  left: 50%;
 }
 
 
 .social-icons {
-  width: 9%;
+  width: 19%;
   height: auto;
-  margin-left: 3%;
+  margin-left: 5%;
 }
 
 /*footer*/

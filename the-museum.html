@@ -29,7 +29,7 @@
                     <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                       <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
                         <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                          <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
                           <hr class="link-lines">
                         </li>
 
@@ -38,7 +38,7 @@
                         </li>
 
                         <li class="nav-item">
-                          <a class="nav-link active" href="#">THE GALLERY</a>
+                          <a class="nav-link active" href="katya-gallery/gallery.html">THE GALLERY</a>
                           <hr class="link-lines">
                         </li>
 
@@ -75,13 +75,19 @@
             <!--navbar-->
 
             <!--button-->
-            <div class="button_container mx-auto col-2 text-center"></div>
+            <div class="button-container mx-auto col-2 text-center" id="btn-target">
+              <a href="#target-section">
+              TAKE A LOOK AT THE MAPS
+              <br>
+                  <i class="fa-solid fa-chevron-down"></i>
+              </a>
+            </div>
             <!--button-->
         </div>
         <!--section1-->
 
         <!--section2-->
-        <div class="section2">
+        <div class="section2" id="target-section">
             <!--row-->
             <div class="row">
                 <!--1st column-->
@@ -135,7 +141,7 @@
                             <li class="item" id="item6" data-preview="preview6" data-number="number6" data-url=""><a href="items.html?slide=13">Shaping Machine</a></li>
                             <li class="item" id="item7" data-preview="preview7" data-number="number7" data-url=""><a href="items.html?slide=10">Hydraulic Pump</a></li>
                             <li class="item" id="item8" data-preview="preview8" data-number="number8" data-url=""><a href="items.html?slide=11">Steam Hammer and Vacuum Pump</a></li>
-                            <li class="item" id="item9" data-preview="preview9" data-number="number9" data-url=""><a href="items.html?slide=6">Cube Brodo Packaging Machine</a></li>
+                            <li class="item" id="item9" data-preview="preview9" data-number="number9" data-url=""><a href="items.html?slide=6">Cube Brodo Packing Machine</a></li>
                         </ol>
                     </div>
                     <!--ground floor list-->
@@ -147,7 +153,7 @@
                           <li class="item" id="item10" data-preview="preview10" data-number="number10"><a href="items.html?slide=5">Chocolate Packing Machine</a></li>
                           <li class="item" id="item11" data-preview="preview11" data-number="number11"><a href="items.html?slide=4">Tortellini Machine</a></li>
                           <li class="item" id="item12" data-preview="preview12" data-number="number12"><a href="items.html?slide=3">Gelato Machine</a></li>
-                          <li class="item" id="item13" data-preview="preview13" data-number="number13"><a href="items.html?slide=8">Slik Mill Model</a></li>
+                          <li class="item" id="item13" data-preview="preview13" data-number="number13"><a href="items.html?slide=8">Silk Mill Model</a></li>
                           <li class="item" id="item14" data-preview="preview14" data-number="number14"><a href="items.html?slide=7">Silk Loom Model</a></li>
                           <li class="item" id="item15" data-preview="preview15" data-number="number15"><a href="items.html?slide=9">Silk</a></li>
                       </ol>
@@ -202,25 +208,31 @@
 
                                 <!--hidden previews-->
                                 <div class="preview" id="preview1">
-                                  <img src="images/terracotta-mould.png" alt="Terracotta Mold">
+                                  <img src="images/1color.png" alt="Terracotta Mold">
                                 </div>
                                 <div class="preview" id="preview2">
-                                  <img src="images/melted-brick.png" alt="Melted Brick">
+                                  <img src="images/2color.png" alt="Melted Brick">
                                 </div>
                                 <div class="preview" id="preview3">
-                                  <img src="images/aldini-steam-engine.png" alt="Aldini Steam Engine">
+                                  <img src="images/14color.png" alt="Aldini Steam Engine">
                                 </div>
                                 <div class="preview" id="preview4">
-                                  <img src="images/gear-cutter.png" alt="Hoffmann Kiln">
+                                  <img src="" alt="Hoffmann Kiln">
+                                </div>
+                                <div class="preview" id="preview5">
+                                  <img src="images/12color.png" alt="Power Hammer">
                                 </div>
                                 <div class="preview" id="preview6">
-                                  <img src="" alt="Shaping Machine">
+                                  <img src="images/13color.png" alt="Shaping Machine">
                                 </div>
                                 <div class="preview" id="preview7">
-                                  <img src="images/steam-turbine.png" alt="Hydraulic Pump">
+                                  <img src="images/10color.png" alt="Hydraulic Pump">
                                 </div>
                                 <div class="preview" id="preview8">
-                                  <img src="images/steam-hammer&vacuum-pump.png" alt="Steam Hammer and Vacuum Pump">
+                                  <img src="images/11color.png" alt="Steam Hammer and Vacuum Pump">
+                                </div>
+                                <div class="preview" id="preview9" style="top: 200px; left: 550px;">
+                                  <img src="images/6color.png" alt="Cube Brodo Packing Machine">
                                 </div>
                                 <!--hidden previews-->
                         </div>
@@ -247,22 +259,22 @@
                                 <!--numbers on the map-->
 
                                 <!--hidden previews-->
-                                <div class="preview" id="preview10">
+                                <div class="preview" id="preview10" style="top: 200px; left: 550px;">
                                 <img src="images/6color.png" alt="Chocolate Packing Machine">
                                 </div>
-                                <div class="preview" id="preview11">
+                                <div class="preview" id="preview11" style="top: 5px; left: 600px;">
                                 <img src="images/4color.png" alt="Tortellini Machine">
                                 </div>
-                                <div class="preview" id="preview12">
+                                <div class="preview" id="preview12" style="top: 5px; left: 300px;">
                                 <img src="images/3color.png" alt="Gelato Machine">
                                 </div>
-                                <div class="preview" id="preview13">
+                                <div class="preview" id="preview13" style="top: 240px; left: 1px;">
                                 <img src="images/8color.png" alt="Silk Mill Model">
                                 </div>
-                                <div class="preview" id="preview14">
+                                <div class="preview" id="preview14" style="top: 200px; left: 200px;">
                                 <img src="images/7color.png" alt="Silk Loom Model">
                                 </div>
-                                <div class="preview" id="preview15">
+                                <div class="preview" id="preview15" style="top: 0px; left: 200px;">
                                 <img src="images/9color.png" alt="Silk">
                                 </div>                               
                                 <!--hidden previews-->
