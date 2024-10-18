@@ -405,19 +405,17 @@ margin-top: 19%;
   margin-bottom: 7%;
 }
 
-
 .social-icons-container {
-  max-width: 200px;
-  margin-top: 10%;
-  position: relative;
-  left: 50%;
-}
-
-
-.social-icons {
-  width: 19%;
-  height: auto;
-  margin-left: 5%;
-}
+    max-width: 200px;
+    margin-top: 10%;
+    position: relative;
+    left: 50%;
+  }
+  
+  .social-icons {
+    width: 19%;
+    height: auto;
+    margin-left: 5%;
+  }
 
 /*footer*/
