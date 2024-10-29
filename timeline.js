@@ -3,18 +3,22 @@ const timeline = document.querySelector('.timeline');
 const leftArrow = document.getElementById('leftArrow');
 const rightArrow = document.getElementById('rightArrow');
 
+// Verifica se gli elementi sono stati trovati
+if (timeline && leftArrow && rightArrow) {
+    // Scorrimento a sinistra
+    leftArrow.addEventListener('click', scrollLeft);
+    function scrollLeft() {
+        timeline.scrollBy(-200, 0);
+    }
+}
 // Scorrimento a sinistra
-leftArrow.addEventListener('click', () => {
-    timeline.scrollBy({
-        left: -200,
-        behavior: 'smooth'
-    });
-});
+leftArrow.addEventListener('click', scrollLeft);
+function scrollLeft() {
+    timeline.scrollBy(-200,0);
+}
 
 // Scorrimento a destra
-rightArrow.addEventListener('click', () => {
-    timeline.scrollBy({
-        left: 200,
-        behavior: 'smooth'
-    });
-});
+rightArrow.addEventListener('click', scrollRight);
+function scrollRight() {
+    timeline.scrollBy(200,0);
+}
