@@ -1,13 +1,12 @@
 /* Contenitore principale della timeline */
 .timeline-container {
-    /*outline: 1px solid blue;  Scegli un colore che risalti */
     position: relative;
     top: 35%;
     left: 10%;
     display: flex;
     align-items: center;
     max-width: 80%;
-    max-height: 20%; /*perchè non si rimpicciolisce??????*/
+    max-height: 20%; 
     overflow: hidden;
 }
 
