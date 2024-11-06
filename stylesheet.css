@@ -6,7 +6,7 @@
 
 /*media queries*/
     /*small screens*/
-    @media (max-width: 450px) {
+    @media (max-width: 320px) {
       /*section1*/
         .section1 {
           height: 100vh;
@@ -37,6 +37,25 @@
       /*section1*/
 
       /*section2*/
+        /*titles*/
+          .section2 .title-container {
+            text-align: left;
+            padding-top: 30%;
+          }
+          .section2 #home-title {
+              font-size: 9vw;
+              -webkit-text-stroke: 2px white;
+              color: transparent;
+          }
+          .section2 #home-subtitle {
+              font-size: 5vw;
+          }
+
+          .section2 .title-container p{
+            font-size: 3vw;
+          }
+        /*titles*/
+
         /*paths*/
           .path-container{
             margin-top: 5%;
@@ -94,6 +113,27 @@
       /*section2*/
 
       /*section3*/
+
+        /*titles*/
+          .section3 .title-container {
+            padding-right: 5%;
+            text-align: right;
+            padding-top: 15%;
+          }
+          .section3 #home-title {
+              font-size: 9vw;
+              -webkit-text-stroke: 2px white;
+              color: transparent;
+          }
+          .section3 #home-subtitle {
+              font-size: 5vw;
+          }
+
+          .section3 .title-container p{
+            font-size: 3vw;
+          }
+        /*titles*/
+
         /*carousel*/
           .carousel {
                     margin-top: 5%;
@@ -115,6 +155,23 @@
       /*section3*/
 
       /*footer*/
+        /*titles*/
+        footer .title-container {
+          padding-right: 5%;
+          text-align: left;
+          padding-top: 15%;
+        }
+        footer #home-title {
+            font-size: 9vw;
+            -webkit-text-stroke: 2px white;
+            color: transparent;
+        }
+
+        footer .title-container p{
+          font-size: 3vw;
+        }
+      /*titles*/
+
         footer {
           width: 100%;
           margin-left: auto;
@@ -182,7 +239,7 @@
         font-family: 'Cooper ', sans-serif;
         }
 
-        .contacts, .affiliations {Hewitt
+        .contacts, .affiliations {
          margin-top: 19%;
          margin-bottom: 10%;
         }
@@ -542,6 +599,20 @@
         /*paths*/
 
         /*section3*/
+            /*title*/
+              .section3 .title-container {
+                text-align: right;
+                margin-right: 5%;
+                margin-top: 7%;
+              }
+              .section3 #home-title {
+                  font-size: 3vw;
+              }
+                
+              .section3 #home-subtitle {
+                  font-size: 2vw;
+              }
+            /*title*/
             /*carousel*/
               .carousel {
                 margin-top: 7%;
@@ -770,20 +841,6 @@ hr {
   .section3 {
     background-color: black;
   }
-    /*title*/
-    .section3 .title-container {
-        text-align: right;
-        margin-right: 5%;
-        margin-top: 7%;
-    }
-    .section3 #home-title {
-        font-size: 3vw;
-    }
-      
-    .section3 #home-subtitle {
-        font-size: 2vw;
-    }
-    /*title*/
 
     /*carousel*/
     .floor-title {
