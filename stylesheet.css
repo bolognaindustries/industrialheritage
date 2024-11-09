@@ -779,44 +779,44 @@
     width: 60%;
     }
 
-/* Ensure the dropdown menu appears on hover */
-.nav-item.dropdown:hover .dropdown-menu {
-    display: block;
-}
+    /* Ensure the dropdown menu appears on hover */
+    .nav-item.dropdown:hover .dropdown-menu {
+        display: block;
+    }
 
-.dropdown-item:hover + .link-lines {
-    width: 60%;
-}
-
-.dropdown-menu .link-lines {
-  height: 3px !important;
-  margin: 4px auto 0;
-  padding: 0; /* Remove any padding */
-}
-
-.navbar .dropdown-menu {
-    top: 100%; /* Position directly below the parent menu item */
-    margin-top: 0; /* Remove any unwanted margin */
-  }
-
-.dropdown-menu {
-    display: none;
-    border-radius: 0;
-    position: absolute;
-    background-color: #333;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;}
-
-.dropdown-menu a {
-    color: white;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: flex; /* Use flexbox for centering */
-    align-items: center; /* Center vertically */
-    justify-content: center; /* Center horizontally */
-    text-align: center; /* Center text within the box */
-}
+    .dropdown-item:hover + .link-lines {
+        width: 60%;
+    }
+    
+    .dropdown-menu .link-lines {
+      height: 3px !important;
+      margin: 4px auto 0;
+      padding: 0; /* Remove any padding */
+    }
+    
+    .navbar .dropdown-menu {
+        top: 100%; /* Position directly below the parent menu item */
+        margin-top: 0; /* Remove any unwanted margin */
+      }
+    
+    .dropdown-menu {
+        display: none;
+        border-radius: 0;
+        position: absolute;
+        background-color: #333;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;}
+    
+    .dropdown-menu a {
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: flex; /* Use flexbox for centering */
+        align-items: center; /* Center vertically */
+        justify-content: center; /* Center horizontally */
+        text-align: center; /* Center text within the box */
+    }
     /*navbar*/
 
     /*title and subtitle*/
