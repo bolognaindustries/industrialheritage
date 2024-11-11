@@ -163,7 +163,7 @@
 }
 
 .background-image {
-  background-image: url('../img/galleryimage.jpg');
+  background-image: url('galleryimage.jpg');
   height: 725px;
   background-position: center 45%;
   background-size: 140%;
@@ -195,9 +195,9 @@
 .separator {
   height: 50px; 
   background-color: #212529;
-  width: 103%; /* Set the width to 100% to match the parent container */
-  margin-left: -1.5%; /* Negative margin to pull it to the left */
-  margin-right: -1.5%; /* Negative margin to pull it to the right */
+  width: 103%; 
+  margin-left: -1.5%; 
+  margin-right: -1.5%; 
 }
 
 
@@ -272,42 +272,42 @@
 /* Gallery Items */
 .gallery-items {
   display: flex;
-  justify-content: space-between;  /* Ensure space between items */
-  gap: 20px;  /* Adds space between items */
+  justify-content: space-between;  
+  gap: 20px; 
   flex-wrap: wrap;
   margin-bottom: 40px; 
 }
 
 .gallery-item {
-  flex: 1 1 calc(33.33% - 20px);  /* Three items per row */
+  flex: 1 1 calc(33.33% - 20px);  
   background-color: #212529;  
   color: #fff;
   padding: 15px;
   text-align: center;
   border-radius: 8px;  
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);  /* Softer shadows */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);  
   display: flex; 
   border: 1px solid #444;  
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  flex-direction: column;  /* Aligns items vertically */
-  justify-content: space-between;  /* Ensures spacing between elements */
+  flex-direction: column;  
+  justify-content: space-between;  
 }
 
 .gallery-item:hover {
-  transform: translateY(-5px);  /* Slight lift on hover */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);   /* Deepen shadow on hover */
+  transform: translateY(-5px);  
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);   
 }
 
 .gallery-item img {
-  width: 100%;  /* Make image width responsive */
+  width: 100%; 
     max-width: 250px;  
     height: auto;  
-    margin: 0 auto;  /* Center the image */
+    margin: 0 auto;  
 }
 
 .gallery-item h4 {
   font-size: 22px;
-  margin: 10px 0; /* Consistent vertical spacing */
+  margin: 10px 0; 
 }
 
 .gallery-item p {
@@ -320,7 +320,7 @@
 .gallery-divider {
   border: 1px solid #444; 
   width: 100%; 
-  max-width: 4000px; /* You can adjust this value to control the maximum length */
+  max-width: 4000px;
   margin: 20px auto; 
 }
 
@@ -329,13 +329,13 @@
   background-color: #6d7175;
   color: white; 
   border: none;
-  border-radius: 5px; /* Rounded corners */
+  border-radius: 5px;
   padding: 8px 10px; 
   font-size: 1rem; 
-  transition: background-color 0.3s, transform 0.2s; /* Smooth transition for color and size */
+  transition: background-color 0.3s, transform 0.2s; 
   cursor: pointer; 
-  margin-top: 15px;  /* Increased margin for space above the button */
-  margin-bottom: 0;  /* Ensure no bottom margin */
+  margin-top: 15px;  
+  margin-bottom: 0; 
 }
 
 /* Hover Effect */
