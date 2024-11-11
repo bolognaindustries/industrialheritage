@@ -446,7 +446,6 @@
       /*section1*/
         .section1 {
           height: 100vh;
-          position: relative;
         }
 
         .section1 .title-container {
