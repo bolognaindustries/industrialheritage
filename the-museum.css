@@ -191,7 +191,7 @@ width: 60%;
 
   .left-container {
     position: relative;
-    width: 350px;
+    width: 35%;
     height: 100vh;
     background: #0D0D0D;
   }
@@ -202,7 +202,7 @@ width: 60%;
   }
 
   .section2 img {
-    max-width: 85%;
+    max-width: 100%;
     height: auto;
     margin-top: 5%;
     margin-left: 10%;
@@ -234,6 +234,10 @@ width: 60%;
     margin-right: 10%;
     margin-left: 5%;
     line-height: 35px;
+  }
+
+  .right-container {
+    width: 55%;
   }
 
   .right-container .title {
@@ -285,6 +289,7 @@ width: 60%;
 
 /*map and numbers*/
   .map-container {
+    padding-top: 5%;
     position: relative;
     width: auto;
   }
@@ -292,6 +297,7 @@ width: 60%;
   .maps h3 {
     text-decoration: underline;
     text-underline-offset: 15px;
+    margin-left: 20%;
   }
 
   .number {
@@ -324,48 +330,15 @@ width: 60%;
     text-align: center;
   }
 
-  #preview1 {
-    top: 200px;
-    left: 200px;
-  }
-
-  #preview2 {
-    top: 212px;
-    left: 250px;
-  }
-
-  #preview3 {
-    top: 212px;
-    left: 200px;
-  }
-
-  #preview4 {
-    top: 200px;
-    left: 170px;
-  }
-
-  #preview5 {
-    top: 200px;
-    left: 420px;
-  }
-
-  #preview6 {
-    top: 200px;
-    left: 650px;
-  }
-
-  #preview7 {
-    top: 200px;
-    left: 200px;
-  }
-
-  #preview8 {
-    top: 150px;
-    left: 350px;
-  }  
-
   .item {
     cursor: pointer;
+  }
+
+  .preview-line {
+    position: absolute;
+    width: 2px;
+    background-color: #8CB758;
+    transform-origin: top left;
   }
 /*map and numbers*/
 
@@ -375,9 +348,9 @@ width: 60%;
     position: relative;
     flex-direction: column;
     gap: 20px;
-    width: 50px;
+    width: 10%;
     margin-top: 24%;
-    margin-left: 3%;
+    padding-left: 7%;
   }
 
   .btn-map {
