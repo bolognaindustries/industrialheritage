@@ -325,8 +325,8 @@ width: 60%;
   .preview {
     position: absolute;
     display: none;
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     text-align: center;
   }
 
