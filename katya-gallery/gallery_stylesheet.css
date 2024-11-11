@@ -163,7 +163,7 @@
 }
 
 .background-image {
-  background-image: url('https://github.com/bolognaindustries/industrialheritage/blob/main/katya-gallery/galleryimage.jpg');
+  background-image: url('galleryimage.jpg');
   height: 725px;
   background-position: center 45%;
   background-size: 140%;
