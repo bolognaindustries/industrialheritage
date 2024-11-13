@@ -8,17 +8,17 @@ if (timeline && leftArrow && rightArrow) {
     // Scorrimento a sinistra
     leftArrow.addEventListener('click', scrollLeft);
     function scrollLeft() {
-        timeline.scrollBy(-200, 0);
+        timeline.scrollBy(-385, 0);
     }
 }
 // Scorrimento a sinistra
 leftArrow.addEventListener('click', scrollLeft);
 function scrollLeft() {
-    timeline.scrollBy(-200,0);
+    timeline.scrollBy(-385,0);
 }
 
 // Scorrimento a destra
 rightArrow.addEventListener('click', scrollRight);
 function scrollRight() {
-    timeline.scrollBy(200,0);
+    timeline.scrollBy(385,0);
 }
