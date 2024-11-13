@@ -4,24 +4,26 @@
 // adding events mouseenter, mouseleave and click on all the numbers, making a preview pop up
     var numbers = document.querySelectorAll(".number");
     var allItems = document.querySelectorAll(".item");
-    var listsOfItems = document.querySelectorAll("list-of-items");
-    var floorDescription = document.getElementById("floor-description");
+    var listsOfItems = document.querySelectorAll(".list-of-items");
+    var floorDescriptions = document.querySelectorAll(".floor-description");
+    var texts = document.querySelectorAll(".text");
+   
+    isClicked = false
 
     numbers.forEach(function(number) {
-        var numberLink = number.querySelector("a");
-
+        
         number.addEventListener("mouseenter", function() {
+            if(!isClicked) {
             var previewId = number.getAttribute("data-preview");
             var itemId = number.getAttribute("data-item");
 
             var preview = document.getElementById(previewId);
             var currentItem = document.getElementById(itemId);
-            var currentItemLink = currentItem.querySelector("a");
 
             number.style.backgroundColor = "#8CB758";
-            numberLink.style.color = "white";
+            number.style.color = "white";
 
-            currentItemLink.style.color = "#8CB758";
+            currentItem.style.color = "#8CB758";
 
             preview.style.display = "block";
 
@@ -39,25 +41,26 @@
 
             allItems.forEach(function(item) {
                 var itemLink = item.querySelector("a");
-                itemLink.style.color = "white";
+                item.style.color = "white";
             });
 
-            currentItemLink.style.color = "#8CB758";
+            currentItem.style.color = "#8CB758";
 
+            }
         });
 
         number.addEventListener("mouseleave", function() {
+            if(!isClicked) {
             var previewId = number.getAttribute("data-preview");
             var itemId = number.getAttribute("data-item");
 
             var preview = document.getElementById(previewId);
             var currentItem = document.getElementById(itemId);
-            var currentItemLink = currentItem.querySelector("a");
 
             number.style.backgroundColor = "white";
-            numberLink.style.color = "#8CB758";
+            number.style.color = "#8CB758";
 
-            currentItemLink.style.color = "white";
+            currentItem.style.color = "white";
 
             preview.style.display = "none";
             
@@ -72,8 +75,31 @@
             // Reset color for all items
             allItems.forEach(function(item) {
                 var itemLink = item.querySelector("a");
-                itemLink.style.color = "white";
+                item.style.color = "white";
             });
+
+            }
+        });
+
+        number.addEventListener("click", function() {
+            isClicked = !isClicked
+            var textId = number.getAttribute("data-text");
+            
+            var text = document.getElementById(textId);
+
+            floorDescriptions.forEach(function(floorDescription) {
+                floorDescription.style.display = "none";
+            });
+
+            listsOfItems.forEach(function(listOfItems) {
+                listOfItems.style.display = "none";
+            });
+
+            texts.forEach(function(text) {
+                text.style.display = "none";
+            });
+
+            text.style.display = "block";
         });
     });
 //1st function
@@ -81,56 +107,74 @@
 
 //2nd function
 //adding events mouseenter, mouseleave and click on all the items, making a preview pop up and the color of the numbers change
-    var items = document.querySelectorAll(".item")
+    var items = document.querySelectorAll(".item");
     var numbers = document.querySelectorAll(".number");
 
     items.forEach(function(item) {
-        var itemLink = item.querySelector("a");
 
         item.addEventListener("mouseenter", function() {
+            if(!isClicked) {
             var previewId = item.getAttribute("data-preview");
             var numberId = item.getAttribute("data-number");
 
             var preview = document.getElementById(previewId);
             var number = document.getElementById(numberId);
-            var numberLink = number.querySelector("a");
 
             number.style.backgroundColor = "#8CB758";
-            numberLink.style.color = "white";
+            number.style.color = "white";
 
-            itemLink.style.color ="#8CB758"
+            item.style.color ="#8CB758";
 
             preview.style.display = "block";
+
+            }
         });
    
 
         item.addEventListener("mouseleave", function() {
+            if(!isClicked) {
             var previewId = item.getAttribute("data-preview");
             var numberId = item.getAttribute("data-number");
 
             var preview = document.getElementById(previewId);
             var number = document.getElementById(numberId);
-            var numberLink = number.querySelector("a");
 
             number.style.backgroundColor = "white";
-            numberLink.style.color = "#8CB758";
+            number.style.color = "#8CB758";
 
-            itemLink.style.color ="white"
+            item.style.color ="white";
 
             preview.style.display = "none";
-
+            
+            }
         });
 
         item.addEventListener("click", function() {
-            var urlId = item.getAttribute("data-url");
+            isClicked = !isClicked
+            var textId = item.getAttribute("data-text");
+            
+            var text = document.getElementById(textId);
 
-            var url = document.getElementById(urlId);
+            floorDescriptions.forEach(function(floorDescription) {
+                floorDescription.style.display = "none";
+            });
 
-            window.location.href = url;
+            listsOfItems.forEach(function(listOfItems) {
+                listOfItems.style.display = "none";
+            });
 
+            texts.forEach(function(text) {
+                text.style.display = "none";
+            });
+
+            text.style.display = "block";
+
+            if (!isClicked) {
+                var previewId = number.getAttribute("data-preview");
+                var preview = document.getElementById(previewId);
+                preview.style.display = "none";
+            }
         });
-
-
     });
 //2nd function
 
@@ -276,14 +320,3 @@
 changeToMap1();
 changeToDescr();
 //inizialize
-
-
-
-
-
-
-
-
-
-
-
