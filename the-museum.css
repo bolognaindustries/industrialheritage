@@ -366,6 +366,22 @@ width: 60%;
   }
 /*map buttons*/
 
+/*user type buttons*/
+
+  .user-type-btn-container {
+    position: absolute;
+    left: 85%;
+    top: 105%;
+    width: 10%;
+    height: 6%;
+  }
+
+  .user-type-btn img {
+    width: 30px;
+    height: 30px;
+  }
+/*user type buttons*/
+
 
 /*footer*/
   footer {
