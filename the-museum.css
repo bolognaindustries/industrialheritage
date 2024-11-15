@@ -1,506 +1,431 @@
-body{
-  margin: 0px;
-  box-sizing: content-box;
+/* Base styles for Desktop-First */
+body {
+  margin: 0;
+  box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
   background-color: black;
 }
 
-
-/*media queries*/
-    /*small screens*/
-    @media screen and (max-width: 425px) and (orientation: portrait){
-      #btn-target {
-        top: 70%;
-      }
-
-      img.map {
-        width: 80%;
-        height: auto;
-      }
-
-      .left-container {
-        display: none;
-      }
-
-      .map-btn-container {
-        width: 10%;
-      }
-
-      .right-container {
-        width: 90%;
-      }
-
-      .map-container {
-        margin-top: 30%;
-        width: 100%;
-        height: auto;
-        transform: rotate(90deg); /* Rimuove la rotazione per visualizzazione verticale */
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-
-      img.map {
-        position: absolute;
-        width: 100%;
-        height: auto;
-        margin-top: -37%;
-        margin-left: 70%;
-      }
-
-      .number {
-        display: none;
-      }
-
-      .btn-check {
-        display: none;
-      }
-
+    /* Navbar */
+    .navbar { 
+      font-family: 'Cooper Hewitt', sans-serif;
+      font-weight: bold;
+      padding-left: 3%;
+      padding-right: 3%;
+      padding-top: 6px;
+      padding-bottom: 0;
     }
-
-    @media screen and (min-width: 425px) and (orientation: landscape){
-      #btn-target {
-        top: 90%;
-      }
-    }
-
-    @media screen and (max-width: 768px) and (orientation: portrait) {
-      #btn-target {
-        top: 90%;
-      }
-    }
-
-    @media screen and (max-width: 768px) and (orientation: landscape) {
-      #btn-target {
-        top: 90%;
-      }
-    }
-
-    @media screen and (min-width: 1024px) {
-      #btn-target {
-        top: 90%;
-      }
-
-      .section2 .title-container {
-        padding-top: 7%;
-        padding-left: 5%;
-      }
     
-      .section2 img {
-        max-width: 100%;
-        height: auto;
-        margin-top: 5%;
-        margin-left: 10%;
-      }
-
-      .right-container {
-        width: 55%;
-      }
-
-      .map-container {
-        padding-top: 5%;
-      }
-
-      .number {
-        position: absolute;
-        width: 36px;
-        height: 36px;
-        background-color: white;
-        color: #8CB758;
-        text-align: center;
-        border-radius: 50%;
-        cursor: pointer;
-        font-size: 20px;
-        font-weight: bold;
+    .navbar-brand img {
+      height: 60px;
+      width: auto;
+    }
     
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
+    .navbar-brand span {
+      font-family: 'Cooper Hewitt', sans-serif;
+      font-size: 1rem;
+      margin-left: 9%;
+    }
+    
+    .vr {
+      padding-left: 1px;
+      padding-right: 1px;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    
+    .nav-item {
+      line-height: 2px;
+    }
+    
+    .link-lines {
+      background-color: white;
+      height: 3px;
+      width: 0;
+      transition: width 0.3s ease;
+      opacity: 1;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 4px;
+    }
+    
+    .nav-item:hover .link-lines {
+      width: 60%;
+    }
+    
+    .navbar-nav .nav-link {
+      margin-top: 0;
+      padding-top:30px;
     }
 
-    @media screen and (min-width: 1280px) {
-      #btn-target {
-        top: 90%;
-      }
+    /* User Type Buttons*/
+    .user-type-btn-container {
+      position: absolute;
+      left: 21%;
+      top: 104%;
+      display: flex;
+      flex-direction: row;
+      gap: 5%;
     }
 
-    @media screen and (min-width: 1536px) {
-      #btn-target {
-        top: 70%;
-      }
+    .user-type-btn-container img {
+      width: 25px;
+      height: 20px;
     }
 
+    /* Section 1: Introduction */
+    .section1 {
+      height: 100vh;
+      background-color: #0D0D0D;;
+    }
+
+    #btn-target {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      top: 90%;
+    }
+
+    #btn-target a {
+      color: #fff;
+      text-decoration: none;
+      font-family: 'Cooper Hewitt', sans-serif;
+      font-weight: bold;
+      white-space: nowrap;
+    }
+
+    /* Section 2: The Map*/
+    .section2 {
+      background-color: black;
+      height: 100vh;
+    }
+
+    .section2 .title-container {
+      padding-top: 7%;
+      padding-left: 5%;
+    }
+
+    .section2 img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 5%;
+      margin-left: 10%;
+    }
+    
+    .row {
+      max-width: 100%;
+    }
+
+        /* Left Container: Lists and Descriptions */
+        .left-container {
+          position: relative;
+          width: 35%;
+          height: 100vh;
+          background: #0D0D0D;
+        }
+
+        .left-container .title {
+          display: inline-block;
+          justify-content: center;
+          text-align: left;
+          margin-left: 10%;
+          margin-top: 15%;
+          margin-bottom: 10%;
+          color: white;
+          font-size: 20px;
+          line-height: 33px;
+        }
+
+        .left-container p {
+          font-size: 15px;
+          color: white;
+          margin-right: 10%;
+          margin-left: 10%;
+        }
+
+        .left-container ol {
+          font-size: 17px;
+          color: white;
+          margin-right: 10%;
+          margin-left: 5%;
+          line-height: 35px;
+        }
+        
+        .left-container .btn a {
+          color: #fff;
+          text-decoration: none;
+          font-family: 'Cooper Hewitt', sans-serif;
+          font-weight: bold;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+        }
+        
+        #button-list {
+          position: absolute;
+          bottom: 20px;
+          right: 153px;
+          white-space: nowrap;
+        }
+
+        #button-description {
+          position: absolute;
+          bottom: 20px;
+          right: 200px;
+          white-space: nowrap;
+        }
+
+        /* Right Container: Maps and Numbers */
+        .right-container {
+          width: 55%;
+        }
+
+        .map-container {
+          padding-top: 5%;
+          position: relative;
+        }
+        
+        .maps h3 {
+          text-decoration: underline;
+          text-underline-offset: 30%;
+          margin-left: 20%;
+          font-size: 2em;
+          color: white;
+          text-align: center;
+          justify-content: center;
+          margin-top: 10%;
+          font-weight: bold;
+        }
+
+        .number {
+          position: absolute;
+          width: 36px;
+          height: 36px;
+          background-color: white;
+          color: #8CB758;
+          text-align: center;
+          border-radius: 50%;
+          cursor: pointer;
+          font-size: 20px;
+          font-weight: bold;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+                
+        .preview {
+          position: absolute;
+          display: none;
+          width: 250px;
+          height: 250px;
+          text-align: center;
+        }
+        
+        .item {
+          cursor: pointer;
+        }
+    
+        .preview-line {
+          position: absolute;
+          width: 2px;
+          background-color: #8CB758;
+          transform-origin: top left;
+        }
+
+        .map-btn-container {
+          display: flex;
+          position: relative;
+          flex-direction: column;
+          gap: 20px;
+          width: 10%;
+          margin-top: 24%;
+          padding-left: 7%;
+        }
+    
+        .btn-map {
+          width: 15px;
+          height: 15px;
+          border-radius: 50%;
+          background-color: #2A2928;  
+          cursor: pointer;  
+        }
+    
+        .btn-map.active {
+          background-color: white;
+        }
 
 
+    /* Footer */
+    footer {
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
 
+    footer .row {
+      margin-left: -5%;
+      margin-right: -5%
+    }
 
-
-
-.section1 {
-  height: 100vh;
-}
-
-/*navbar*/
-.navbar { 
-  font-family: 'Cooper Hewitt', sans-serif;
-  font-weight: bold;
-  padding-left: 3%;
-  padding-right: 3%;
-  padding-top: 6px;
-  padding-bottom: 0;
-}
-
-.navbar-brand img {
-  height: 60px;
-  width: auto;
-}
-
-.navbar-brand span {
-  font-family: 'Cooper Hewitt', sans-serif;
-  font-size: 1rem;
-  margin-left: 9%;
-}
-
-.vr {
-  padding-left: 1px;
-  padding-right: 1px;
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
-.nav-item {
-line-height: 2px;
-}
-
-.link-lines {
-  background-color: white;
-  height: 3px;
-  width: 0;
-  transition: width 0.3s ease;
-  opacity: 1;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 4px;
-}
-
-.nav-item:hover .link-lines {
-width: 60%;
-}
-
-.navbar-nav .nav-link {
-  margin-top: 0;
-  padding-top:30px;
-}
-/*navbar*/
-
-/*title and subtitle*/
-.title-container {
-  font-family: 'Cooper Hewitt', sans-serif; 
-  color: white;
-}
-
-.title-container #home-title {
-  font-weight: bold;
-  -webkit-text-stroke: 2px white;
-  color: transparent;
-}
-
-.title-container #home-subtitle {
-  font-weight: bold;
-}
-
-/*"see more" button*/
-  #btn-target {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
-
-  #btn-target a {
-    color: #fff;
-    text-decoration: none;
-    font-family: 'Cooper Hewitt', sans-serif;
-    font-weight: bold;
-    white-space: nowrap;
-  }
-/*"see more" button*/
-
-/*background of the rest of the page*/
-.rest-of-the-page {
-  background-color: black;
-}
-
-/*section 2 "explore the items"*/
-  .section2 {
-    background-color: black;
-    height: 100vh;
-  }
-
-  .left-container {
-    position: relative;
-    width: 35%;
-    height: 100vh;
-    background: #0D0D0D;
-  }
-
-  .left-container .title {
-    display: inline-block;
-    justify-content: center;
-    text-align: left;
-    margin-left: 10%;
-    margin-top: 15%;
-    margin-bottom: 10%;
-    color: white;
-    font-size: 20px;
-    line-height: 33px;
-  }
-
-  .left-container p {
-    font-size: 15px;
-    color: white;
-    margin-right: 10%;
-    margin-left: 10%;
-
-  }
-
-  .left-container ol {
-    font-size: 17px;
-    color: white;
-    margin-right: 10%;
-    margin-left: 5%;
-    line-height: 35px;
-  }
-
-  
-
-  .right-container .title {
-    justify-content: center;
-    text-align: center;
-    color: white;
-    font-size: 20px;
-    margin-top: 5%;
-  }
-
-  .row {
-    max-width: 100%;
-  }
-
-  .list-of-items a {
-    text-decoration: none;
-    color: white;
-  }
-/*section 2 "explore the items"*/
-
-
-
-/*see the list of items btn*/
-  #button-list {
-    position: absolute;
-    bottom: 20px;
-    right: 153px;
-    white-space: nowrap;
-  }
-  #button-description {
-    position: absolute;
-    bottom: 20px;
-    right: 200px;
-    white-space: nowrap;
-  }
-
-  .left-container .btn a {
-    color: #fff;
-    text-decoration: none;
-    font-family: 'Cooper Hewitt', sans-serif;
-    font-weight: bold;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-  }
-
-/*see the list of items btn*/
-
-
-/*map and numbers*/
-  .map-container {
-    position: relative;
-    width: auto;
-  }
-
-  .maps h3 {
-    text-decoration: underline;
-    text-underline-offset: 15px;
-    margin-left: 20%;
-  }
-
-
-  .preview {
-    position: absolute;
-    display: none;
-    width: 250px;
-    height: 250px;
-    text-align: center;
-  }
-
-  .item {
-    cursor: pointer;
-  }
-
-  .preview-line {
-    position: absolute;
-    width: 2px;
-    background-color: #8CB758;
-    transform-origin: top left;
-  }
-/*map and numbers*/
-
-/*map buttons*/
-  .map-btn-container {
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    gap: 20px;
-    width: 10%;
-    margin-top: 24%;
-    padding-left: 7%;
-  }
-
-  .btn-map {
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background-color: #2A2928;  
-    cursor: pointer;  
-  }
-
-  .btn-map.active {
-    background-color: white;
-  }
-/*map buttons*/
-
-/*user type buttons*/
-
-  .user-type-btn-container {
-    position: absolute;
-    left: 21%;
-    top: 104%;
-    display: flex;
-    flex-direction: row;
-    gap: 5%;
-  }
-
-  .user-type-btn-container img {
-    width: 25px;
-    height: 20px;
-  }
-/*user type buttons*/
-
-
-
-
-/*footer*/
-  footer {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  footer .row {
-    margin-left: -5%;
-    margin-right: -5%
-  }
-
-  footer .title-container {
+    footer .title-container {
       text-align: left;
       margin-right: 2%;
       margin-top: 7%;
-  }
+    }
 
-  footer #home-title {
-  font-weight: bold;
-  -webkit-text-stroke: 2px white;
-  color: transparent;
-  position: relative;
-  font-size: 3vw;
-  z-index: 100;
-  }
+    footer #home-title {
+      font-weight: bold;
+      -webkit-text-stroke: 2px white;
+      color: transparent;
+      position: relative;
+      font-size: 3vw;
+      z-index: 100;
+    }
 
-  footer #home-subtitle {
-  font-size: 2vw;
-  }
+    footer #home-subtitle {
+      font-size: 2vw;
+    }
 
-  footer h4 {
-  font-size: 24px;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
-  text-align: left;
-  color: white;
-  }
+    footer h4 {
+      font-size: 24px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      text-align: left;
+      color: white;
+    }
 
-  #museum-logo {
-  position: relative;
-  width: 325px;
-  height: auto;
-  display: block;
-  margin-top: 10%;
-  left: -10%;
-  top: -10%;
-  z-index: 10;
-  }
+    #museum-logo {
+      position: relative;
+      width: 325px;
+      height: auto;
+      display: block;
+      margin-top: 10%;
+      left: -10%;
+      top: -10%;
+      z-index: 10;
+    }
 
-  .contacts p, footer .affiliations p {
-  line-height: 1.5;
-  margin-bottom: 20px;
-  text-align: left;
-  color: white;
-  font-weight: bold;
-  }
+    .contacts p, footer .affiliations p {
+      line-height: 1.5;
+      margin-bottom: 20px;
+      text-align: left;
+      color: white;
+      font-weight: bold;
+    }
 
-  footer p {
-  font-size: 17px;
-  font-weight: normal;
-  text-align: left;
-  font-family: 'Cooper Hewitt', sans-serif;
-  }
+    footer p {
+      font-size: 17px;
+      font-weight: normal;
+      text-align: left;
+      font-family: 'Cooper Hewitt', sans-serif;
+    }
 
-  .contacts, .affiliations {
-  margin-top: 19%;
-  }
+    .contacts, .affiliations {
+      margin-top: 19%;
+    }
 
-  .contacts {
-    margin-left: 7%;
-  }
+    .contacts {
+      margin-left: 7%;
+    }
 
-  .affiliations {
-    margin-left: 4%;
-  }
+    .affiliations {
+      margin-left: 4%;
+    }
 
-  .contacts h4 {
-    margin-bottom: 10%;
-  }
+    .contacts h4 {
+      margin-bottom: 10%;
+    }
 
-  .affiliations h4 {
-    margin-bottom: 7%;
-  }
+    .affiliations h4 {
+      margin-bottom: 7%;
+    }
 
-  .social-icons-container {
-    max-width: 200px;
-    margin-top: 10%;
-    position: relative;
-    left: 50%;
-  }
-  
-  
-  .social-icons {
-    width: 19%;
-    height: auto;
-    margin-left: 5%;
-  }
-/*footer*/
+    .social-icons-container {
+      max-width: 200px;
+      margin-top: 10%;
+      position: relative;
+      left: 50%;
+    }
+    
+    
+    .social-icons {
+      width: 19%;
+      height: auto;
+      margin-left: 5%;
+    }
+
+/* Media Queries */
+@media (max-width: 1024px) {
+
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 576px) {
+    /* Hiding Everything We Don't Need on Mobile */
+    .number {
+      display: none;
+    }
+
+    .left-container {
+      display: none;
+    }
+    
+    /* Section 1: Introduction */
+
+
+    /* Section 2: The Map */
+    .row {
+      --bs-gutter-x: 0 !important;
+    }
+
+    .section2 {
+      width: 100%;
+    }
+
+    .right-container {
+      width: 100vw;
+      padding: 0;
+      margin: 0;
+    }
+
+    .maps {
+      width: 100vw !important;
+      height: 100vh !important;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    .map-container {
+      padding-top: 0;
+      transform: rotate(90deg);
+      width: 100%;
+      margin-top: 30%;
+    } 
+
+    .maps h3 {
+      font-size: 1,5em;
+      margin: 0;
+      margin-top: 10%;
+    }
+
+    .section2 img {
+      padding: 0;
+      margin: 0;
+      width: 120%;
+      height: auto;
+      max-width: none;
+    }
+}
