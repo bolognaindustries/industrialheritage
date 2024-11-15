@@ -287,10 +287,6 @@ body {
       z-index: 100;
     }
 
-    footer #home-subtitle {
-      font-size: 2vw;
-    }
-
     footer h4 {
       font-size: 24px;
       font-weight: bold;
@@ -304,7 +300,6 @@ body {
       position: relative;
       width: 325px;
       height: auto;
-      display: block;
       margin-top: 10%;
       left: -10%;
       top: -10%;
@@ -352,7 +347,6 @@ body {
       position: relative;
       left: 50%;
     }
-    
     
     .social-icons {
       width: 19%;
@@ -424,8 +418,123 @@ body {
     .section2 img {
       padding: 0;
       margin: 0;
-      width: 120%;
+      width: 130%;
       height: auto;
       max-width: none;
     }
+
+    .pop-up-description {
+      position: absolute;
+      text-align: center;
+      background-color: white;
+      height: 10%;
+      border-top-left-radius: 20%;
+      border-top-right-radius: 20%;
+      top: 245%;
+    }
+
+    /* Footer */
+      footer .row {
+        --bs-gutter-x: 0 !important;
+        width: 100vw !important;
+        height: 100vh !important;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+      }
+
+      footer {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        position: absolute;
+        top: 265%;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 10%;
+      }
+
+      footer .title-container {
+        text-align: center;
+        align-items: center;
+      }
+
+      footer #home-title {
+        font-size: 9vw;
+        text-align: center;
+        margin-left: 0;
+        margin-right: 0;
+      } 
+
+      footer .title-container p{
+        font-size: 3vw;
+      }
+
+      footer h4 {
+        margin: 0;
+        text-align: center;
+      }
+
+      #museum-logo {
+        position: sticky;
+        width: 50%;
+        height: auto;
+        padding: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 10%;
+      }
+
+      .contacts, .affiliations {
+        margin: 0;
+      }
+
+      .contacts h4 {
+        margin: 2%;
+      }
+  
+      .affiliations h4 {
+        margin: 2%;
+        margin-top: 10%;
+      }
+
+      .contacts p, footer .affiliations p {
+        text-align: center;
+      }
+
+      .contacts {
+        margin-top: 7%;
+        margin-bottom: 0;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .affiliations {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .social-icons-container {
+        align-items: center;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 25%;
+      }
+
+      .social-icons {
+        margin: 0;
+        width: 60%;
+      }
+
+          
+
+
+
+
+
+
+
 }
