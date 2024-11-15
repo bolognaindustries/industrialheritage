@@ -8,7 +8,7 @@ body{
 
 /*media queries*/
     /*small screens*/
-    @media screen and (min-width: 425px) and (orientation: portrait){
+    @media screen and (max-width: 425px) and (orientation: portrait){
       #btn-target {
         top: 70%;
       }
