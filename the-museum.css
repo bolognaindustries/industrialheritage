@@ -102,7 +102,9 @@ body {
     /* Section 2: The Map*/
     .section2 {
       background-color: black;
+      height: 100vh;
       max-height: 100vh;
+      position: relative;
     }
 
     .section2 .title-container {
@@ -241,7 +243,7 @@ body {
           display: flex;
           position: relative;
           flex-direction: column;
-          gap: 20px;
+          gap: 3%;
           width: 10%;
           margin-top: 24%;
           padding-left: 7%;
@@ -257,6 +259,10 @@ body {
     
         .btn-map.active {
           background-color: white;
+        }
+
+        .pop-up-description {
+          display: none;
         }
 
 
@@ -380,10 +386,13 @@ body {
     .row {
       --bs-gutter-x: 0 !important;
       position: relative;
+      margin: 0;
+      padding: 0;
     }
 
     .section2 {
-      width: 100%;
+      display: flex;
+      flex-direction: column;
     }
 
     .right-container {
@@ -393,8 +402,18 @@ body {
     }
 
     .map-btn-container {
+      align-items: center;
+      width: 10%;
+      height: 5%;
+      display: flex;
+      flex-direction: row;
       position: absolute;
-      left: 90%;
+      bottom: 11%;
+      left: 50%;
+      transform: translateX(-50%);
+      margin: 0;
+      padding: 0;
+      gap: 32%;
     }
 
     .maps {
@@ -430,13 +449,15 @@ body {
     }
 
     .pop-up-description {
+      display: block;
       position: absolute;
       text-align: center;
       background-color: white;
-      height: 10%;
+      height: 8%;
       border-top-left-radius: 20%;
       border-top-right-radius: 20%;
       bottom: 0;
+      position: sticky;
     }
 
     /* Footer */
