@@ -379,6 +379,8 @@ body {
     /* Section 2: The Map */
     .row {
       --bs-gutter-x: 0 !important;
+      position: relative;
+      height: 100vh;
     }
 
     .section2 {
@@ -389,6 +391,11 @@ body {
       width: 100vw;
       padding: 0;
       margin: 0;
+    }
+
+    .map-btn-container {
+      position: absolute;
+      left: 90%;
     }
 
     .maps {
@@ -406,7 +413,7 @@ body {
       padding-top: 0;
       transform: rotate(90deg);
       width: 100%;
-      margin-top: 30%;
+      margin-top: 25%;
     } 
 
     .maps h3 {
@@ -427,10 +434,10 @@ body {
       position: absolute;
       text-align: center;
       background-color: white;
-      height: 10%;
+      height: 20%;
       border-top-left-radius: 20%;
       border-top-right-radius: 20%;
-      top: 245%;
+      top: 100vh;
     }
 
     /* Footer */
