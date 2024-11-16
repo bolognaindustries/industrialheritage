@@ -407,8 +407,6 @@ body {
       height: 5%;
       display: flex;
       flex-direction: row;
-      position: absolute;
-      bottom: 11%;
       left: 50%;
       transform: translateX(-50%);
       margin: 0;
@@ -458,6 +456,7 @@ body {
       border-top-right-radius: 20%;
       bottom: 0;
       position: sticky;
+      margin-top: 10%;
     }
 
     /* Footer */
