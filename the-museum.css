@@ -102,7 +102,7 @@ body {
     /* Section 2: The Map*/
     .section2 {
       background-color: black;
-      height: 100vh;
+      max-height: 100vh;
     }
 
     .section2 .title-container {
@@ -380,7 +380,6 @@ body {
     .row {
       --bs-gutter-x: 0 !important;
       position: relative;
-      height: 100vh;
     }
 
     .section2 {
@@ -425,7 +424,7 @@ body {
     .section2 img {
       padding: 0;
       margin: 0;
-      width: 130%;
+      width: 150%;
       height: auto;
       max-width: none;
     }
@@ -434,10 +433,10 @@ body {
       position: absolute;
       text-align: center;
       background-color: white;
-      height: 20%;
+      height: 10%;
       border-top-left-radius: 20%;
       border-top-right-radius: 20%;
-      top: 100vh;
+      bottom: 0;
     }
 
     /* Footer */
@@ -535,13 +534,4 @@ body {
         margin: 0;
         width: 60%;
       }
-
-          
-
-
-
-
-
-
-
 }
