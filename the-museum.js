@@ -315,6 +315,35 @@
 
 //4rd function
 
+// ONLY MOBILE
+// 1st Function: clicking the pop-up description
+    var popUpBtn = document.querySelector(".pop-up-icon-container i");
+    var popUp = document.querySelector(".left-container");
+
+    popUpIsOpen = false;
+
+    popUp.addEventListener("click", function() {
+        popUpIsOpen = !popUpIsOpen;
+
+        if(popUpIsOpen) {
+            popUp.style.bottom = "0";
+
+            popUpBtn.style.transform = "rotate(180deg)";
+        } else {
+            popUp.style.bottom = "-60vh";
+
+            popUpBtn.style.transform = "rotate(0deg)";
+        }
+
+    });
+
+  
+
+
+
+
+
+
 
 //inizialize
 changeToMap1();
