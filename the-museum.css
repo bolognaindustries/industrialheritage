@@ -366,7 +366,7 @@ body {
 
 @media (max-width: 576px) {
     /* Hiding Everything we don't Need on Mobile*/
-    .preview {
+    .previews {
       display: none;
     }
 
@@ -448,18 +448,18 @@ body {
         display: flex;
         flex-direction: row;
         width: 90vw;
-        height: 5%;
+        height: 10%;
         top: 50vh;
         left: 50%;
         transform: translateX(-50%);
         margin: 0;
         padding: 0;
-        gap: 80%;
+        gap: 77%;
       }
 
       .btn-map {
-        width: 55%;
-        height: 100%;
+        width: 2.5em;
+        height: 2.5em;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -492,14 +492,14 @@ body {
         font-size: 3ex;
         margin: 0;
         margin-top: 5%;
-        margin-bottom: 23%;
+        margin-bottom: 30%;
       }
 
       .section2 img {
         padding: 0;
         margin: 0;
-        width: 120%;
-        height: auto;
+        height: 35vh;
+        width: auto;
         max-width: none;
         z-index: 10;
       }
@@ -507,14 +507,14 @@ body {
       .number {
         transform: rotate(-90deg);
         position: absolute;
-        width: 25px;
-        height: 25px;
+        width: 30px;
+        height: 30px;
         background-color: white;
         color: #8CB758;
         text-align: center;
         border-radius: 50%;
         cursor: pointer;
-        font-size: 20px;
+        font-size: 15px;
         font-weight: bold;
         display: flex;
         align-items: center;
