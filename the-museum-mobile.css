@@ -92,6 +92,9 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: space-between;
+        gap: 5vh;
+
     }
 
         /*Top Container*/
@@ -116,14 +119,14 @@ body {
         
         .section2 img {
             position: relative;
-            height: 60vh;
+            height: 65vh;
             width: auto;
             left: 50%;
             transform: translateX(-50%);
         }
 
         .right-container {
-            height: 80vh;
+            height: 85vh;
             width: 100vw;
         }
 
@@ -171,19 +174,20 @@ body {
         }
 
         /*Bottom Container*/
-        .left-container {
-            height: 20vh;
+        .pop-up {
+            height: 10vh;
+            width: 100vw;
             background: white;
             position: sticky;
-            border-top-left-radius: 11%;
-            border-top-right-radius: 11%;
+            border-top-left-radius: 50px;
+            border-top-right-radius: 50px;
             display: flex;
             justify-content: center;
             overflow: hidden;
             bottom: 0;
         }
 
-        .left-container i {
+        .pop-up i {
             position: absolute;
             margin-top: 4%;
             transform: rotate(360deg);
