@@ -139,9 +139,23 @@ body {
             display: none;
         }
 
-        .numbers {
-            display: none;
+        .number {
+          position: absolute;
+          width: auto;
+          height: 2em;
+          background-color: white;
+          color: #8CB758;
+          text-align: center;
+          aspect-ratio: 1 / 1;
+          border-radius: 50%;
+          cursor: pointer;
+          font-size: 17px;
+          font-weight: bold;
+          display: flex;
+          align-items: center;
+          justify-content: center;
         }
+
 
         .map-btn-container {
             width: 90%;
@@ -150,8 +164,7 @@ body {
             flex-direction: row;
             align-items: center;
             justify-content: space-between;
-            top: 50%;
-            transform: translateY(-50%);
+            top: 50vh;
             left: 50%;
             transform: translateX(-50%);
         }
@@ -174,26 +187,47 @@ body {
         }
 
         /*Bottom Container*/
-        .pop-up {
+        .tab {
             height: 10vh;
             width: 100vw;
             background: white;
             position: sticky;
-            border-top-left-radius: 50px;
-            border-top-right-radius: 50px;
+            border-top-left-radius: 45px;
+            border-top-right-radius: 45px;
             display: flex;
             justify-content: center;
             overflow: hidden;
             bottom: 0;
         }
 
-        .pop-up i {
+        .tab i {
             position: absolute;
             margin-top: 4%;
-            transform: rotate(360deg);
             left: 50%;
             transform: translateX(-50%);
             cursor: pointer;
+        }
+
+        .left-container {
+          height: 80vh;
+          width: 100vw;
+          background: white;
+          position: absolute;
+          border-top-left-radius: 45px;
+          border-top-right-radius: 45px;
+          display: flex;
+          justify-content: center;
+          overflow: hidden;
+          bottom: 0;
+        }
+
+        .left-container i {
+          position: absolute;
+          margin-top: 4%;
+          margin-bottom: 5%;
+          left: 50%;
+          transform: translateX(-50%);
+          cursor: pointer;
         }
 
         .left-container .title {
@@ -213,9 +247,12 @@ body {
             font-weight: bold;
             font-size: 1em;
             color: black;
-            margin: 0;
             padding: 0;
             overflow: hidden;
+            margin-left: 5%;
+            margin-right: 5%;
+            margin-top: 5%;
+            text-align: center;
         }
 
         .left-container .btn a {

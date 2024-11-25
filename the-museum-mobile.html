@@ -5,7 +5,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>The Museum</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <link href="the-museum-mobile.css" rel="stylesheet">
         <script src="https://kit.fontawesome.com/b7dc8e0f7f.js" crossorigin="anonymous"></script>
     </head>
 
@@ -101,15 +100,15 @@
                         <img src="images/groundfloormapgray - vertical.png" alt="Museum Map" class="map">
                             <!--numbers on the map-->
                             <div class="numbers">
-                                <div class="number" id="number1" data-preview="preview1" data-item="item1" data-text="text1" style="top: 18%; left: 57%">1</div>
-                                <div class="number" id="number2" data-preview="preview2" data-item="item2" data-text="text2" style="top: 38%; left: 42%;">2</div>
-                                <div class="number" id="number3" data-preview="preview3" data-item="item3" data-text="text3" style="top: 48%; left: 24%;">3</div>
-                                <div class="number" id="number4" data-preview="preview4" data-item="item4" data-text="text4" style="top: 54%; left: 71%;">4</div>
-                                <div class="number" id="number5" data-preview="preview5" data-item="item5" data-text="text5" style="top: 41%; left: 62%;">5</div>
-                                <div class="number" id="number6" data-preview="preview6" data-item="item6" data-text="text6" style="top: 36%; left: 78%;">6</div>
-                                <div class="number" id="number7" data-preview="preview7" data-item="item7" data-text="text7" style="top: 40%; left: 94%;">7</div>
-                                <div class="number" id="number8" data-preview="preview8" data-item="item8" data-text="text8" style="top: 63%; left: 96%;">8</div>
-                                <div class="number" id="number9" data-preview="preview9" data-item="item9" data-text="text9" style="top: 89%; left: 71%;">9</div>
+                                <div class="number" id="number1" data-preview="preview1" data-item="item1" data-text="text1" style="top: 50%; left: 71%;">1</div>
+                                <div class="number" id="number2" data-preview="preview2" data-item="item2" data-text="text2" style="top: 38%; left: 55%;">2</div>
+                                <div class="number" id="number3" data-preview="preview3" data-item="item3" data-text="text3" style="top: 18%; left: 50%;">3</div>
+                                <div class="number" id="number4" data-preview="preview4" data-item="item4" data-text="text4" style="top: 60%; left: 45%;">4</div>
+                                <div class="number" id="number5" data-preview="preview5" data-item="item5" data-text="text5" style="top: 50%; left: 58%;">5</div>
+                                <div class="number" id="number6" data-preview="preview6" data-item="item6" data-text="text6" style="top: 70%; left: 57%;">6</div>
+                                <div class="number" id="number7" data-preview="preview7" data-item="item7" data-text="text7" style="top: 84%; left: 55%;">7</div>
+                                <div class="number" id="number8" data-preview="preview8" data-item="item8" data-text="text8" style="top: 85%; left: 40%;">8</div>
+                                <div class="number" id="number9" data-preview="preview9" data-item="item9" data-text="text9" style="top: 60%; left: 20%;">9</div>
                             </div>
                             <!--numbers on the map-->
 
@@ -237,16 +236,38 @@
             <!--Top Container-->
 
             <!--Bottom Container-->
-            <div class="pop-up">
-              <div class="pop-up-icon-container">
-                <i class="fa-solid fa-chevron-up"></i>
-              </div>
-            </div> 
-            <div class="left-container" style="display: none;">
-                <!--1st alternative(floor description)-->
-                  <!--Ground Floor-->
-                  <div class="floor-description" id="description1">
-                      <h3 class="title">GROUND FLOOR: MEDIEVAL INDUSTRY</h3>
+              <!--Tab to Open the Hidden Container-->
+              <div class="tab">
+                <div class="tab-icon-container">
+                  <i class="fa-solid fa-chevron-up"></i>
+                </div>
+              </div> 
+              <!--Tab to Open the Hidden Container-->
+
+              <!--Hidden Container-->
+              <div class="left-container" style="display: none;">
+                <div class="pop-up-icon-container">
+                  <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                  <!--1st alternative(floor description)-->
+                    <!--Ground Floor-->
+                    <div class="floor-description" id="description1">
+                        <h3 class="title">GROUND FLOOR: MEDIEVAL INDUSTRY</h3>
+                        <p id="floor-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis egestas justo, eget pellentesque nibh. 
+                        <br>
+                        <br> 
+                        Nunc urna odio, convallis varius elit quis, volutpat eleifend lorem. 
+                        Mauris vestibulum velit non lectus fringilla venenatis. Fusce id risus vitae lectus auctor sollicitudin ut vitae magna. 
+                        <br>
+                        <br>      
+                        Cras tincidunt congue ligula, pharetra rutrum metus ornare quis. Nunc finibus arcu vitae placerat ultrices. Maecenas vel odio condimentum, facilisis ante nec, dictum justo. 
+                        </p>
+                    </div>
+                    <!--Ground Floor-->
+
+                    <!--First Floor-->
+                    <div class="floor-description" id="description2" style="display:none;">
+                      <h3 class="title">FIRST FLOOR: MEDIEVAL INDUSTRY</h3>
                       <p id="floor-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis egestas justo, eget pellentesque nibh. 
                       <br>
                       <br> 
@@ -256,124 +277,110 @@
                       <br>      
                       Cras tincidunt congue ligula, pharetra rutrum metus ornare quis. Nunc finibus arcu vitae placerat ultrices. Maecenas vel odio condimentum, facilisis ante nec, dictum justo. 
                       </p>
-                  </div>
-                  <!--Ground Floor-->
-
-                  <!--First Floor-->
-                  <div class="floor-description" id="description2" style="display:none;">
-                    <h3 class="title">FIRST FLOOR: MEDIEVAL INDUSTRY</h3>
-                    <p id="floor-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis egestas justo, eget pellentesque nibh. 
-                    <br>
-                    <br> 
-                    Nunc urna odio, convallis varius elit quis, volutpat eleifend lorem. 
-                    Mauris vestibulum velit non lectus fringilla venenatis. Fusce id risus vitae lectus auctor sollicitudin ut vitae magna. 
-                    <br>
-                    <br>      
-                    Cras tincidunt congue ligula, pharetra rutrum metus ornare quis. Nunc finibus arcu vitae placerat ultrices. Maecenas vel odio condimentum, facilisis ante nec, dictum justo. 
-                    </p>
-                  </div>
-                  <!--First Floor-->
-                <!--1st alternative-->
+                    </div>
+                    <!--First Floor-->
+                  <!--1st alternative-->
 
 
-                <!--2nd  alternative(list)-->
-                  <!--ground floor list-->
-                  <div class="list-of-items" id="list1" style="display: none;">
-                    <h3 class="title">GROUND FLOOR ITEMS</h3>
+                  <!--2nd  alternative(list)-->
+                    <!--ground floor list-->
+                    <div class="list-of-items" id="list1" style="display: none;">
+                      <h3 class="title">GROUND FLOOR ITEMS</h3>
+                        <ol>
+                            <li class="item" id="item1" data-preview="preview1" data-number="number1" data-text="text1">Terracotta Mould</li>
+                            <li class="item" id="item2" data-preview="preview2" data-number="number2" data-text="text2">Melted Brick</li>
+                            <li class="item" id="item3" data-preview="preview3" data-number="number3" data-text="text3">Aldini Steam Machine</li>
+                            <li class="item" id="item4" data-preview="preview4" data-number="number4" data-text="text4">Hoffmann Kiln</li>
+                            <li class="item" id="item5" data-preview="preview5" data-number="number5" data-text="text5">Power Hammer</li>
+                            <li class="item" id="item6" data-preview="preview6" data-number="number6" data-text="text6">Shaping Machine</li>
+                            <li class="item" id="item7" data-preview="preview7" data-number="number7" data-text="text7">Hydraulic Pump</li>
+                            <li class="item" id="item8" data-preview="preview8" data-number="number8" data-text="text8">Steam Hammer and Vacuum Pump</li>
+                            <li class="item" id="item9" data-preview="preview9" data-number="number9" data-text="text9">Cube Brodo Packing Machine</li>
+                        </ol>
+                    </div>
+                    <!--ground floor list-->
+
+                    <!--first floor list-->
+                    <div class="list-of-items" id="list2" style="display: none;">
+                      <h3 class="title">FIRST FLOOR ITEMS</h3>
                       <ol>
-                          <li class="item" id="item1" data-preview="preview1" data-number="number1" data-text="text1">Terracotta Mould</li>
-                          <li class="item" id="item2" data-preview="preview2" data-number="number2" data-text="text2">Melted Brick</li>
-                          <li class="item" id="item3" data-preview="preview3" data-number="number3" data-text="text3">Aldini Steam Machine</li>
-                          <li class="item" id="item4" data-preview="preview4" data-number="number4" data-text="text4">Hoffmann Kiln</li>
-                          <li class="item" id="item5" data-preview="preview5" data-number="number5" data-text="text5">Power Hammer</li>
-                          <li class="item" id="item6" data-preview="preview6" data-number="number6" data-text="text6">Shaping Machine</li>
-                          <li class="item" id="item7" data-preview="preview7" data-number="number7" data-text="text7">Hydraulic Pump</li>
-                          <li class="item" id="item8" data-preview="preview8" data-number="number8" data-text="text8">Steam Hammer and Vacuum Pump</li>
-                          <li class="item" id="item9" data-preview="preview9" data-number="number9" data-text="text9">Cube Brodo Packing Machine</li>
+                          <li class="item" id="item10" data-preview="preview10" data-number="number10" data-text="text10">Chocolate Packing Machine</li>
+                          <li class="item" id="item11" data-preview="preview11" data-number="number11" data-text="text11">Tortellini Machine</li>
+                          <li class="item" id="item12" data-preview="preview12" data-number="number12" data-text="text12">Gelato Machine</li>
+                          <li class="item" id="item13" data-preview="preview13" data-number="number13" data-text="text13">Silk Mill Model</li>
+                          <li class="item" id="item14" data-preview="preview14" data-number="number14" data-text="text14">Silk Loom Model</li>
+                          <li class="item" id="item15" data-preview="preview15" data-number="number15" data-text="text15">Silk</li>
                       </ol>
-                  </div>
-                  <!--ground floor list-->
+                    </div>
+                    <!--first floor list-->
+                  <!--2nd alternative-->
 
-                  <!--first floor list-->
-                  <div class="list-of-items" id="list2" style="display: none;">
-                    <h3 class="title">FIRST FLOOR ITEMS</h3>
-                    <ol>
-                        <li class="item" id="item10" data-preview="preview10" data-number="number10" data-text="text10">Chocolate Packing Machine</li>
-                        <li class="item" id="item11" data-preview="preview11" data-number="number11" data-text="text11">Tortellini Machine</li>
-                        <li class="item" id="item12" data-preview="preview12" data-number="number12" data-text="text12">Gelato Machine</li>
-                        <li class="item" id="item13" data-preview="preview13" data-number="number13" data-text="text13">Silk Mill Model</li>
-                        <li class="item" id="item14" data-preview="preview14" data-number="number14" data-text="text14">Silk Loom Model</li>
-                        <li class="item" id="item15" data-preview="preview15" data-number="number15" data-text="text15">Silk</li>
-                    </ol>
-                  </div>
-                  <!--first floor list-->
-                <!--2nd alternative-->
-
-                <!--3rd alternative(descriptions for each item on click)-->
-                  <div class="item-texts">
-                    <div class="text" id="text1">
-                      <h3></h3>
-                      <p></p>
+                  <!--3rd alternative(descriptions for each item on click)-->
+                    <div class="item-texts">
+                      <div class="text" id="text1">
+                        <h3></h3>
+                        <p></p>
+                      </div>
+                      <div class="text" id="text2">
+                        <h3></h3>
+                        <p></p>
+                      </div>
+                      <div class="text" id="text3">
+                        <h3></h3>
+                        <p></p>
+                      </div>
+                      <div class="text" id="text4">
+                        <h3></h3>
+                        <p></p>
+                      </div>
+                      <div class="text" id="text5">
+                        <h3></h3>
+                        <p></p>
+                      </div>
+                      <div class="text" id="text6">
+                        <h3></h3>
+                        <p></p>
+                      </div>
+                      <div class="text" id="text7">
+                        <h3></h3>
+                        <p></p>
+                      </div>
+                      <div class="text" id="text8">
+                        <h3></h3>
+                        <p></p>
+                      </div>
+                      <div class="text" id="text9">
+                        <h3></h3>
+                        <p></p>
+                      </div>
+                      <div class="text" id="text10">
+                        <h3></h3>
+                        <p></p>
+                      </div>
+                      <div class="text" id="text11">
+                        <h3></h3>
+                        <p></p>
+                      </div>
+                      <div class="text" id="text12">
+                        <h3></h3>
+                        <p></p>
+                      </div>
+                      <div class="text" id="text13">
+                        <h3></h3>
+                        <p></p>
+                      </div>
+                      <div class="text" id="text14">
+                        <h3></h3>
+                        <p></p>
+                      </div>
+                      <div class="text" id="text15">
+                        <h3></h3>
+                        <p></p>
+                      </div>
                     </div>
-                    <div class="text" id="text2">
-                      <h3></h3>
-                      <p></p>
-                    </div>
-                    <div class="text" id="text3">
-                      <h3></h3>
-                      <p></p>
-                    </div>
-                    <div class="text" id="text4">
-                      <h3></h3>
-                      <p></p>
-                    </div>
-                    <div class="text" id="text5">
-                      <h3></h3>
-                      <p></p>
-                    </div>
-                    <div class="text" id="text6">
-                      <h3></h3>
-                      <p></p>
-                    </div>
-                    <div class="text" id="text7">
-                      <h3></h3>
-                      <p></p>
-                    </div>
-                    <div class="text" id="text8">
-                      <h3></h3>
-                      <p></p>
-                    </div>
-                    <div class="text" id="text9">
-                      <h3></h3>
-                      <p></p>
-                    </div>
-                    <div class="text" id="text10">
-                      <h3></h3>
-                      <p></p>
-                    </div>
-                    <div class="text" id="text11">
-                      <h3></h3>
-                      <p></p>
-                    </div>
-                    <div class="text" id="text12">
-                      <h3></h3>
-                      <p></p>
-                    </div>
-                    <div class="text" id="text13">
-                      <h3></h3>
-                      <p></p>
-                    </div>
-                    <div class="text" id="text14">
-                      <h3></h3>
-                      <p></p>
-                    </div>
-                    <div class="text" id="text15">
-                      <h3></h3>
-                      <p></p>
-                    </div>
-                  </div>
-                <!--3rd alternative-->
-            </div>
+                  <!--3rd alternative-->
+              </div>
+              <!--Hidden Container-->
             <!--Bottom Container-->
         </div>
         <!--Section 2: Map and Description-->

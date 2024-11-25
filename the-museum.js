@@ -1,52 +1,52 @@
-//THE-MUSEUM.HTML
+function selectFrom(context) {
+    
 
-//1st function
-// adding events mouseenter, mouseleave and click on all the numbers, making a preview pop up
+
+
     var numbers = document.querySelectorAll(".number");
     var allItems = document.querySelectorAll(".item");
     var listsOfItems = document.querySelectorAll(".list-of-items");
     var floorDescriptions = document.querySelectorAll(".floor-description");
     var texts = document.querySelectorAll(".text");
-   
+
     isClicked = false
 
     numbers.forEach(function(number) {
         
         number.addEventListener("mouseenter", function() {
-            if(!isClicked) {
-            var previewId = number.getAttribute("data-preview");
-            var itemId = number.getAttribute("data-item");
+        if(!isClicked) {
+        var previewId = number.getAttribute("data-preview");
+        var itemId = number.getAttribute("data-item");
 
-            var preview = document.getElementById(previewId);
-            var currentItem = document.getElementById(itemId);
+        var preview = document.getElementById(previewId);
+        var currentItem = document.getElementById(itemId);
 
-            number.style.backgroundColor = "#8CB758";
-            number.style.color = "white";
+        number.style.backgroundColor = "#8CB758";
+        number.style.color = "white";
 
-            currentItem.style.color = "#8CB758";
+        currentItem.style.color = "#8CB758";
 
-            preview.style.display = "block";
+        preview.style.display = "block";
 
-            floorDescriptions.forEach(function(floorDescription) {
-                floorDescription.style.display = "none"
-            });
+        floorDescriptions.forEach(function(floorDescription) {
+            floorDescription.style.display = "none"
+        });
 
-            if(btnMap1.classList.contains("active")) {
-                list2.style.display = "none";
-                list1.style.display = "block";
-            } else if (btnMap2.classList.contains("active")) {
-                list1.style.display = "none";
-                list2.style.display = "block";
-            }
+        if(btnMap1.classList.contains("active")) {
+            list2.style.display = "none";
+            list1.style.display = "block";
+        } else if (btnMap2.classList.contains("active")) {
+            list1.style.display = "none";
+            list2.style.display = "block";
+        }
 
-            allItems.forEach(function(item) {
-                var itemLink = item.querySelector("a");
-                item.style.color = "white";
-            });
+        allItems.forEach(function(item) {
+            var itemLink = item.querySelector("a");
+            item.style.color = "white";
+        });
 
-            currentItem.style.color = "#8CB758";
-
-            }
+        currentItem.style.color = "#8CB758";
+        }
         });
 
         number.addEventListener("mouseleave", function() {
@@ -80,6 +80,75 @@
 
             }
         });
+    });
+}
+
+
+// Detecting the viewport and showing the right piece of HTML code
+    function loadCss(filename) {
+        var link = document.createElement("link");
+        link.rel = "stylesheet";
+        link.href = filename;
+        document.head.appendChild(link);
+    }
+
+    function detectViewport() {
+        var desktop = document.getElementById("desktop-version");
+        var mobile = document.getElementById("mobile-version");
+
+        if (window.matchMedia("(max-width: 768px)").matches) {
+            // Show Mobile
+            mobile.style.display = "block";
+            desktop.style.display = "none";
+
+            // Load the right stylesheet
+            loadCss("the-museum-mobile.css");
+
+            // Mobile logic
+            var tabBtn = document.querySelector(".tab-icon-container i");
+            var tab = document.querySelector(".tab");
+            var hiddenTabBtn = document.querySelector(".left-container i");
+            var hiddenTab = document.querySelector(".left-container");
+
+
+            tabBtn.addEventListener("click", function() {
+                tab.style.display = "none";
+                hiddenTab.style.display = "none"
+                
+                hiddenTab.style.display = "block";
+            });
+
+            hiddenTabBtn.addEventListener("click", function() {
+                tab.style.display = "none";
+                hiddenTab.style.display = "none"
+                
+                tab.style.display = "block";
+            });
+
+        } else {
+            // Show Desktop
+            mobile.style.display = "none";
+            desktop.style.display = "block";
+
+            // Load the right stylesheet
+            loadCss("the-museum.css");
+
+            // Desktop logic
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+// 2nd FUNCTION
+// adding events mouseenter, mouseleave and click on all the numbers, making a preview pop up
+    
 
         number.addEventListener("click", function() {
             isClicked = !isClicked
@@ -102,10 +171,9 @@
             text.style.display = "block";
         });
     });
-//1st function
 
 
-//2nd function
+//3nd FUNCTION
 //adding events mouseenter, mouseleave and click on all the items, making a preview pop up and the color of the numbers change
     var items = document.querySelectorAll(".item");
     var numbers = document.querySelectorAll(".number");
@@ -176,10 +244,9 @@
             }
         });
     });
-//2nd function
 
 
-//3rd function
+//4th FUNCTION
 // button that triggers the change of the left container (from floor description to list item and viceversa)
     var btnsLeft = document.querySelectorAll(".button-container-left");
     var btnList = document.getElementById("button-list");
@@ -250,10 +317,10 @@
     btnDescr.addEventListener("click", function() {
         changeToDescr();
     });
-//3rd function
 
-//4rd function 
-//2 buttons that trigger the change from the ground floor to the first floor
+
+// 5th FUNCTION 
+// 2 buttons that trigger the change from the ground floor to the first floor
     var btnMap1 = document.getElementById("btn-map-1");
     var btnMap2 = document.getElementById("btn-map-2");
     var btnMaps = document.querySelectorAll(".btn-map");
@@ -313,39 +380,14 @@
     });
 
 
-//4rd function
 
 // ONLY MOBILE
 // 1st Function: clicking the pop-up description
-    var popUpBtn = document.querySelector(".pop-up-icon-container i");
-    var popUp = document.querySelector(".left-container");
-
-    popUpIsOpen = false;
-
-    popUp.addEventListener("click", function() {
-        popUpIsOpen = !popUpIsOpen;
-
-        if(popUpIsOpen) {
-            popUp.style.bottom = "0";
-
-            popUpBtn.style.transform = "rotate(180deg)";
-        } else {
-            popUp.style.bottom = "-60vh";
-
-            popUpBtn.style.transform = "rotate(0deg)";
-        }
-
-    });
-
-  
-
-
-
-
-
-
+    
 
 //inizialize
+detectViewport();
+window.addEventListener("resize", detectViewport);
 changeToMap1();
 changeToDescr();
 //inizialize
