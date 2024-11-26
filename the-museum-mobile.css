@@ -139,7 +139,7 @@ body {
             display: none;
         }
 
-        .number {
+        .number-m {
           position: absolute;
           width: auto;
           height: 2em;
@@ -155,7 +155,6 @@ body {
           align-items: center;
           justify-content: center;
         }
-
 
         .map-btn-container {
             width: 90%;
@@ -182,8 +181,17 @@ body {
             background-color: white;
         }
 
+        .btn-map i {
+          color: #2A2928;
+        }
+
+        .btn-map i.active {
+          color: white;
+        }
+
         .btn-map.active {
             background-color: #2A2928;
+            cursor: default;
         }
 
         /*Bottom Container*/
@@ -208,8 +216,8 @@ body {
             cursor: pointer;
         }
 
-        .left-container {
-          height: 80vh;
+        .left-container-m {
+          height: 70vh;
           width: 100vw;
           background: white;
           position: absolute;
@@ -221,7 +229,7 @@ body {
           bottom: 0;
         }
 
-        .left-container i {
+        .left-container-m i {
           position: absolute;
           margin-top: 4%;
           margin-bottom: 5%;
@@ -230,8 +238,8 @@ body {
           cursor: pointer;
         }
 
-        .left-container .title {
-            display: inline-block;
+        .left-container-m .title {
+            display: relative;
             justify-content: center;
             text-align: center;
             margin-left: 0;
@@ -243,7 +251,7 @@ body {
             font-weight: bold;
         }
 
-        .left-container p {
+        .left-container-m p {
             font-weight: bold;
             font-size: 1em;
             color: black;
@@ -255,20 +263,36 @@ body {
             text-align: center;
         }
 
-        .left-container .btn a {
-            display: none;
-        }
-
-        #button-list {
-            display: none;
-        }
-
-        #button-description {
+        .left-container-m .btn a {
             display: none;
         }
 
         .button-container-left {
             display: none;
+        }
+
+        .floor-description-m {
+          max-height: 50vh;
+        }
+
+        .text-m {
+          display: none;
+          color: black;
+        }
+
+        .text-m h3 {
+          display: relative;
+          justify-content: center;
+          text-align: center;
+          margin-left: 0;
+          margin-right: 0;
+          margin-bottom: 5%;
+          margin-top: 13%;
+          color: black;
+          font-size: 1.5em;
+          line-height: 1.5em;
+          font-weight: bold;
+          text-transform: uppercase;
         }
     
 
@@ -289,7 +313,7 @@ footer {
     margin-top: 20%;
   }
 
-  footer #home-title {
+  footer #home-title-m {
     font-weight: bold;
     -webkit-text-stroke: 2px white;
     font-size: 9vw;
@@ -309,7 +333,7 @@ footer {
     color: white;
   }
 
-  #museum-logo {
+  #museum-logo-m {
     position: sticky;
     width: 50%;
     height: auto;
@@ -372,5 +396,3 @@ footer {
     width: auto;
     height: auto;
   }
-
-

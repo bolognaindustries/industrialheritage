@@ -261,6 +261,10 @@ body {
           background-color: white;
         }
 
+        .text {
+          display: none;
+        }
+
     /* Footer */
     footer {
       width: 100%;
