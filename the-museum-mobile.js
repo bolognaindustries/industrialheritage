@@ -74,6 +74,8 @@ if (mobile) {
 
                 changeToDescr();
             }
+
+            updateContent();
         }); 
     });
 
@@ -158,6 +160,59 @@ if (mobile) {
         changeToDescr();
     });
 
+    // 4TH FUNCTION
+    // Clicking on the user button and making all the 3 choices pop up
+    var userToggleBtn = document.querySelector(".user-btn-toggle-m");
+    var userBtns = document.querySelectorAll(".user-btn-m");
+    var userBtn1 = document.getElementById("user-btn1-m");
+    var userBtn2 = document.getElementById("user-btn2-m");
+    var userBtn3 = document.getElementById("user-btn3-m");
+    var activeUserType = "general";
+
+
+    userToggleBtn.addEventListener("click", function() {
+        userBtns.forEach(function(userBtn) {
+            userBtn.style.display = "block";
+        });
+    });
+
+    userBtns.forEach(function(userBtn) {
+        userBtn.addEventListener("click", function() {
+            userBtns.forEach(function(btn) {
+                btn.classList.remove("active");
+            });
+
+            this.classList.add("active");
+
+            activeUserType = this.getAttribute("data-user");
+
+            updateContent();
+        });
+    });
+
+    function updateContent() {
+        var activeNumber = document.querySelector(".number-m[style*='background-color: #8CB758']");
+        
+        if(!activeNumber) return;
+        
+        var activeUser = activeUserType;
+
+        var textId = activeNumber.getAttribute("data-text");
+        var activeText = document.getElementById(textId);
+        var texts = document.querySelectorAll(".text-m");
+
+        texts.forEach(function(txt) {
+            txt.style.display = "none";
+        });
+
+        var userContent = activeText.querySelector('.content[data-user"${activeType}"]');
+
+        if (userContent) {
+            userContent.style.display = "block";
+        }
+    }   
+
+    
     // INITIALIZE
     changeToMap1();
     changeToDescr();

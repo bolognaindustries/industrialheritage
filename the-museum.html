@@ -455,7 +455,7 @@
             <!--Top Container-->
             <div class="right-container">
 
-                <!--map 1st alternative-->
+                <!--Map 1st alternative-->
                 <div class="maps" id="map-container1-m" style="display: block;">
                     
                     <div class="title"><h3>GROUND FLOOR</h3>
@@ -478,9 +478,9 @@
                             <!--numbers on the map-->
                     </div>              
                 </div>
-                <!--map 1st alternative-->
+                <!--Map 1st alternative-->
 
-                <!--2nd alternative-->
+                <!--Map 2nd alternative-->
                 <div class="maps" id="map-container2-m" style="display: none;">
                     
                     <div class="title">
@@ -502,22 +502,9 @@
                             <!--numbers on the map-->
                     </div>
                 </div>
-                <!--2nd alternative-->
+                <!--Map 2nd alternative-->
 
-                <!--user type buttons-->
-                  <div class="user-type-btn-container" style="display: none;">
-                    <input type="radio" class="user-type-btn btn-check" name="btnradio" id="user-type-btn1" autocomplete="off" checked>
-                    <label class="btn btn-outline-dark" for="user-type-btn1"><img src="images/ICONchildren.png"></label>
-                  
-                    <input type="radio" class="user-type-btn btn-check" name="btnradio" id="user-type-btn2" autocomplete="off">
-                    <label class="btn btn-outline-dark" for="user-type-btn2"><img src="images/ICONgeneral.png"></label>
-                  
-                    <input type="radio" class="user-type-btn btn-check" name="btnradio" id="user-type-btn3" autocomplete="off">
-                    <label class="btn btn-outline-dark" for="user-type-btn3"><img src="images/ICONexpert.png"></label>
-                  </div>
-                <!--user type buttons-->
-
-                <!--MOBILE ONLY: map buttons-->
+                <!--Map buttons-->
                 <div class="map-btn-container">
                   <div class="btn-map" id="btn-map-1-m">
                     <i class="fa-solid fa-chevron-left d-md-none d-sm-block"></i>
@@ -526,7 +513,17 @@
                     <i class="fa-solid fa-chevron-right d-md-none d-sm-block"></i>
                   </div>
                 </div>
-                <!--MOBILE ONLY: map buttons-->
+                <!--Map buttons-->
+                
+                <!--User type buttons-->
+                <div class="user-btn-container-m">
+                  <div class="user-btn-toggle-m"></div>
+                    <div class="user-btn-m" id="user-btn1-m" data-user="kid" style="display: none;"></div>
+                    <div class="user-btn-m" id="user-btn2-m" data-user="general" style="display: none;"></div>
+                    <div class="user-btn-m" id="user-btn3-m" data-user="expert" style="display: none;"></div>
+                </div>
+                <!--User type buttons-->
+
             </div>
             <!--Top Container-->
 
@@ -578,66 +575,232 @@
 
                   <!--2nd alternative(descriptions for each item on click)-->
                     <div class="item-texts-m" style="display: none;">
+                      
                       <div class="text-m" id="text1-m">
-                        <h3>Terracotta Mould</h3>
-                        <p></p>
+                        <div class="content" data-user="kid" style="display: none;">
+                          <h3>Terracotta Mould</h3>
+                          <p></p>
+                        </div>
+                        <div class="content" data-user="general">
+                          <h3>Terracotta Mould</h3>
+                          <p></p>
+                        </div>
+                        <div class="content" data-user="expert" style="display: none;">
+                          <h3>Terracotta Mould</h3>
+                          <p></p>
+                        </div>
                       </div>
+
                       <div class="text-m" id="text2-m">
-                        <h3>Melted Brick</h3>
-                        <p></p>
+                        <div class="content" data-user="kid" style="display: none;">
+                          <h3>Melted Brick</h3>
+                          <p></p>
+                        </div>
+                        <div class="content" data-user="general">
+                          <h3>Melted Brick</h3>
+                          <p></p>
+                        </div>
+                        <div class="content" data-user="expert" style="display: none;">
+                          <h3>Melted Brick</h3>
+                          <p></p>
+                        </div>
                       </div>
+
                       <div class="text-m" id="text3-m">
-                        <h3>Aldini Steam Machine</h3>
-                        <p></p>
+                        <div class="content" data-user="kid" style="display: none;">
+                          <h3>Aldini Steam Machine</h3>
+                          <p></p>
+                        </div>
+                        <div class="content" data-user="general">
+                          <h3>Aldini Steam Machine</h3>
+                          <p></p>
+                        </div>
+                        <div class="content" data-user="expert" style="display: none;">
+                          <h3>Aldini Steam Machine</h3>
+                          <p></p>
+                        </div>
                       </div>
+
                       <div class="text-m" id="text4-m">
-                        <h3>Hoffmann Kiln</h3>
-                        <p></p>
+                        <div class="content" data-user="kid" style="display: none;">
+                          <h3>Hoffmann Kiln</h3>
+                          <p></p>
+                        </div>
+                        <div class="content" data-user="general">
+                          <h3>Hoffmann Kiln</h3>
+                          <p></p>
+                        </div>
+                        <div class="content" data-user="expert" style="display: none;">
+                          <h3>Hoffmann Kiln</h3>
+                          <p></p>
+                        </div>
                       </div>
+
                       <div class="text-m" id="text5-m">
-                        <h3>Power Hammer</h3>
-                        <p></p>
+                        <div class="content" data-user="kid" style="display: none;">
+                          <h3>Power Hammer</h3>
+                          <p></p>
+                        </div>
+                        <div class="content" data-user="general">
+                          <h3>Power Hammer</h3>
+                          <p></p>
+                        </div>
+                        <div class="content" data-user="expert" style="display: none;">
+                          <h3>Power Hammer</h3>
+                          <p></p>
+                        </div>
                       </div>
+
                       <div class="text-m" id="text6-m">
-                        <h3>Shaping Machine</h3>
-                        <p></p>
+                        <div class="content" data-user="kid" style="display: none;">
+                          <h3>Shaping Machine</h3>
+                          <p></p>
+                        </div>
+                        <div class="content" data-user="general">
+                          <h3>Shaping Machine</h3>
+                          <p></p>
+                        </div>
+                        <div class="content" data-user="expert" style="display: none;">
+                          <h3>Shaping Machine</h3>
+                          <p></p>
+                        </div>
                       </div>
+
                       <div class="text-m" id="text7-m">
-                        <h3>Hydraulic Pump</h3>
-                        <p></p>
+                        <div class="content" data-user="kid" style="display: none;">
+                          <h3>Hydraulic Pump</h3>
+                          <p></p>
+                        </div>
+                        <div class="content" data-user="general">
+                          <h3>Hydraulic Pump</h3>
+                          <p></p>
+                        </div>
+                        <div class="content" data-user="expert" style="display: none;">
+                          <h3>Hydraulic Pump</h3>
+                          <p></p>
+                        </div>
                       </div>
+
                       <div class="text-m" id="text8-m">
-                        <h3></h3>
-                        <p></p>
+                        <div class="content" data-user="kid" style="display: none;">
+                          <h3>Steam Hammer and Vacuum Pump</h3>
+                          <p></p>
+                        </div>
+                        <div class="content" data-user="general">
+                          <h3>Steam Hammer and Vacuum Pump</h3>
+                          <p></p>
+                        </div>
+                        <div class="content" data-user="expert" style="display: none;">
+                          <h3>Steam Hammer and Vacuum Pump</h3>
+                          <p></p>
+                        </div>
                       </div>
+
                       <div class="text-m" id="text9-m">
-                        <h3>Steam Hammer and Vacuum Pump</h3>
-                        <p></p>
+                        <div class="content" data-user="kid" style="display: none;">
+                          <h3>Cube Brodo Packing Machine</h3>
+                          <p></p>
+                        </div>
+                        <div class="content" data-user="general">
+                          <h3>Cube Brodo Packing Machine</h3>
+                          <p></p>
+                        </div>
+                        <div class="content" data-user="expert" style="display: none;">
+                          <h3>Cube Brodo Packing Machine</h3>
+                          <p></p>
+                        </div>
                       </div>
+
                       <div class="text-m" id="text10-m">
-                        <h3>Cube Brodo Packing Machine</h3>
-                        <p></p>
+                        <div class="content" data-user="kid" style="display: none;">
+                          <h3>Chocolate Packing Machine</h3>
+                          <p></p>
+                        </div>
+                        <div class="content" data-user="general">
+                          <h3>Chocolate Packing Machine</h3>
+                          <p></p>
+                        </div>
+                        <div class="content" data-user="expert" style="display: none;">
+                          <h3>Chocolate Packing Machine</h3>
+                          <p></p>
+                        </div>
                       </div>
+
                       <div class="text-m" id="text11-m">
-                        <h3>Tortellini Machine</h3>
-                        <p></p>
+                        <div class="content" data-user="kid" style="display: none;">
+                          <h3>Tortellini Machine</h3>
+                          <p></p>
+                        </div>
+                        <div class="content" data-user="general">
+                          <h3>Tortellini Machine</h3>
+                          <p></p>
+                        </div>
+                        <div class="content" data-user="expert" style="display: none;">
+                          <h3>Tortellini Machine</h3>
+                          <p></p>
+                        </div>
                       </div>
+
                       <div class="text-m" id="text12-m">
-                        <h3>Gelato Machine</h3>
-                        <p></p>
+                        <div class="content" data-user="kid" style="display: none;">
+                          <h3>Gelato Machine</h3>
+                          <p></p>
+                        </div>
+                        <div class="content" data-user="general">
+                          <h3>Gelato Machine</h3>
+                          <p></p>
+                        </div>
+                        <div class="content" data-user="expert" style="display: none;">
+                          <h3>Gelato Machine</h3>
+                          <p></p>
+                        </div>
                       </div>
+
                       <div class="text-m" id="text13-m">
-                        <h3>Silk Mill Model</h3>
-                        <p></p>
+                        <div class="content" data-user="kid" style="display: none;">
+                          <h3>Silk Mill Model</h3>
+                          <p></p>
+                        </div>
+                        <div class="content" data-user="general">
+                          <h3>Silk Mill Model</h3>
+                          <p></p>
+                        </div>
+                        <div class="content" data-user="expert" style="display: none;">
+                          <h3>Silk Mill Model</h3>
+                          <p></p>
+                        </div>
                       </div>
+
                       <div class="text-m" id="text14-m">
-                        <h3>Silk Loom Model</h3>
-                        <p></p>
+                        <div class="content" data-user="kid" style="display: none;">
+                          <h3>Silk Loom Model</h3>
+                          <p></p>
+                        </div>
+                        <div class="content" data-user="general">
+                          <h3>Silk Loom Model</h3>
+                          <p></p>
+                        </div>
+                        <div class="content" data-user="expert" style="display: none;">
+                          <h3>Silk Loom Model</h3>
+                          <p></p>
+                        </div>
                       </div>
+
                       <div class="text-m" id="text15-m">
-                        <h3>Silk</h3>
-                        <p></p>
+                        <div class="content" data-user="kid" style="display: none;">
+                          <h3>Silk</h3>
+                          <p></p>
+                        </div>
+                        <div class="content" data-user="general">
+                          <h3>Silk</h3>
+                          <p></p>
+                        </div>
+                        <div class="content" data-user="expert" style="display: none;">
+                          <h3>Silk</h3>
+                          <p></p>
+                        </div>
                       </div>
+
                     </div>
                   <!--3rd alternative-->
               </div>
