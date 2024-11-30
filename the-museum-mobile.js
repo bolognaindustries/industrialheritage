@@ -10,12 +10,12 @@ if (mobile) {
     var hiddenTabBtn = document.querySelector(".left-container-m i");
     var hiddenTab = document.querySelector(".left-container-m");
     
-    tabBtn.addEventListener("click", function() {
+    tabBtn.addEventListener("touchstart", function() {
         tab.style.display = "none";
         hiddenTab.style.display = "block";
     });
 
-    hiddenTabBtn.addEventListener("click", function() {
+    hiddenTabBtn.addEventListener("touchstart", function() {
         hiddenTab.style.display = "none"
         tab.style.display = "block";
     });
@@ -33,7 +33,7 @@ if (mobile) {
     var numberIsClicked = false;
 
     numbers.forEach(function(number) {
-        number.addEventListener("click", function() {
+        number.addEventListener("touchstart", function() {
             numberIsClicked = !numberIsClicked;
 
             var textId = number.getAttribute("data-text");
@@ -150,12 +150,12 @@ if (mobile) {
         btnMap2I.classList.add("active");
     }
 
-    btnMap1.addEventListener("click", function() {
+    btnMap1.addEventListener("touchstart", function() {
         changeToMap1();
         changeToDescr();
     });
 
-    btnMap2.addEventListener("click", function() {
+    btnMap2.addEventListener("touchstart", function() {
         changeToMap2();
         changeToDescr();
     });
@@ -169,15 +169,27 @@ if (mobile) {
     var userBtn3 = document.getElementById("user-btn3-m");
     var activeUserType = "general";
 
+    var userBtnIsClicked = false
 
-    userToggleBtn.addEventListener("click", function() {
-        userBtns.forEach(function(userBtn) {
-            userBtn.style.display = "block";
-        });
+
+    userToggleBtn.addEventListener("touchstart", function() {
+
+        userBtnIsClicked = !userBtnIsClicked
+
+        if(!userBtnIsClicked) {
+            userBtns.forEach(function(userBtn) {
+                userBtn.style.display = "block";
+            });
+        } else {
+            userBtns.forEach(function(userBtn) {
+                userBtn.style.display = "none";
+            });
+        }
     });
 
     userBtns.forEach(function(userBtn) {
-        userBtn.addEventListener("click", function() {
+        userBtn.addEventListener("touchstart", function() {
+
             userBtns.forEach(function(btn) {
                 btn.classList.remove("active");
             });
@@ -188,6 +200,7 @@ if (mobile) {
 
             updateContent();
         });
+
     });
 
     function updateContent() {
