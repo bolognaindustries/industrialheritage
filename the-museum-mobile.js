@@ -27,9 +27,6 @@ if (mobile) {
     var textsContainer = document.querySelector(".item-texts-m");
     var texts = document.querySelectorAll(".text-m");
 
-    var tab = document.querySelector(".tab");
-    var hiddenTab = document.querySelector(".left-container-m");
-
     var numberIsClicked = false;
 
     numbers.forEach(function(number) {
@@ -167,16 +164,18 @@ if (mobile) {
     var userBtn1 = document.getElementById("user-btn1-m");
     var userBtn2 = document.getElementById("user-btn2-m");
     var userBtn3 = document.getElementById("user-btn3-m");
-    var activeUserType = "general";
 
-    var userBtnIsClicked = false
+    var defaultUserType = "general";
+    var currentUserType = localStorage.getItem("userType") || defaultUserType;
+    
+    var isUserMenuOpen = false;
 
 
     userToggleBtn.addEventListener("touchstart", function() {
 
-        userBtnIsClicked = !userBtnIsClicked
+        isUserMenuOpen = !isUserMenuOpen; 
 
-        if(!userBtnIsClicked) {
+        if(!isUserMenuOpen) {
             userBtns.forEach(function(userBtn) {
                 userBtn.style.display = "block";
             });
@@ -204,11 +203,11 @@ if (mobile) {
     });
 
     function updateContent() {
-        var activeNumber = document.querySelector(".number-m[style*='background-color: #8CB758']");
+        var activeNumber = document.querySelector(".number-m[style*=`background-color: #8CB758`]");
         
         if(!activeNumber) return;
         
-        var activeUser = activeUserType;
+        var temporaryUserType = currentUserType;
 
         var textId = activeNumber.getAttribute("data-text");
         var activeText = document.getElementById(textId);
@@ -218,7 +217,7 @@ if (mobile) {
             txt.style.display = "none";
         });
 
-        var userContent = activeText.querySelector('.content[data-user"${activeType}"]');
+        var userContent = activeText.querySelector(`.content[data-user="${currentUserType}"]`);
 
         if (userContent) {
             userContent.style.display = "block";
@@ -229,4 +228,6 @@ if (mobile) {
     // INITIALIZE
     changeToMap1();
     changeToDescr();
+    localStorage.setItem("userType", currentUserType);
+    updateContent();
 }
