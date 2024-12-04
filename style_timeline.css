@@ -61,7 +61,7 @@
 /* Contenitore principale della timeline */
 .timeline-container {
     position: relative;
-    top: 15%;
+    top: 5%;
     left: 10%;
     display: flex;
     align-items: center;
@@ -85,7 +85,7 @@
 .timeline-event { 
     min-width: calc(33.33% - 20px); /* Mostra tre eventi alla volta (33.33%) meno il gap */
     max-width: calc(33.33% - 20px);
-    height: auto;
+    height: 30%;
     max-height: 20%;
     background-color: #fff;
     border: 1px solid #000000;

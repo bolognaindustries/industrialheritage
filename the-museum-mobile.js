@@ -10,12 +10,12 @@ if (mobile) {
     var hiddenTabBtn = document.querySelector(".left-container-m i");
     var hiddenTab = document.querySelector(".left-container-m");
     
-    tabBtn.addEventListener("click", function() {
+    tabBtn.addEventListener("touchstart", function() {
         tab.style.display = "none";
         hiddenTab.style.display = "block";
     });
 
-    hiddenTabBtn.addEventListener("click", function() {
+    hiddenTabBtn.addEventListener("touchstart", function() {
         hiddenTab.style.display = "none"
         tab.style.display = "block";
     });
@@ -27,13 +27,10 @@ if (mobile) {
     var textsContainer = document.querySelector(".item-texts-m");
     var texts = document.querySelectorAll(".text-m");
 
-    var tab = document.querySelector(".tab");
-    var hiddenTab = document.querySelector(".left-container-m");
-
     var numberIsClicked = false;
 
     numbers.forEach(function(number) {
-        number.addEventListener("click", function() {
+        number.addEventListener("touchstart", function() {
             numberIsClicked = !numberIsClicked;
 
             var textId = number.getAttribute("data-text");
@@ -150,12 +147,12 @@ if (mobile) {
         btnMap2I.classList.add("active");
     }
 
-    btnMap1.addEventListener("click", function() {
+    btnMap1.addEventListener("touchstart", function() {
         changeToMap1();
         changeToDescr();
     });
 
-    btnMap2.addEventListener("click", function() {
+    btnMap2.addEventListener("touchstart", function() {
         changeToMap2();
         changeToDescr();
     });
@@ -167,17 +164,31 @@ if (mobile) {
     var userBtn1 = document.getElementById("user-btn1-m");
     var userBtn2 = document.getElementById("user-btn2-m");
     var userBtn3 = document.getElementById("user-btn3-m");
-    var activeUserType = "general";
+
+    var defaultUserType = "general";
+    var currentUserType = localStorage.getItem("userType") || defaultUserType;
+    
+    var isUserMenuOpen = false;
 
 
-    userToggleBtn.addEventListener("click", function() {
-        userBtns.forEach(function(userBtn) {
-            userBtn.style.display = "block";
-        });
+    userToggleBtn.addEventListener("touchstart", function() {
+
+        isUserMenuOpen = !isUserMenuOpen; 
+
+        if(!isUserMenuOpen) {
+            userBtns.forEach(function(userBtn) {
+                userBtn.style.display = "block";
+            });
+        } else {
+            userBtns.forEach(function(userBtn) {
+                userBtn.style.display = "none";
+            });
+        }
     });
 
     userBtns.forEach(function(userBtn) {
-        userBtn.addEventListener("click", function() {
+        userBtn.addEventListener("touchstart", function() {
+
             userBtns.forEach(function(btn) {
                 btn.classList.remove("active");
             });
@@ -188,14 +199,15 @@ if (mobile) {
 
             updateContent();
         });
+
     });
 
     function updateContent() {
-        var activeNumber = document.querySelector(".number-m[style*='background-color: #8CB758']");
+        var activeNumber = document.querySelector(".number-m[style*=`background-color: #8CB758`]");
         
         if(!activeNumber) return;
         
-        var activeUser = activeUserType;
+        var temporaryUserType = currentUserType;
 
         var textId = activeNumber.getAttribute("data-text");
         var activeText = document.getElementById(textId);
@@ -205,7 +217,7 @@ if (mobile) {
             txt.style.display = "none";
         });
 
-        var userContent = activeText.querySelector('.content[data-user"${activeType}"]');
+        var userContent = activeText.querySelector(`.content[data-user="${currentUserType}"]`);
 
         if (userContent) {
             userContent.style.display = "block";
@@ -216,4 +228,6 @@ if (mobile) {
     // INITIALIZE
     changeToMap1();
     changeToDescr();
+    localStorage.setItem("userType", currentUserType);
+    updateContent();
 }

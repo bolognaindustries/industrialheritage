@@ -2,7 +2,6 @@
 body {
     margin: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
     background-color: black;
 }
 
@@ -105,7 +104,7 @@ body {
             padding: 0;
         }
 
-        .section2 h3 {
+        .section2 .title h3 {
             display: flex;
             text-decoration: underline;
             text-underline-offset: 30%;
@@ -115,6 +114,7 @@ body {
             justify-content: center;
             margin-top: 10%;
             font-weight: bold;
+            font-family: "Poppins", sans-serif;
         }
         
         .section2 img {
@@ -194,6 +194,130 @@ body {
             cursor: default;
         }
 
+        /*Bottom Container*/
+        .tab {
+            height: 10vh;
+            width: 100vw;
+            background: #373636;
+            position: sticky;
+            border-top-left-radius: 45px;
+            border-top-right-radius: 45px;
+            display: flex;
+            justify-content: center;
+            overflow: hidden;
+            bottom: 0;
+        }
+
+        .tab i {
+            position: absolute;
+            margin-top: 4%;
+            left: 50%;
+            transform: translateX(-50%);
+            cursor: pointer;
+        }
+
+        .left-container-m {
+          height: 70vh;
+          width: 100vw;
+          background: #373636;
+          position: absolute;
+          border-top-left-radius: 45px;
+          border-top-right-radius: 45px;
+          display: flex;
+          justify-content: center;
+          overflow: hidden;
+          bottom: 0;
+          z-index: 1;
+        }
+
+        .left-container-m i {
+          position: absolute;
+          margin-top: 4%;
+          margin-bottom: 5%;
+          left: 50%;
+          transform: translateX(-50%);
+          cursor: pointer;
+        }
+
+        .left-container-m .title {
+            display: relative;
+            justify-content: center;
+            text-align: center;
+            margin-left: 0;
+            margin-right: 0;
+            margin-bottom: 5%;
+            color: black;
+            font-size: 1.5em;
+            line-height: 1.5em;
+            font-weight: bold;
+        }
+
+        .left-container-m p {
+            font-weight: bold;
+            font-size: 11pt;
+            color: white;
+            padding: 0;
+            overflow: hidden;
+            margin-left: 10%;
+            margin-right: 15%;
+            margin-top: 45%;
+            text-align: left;
+            letter-spacing: 2px;
+            font-family: "Poppins", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .left-container-m .btn a {
+            display: none;
+        }
+
+        .button-container-left {
+            display: none;
+        }
+
+        .floor-description-m {
+          max-height: 50vh;
+        }
+
+        .text-m {
+          display: none;
+        }
+
+        .text-m h4 {
+          margin-top: 15%;
+          margin-left: 10%;
+          position: relative;
+          color: white;
+          font-size: 23pt;
+          text-align: left;
+          z-index: 3;
+          font-family: "Poppins", sans-serif;
+          font-weight: 400;
+        }
+
+        .text-m h3 {
+          margin-left: 10%;
+          position: relative;
+          color: white;
+          font-size: 29pt;
+          text-align: left;
+          z-index: 3;
+          font-family: "Poppins", sans-serif;
+          font-weight: 700;
+          letter-spacing: 3px;
+        }
+
+        .text-m img {
+          position: absolute;
+          z-index: 2;
+          width: 290px;
+          height: auto;
+          top: 20%;
+          left: 10%;
+          margin-right: 70%;
+        }
+
         .user-btn-toggle-m {
           position: relative;
           background-color: white;
@@ -202,16 +326,17 @@ body {
           width: 2em;
           height: 3em;
           aspect-ratio: 1 / 1;
+          margin-bottom: 20%;
         }
 
         .user-btn-container-m {
           position: absolute;
-          left: 88vw;
-          top: 13.5vh;
+          left: 90%;
+          top: 68%;
           display: flex;
           flex-direction: column;
           justify-content: space-between;
-          gap: 16px;
+          gap: 7px;
         }
 
         .user-btn-container-m img {
@@ -252,107 +377,6 @@ body {
 
         #user-btn3-m.active {
           background-image: url("");
-        }
-
-        /*Bottom Container*/
-        .tab {
-            height: 10vh;
-            width: 100vw;
-            background: white;
-            position: sticky;
-            border-top-left-radius: 45px;
-            border-top-right-radius: 45px;
-            display: flex;
-            justify-content: center;
-            overflow: hidden;
-            bottom: 0;
-        }
-
-        .tab i {
-            position: absolute;
-            margin-top: 4%;
-            left: 50%;
-            transform: translateX(-50%);
-            cursor: pointer;
-        }
-
-        .left-container-m {
-          height: 70vh;
-          width: 100vw;
-          background: white;
-          position: absolute;
-          border-top-left-radius: 45px;
-          border-top-right-radius: 45px;
-          display: flex;
-          justify-content: center;
-          overflow: hidden;
-          bottom: 0;
-        }
-
-        .left-container-m i {
-          position: absolute;
-          margin-top: 4%;
-          margin-bottom: 5%;
-          left: 50%;
-          transform: translateX(-50%);
-          cursor: pointer;
-        }
-
-        .left-container-m .title {
-            display: relative;
-            justify-content: center;
-            text-align: center;
-            margin-left: 0;
-            margin-right: 0;
-            margin-bottom: 5%;
-            color: black;
-            font-size: 1.5em;
-            line-height: 1.5em;
-            font-weight: bold;
-        }
-
-        .left-container-m p {
-            font-weight: bold;
-            font-size: 1em;
-            color: black;
-            padding: 0;
-            overflow: hidden;
-            margin-left: 5%;
-            margin-right: 5%;
-            margin-top: 5%;
-            text-align: center;
-        }
-
-        .left-container-m .btn a {
-            display: none;
-        }
-
-        .button-container-left {
-            display: none;
-        }
-
-        .floor-description-m {
-          max-height: 50vh;
-        }
-
-        .text-m {
-          display: none;
-          color: black;
-        }
-
-        .text-m h3 {
-          position: relative;
-          justify-content: center;
-          text-align: center;
-          margin-left: 0;
-          margin-right: 0;
-          margin-bottom: 5%;
-          margin-top: 13%;
-          color: black;
-          font-size: 1.5em;
-          line-height: 1.5em;
-          font-weight: bold;
-          text-transform: uppercase;
         }
     
 

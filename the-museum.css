@@ -101,6 +101,8 @@ body {
 
     /* Section 2: The Map*/
     .section2 {
+      display: flex;
+      flex-direction: row;
       background-color: black;
       height: 100vh;
       max-height: 100vh;
@@ -113,20 +115,17 @@ body {
     }
 
     .section2 img {
+      position: relative;
       max-width: 100%;
       height: auto;
       margin-top: 5%;
-      margin-left: 10%;
     }
     
-    .row {
-      max-width: 100%;
-    }
-
+    
         /* Left Container: Lists and Descriptions */
         .left-container {
           position: relative;
-          width: 35%;
+          width: 35vw;
           height: 100vh;
           background: #0D0D0D;
         }
@@ -184,24 +183,28 @@ body {
 
         /* Right Container: Maps and Numbers */
         .right-container {
-          width: 55%;
+          width: 60vw;
         }
 
         .map-container {
-          padding-top: 5%;
           position: relative;
+          width: 95%;
+          left: 50%;
+          transform: translateX(-50%);
         }
-        
+
         .maps h3 {
+          position: relative;
           text-decoration: underline;
           text-underline-offset: 30%;
-          margin-left: 20%;
+          left: 50%;
+          transform: translateX(-50%);
           font-size: 2em;
           color: white;
           text-align: center;
-          justify-content: center;
-          margin-top: 10%;
+          margin-top: 5%;
           font-weight: bold;
+          font-family: Arial, Helvetica, sans-serif;
         }
 
         .number {
@@ -213,7 +216,7 @@ body {
           text-align: center;
           border-radius: 50%;
           cursor: pointer;
-          font-size: 20px;
+          font-size: 17px;
           font-weight: bold;
           display: flex;
           align-items: center;
@@ -243,15 +246,16 @@ body {
           display: flex;
           position: relative;
           flex-direction: column;
-          gap: 3%;
-          width: 10%;
+          left: 1.5%;
+          gap: 5%;
+          width: 5vw;
           margin-top: 24%;
-          padding-left: 7%;
+          padding: 0;
         }
     
         .btn-map {
-          width: 15px;
-          height: 15px;
+          width: 17px;
+          height: 17px;
           border-radius: 50%;
           background-color: #2A2928;  
           cursor: pointer;  
@@ -358,270 +362,3 @@ body {
       height: auto;
       margin-left: 5%;
     }
-
-/* Media Queries */
-@media (max-width: 1024px) {
-
-}
-
-@media (max-width: 768px) {
-
-}
-
-@media (max-width: 576px) {
-    /* Hiding Everything we don't Need on Mobile*/
-    .previews {
-      display: none;
-    }
-
-    /* Section 2: The Map */
-    .row {
-      --bs-gutter-x: 0 !important;
-      position: relative;
-      display: flex;
-      flex-direction: column !important;
-      margin: 0;
-      padding: 0;
-    }
-
-    .section2 {
-      display: flex;
-      position: relative;
-      height: 100vh;
-      overflow: hidden;
-    }
-
-      /* Left Container: Items Descriptions*/
-      .left-container {
-        flex: 2;
-        order: 2;
-        height: 20%;
-        width: 100vw;
-        background-color: white;
-        position: relative;
-        margin: 0;
-        padding: 0;
-        border-top-left-radius: 11%;
-        border-top-right-radius: 11%;
-        overflow: hidden;
-        display: flex;
-        justify-content: center;
-      }
-
-      .left-container i {
-        position: absolute;
-        margin-top: 4%;
-        transform: rotate(360deg);
-        left: 50%;
-        transform: translateX(-50%);
-        cursor: pointer;
-      }
-
-      .left-container .title {
-        display: inline-block;
-        justify-content: center;
-        text-align: center;
-        margin-top: 10%;
-        margin-bottom: 5%;
-        margin-left: 0;
-        margin-right: 0;
-        color: black;
-        font-size: 1.5em;
-        line-height: 33px;
-        font-weight: bold;
-      }
-
-      .left-container p {
-        font-weight: bold;
-        font-size: 15px;
-        color: black;
-        margin-right: 5%;
-        margin-left: 5%;
-      }
-
-      /*Right Container: Map and Numbers*/
-      .right-container {
-        order: 1;
-        flex: 1;
-        height: 80%;
-        position: relative;
-        width: 100vw;
-        padding: 0;
-        margin: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        overflow: hidden;
-      }
-
-      .map-btn-container {
-        position: relative;
-        align-items: center;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 90%;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        margin: 0;
-        padding: 0;
-      }
-
-      .btn-map {
-        position: relative;
-        width: 2em;
-        height: auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: white;
-        aspect-ratio: 1 / 1;
-        border-radius: 50%;
-      }
-
-      .btn-map.active {
-        background-color: #2A2928;
-      }
-
-      .map-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        overflow: hidden;
-        padding-top: 0;
-        transform: rotate(90deg);
-        width: 100%;
-        margin-top: 15%;
-      } 
-
-      .maps h3 {
-        font-size: 3ex;
-        margin: 0;
-        margin-top: 5%;
-        margin-bottom: 30%;
-      }
-
-      .section2 img {
-        padding: 0;
-        margin: 0;
-        height: 35vh;
-        width: auto;
-        max-width: none;
-        z-index: 10;
-      }
-
-      .number {
-        transform: rotate(-90deg);
-        position: absolute;
-        width: 30px;
-        height: 30px;
-        background-color: white;
-        color: #8CB758;
-        text-align: center;
-        border-radius: 50%;
-        cursor: pointer;
-        font-size: 15px;
-        font-weight: bold;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-
-    /* Footer */
-      footer .row {
-        --bs-gutter-x: 0 !important;
-        width: 100vw !important;
-        height: 100vh !important;
-        justify-content: center;
-        align-items: center;
-        margin: 0;
-        padding: 0;
-      }
-
-      footer {
-        display: flex;
-        text-align: center;
-        flex-direction: column;
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        padding-bottom: 10%;
-        z-index: 10;
-      }
-
-      footer .title-container {
-        text-align: center;
-        align-items: center;
-        margin-top: 20%;
-      }
-
-      footer #home-title {
-        font-size: 9vw;
-        text-align: center;
-        margin-left: 0;
-        margin-right: 0;
-      } 
-
-      footer .title-container p{
-        font-size: 3vw;
-      }
-
-      footer h4 {
-        margin: 0;
-        text-align: center;
-      }
-
-      #museum-logo {
-        position: sticky;
-        width: 50%;
-        height: auto;
-        padding: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        margin-top: 10%;
-      }
-
-      .contacts, .affiliations {
-        margin: 0;
-      }
-
-      .contacts h4 {
-        margin: 2%;
-      }
-  
-      .affiliations h4 {
-        margin: 2%;
-        margin-top: 10%;
-      }
-
-      .contacts p, footer .affiliations p {
-        text-align: center;
-      }
-
-      .contacts {
-        margin-top: 7%;
-        margin-bottom: 0;
-        margin-left: auto;
-        margin-right: auto;
-      }
-
-      .affiliations {
-        margin-left: auto;
-        margin-right: auto;
-      }
-
-      .social-icons-container {
-        align-items: center;
-        left: 50%;
-        transform: translateX(-50%);
-        display: flex;
-        flex-direction: row;
-        margin-bottom: 25%;
-      }
-
-      .social-icons {
-        margin: 0;
-        width: 60%;
-      }
-}
