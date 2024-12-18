@@ -8,12 +8,13 @@ body {
 /*Section 1: Introduction*/
     /* Navbar */
       .navbar { 
-        font-family: 'Cooper Hewitt', sans-serif;
+        font-family: "Poppins", sans-serif;
         font-weight: bold;
         padding-left: 3%;
         padding-right: 3%;
         padding-top: 6px;
         padding-bottom: 0;
+        background-color: transparent !important;
       }
       
       .navbar-brand img {
@@ -22,7 +23,7 @@ body {
       }
       
       .navbar-brand span {
-        font-family: 'Cooper Hewitt', sans-serif;
+        font-family: "Poppins", sans-serif;
         font-size: 1rem;
         margin-left: 9%;
       }
@@ -61,7 +62,35 @@ body {
     /*Section 1: Introduction*/
     .section1 {
         height: 100vh;
-        background-color: #0D0D0D;;
+        background-color: #0D0D0D;
+        font-family: "Poppins", sans-serif;
+      }
+
+      .introduction-container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        align-items: center;
+        left: 50%;
+        transform: translateX(-50%);
+        padding-top: 15%;
+      }
+  
+      .introduction-container h1 {
+        color: white;
+        font-weight: bold;
+        font-size: 24px;
+        margin-bottom: 10%;
+        text-align: center;
+        line-height: 1.5em;
+      }
+  
+      .introduction-container p {
+        color: white;
+        font-size: 11pt;
+        text-align: center;
+        line-height: 2em;
       }
   
       #btn-target {
@@ -79,7 +108,7 @@ body {
       #btn-target a {
         color: #fff;
         text-decoration: none;
-        font-family: 'Cooper Hewitt', sans-serif;
+        font-family: "Poppins", sans-serif;
         font-weight: bold;
         white-space: nowrap;
       }
@@ -93,10 +122,14 @@ body {
         align-items: center;
         justify-content: space-between;
         gap: 5vh;
-
     }
 
         /*Top Container*/
+        .right-container {
+          height: 85vh;
+          width: 100vw;
+        }
+
         .section2 .title-container {
             display: flex;
             align-items: center;
@@ -119,15 +152,10 @@ body {
         
         .section2 img {
             position: relative;
-            height: 65vh;
+            height: 70vh;
             width: auto;
             left: 50%;
             transform: translateX(-50%);
-        }
-
-        .right-container {
-            height: 85vh;
-            width: 100vw;
         }
 
         .map-container {
@@ -157,7 +185,7 @@ body {
         }
 
         .map-btn-container {
-            width: 90%;
+            width: 95%;
             position: absolute;
             display: flex;
             flex-direction: row;
@@ -228,6 +256,7 @@ body {
           overflow: hidden;
           bottom: 0;
           z-index: 1;
+          font-family: "Poppins", sans-serif;
         }
 
         .left-container-m i {
@@ -240,16 +269,17 @@ body {
         }
 
         .left-container-m .title {
-            display: relative;
+            position: relative;
             justify-content: center;
-            text-align: center;
-            margin-left: 0;
-            margin-right: 0;
-            margin-bottom: 5%;
-            color: black;
-            font-size: 1.5em;
+            color: white;
             line-height: 1.5em;
             font-weight: bold;
+            margin-left: 10%;
+            font-size: 23pt;
+            text-align: left;
+            font-weight: 700;
+            letter-spacing: 3px;
+            margin-top: 15%;
         }
 
         .left-container-m p {
@@ -260,12 +290,17 @@ body {
             overflow: hidden;
             margin-left: 10%;
             margin-right: 15%;
-            margin-top: 45%;
             text-align: left;
             letter-spacing: 2px;
             font-family: "Poppins", serif;
             font-weight: 400;
             font-style: normal;
+            padding-top: 5%;
+        }
+
+        .left-container-m span {
+          display: block;
+          margin-bottom: 2%;
         }
 
         .left-container-m .btn a {

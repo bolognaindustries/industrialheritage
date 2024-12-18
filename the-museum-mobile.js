@@ -10,12 +10,12 @@ if (mobile) {
     var hiddenTabBtn = document.querySelector(".left-container-m i");
     var hiddenTab = document.querySelector(".left-container-m");
     
-    tabBtn.addEventListener("touchstart", function() {
+    tabBtn.addEventListener("pointerdown", function() {
         tab.style.display = "none";
         hiddenTab.style.display = "block";
     });
 
-    hiddenTabBtn.addEventListener("touchstart", function() {
+    hiddenTabBtn.addEventListener("pointerdown", function() {
         hiddenTab.style.display = "none"
         tab.style.display = "block";
     });
@@ -30,7 +30,7 @@ if (mobile) {
     var numberIsClicked = false;
 
     numbers.forEach(function(number) {
-        number.addEventListener("touchstart", function() {
+        number.addEventListener("pointerdown", function() {
             numberIsClicked = !numberIsClicked;
 
             var textId = number.getAttribute("data-text");
@@ -147,12 +147,12 @@ if (mobile) {
         btnMap2I.classList.add("active");
     }
 
-    btnMap1.addEventListener("touchstart", function() {
+    btnMap1.addEventListener("pointerdown", function() {
         changeToMap1();
         changeToDescr();
     });
 
-    btnMap2.addEventListener("touchstart", function() {
+    btnMap2.addEventListener("pointerdown", function() {
         changeToMap2();
         changeToDescr();
     });
@@ -171,7 +171,7 @@ if (mobile) {
     var isUserMenuOpen = false;
 
 
-    userToggleBtn.addEventListener("touchstart", function() {
+    userToggleBtn.addEventListener("pointerdown", function() {
 
         isUserMenuOpen = !isUserMenuOpen; 
 
@@ -187,7 +187,7 @@ if (mobile) {
     });
 
     userBtns.forEach(function(userBtn) {
-        userBtn.addEventListener("touchstart", function() {
+        userBtn.addEventListener("pointerdown", function() {
 
             userBtns.forEach(function(btn) {
                 btn.classList.remove("active");
@@ -203,7 +203,7 @@ if (mobile) {
     });
 
     function updateContent() {
-        var activeNumber = document.querySelector(".number-m[style*=`background-color: #8CB758`]");
+        var activeNumber = document.querySelector(".number-m[style*='background-color: #8CB758']");
         
         if(!activeNumber) return;
         

@@ -142,7 +142,6 @@ body {
       padding-left: 5%;
     }
     
-    
         /* Left Container: Lists and Descriptions */
         .left-container {
           position: relative;
@@ -404,3 +403,53 @@ body {
         width: 35px;
         height: auto;
       }
+
+@media screen and (min-width: 1200px) {
+  .section2 {
+    height: 70vh;
+  }
+
+  .introduction-container {
+    padding-top: 12%;
+  }
+
+  .introduction-container h1 {
+    font-size: 63px;
+  }
+
+  .introduction-container p {
+    font-size: 24px;
+  }
+
+  #btn-target a {
+    font-size: 19px;
+  }
+
+  .left-container {
+    height: 70vh;
+  }
+
+  .right-container {
+    height: 70vh;
+  }
+
+  .map-btn-container {
+    height: 70vh;
+  }
+
+  footer {
+    padding-top: 5%;
+  }
+
+  .left-container p {
+    font-size: 19px;
+  }
+
+  .left-container ol {
+    font-size: 19px;
+  }
+
+  .left-container .title {
+    font-size: 31px;
+  }
+}
