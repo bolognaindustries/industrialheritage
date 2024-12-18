@@ -1,954 +1,1042 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>The Museum</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <script src="https://kit.fontawesome.com/b7dc8e0f7f.js" crossorigin="anonymous"></script>
-        <style>@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-        </style>
-    </head>
 
-    <body>
-        <!--Section 1: Introduction-->
-        <div class="section1">
-            <!--navbar-->
-            <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
-                <div class="container-fluid">
-                    <!--title and logo-->
-                    <a class="navbar-brand" href="index.html">
-                      <img src="images/LOGO.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-center"><span>INDUSTRIAL HERITAGE</span>
-                    </a>
-                    <!--title and logo-->
-                    <!--toggle for mobile view-->
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <!--toogle for mobile view-->
-                    <!--links-->
-                    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
-                        <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
-                          <hr class="link-lines">
-                        </li>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Museum</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/b7dc8e0f7f.js" crossorigin="anonymous"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+  </style>
+</head>
 
-                        <li>
-                          <div class="vr d-none d-lg-block text-light opacity-100"></div>
-                        </li>
+<body>
+  <!--Section 1: Introduction-->
+  <div class="section1">
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+      <div class="container-fluid">
+        <!--title and logo-->
+        <a class="navbar-brand" href="index.html">
+          <img src="images/LOGO.png" alt="Logo" width="30" height="24"
+            class="d-inline-block align-text-center"><span>INDUSTRIAL HERITAGE</span>
+        </a>
+        <!--title and logo-->
+        <!--toggle for mobile view-->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--toogle for mobile view-->
+        <!--links-->
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+              <hr class="link-lines">
+            </li>
 
-                        <li class="nav-item">
-                          <a class="nav-link active" href="katya-gallery/gallery.html">THE GALLERY</a>
-                          <hr class="link-lines">
-                        </li>
+            <li>
+              <div class="vr d-none d-lg-block text-light opacity-100"></div>
+            </li>
 
-                        <li>
-                          <div class="vr d-none d-lg-block text-light opacity-100"></div>
-                        </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="katya-gallery/gallery.html">THE GALLERY</a>
+              <hr class="link-lines">
+            </li>
 
-                        <li class="nav-item">
-                          <a class="nav-link active" href="#">THE PROJECT</a>
-                          <hr class="link-lines">
-                        </li>
+            <li>
+              <div class="vr d-none d-lg-block text-light opacity-100"></div>
+            </li>
 
-                        <li>
-                          <div class="vr d-none d-lg-block text-light opacity-100" text-light></div>
-                        </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">THE PROJECT</a>
+              <hr class="link-lines">
+            </li>
 
-                        <li class="nav-item">
-                          <a class="nav-link active" href="the-museum.html">THE MUSEUM</a>
-                          <hr class="link-lines">
-                        </li>
+            <li>
+              <div class="vr d-none d-lg-block text-light opacity-100" text-light></div>
+            </li>
 
-                        <li>
-                          <div class="vr d-none d-lg-block text-light opacity-100"></div>
-                        </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="the-museum.html">THE MUSEUM</a>
+              <hr class="link-lines">
+            </li>
 
-                        <li class="nav-item">
-                          <a class="nav-link active" href="#">ABOUT US</a>
-                          <hr class="link-lines">
-                        </li>
-                      </ul>
-                      <!--links-->
-                  </div>
-            </nav>
-            <!--navbar-->
+            <li>
+              <div class="vr d-none d-lg-block text-light opacity-100"></div>
+            </li>
 
-            <!--button-->
-            <div class="button-container mx-auto col-2 text-center" id="btn-target">
-              <a href="#target-section">
-              TAKE A LOOK AT THE MAPS
+            <li class="nav-item">
+              <a class="nav-link active" href="#">ABOUT US</a>
+              <hr class="link-lines">
+            </li>
+          </ul>
+          <!--links-->
+        </div>
+    </nav>
+    <!--navbar-->
+
+    <!--introduction text-->
+    <div class="introduction-container">
+      <h1>Welcome to the<br>
+        Museo del Patrimonio Industriale</h1>
+      <p class="introduction-text">Step into the heart of Bologna's industrial past, where you can explore the evolution
+        of the city’s technological
+        innovations. From the Hoffmann kilns in the ground floor gallery to the machines and products that shaped the
+        modern city on the first floor, the museum offers a journey through key moments in Bologna’s industrial history.
+      </p>
+      <br>
+      <p class="introduction-text">Navigate through both floors by clicking on the numbers to dive deeper into each
+        section. Enjoy discovering the
+        stories behind the artifacts as you move through the museum!
+      </p>
+    </div>
+    <!--introduction text-->
+
+    <!--button-->
+    <div class="button-container mx-auto col-2 text-center" id="btn-target">
+      <a href="#target-section">
+        TAKE A LOOK AT THE MAPS
+        <br>
+        <i class="fa-solid fa-chevron-down"></i>
+      </a>
+    </div>
+    <!--button-->
+  </div>
+  <!--Section 1: Introduction-->
+
+  <!--DESKTOP-->
+  <div id="desktop" style="display: none;">
+
+    <!--Section 2: Map and Descriptions(Desktop)-->
+    <div class="section2" id="target-section">
+      <!--1st column-->
+      <div class="left-container">
+        <!--1st alternative(floor description)-->
+        <!--Ground Floor-->
+        <div class="floor-description" id="description1">
+          <h3 class="title">GROUND FLOOR: 
+           <br> EARLY INDUSTRY & INNOVATION</h3>
+          <p id="ground-floor-description">
+            <span>The ground floor is set within the Hoffmann kiln gallery, featuring models,
+            machines, and scientific instruments from the Aldini Valeriani collections, Bologna's oldest technical
+            school.</span>
+            <span>
+            These exhibits trace key technological milestones of the Industrial Revolution in Bologna and its
+            industrial development from the 19th to early 20th centuries. Highlights include the history of the Galotti
+            Brickworks, home to the museum, and the introduction of Hoffmann kilns in the late 19th century.</span>
+            <span>Visitors can explore the kiln's structure and learn about brick production, from clay extraction to firing.</span>
+          </p>
+        </div>
+        <!--Ground Floor-->
+
+        <!--First Floor-->
+        <div class="floor-description" id="description2" style="display:none;">
+          <h3 class="title">FIRST FLOOR:
+            <br>MODERN INDUSTRY & MECHANICS</h3>
+          <p id="first-floor-description">
+            <span>This floor showcases iconic products representing Bologna’s industrial
+            evolution, such as the Zamboni-Troncon tortellini machine and the ACMA 713 packaging machine.</span>
+            <span>The exhibits focus on the growth of technical knowledge, production systems, and innovative processes that have
+            established Bologna as a leader in automation and manufacturing.</span>
+            <span>Visitors can delve into the dynamics of
+            industrial development, supported by local institutions that have driven competitiveness and advanced
+            production methods.</span>
+          </p>
+        </div>
+        <!--First Floor-->
+        <!--1st alternative-->
+
+        <!--2nd  alternative(list)-->
+        <!--ground floor list-->
+        <div class="list-of-items" id="list1" style="display: none;">
+          <h3 class="title">GROUND FLOOR ITEMS</h3>
+          <ol>
+            <li class="item" id="item1" data-preview="preview1" data-number="number1" data-text="text1">Terracotta Mould
+            </li>
+            <li class="item" id="item2" data-preview="preview2" data-number="number2" data-text="text2">Melted Brick
+            </li>
+            <li class="item" id="item3" data-preview="preview3" data-number="number3" data-text="text3">Aldini Steam
+              Machine</li>
+            <li class="item" id="item4" data-preview="preview4" data-number="number4" data-text="text4">Hoffmann Kiln
+            </li>
+            <li class="item" id="item5" data-preview="preview5" data-number="number5" data-text="text5">Power Hammer
+            </li>
+            <li class="item" id="item6" data-preview="preview6" data-number="number6" data-text="text6">Shaping Machine
+            </li>
+            <li class="item" id="item7" data-preview="preview7" data-number="number7" data-text="text7">Hydraulic Pump
+            </li>
+            <li class="item" id="item8" data-preview="preview8" data-number="number8" data-text="text8">Steam Hammer and
+              Vacuum Pump</li>
+            <li class="item" id="item9" data-preview="preview9" data-number="number9" data-text="text9">Cube Brodo
+              Packing Machine</li>
+          </ol>
+        </div>
+        <!--ground floor list-->
+
+        <!--first floor list-->
+        <div class="list-of-items" id="list2" style="display: none;">
+          <h3 class="title">FIRST FLOOR ITEMS</h3>
+          <ol start="10">
+            <li class="item" id="item10" data-preview="preview10" data-number="number10" data-text="text10">Chocolate
+              Packing Machine</li>
+            <li class="item" id="item11" data-preview="preview11" data-number="number11" data-text="text11">Tortellini
+              Machine</li>
+            <li class="item" id="item12" data-preview="preview12" data-number="number12" data-text="text12">Gelato
+              Machine</li>
+            <li class="item" id="item13" data-preview="preview13" data-number="number13" data-text="text13">Silk Mill
+              Model</li>
+            <li class="item" id="item14" data-preview="preview14" data-number="number14" data-text="text14">Silk Loom
+              Model</li>
+            <li class="item" id="item15" data-preview="preview15" data-number="number15" data-text="text15">Silk</li>
+          </ol>
+        </div>
+        <!--first floor list-->
+        <!--2nd alternative-->
+
+        <!--3rd alternative(descriptions for each item on click)-->
+        <div class="item-texts" style="display: none;">
+          <div class="text" id="text1">
+            <h3>Terracotta Mould</h3>
+            <p></p>
+          </div>
+          <div class="text" id="text2">
+            <h3>Melted Brick</h3>
+            <p></p>
+          </div>
+          <div class="text" id="text3">
+            <h3>Aldini Steam Machine</h3>
+            <p></p>
+          </div>
+          <div class="text" id="text4">
+            <h3>Hoffmann Kiln</h3>
+            <p></p>
+          </div>
+          <div class="text" id="text5">
+            <h3>Power Hammer</h3>
+            <p></p>
+          </div>
+          <div class="text" id="text6">
+            <h3>Shaping Machine</h3>
+            <p></p>
+          </div>
+          <div class="text" id="text7">
+            <h3>Hydraulic Pump</h3>
+            <p></p>
+          </div>
+          <div class="text" id="text8">
+            <h3>Steam Hammer and Vacuum Pump</h3>
+            <p></p>
+          </div>
+          <div class="text" id="text9">
+            <h3>Cube Brodo Packing Machine</h3>
+            <p></p>
+          </div>
+          <div class="text" id="text10">
+            <h3>Chocolate Packing Machine</h3>
+            <p></p>
+          </div>
+          <div class="text" id="text11">
+            <h3>Tortellini Machine</h3>
+            <p></p>
+          </div>
+          <div class="text" id="text12">
+            <h3>Gelato Machine</h3>
+            <p></p>
+          </div>
+          <div class="text" id="text13">
+            <h3>Silk Mill Model</h3>
+            <p></p>
+          </div>
+          <div class="text" id="text14">
+            <h3>Silk Loom Model</h3>
+            <p></p>
+          </div>
+          <div class="text" id="text15">
+            <h3>Silk</h3>
+            <p></p>
+          </div>
+        </div>
+        <!--3rd alternative-->
+
+        <!--button change to list-->
+        <div class="button-container-left mx-auto col-2 text-center" id="button-list">
+          <button id="btn" type="button" class="btn btn-block btn-transparent px-4"><a id="list-btn"
+              href="#section1">See the list of items
               <br>
-                  <i class="fa-solid fa-chevron-down"></i>
-              </a>
+              <i id="long-arrow" class="fa-solid fa-arrow-right-long"></i></a></button>
+        </div>
+        <!--button change to list-->
+
+        <!--button change to description-->
+        <div class="button-container-left mx-auto col-2 text-center" id="button-description" style="display: none;">
+          <button id="btn" type="button" class="btn btn-block btn-transparent px-4"><a id="list-btn"
+              href="#section1">Read the floor description
+              <br>
+              <i id="long-arrow" class="fa-solid fa-arrow-right-long"></i></a></button>
+        </div>
+        <!--button change to description-->
+
+
+
+      </div>
+      <!--1st column-->
+
+      <!--2nd column-->
+      <div class="right-container">
+
+        <!--map 1st alternative-->
+        <div class="maps" id="map-container1" style="display: block;">
+
+          <div class="title">
+            <h3>GROUND FLOOR</h3>
+          </div>
+
+          <div class="map-container">
+            <img src="images/groundfloormapgray.png" alt="Museum Map" class="map">
+
+            <!--numbers on the map-->
+            <div class="numbers">
+              <div class="number" id="number1" data-preview="preview1" data-item="item1" data-text="text1"
+                style="top: 12%; left: 46%">1</div>
+              <div class="number" id="number2" data-preview="preview2" data-item="item2" data-text="text2"
+                style="top: 33%; left: 30%;">2</div>
+              <div class="number" id="number3" data-preview="preview3" data-item="item3" data-text="text3"
+                style="top: 45%; left: 13%;">3</div>
+              <div class="number" id="number4" data-preview="preview4" data-item="item4" data-text="text4"
+                style="top: 51%; left: 65%;">4</div>
+              <div class="number" id="number5" data-preview="preview5" data-item="item5" data-text="text5"
+                style="top: 37%; left: 58%;">5</div>
+              <div class="number" id="number6" data-preview="preview6" data-item="item6" data-text="text6"
+                style="top: 30%; left: 68%;">6</div>
+              <div class="number" id="number7" data-preview="preview7" data-item="item7" data-text="text7"
+                style="top: 33%; left: 83%;">7</div>
+              <div class="number" id="number8" data-preview="preview8" data-item="item8" data-text="text8"
+                style="top: 61%; left: 88%;">8</div>
+              <div class="number" id="number9" data-preview="preview9" data-item="item9" data-text="text9"
+                style="top: 89%; left: 63%;">9</div>
             </div>
-            <!--button-->
-        </div>
-        <!--Section 1: Introduction-->
+            <!--numbers on the map-->
 
-        <!--DESKTOP-->
-        <div id="desktop" style="display: none;">
-          
-          <!--Section 2: Map and Descriptions(Desktop)-->
-          <div class="section2" id="target-section">
-              <!--1st column-->
-              <div class="left-container">
-                  <!--popup icon in the mobile version-->
-                  <div class="pop-up-icon-container d-md-none d-sm-block">
-                  <i class="fa-solid fa-chevron-up"></i>
-                  </div>
-                  <!--popup icon in the mobile version-->
-
-                  <!--1st alternative(floor description)-->
-                    <!--Ground Floor-->
-                    <div class="floor-description" id="description1">
-                        <h3 class="title">GROUND FLOOR: MEDIEVAL INDUSTRY</h3>
-                        <p id="ground-floor-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis egestas justo, eget pellentesque nibh. 
-                        <br>
-                        <br> 
-                        Nunc urna odio, convallis varius elit quis, volutpat eleifend lorem. 
-                        Mauris vestibulum velit non lectus fringilla venenatis. Fusce id risus vitae lectus auctor sollicitudin ut vitae magna. 
-                        <br>
-                        <br>      
-                        Cras tincidunt congue ligula, pharetra rutrum metus ornare quis. Nunc finibus arcu vitae placerat ultrices. Maecenas vel odio condimentum, facilisis ante nec, dictum justo. 
-                        </p>
-                    </div>
-                    <!--Ground Floor-->
-
-                    <!--First Floor-->
-                    <div class="floor-description" id="description2" style="display:none;">
-                      <h3 class="title">FIRST FLOOR: MEDIEVAL INDUSTRY</h3>
-                      <p id="first-floor-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis egestas justo, eget pellentesque nibh. 
-                      <br>
-                      <br> 
-                      Nunc urna odio, convallis varius elit quis, volutpat eleifend lorem. 
-                      Mauris vestibulum velit non lectus fringilla venenatis. Fusce id risus vitae lectus auctor sollicitudin ut vitae magna. 
-                      <br>
-                      <br>      
-                      Cras tincidunt congue ligula, pharetra rutrum metus ornare quis. Nunc finibus arcu vitae placerat ultrices. Maecenas vel odio condimentum, facilisis ante nec, dictum justo. 
-                      </p>
-                    </div>
-                    <!--First Floor-->
-                  <!--1st alternative-->
-
-                  <!--2nd  alternative(list)-->
-                    <!--ground floor list-->
-                    <div class="list-of-items" id="list1" style="display: none;">
-                      <h3 class="title">GROUND FLOOR ITEMS</h3>
-                        <ol>
-                            <li class="item" id="item1" data-preview="preview1" data-number="number1" data-text="text1">Terracotta Mould</li>
-                            <li class="item" id="item2" data-preview="preview2" data-number="number2" data-text="text2">Melted Brick</li>
-                            <li class="item" id="item3" data-preview="preview3" data-number="number3" data-text="text3">Aldini Steam Machine</li>
-                            <li class="item" id="item4" data-preview="preview4" data-number="number4" data-text="text4">Hoffmann Kiln</li>
-                            <li class="item" id="item5" data-preview="preview5" data-number="number5" data-text="text5">Power Hammer</li>
-                            <li class="item" id="item6" data-preview="preview6" data-number="number6" data-text="text6">Shaping Machine</li>
-                            <li class="item" id="item7" data-preview="preview7" data-number="number7" data-text="text7">Hydraulic Pump</li>
-                            <li class="item" id="item8" data-preview="preview8" data-number="number8" data-text="text8">Steam Hammer and Vacuum Pump</li>
-                            <li class="item" id="item9" data-preview="preview9" data-number="number9" data-text="text9">Cube Brodo Packing Machine</li>
-                        </ol>
-                    </div>
-                    <!--ground floor list-->
-
-                    <!--first floor list-->
-                    <div class="list-of-items" id="list2" style="display: none;">
-                      <h3 class="title">FIRST FLOOR ITEMS</h3>
-                      <ol start="10">
-                          <li class="item" id="item10" data-preview="preview10" data-number="number10" data-text="text10">Chocolate Packing Machine</li>
-                          <li class="item" id="item11" data-preview="preview11" data-number="number11" data-text="text11">Tortellini Machine</li>
-                          <li class="item" id="item12" data-preview="preview12" data-number="number12" data-text="text12">Gelato Machine</li>
-                          <li class="item" id="item13" data-preview="preview13" data-number="number13" data-text="text13">Silk Mill Model</li>
-                          <li class="item" id="item14" data-preview="preview14" data-number="number14" data-text="text14">Silk Loom Model</li>
-                          <li class="item" id="item15" data-preview="preview15" data-number="number15" data-text="text15">Silk</li>
-                      </ol>
-                    </div>
-                    <!--first floor list-->
-                  <!--2nd alternative-->
-
-                  <!--3rd alternative(descriptions for each item on click)-->
-                    <div class="item-texts" style="display: none;">
-                      <div class="text" id="text1">
-                        <h3>Terracotta Mould</h3>
-                        <p></p>
-                      </div>
-                      <div class="text" id="text2">
-                        <h3>Melted Brick</h3>
-                        <p></p>
-                      </div>
-                      <div class="text" id="text3">
-                        <h3>Aldini Steam Machine</h3>
-                        <p></p>
-                      </div>
-                      <div class="text" id="text4">
-                        <h3>Hoffmann Kiln</h3>
-                        <p></p>
-                      </div>
-                      <div class="text" id="text5">
-                        <h3>Power Hammer</h3>
-                        <p></p>
-                      </div>
-                      <div class="text" id="text6">
-                        <h3>Shaping Machine</h3>
-                        <p></p>
-                      </div>
-                      <div class="text" id="text7">
-                        <h3>Hydraulic Pump</h3>
-                        <p></p>
-                      </div>
-                      <div class="text" id="text8">
-                        <h3>Steam Hammer and Vacuum Pump</h3>
-                        <p></p>
-                      </div>
-                      <div class="text" id="text9">
-                        <h3>Cube Brodo Packing Machine</h3>
-                        <p></p>
-                      </div>
-                      <div class="text" id="text10">
-                        <h3>Chocolate Packing Machine</h3>
-                        <p></p>
-                      </div>
-                      <div class="text" id="text11">
-                        <h3>Tortellini Machine</h3>
-                        <p></p>
-                      </div>
-                      <div class="text" id="text12">
-                        <h3>Gelato Machine</h3>
-                        <p></p>
-                      </div>
-                      <div class="text" id="text13">
-                        <h3>Silk Mill Model</h3>
-                        <p></p>
-                      </div>
-                      <div class="text" id="text14">
-                        <h3>Silk Loom Model</h3>
-                        <p></p>
-                      </div>
-                      <div class="text" id="text15">
-                        <h3>Silk</h3>
-                        <p></p>
-                      </div>
-                    </div>
-                  <!--3rd alternative-->
-
-                  <!--button change to list-->
-                  <div class="button-container-left mx-auto col-2 text-center" id="button-list">
-                      <button id="btn" type="button" class="btn btn-block btn-transparent px-4"><a id="list-btn" href="#section1">See the list of items
-                      <br>
-                      <i id="long-arrow" class="fa-solid fa-arrow-right-long"></i></a></button>
-                  </div>
-                  <!--button change to list-->
-
-                  <!--button change to description-->
-                  <div class="button-container-left mx-auto col-2 text-center" id="button-description" style="display: none;">
-                    <button id="btn" type="button" class="btn btn-block btn-transparent px-4"><a id="list-btn" href="#section1">Read the floor description
-                    <br>
-                    <i id="long-arrow" class="fa-solid fa-arrow-right-long"></i></a></button>
-                  </div>
-                  <!--button change to description-->
-
-
-
+            <!--hidden previews-->
+            <div class="previews">
+              <div class="preview" id="preview1" style="top: -17%; left: -7%;">
+                <img src="images/1color.png" alt="Terracotta Mold">
+                <div class="preview-line" style="top: 65%; left: 180%; height: 89%; transform: rotate(110deg);"></div>
               </div>
-              <!--1st column-->
-
-              <!--2nd column-->
-              <div class="right-container">
-
-                  <!--map 1st alternative-->
-                  <div class="maps" id="map-container1" style="display: block;">
-                      
-                      <div class="title"><h3>GROUND FLOOR</h3>
-                      </div>
-
-                      <div class="map-container">
-                          <img src="images/groundfloormapgray.png" alt="Museum Map" class="map">
-                              <!--numbers on the map-->
-                              <div class="number" id="number1" data-preview="preview1" data-item="item1" data-text="text1" style="top: 18%; left: 57%">1</div>
-                              <div class="number" id="number2" data-preview="preview2" data-item="item2" data-text="text2" style="top: 38%; left: 42%;">2</div>
-                              <div class="number" id="number3" data-preview="preview3" data-item="item3" data-text="text3" style="top: 48%; left: 24%;">3</div>
-                              <div class="number" id="number4" data-preview="preview4" data-item="item4" data-text="text4" style="top: 54%; left: 71%;">4</div>
-                              <div class="number" id="number5" data-preview="preview5" data-item="item5" data-text="text5" style="top: 41%; left: 62%;">5</div>
-                              <div class="number" id="number6" data-preview="preview6" data-item="item6" data-text="text6" style="top: 36%; left: 78%;">6</div>
-                              <div class="number" id="number7" data-preview="preview7" data-item="item7" data-text="text7" style="top: 40%; left: 94%;">7</div>
-                              <div class="number" id="number8" data-preview="preview8" data-item="item8" data-text="text8" style="top: 63%; left: 96%;">8</div>
-                              <div class="number" id="number9" data-preview="preview9" data-item="item9" data-text="text9" style="top: 89%; left: 71%;">9</div>
-                              <!--numbers on the map-->
-
-                              <!--hidden previews-->
-                              <div class="previews">
-                                <div class="preview" id="preview1" style="top: -10%; left: 5%;">
-                                  <img src="images/1color.png" alt="Terracotta Mold">
-                                  <div class="preview-line" style="top: 70%; left: 108%; height: 120px; transform: rotate(258deg)"></div>
-                                </div>
-                                <div class="preview" id="preview2" style="top: -17%; left: -7%;">
-                                  <img src="images/2color.png" alt="Melted Brick">
-                                  <div class="preview-line" style="top: 76%; left: 106%; height: 120px; transform: rotate(309deg)"></div>
-                                </div>
-                                <div class="preview" id="preview3" style="top: 50%; left: 30%;">
-                                  <img src="images/14color.png" alt="Aldini Steam Engine">
-                                  <div class="preview-line" style="top: 5%; left: -5%; height: 82px; transform: rotate(320deg)"></div>
-                                </div>
-                                <div class="preview" id="preview4" style="top: -17%; left: -10%;">
-                                  <img src="" alt="Hoffmann Kiln">
-                                  <div class="preview-line" style="top: 100%; left: 80%; height: 300px; transform: rotate(180deg)"></div>
-                                </div>
-                                <div class="preview" id="preview5" style="top: -17%; left: -10%;">
-                                  <img src="images/12color.png" alt="Power Hammer">
-                                  <div class="preview-line" style="top: 60%; left: 110%; height: 280px; transform: rotate(298deg)"></div>
-                                </div>
-                                <div class="preview" id="preview6" style="top: -19%; left: 80%;">
-                                  <img src="images/13color.png" alt="Shaping Machine">
-                                  <div class="preview-line" style="top: 105%; left: 5%; height: 24%; transform: rotate(220deg)"></div>
-                                </div>
-                                <div class="preview" id="preview7" style="top: -19%; left: 80%;">
-                                  <img src="images/10color.png" alt="Hydraulic Pump">
-                                  <div class="preview-line" style="top: 105%; left: 50%; height: 6%; transform: rotate(5deg)"></div>
-                                </div>
-                                <div class="preview" id="preview8" style="top: 50%; left: 25%;">
-                                  <img src="images/11color.png" alt="Steam Hammer and Vacuum Pump">
-                                  <div class="preview-line" id="line1" style="top: 50%; left: 111%; height: 100%; transform: rotate(260deg)"></div>
-                                </div>
-                                <div class="preview" id="preview9" style="top: 50%; left: 17%;">
-                                  <img src="images/6color.png" alt="Cube Brodo Packing Machine">
-                                  <div class="preview-line" style="top: 55%; left: 110%; height: 51%; transform: rotate(296deg)"></div>
-                                </div>
-                              </div>
-                              <!--hidden previews-->
-                      </div>
-                                          
-                  </div>
-                  <!--map 1st alternative-->
-
-                  <!--2nd alternative-->
-                  <div class="maps" id="map-container2" style="display: none;">
-                      
-                      <div class="title"><h3>FIRST FLOOR</h3>
-                      </div>
-
-                      <div class="map-container">
-                          <img src="images/firstfloormapgray.png" alt="Museum Map" class="map">
-
-                              <!--numbers on the map-->
-                              <div class="number" id="number10" data-preview="preview10" data-item="item10" data-text="text10" style="top: 83%; left: 65%;">10</div>
-                              <div class="number" id="number11" data-preview="preview11" data-item="item11" data-text="text11" style="top: 55%; left: 66%;">11</div>
-                              <div class="number" id="number12" data-preview="preview12" data-item="item12" data-text="text12" style="top: 63%; left: 44%;">12</div>
-                              <div class="number" id="number13" data-preview="preview13" data-item="item13" data-text="text13" style="top: 50%; left: 30%;">13</div>
-                              <div class="number" id="number14" data-preview="preview14" data-item="item14" data-text="text14" style="top: 59%; left: 12%;">14</div>
-                              <div class="number" id="number15" data-preview="preview15" data-item="item15" data-text="text15" style="top: 28%; left: 18%;">15</div>
-                              <!--numbers on the map-->
-
-                              <!--hidden previews-->
-                              <div class="preview" id="preview10" style="top: 50%; left: 78%;">
-                                <img src="images/6color.png" alt="Chocolate Packing Machine">
-                                <div class="preview-line" style="top: 67%; left: -25%; height: 35%; transform: rotate(260deg)"></div>
-                              </div>
-                              <div class="preview" id="preview11" style="top: 1%; left: 75%;">
-                                <img src="images/4color.png" alt="Tortellini Machine">
-                                <div class="preview-line" style="top: 105%; left: -15%; height: 40%; transform: rotate(240deg)"></div>
-                              </div>
-                              <div class="preview" id="preview12" style="top: -15%; left: 80%;">
-                                <img src="images/3color.png" alt="Gelato Machine">
-                                <div class="preview-line" style="top: 155%; left: -100%; height: 138%; transform: rotate(240deg)"></div>
-                              </div>
-                              <div class="preview" id="preview13" style="top: 1%; left: 34%;">
-                                <img src="images/8color.png" alt="Silk Mill Model">
-                                <div class="preview-line" style="top: 98%; left: 1%; height: 22%; transform: rotate(240deg)"></div>
-                              </div>
-                              <div class="preview" id="preview14" style="top: 3%; left: 34%;">
-                                <img src="images/7color.png" alt="Silk Loom Model">
-                                <div class="preview-line" style="top: 108%; left: -50%; height: 72%; transform: rotate(240deg)"></div>
-                              </div>
-                              <div class="preview" id="preview15" style="top: -17%; left: -20%;">
-                                <img src="images/9color.png" alt="Silk">
-                                <div class="preview-line" style="top: 85%; left: 115%; height: 13%; transform: rotate(135deg)"></div>
-                              </div>                               
-                              <!--hidden previews-->
-                      </div>
-
-                  </div>
-                  <!--2nd alternative-->
-
-                  <!--user type buttons-->
-                    <div class="user-type-btn-container" style="display: none;">
-                      <input type="radio" class="user-type-btn btn-check" name="btnradio" id="user-type-btn1" autocomplete="off" checked>
-                      <label class="btn btn-outline-dark" for="user-type-btn1"><img src="images/ICONchildren.png"></label>
-                    
-                      <input type="radio" class="user-type-btn btn-check" name="btnradio" id="user-type-btn2" autocomplete="off">
-                      <label class="btn btn-outline-dark" for="user-type-btn2"><img src="images/ICONgeneral.png"></label>
-                    
-                      <input type="radio" class="user-type-btn btn-check" name="btnradio" id="user-type-btn3" autocomplete="off">
-                      <label class="btn btn-outline-dark" for="user-type-btn3"><img src="images/ICONexpert.png"></label>
-                    </div>
-                  <!--user type buttons-->                      
+              <div class="preview" id="preview2" style="top: -17%; left: -7%;">
+                <img src="images/2color.png" alt="Melted Brick">
+                <div class="preview-line" style="top: 79%; left: 94%; height: 40%; transform: rotate(309deg)"></div>
               </div>
-              <!--2nd column-->
-
-              <!--3rd column-->
-              <div class="map-btn-container">
-                <div class="btn-map" id="btn-map-1">
-                </div>
-                <div class="btn-map" id="btn-map-2">
-                </div>
+              <div class="preview" id="preview3" style="top: 50%; left: 30%;">
+                <img src="images/14color.png" alt="Aldini Steam Engine">
+                <div class="preview-line" style="top: 28%; left: 8%; height: 60%; transform: rotate(120deg)"></div>
               </div>
-              <!--3rd column-->
+              <div class="preview" id="preview4" style="top: -17%; left: -10%;">
+                <img src="" alt="Hoffmann Kiln">
+                <div class="preview-line" style="top: 0%; left: 70%; height: 300px; transform: rotate(180deg)"></div>
+              </div>
+              <div class="preview" id="preview5" style="top: -17%; left: -10%;">
+                <img src="images/12color.png" alt="Power Hammer">
+                <div class="preview-line" style="top: 55%; left: 100%; height: 141%; transform: rotate(295deg)"></div>
+              </div>
+              <div class="preview" id="preview6" style="top: -19%; left: 80%;">
+                <img src="images/13color.png" alt="Shaping Machine">
+                <div class="preview-line" style="top: 105%; left: -30%; height: 45%; transform: rotate(230deg)"></div>
+              </div>
+              <div class="preview" id="preview7" style="top: -19%; left: 80%;">
+                <img src="images/10color.png" alt="Hydraulic Pump">
+                <div class="preview-line" style="top: 105%; left: 20%; height: 9%; transform: rotate(195deg)"></div>
+              </div>
+              <div class="preview" id="preview8" style="top: 50%; left: 25%;">
+                <img src="images/11color.png" alt="Steam Hammer and Vacuum Pump">
+                <div class="preview-line" id="line1"
+                  style="top: 50%; left: 100%; height: 112%; transform: rotate(260deg)"></div>
+              </div>
+              <div class="preview" id="preview9" style="top: 50%; left: 17%;">
+                <img src="images/6color.png" alt="Cube Brodo Packing Machine">
+                <div class="preview-line" style="top:57%; left: 100%; height: 65%; transform: rotate(296deg)"></div>
+              </div>
+            </div>
+            <!--hidden previews-->
           </div>
-          <!--Section 2: Map and Descriptions(Desktop)-->
-
-          <!--Footer(Desktop)-->
-          <footer class="footer">
-              <div class="container footer-content">
-                  <!--row--> 
-                  <div class="row">
-                    <!--1st column-->
-                    <div class="title-container col-md-3 ">
-                      <h1 id="home-title">ABOUT THE<br>GROUP</h1>
-                      <img id="museum-logo" src="images/logoconscritta.png">
-                    </div>
-                    <!--1st column-->
-              
-                    <!--2nd column-->
-                    <div class="contacts col-md-3 ">
-                      <h4>CONTACTS</h4>
-                      <p>
-                        Anna Nicoletti<br>
-                        Ekaterina Krasnova<br>
-                        Nadia Calvisi<br>
-                        Rubens Fernandes Junior<br>
-                      </p>
-                    </div>
-                    <!--2nd column-->
-                    
-                    <!--3rd column-->
-                    <div class="affiliations col-md-4">
-                      <h4>AFFILIATIONS</h4>
-                      <p>
-                        Digital Humanities and Digital Knowledge - <br>
-                        DHDK Second Cycle Degree<br>
-                        <br>
-                        University of Bologna
-                      </p>
-                    <!--social icons-->
-                    <div class="social-icons-container">
-                      <a href=https://github.com/bolognaindustries/industrialheritage/blob/main/items/items.html""><img class="social-icons" src="images/logoface.png" alt="Facebook Logo"></a>
-                      <a href=""><img class="social-icons" src="images/logoinsta.png" alt="Instagram Logo"></a>
-                      <a href=""><img class="social-icons" src="images/logounibo.png" alt="University of Bologna Logo"></a>
-                    </div>
-                    <!--social icons-->
-                    </div>
-                    <!--3rd column-->
-                  </div>
-                  <!--row--> 
-              </div>
-          </footer>
-          <!--Footer(Desktop)-->
 
         </div>
-        <!--DESKTOP-->
+        <!--map 1st alternative-->
 
-        <!--MOBILE-->
-        <div id="mobile" style="display: none;">
+        <!--2nd alternative-->
+        <div class="maps" id="map-container2" style="display: none;">
 
-          <!--Section 2: Map and Descriptions(Mobile)--> 
-          <div class="section2" id="target-section">
-
-            <!--Top Container-->
-            <div class="right-container">
-
-                <!--Map 1st alternative-->
-                <div class="maps" id="map-container1-m" style="display: block;">
-                    
-                    <div class="title"><h3>GROUND FLOOR</h3>
-                    </div>
-
-                    <div class="map-container">
-                        <img src="images/groundfloormapgray - vertical.png" alt="Museum Map" class="map">
-                            <!--numbers on the map-->
-                            <div class="numbers">
-                                <div class="number-m" id="number1-m" data-preview="preview1" data-item="item1" data-text="text1-m" style="top: 50%; left: 71%;">1</div>
-                                <div class="number-m" id="number2-m" data-preview="preview2" data-item="item2" data-text="text2-m" style="top: 38%; left: 55%;">2</div>
-                                <div class="number-m" id="number3-m" data-preview="preview3" data-item="item3" data-text="text3-m" style="top: 18%; left: 50%;">3</div>
-                                <div class="number-m" id="number4-m" data-preview="preview4" data-item="item4" data-text="text4-m" style="top: 60%; left: 45%;">4</div>
-                                <div class="number-m" id="number5-m" data-preview="preview5" data-item="item5" data-text="text5-m" style="top: 50%; left: 58%;">5</div>
-                                <div class="number-m" id="number6-m" data-preview="preview6" data-item="item6" data-text="text6-m" style="top: 70%; left: 57%;">6</div>
-                                <div class="number-m" id="number7-m" data-preview="preview7" data-item="item7" data-text="text7-m" style="top: 84%; left: 55%;">7</div>
-                                <div class="number-m" id="number8-m" data-preview="preview8" data-item="item8" data-text="text8-m" style="top: 85%; left: 40%;">8</div>
-                                <div class="number-m" id="number9-m" data-preview="preview9" data-item="item9" data-text="text9-m" style="top: 60%; left: 20%;">9</div>
-                            </div>
-                            <!--numbers on the map-->
-                    </div>              
-                </div>
-                <!--Map 1st alternative-->
-
-                <!--Map 2nd alternative-->
-                <div class="maps" id="map-container2-m" style="display: none;">
-                    
-                    <div class="title">
-                        <h3>FIRST FLOOR</h3>
-                    </div>
-
-                    <div class="map-container">
-                        <img src="images/firstfloormapgray - vertical.png" alt="Museum Map" class="map">
-
-                            <!--numbers on the map-->
-                            <div class="numbers">
-                                <div class="number-m" id="number10" data-preview="preview10" data-item="item10" data-text="text10-m" style="top: 55%; left: 25%;">10</div>
-                                <div class="number-m" id="number11" data-preview="preview11" data-item="item11" data-text="text11-m" style="top: 55%; left: 43%;">11</div>
-                                <div class="number-m" id="number12" data-preview="preview12" data-item="item12" data-text="text12-m" style="top: 40%; left: 40%;">12</div>
-                                <div class="number-m" id="number13" data-preview="preview13" data-item="item13" data-text="text13-m" style="top: 23%; left: 48%;">13</div>
-                                <div class="number-m" id="number14" data-preview="preview14" data-item="item14" data-text="text14-m" style="top: 6%; left: 45%;">14</div>
-                                <div class="number-m" id="number15" data-preview="preview15" data-item="item15" data-text="text15-m" style="top: 10%; left: 63%;">15</div>
-                            </div>
-                            <!--numbers on the map-->
-                    </div>
-                </div>
-                <!--Map 2nd alternative-->
-
-                <!--Map buttons-->
-                <div class="map-btn-container">
-                  <div class="btn-map" id="btn-map-1-m">
-                    <i class="fa-solid fa-chevron-left d-md-none d-sm-block"></i>
-                  </div>
-                  <div class="btn-map" id="btn-map-2-m">
-                    <i class="fa-solid fa-chevron-right d-md-none d-sm-block"></i>
-                  </div>
-                </div>
-                <!--Map buttons-->
-                 </div>
-            <!--Top Container-->
-
-            <!--Bottom Container-->
-
-              <!--Tab to Open the Hidden Container-->
-              <div class="tab">
-                <div class="tab-icon-container">
-                  <i class="fa-solid fa-chevron-up" style="color: white;"></i>
-                </div>
-              </div> 
-              <!--Tab to Open the Hidden Container-->
-
-              <!--Hidden Container-->
-              <div class="left-container-m" style="display: none;">
-                <div class="pop-up-icon-container">
-                  <i class="fa-solid fa-chevron-down" style="color: white;"></i>
-                </div>
-                  <!--1st alternative(floor description)-->
-                    <!--Ground Floor-->
-                    <div class="floor-description-m" id="description1-m">
-                        <h3 class="title">GROUND FLOOR: MEDIEVAL INDUSTRY</h3>
-                        <p id="ground-floor-description-m">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis egestas justo, eget pellentesque nibh. 
-                        <br>
-                        <br> 
-                        Nunc urna odio, convallis varius elit quis, volutpat eleifend lorem. 
-                        Mauris vestibulum velit non lectus fringilla venenatis. Fusce id risus vitae lectus auctor sollicitudin ut vitae magna. 
-                        <br>
-                        <br>      
-                        Cras tincidunt congue ligula, pharetra rutrum metus ornare quis. Nunc finibus arcu vitae placerat ultrices. Maecenas vel odio condimentum, facilisis ante nec, dictum justo. 
-                        </p>
-                    </div>
-                    <!--Ground Floor-->
-
-                    <!--First Floor-->
-                    <div class="floor-description-m" id="description2-m" style="display: none;">
-                      <h3 class="title">FIRST FLOOR: MEDIEVAL INDUSTRY</h3>
-                      <p id="first-floor-description-m">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis egestas justo, eget pellentesque nibh. 
-                      <br>
-                      <br> 
-                      Nunc urna odio, convallis varius elit quis, volutpat eleifend lorem. 
-                      Mauris vestibulum velit non lectus fringilla venenatis. Fusce id risus vitae lectus auctor sollicitudin ut vitae magna. 
-                      <br>
-                      <br>      
-                      Cras tincidunt congue ligula, pharetra rutrum metus ornare quis. Nunc finibus arcu vitae placerat ultrices. Maecenas vel odio condimentum, facilisis ante nec, dictum justo. 
-                      </p>
-                    </div>
-                    <!--First Floor-->
-                  <!--1st alternative-->
-
-                  <!--2nd alternative(descriptions for each item on click)-->
-                    <div class="item-texts-m" style="display: none;">
-                      
-                      <div class="text-m" id="text1-m">
-                        <div class="content" data-user="kid" style="display: none;">
-                          <h4>1st Item</h4>
-                          <h3>Terracotta Mould</h3>
-                          <img src="images/images11.png" style="left: 45%; top: 16%">
-                          <p></p>
-                        </div>
-                        <div class="content" data-user="general">
-                          <h4>1st Item</h4>
-                          <h3>Terracotta Mould</h3>
-                          <img src="images/images11.png" style="left: 45%; top: 16%">
-                          <p></p>
-                        </div>
-                        <div class="content" data-user="expert" style="display: none;">
-                          <h4>1st Item</h4>
-                          <h3>Terracotta Mould</h3>
-                          <img src="images/images11.png" style="left: 45%; top: 16%">
-                          <p></p>
-                        </div>
-                      </div>
-
-                      <div class="text-m" id="text2-m">
-                        <div class="content" data-user="kid" style="display: none;">
-                          <h4>2nd Item</h4>
-                          <h3>Melted Brick</h3>
-                          <img src="images/images12.png" style="left: 50%; top: 16%; width: 360px;">
-                          <p></p>
-                        </div>
-                        <div class="content" data-user="general">
-                          <h4>2nd Item</h4>
-                          <h3>Melted Brick</h3>
-                          <img src="images/images12.png" style="left: 50%; top: 16%; width: 360px;">
-                          <p></p>
-                        </div>
-                        <div class="content" data-user="expert" style="display: none;">
-                          <h4>2nd Item</h4>
-                          <h3>Melted Brick</h3>
-                          <img src="images/images12.png" style="left: 50%; top: 16%; width: 360px;">
-                          <p></p>
-                        </div>
-                      </div>
-
-                      <div class="text-m" id="text3-m">
-                        <div class="content" data-user="kid" style="display: none;">
-                          <h4>3rd Item</h4>
-                          <h3>Aldini Steam Machine</h3>
-                          <img src="">
-                          <p></p>
-                        </div>
-                        <div class="content" data-user="general">
-                          <h4>3rd Item</h4>
-                          <h3>Aldini Steam Machine</h3>
-                          <img src="">
-                          <p></p>
-                        </div>
-                        <div class="content" data-user="expert" style="display: none;">
-                          <h4>3rd Item</h4>
-                          <h3>Aldini Steam Machine</h3>
-                          <img src="">
-                          <p></p>
-                        </div>
-                      </div>
-
-                      <div class="text-m" id="text4-m">
-                        <div class="content" data-user="kid" style="display: none;">
-                          <h4>4th Item</h4>
-                          <h3>Hoffmann Kiln</h3>
-                          <img src="">
-                          <p></p>
-                        </div>
-                        <div class="content" data-user="general">
-                          <h4>4th Item</h4>
-                          <h3>Hoffmann Kiln</h3>
-                          <img src="">
-                          <p></p>
-                        </div>
-                        <div class="content" data-user="expert" style="display: none;">
-                          <h4>4th Item</h4>
-                          <h3>Hoffmann Kiln</h3>
-                          <img src="">
-                          <p></p>
-                        </div>
-                      </div>
-
-                      <div class="text-m" id="text5-m">
-                        <div class="content" data-user="kid" style="display: none;">
-                          <h4>5th Item</h4>
-                          <h3>Power Hammer</h3>
-                          <img src="images/images6.png" style="left: 10%; top: 16%; height: 280px; width: auto; transform: scaleX(-1);">
-                          <p></p>
-                        </div>
-                        <div class="content" data-user="general">
-                          <h4>5th Item</h4>
-                          <h3>Power Hammer</h3>
-                          <img src="images/images6.png" style="left: 10%; top: 16%; height: 280px; width: auto; transform: scaleX(-1);">
-                          <p></p>
-                        </div>
-                        <div class="content" data-user="expert" style="display: none;">
-                          <h4>5th Item</h4>
-                          <h3>Power Hammer</h3>
-                          <img src="images/images6.png" style="left: 10%; top: 16%; height: 280px; width: auto; transform: scaleX(-1);">
-                          <p></p>
-                        </div>
-                      </div>
-
-                      <div class="text-m" id="text6-m">
-                        <div class="content" data-user="kid" style="display: none;">
-                          <h4>6th Item</h4>
-                          <h3>Shaping Machine</h3>
-                          <img src="images/images8.png" style="left: 50%; top: 1%; width: 300px;">
-                          <p></p>
-                        </div>
-                        <div class="content" data-user="general">
-                          <h4>6th Item</h4>
-                          <h3>Shaping Machine</h3>
-                          <img src="images/images8.png" style="left: 50%; top: 1%; width: 300px;">
-                          <p></p>
-                        </div>
-                        <div class="content" data-user="expert" style="display: none;">
-                          <h4>6th Item</h4>
-                          <h3>Shaping Machine</h3>
-                          <img src="images/images8.png" style="left: 50%; top: 1%; width: 300px;">
-                          <p></p>
-                        </div>
-                      </div>
-
-                      <div class="text-m" id="text7-m">
-                        <div class="content" data-user="kid" style="display: none;">
-                          <h4>7th Item</h4>
-                          <h3>Hydraulic Pump</h3>
-                          <img src="images/images5.png" style="width: 200px; left: 40%; top: 10%;">
-                          <p></p>
-                        </div>
-                        <div class="content" data-user="general">
-                          <h4>7th Item</h4>
-                          <h3>Hydraulic Pump</h3>
-                          <img src="images/images5.png" style="width: 200px; left: 40%; top: 12%;">
-                          <p></p>
-                        </div>
-                        <div class="content" data-user="expert" style="display: none;">
-                          <h4>7th Item</h4>
-                          <h3>Hydraulic Pump</h3>
-                          <img src="images/images5.png" style="width: 200px; left: 40%; top: 10%;">
-                          <p></p>
-                        </div>
-                      </div>
-
-                      <div class="text-m" id="text8-m">
-                        <div class="content" data-user="kid" style="display: none;">
-                          <h4>8th Item</h4>
-                          <h3>Steam Hammer and Vacuum Pump</h3>
-                          <img src="images/images9.png" style="width: 290px; left: 50%; top: 7%;">
-                          <p></p>
-                        </div>
-                        <div class="content" data-user="general">
-                          <h4>8th Item</h4>
-                          <h3>Steam Hammer and Vacuum Pump</h3>
-                          <img src="images/images9.png" style="width: 290px; left: 50%; top: 7%;">
-                          <p></p>
-                        </div>
-                        <div class="content" data-user="expert" style="display: none;">
-                          <h4>8th Item</h4>
-                          <h3>Steam Hammer and Vacuum Pump</h3>
-                          <img src="images/images9.png" style="width: 290px; left: 50%; top: 7%;">
-                          <p></p>
-                        </div>
-                      </div>
-
-                      <div class="text-m" id="text9-m">
-                        <div class="content" data-user="kid" style="display: none;">
-                          <h4>9th Item</h4>
-                          <h3>Cube Brodo Packing Machine</h3>
-                          <img src="images/images10.png" style="transform: scaleX(-1);">
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. .</p>
-                        </div>
-                        <div class="content" data-user="general">
-                          <h4>9th Item</h4>
-                          <h3>Cube Brodo Packing Machine</h3>
-                          <img src="images/images10.png" style="transform: scaleX(-1);">
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. .</p>
-                        </div>
-                        <div class="content" data-user="expert" style="display: none;">
-                          <h4>9th Item</h4>
-                          <h3>Cube Brodo Packing Machine</h3>
-                          <img src="images/images10.png" style="transform: scaleX(-1);">
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. .</p>
-                        </div>
-                      </div>
-
-                      <div class="text-m" id="text10-m">
-                        <div class="content" data-user="kid" style="display: none;">
-                          <h4>10th Item</h4>
-                          <h3>Chocolate Packing Machine</h3>
-                          <img src="images/images7.png" style="width: 340px; left: 50%; top: 15%;">
-                          <p></p>
-                        </div>
-                        <div class="content" data-user="general">
-                          <h4>10th Item</h4>
-                          <h3>Chocolate Packing Machine</h3>
-                          <img src="images/images7.png" style="width: 340px; left: 50%; top: 15%;">
-                          <p></p>
-                        </div>
-                        <div class="content" data-user="expert" style="display: none;">
-                          <h4>10th Item</h4>
-                          <h3>Chocolate Packing Machine</h3>
-                          <img src="images/images7.png" style="width: 340px; left: 50%; top: 15%;">
-                          <p></p>
-                        </div>
-                      </div>
-
-                      <div class="text-m" id="text11-m">
-                        <div class="content" data-user="kid" style="display: none;">
-                          <h4>11th Item</h4>
-                          <h3>Tortellini Machine</h3>
-                          <img src="images/images (2).png" style="width: 240px; left: 55%; top: 15%;">
-                          <p></p>
-                        </div>
-                        <div class="content" data-user="general">
-                          <h4>11th Item</h4>
-                          <h3>Tortellini Machine</h3>
-                          <img src="images/images (2).png" style="width: 240px; left: 55%; top: 15%;">
-                          <p></p>
-                        </div>
-                        <div class="content" data-user="expert" style="display: none;">
-                          <h4>11th Item</h4>
-                          <h3>Tortellini Machine</h3>
-                          <img src="images/images (2).png" style="width: 240px; left: 55%; top: 15%;">
-                          <p></p>
-                        </div>
-                      </div>
-
-                      <div class="text-m" id="text12-m">
-                        <div class="content" data-user="kid" style="display: none;">
-                          <h4>12th Item</h4>
-                          <h3>Gelato Machine</h3>
-                          <img src="images/images4 (1).png" style="height: 340px; width: auto; left: 30%; top: 20%;">
-                          <p></p>
-                        </div>
-                        <div class="content" data-user="general">
-                          <h4>12th Item</h4>
-                          <h3>Gelato Machine</h3>
-                          <img src="images/images4 (1).png" style="height: 340px; width: auto; left: 30%; top: 20%;">
-                          <p></p>
-                        </div>
-                        <div class="content" data-user="expert" style="display: none;">
-                          <h4>12th Item</h4>
-                          <h3>Gelato Machine</h3>
-                          <img src="images/images4 (1).png" style="height: 340px; width: auto; left: 30%; top: 20%;">
-                          <p></p>
-                        </div>
-                      </div>
-
-                      <div class="text-m" id="text13-m">
-                        <div class="content" data-user="kid" style="display: none;">
-                          <h4>13th Item</h4>
-                          <h3>Silk Mill Model</h3>
-                          <img src="images/images13.png" style="height: 340px; width: auto; left: 40%; top: 15%;">
-                          <p></p>
-                        </div>
-                        <div class="content" data-user="general">
-                          <h4>13th Item</h4>
-                          <h3>Silk Mill Model</h3>
-                          <img src="images/images13.png" style="height: 340px; width: auto; left: 40%; top: 15%;">
-                          <p></p>
-                        </div>
-                        <div class="content" data-user="expert" style="display: none;">
-                          <h4>13th Item</h4>
-                          <h3>Silk Mill Model</h3>
-                          <img src="images/images13.png" style="height: 340px; width: auto; left: 40%; top: 15%;">
-                          <p></p>
-                        </div>
-                      </div>
-
-                      <div class="text-m" id="text14-m">
-                        <div class="content" data-user="kid" style="display: none;">
-                          <h4>14th Item</h4>
-                          <h3>Silk Loom Model</h3>
-                          <img src="images/images2.png" style="height: 450px; width: auto; left: 47%; top: 1%;">
-                          <p></p>
-                        </div>
-                        <div class="content" data-user="general">
-                          <h4>14th Item</h4>
-                          <h3>Silk Loom Model</h3>
-                          <img src="images/images2.png" style="height: 450px; width: auto; left: 47%; top: 1%;">
-                          <p></p>
-                        </div>
-                        <div class="content" data-user="expert" style="display: none;">
-                          <h4>14th Item</h4>
-                          <h3>Silk Loom Model</h3>
-                          <img src="images/images2.png" style="height: 450px; width: auto; left: 47%; top: 1%;">
-                          <p></p>
-                        </div>
-                      </div>
-
-                      <div class="text-m" id="text15-m">
-                        <div class="content" data-user="kid" style="display: none;">
-                          <h4>15th Item</h4>
-                          <h3>Silk</h3>
-                          <img src="">
-                          <p></p>
-                        </div>
-                        <div class="content" data-user="general">
-                          <h4>15th Item</h4>
-                          <h3>Silk</h3>
-                          <img src="">
-                          <p></p>
-                        </div>
-                        <div class="content" data-user="expert" style="display: none;">
-                          <h4>15th Item</h4>
-                          <h3>Silk</h3>
-                          <img src="">
-                          <p></p>
-                        </div>
-                      </div>
-
-                    </div>
-                  <!--3rd alternative-->
-
-                  <!--User type buttons-->
-                  <div class="user-btn-container-m">
-                    <div class="user-btn-toggle-m"></div>
-                      <div class="user-btn-m" id="user-btn1-m" data-user="kid" style="display: none;"></div>
-                      <div class="user-btn-m" id="user-btn2-m" data-user="general" style="display: none;"></div>
-                      <div class="user-btn-m" id="user-btn3-m" data-user="expert" style="display: none;"></div>
-                  </div>
-                  <!--User type buttons-->
-              </div>
-              <!--Hidden Container-->
-
-            <!--Bottom Container-->
-
+          <div class="title">
+            <h3>FIRST FLOOR</h3>
           </div>
-          <!--Section 2: Map and Description(Mobile)-->
 
-          <!--Footer(Mobile)-->
-          <footer class="footer">
-              <div class="container footer-content">
-                  <!--Top-->
-                  <div class="title-container">
-                      <h1 id="home-title-m">ABOUT THE<br>GROUP</h1>
-                      <img id="museum-logo-m" src="images/logoconscritta.png">
-                  </div>
-                  <!--Top-->
-          
-                  <!--Middle-->
-                  <div class="contacts">
-                      <h4>CONTACTS</h4>
-                      <p>
-                          Anna Nicoletti<br>
-                          Ekaterina Krasnova<br>
-                          Nadia Calvisi<br>
-                          Rubens Fernandes Junior<br>
-                      </p>
-                  </div>
+          <div class="map-container">
+            <img src="images/firstfloormapgray.png" alt="Museum Map" class="map">
 
-                  <div class="affiliations">
-                      <h4>AFFILIATIONS</h4>
-                      <p>
-                          Digital Humanities and Digital Knowledge - <br>
-                          DHDK Second Cycle Degree<br>
-                          <br>
-                          University of Bologna
-                      </p>
-                  </div>
-                  <!--Middle-->
+            <!--numbers on the map-->
+            <div class="numbers">
+              <div class="number" id="number10" data-preview="preview10" data-item="item10" data-text="text10"
+                style="top: 83%; left: 50%;">10</div>
+              <div class="number" id="number11" data-preview="preview11" data-item="item11" data-text="text11"
+                style="top: 50%; left: 50%;">11</div>
+              <div class="number" id="number12" data-preview="preview12" data-item="item12" data-text="text12"
+                style="top: 63%; left: 37%;">12</div>
+              <div class="number" id="number13" data-preview="preview13" data-item="item13" data-text="text13"
+                style="top: 44%; left: 20%;">13</div>
+              <div class="number" id="number14" data-preview="preview14" data-item="item14" data-text="text14"
+                style="top: 56%; left: 3%;">14</div>
+              <div class="number" id="number15" data-preview="preview15" data-item="item15" data-text="text15"
+                style="top: 28%; left: 5%;">15</div>
+            </div>
+            <!--numbers on the map-->
 
-                  <!--Bottom-->
-                  <div class="social-icons-container">
-                      <a href=https://github.com/bolognaindustries/industrialheritage/blob/main/items/items.html""><img class="social-icons" src="images/logoface.png" alt="Facebook Logo"></a>
-                      <a href=""><img class="social-icons" src="images/logoinsta.png" alt="Instagram Logo"></a>
-                      <a href=""><img class="social-icons" src="images/logounibo.png" alt="University of Bologna Logo"></a>
-                  </div>
-                  <!--Bottom-->
+            <!--hidden previews-->
+            <div class="previews">
+              <div class="preview" id="preview10" style="top: 50%; left: 65%;">
+                <img src="images/6color.png" alt="Chocolate Packing Machine">
+                <div class="preview-line" style="top: 69%; left: -35%; height: 35%; transform: rotate(260deg)"></div>
               </div>
-          </footer>
-          <!--Footer(Mobile)-->
+              <div class="preview" id="preview11" style="top: 1%; left: 65%;">
+                <img src="images/4color.png" alt="Tortellini Machine">
+                <div class="preview-line" style="top: 100%; left: -40%; height: 50%; transform: rotate(240deg)"></div>
+              </div>
+              <div class="preview" id="preview12" style="top: 5%; left: 70%;">
+                <img src="images/3color.png" alt="Gelato Machine">
+                <div class="preview-line" style="top: 120%; left: -100%; height: 117%; transform: rotate(255deg)"></div>
+              </div>
+              <div class="preview" id="preview13" style="top: 1%; left: 25%;">
+                <img src="images/8color.png" alt="Silk Mill Model">
+                <div class="preview-line" style="top: 88%; left: -2%; height: 12%; transform: rotate(240deg)"></div>
+              </div>
+              <div class="preview" id="preview14" style="top: 1%; left: 25%;">
+                <img src="images/7color.png" alt="Silk Loom Model">
+                <div class="preview-line" style="top: 112%; left: -60%; height: 75%; transform: rotate(236deg)"></div>
+              </div>
+              <div class="preview" id="preview15" style="top: 1%; left: 25%;">
+                <img src="images/9color.png" alt="Silk">
+                <div class="preview-line" style="top: 60%; left: 0%; height: 52%; transform: rotate(91deg)"></div>
+              </div>
+            </div>
+            <!--hidden previews-->
+          </div>
 
         </div>
-        <!--MOBILE-->
+        <!--2nd alternative-->
 
-        <!--javascript-->
-        <script src="the-museum-main.js" defer></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-        <!--javascript-->
-    </body>
+        <!--user type buttons-->
+        <div class="user-type-btn-container" style="display: none;">
+          <input type="radio" class="user-type-btn btn-check" name="btnradio" id="user-type-btn1" autocomplete="off"
+            checked>
+          <label class="btn btn-outline-dark" for="user-type-btn1"><img src="images/ICONchildren.png"></label>
+
+          <input type="radio" class="user-type-btn btn-check" name="btnradio" id="user-type-btn2" autocomplete="off">
+          <label class="btn btn-outline-dark" for="user-type-btn2"><img src="images/ICONgeneral.png"></label>
+
+          <input type="radio" class="user-type-btn btn-check" name="btnradio" id="user-type-btn3" autocomplete="off">
+          <label class="btn btn-outline-dark" for="user-type-btn3"><img src="images/ICONexpert.png"></label>
+        </div>
+        <!--user type buttons-->
+      </div>
+      <!--2nd column-->
+
+      <!--3rd column-->
+      <div class="map-btn-container">
+        <div class="btn-map" id="btn-map-1">
+        </div>
+        <div class="btn-map" id="btn-map-2">
+        </div>
+      </div>
+      <!--3rd column-->
+    </div>
+    <!--Section 2: Map and Descriptions(Desktop)-->
+
+    <!--Footer(Desktop)-->
+    <footer class="footer">
+      <!--1st column-->
+      <div class="title-container">
+        <h1 id="home-title">ABOUT THE<br>GROUP</h1>
+        <img id="museum-logo" src="images/logoconscritta.png">
+      </div>
+      <!--1st column-->
+
+      <!--2nd column-->
+      <div class="contacts">
+        <h4>CONTACTS</h4>
+        <p>
+          Anna Nicoletti<br>
+          Ekaterina Krasnova<br>
+          Nadia Calvisi<br>
+          Rubens Fernandes Junior<br>
+        </p>
+      </div>
+      <!--2nd column-->
+
+      <!--3rd column-->
+      <div class="affiliations">
+        <h4>AFFILIATIONS</h4>
+        <p>
+          Digital Humanities and Digital Knowledge - <br>
+          DHDK Second Cycle Degree<br>
+          <br>
+          University of Bologna
+        </p>
+        <!--social icons-->
+        <div class="social-icons-container">
+          <a href=https://github.com/bolognaindustries/industrialheritage/blob/main/items/items.html""><img
+              class="social-icons" src="images/logoface.png" alt="Facebook Logo"></a>
+          <a href=""><img class="social-icons" src="images/logoinsta.png" alt="Instagram Logo"></a>
+          <a href=""><img class="social-icons" src="images/logounibo.png" alt="University of Bologna Logo"></a>
+        </div>
+        <!--social icons-->
+      </div>
+      <!--3rd column-->
+    </footer>
+    <!--Footer(Desktop)-->
+
+  </div>
+  <!--DESKTOP-->
+
+  <!--MOBILE-->
+  <div id="mobile" style="display: none;">
+
+    <!--Section 2: Map and Descriptions(Mobile)-->
+    <div class="section2" id="target-section">
+
+      <!--Top Container-->
+      <div class="right-container">
+
+        <!--Map 1st alternative-->
+        <div class="maps" id="map-container1-m" style="display: block;">
+
+          <div class="title">
+            <h3>GROUND FLOOR</h3>
+          </div>
+
+          <div class="map-container">
+            <img src="images/groundfloormapgray - vertical.png" alt="Museum Map" class="map">
+            <!--numbers on the map-->
+            <div class="numbers">
+              <div class="number-m" id="number1-m" data-preview="preview1" data-item="item1" data-text="text1-m"
+                style="top: 50%; left: 71%;">1</div>
+              <div class="number-m" id="number2-m" data-preview="preview2" data-item="item2" data-text="text2-m"
+                style="top: 38%; left: 55%;">2</div>
+              <div class="number-m" id="number3-m" data-preview="preview3" data-item="item3" data-text="text3-m"
+                style="top: 18%; left: 50%;">3</div>
+              <div class="number-m" id="number4-m" data-preview="preview4" data-item="item4" data-text="text4-m"
+                style="top: 60%; left: 45%;">4</div>
+              <div class="number-m" id="number5-m" data-preview="preview5" data-item="item5" data-text="text5-m"
+                style="top: 50%; left: 58%;">5</div>
+              <div class="number-m" id="number6-m" data-preview="preview6" data-item="item6" data-text="text6-m"
+                style="top: 70%; left: 57%;">6</div>
+              <div class="number-m" id="number7-m" data-preview="preview7" data-item="item7" data-text="text7-m"
+                style="top: 84%; left: 55%;">7</div>
+              <div class="number-m" id="number8-m" data-preview="preview8" data-item="item8" data-text="text8-m"
+                style="top: 85%; left: 40%;">8</div>
+              <div class="number-m" id="number9-m" data-preview="preview9" data-item="item9" data-text="text9-m"
+                style="top: 60%; left: 20%;">9</div>
+            </div>
+            <!--numbers on the map-->
+          </div>
+        </div>
+        <!--Map 1st alternative-->
+
+        <!--Map 2nd alternative-->
+        <div class="maps" id="map-container2-m" style="display: none;">
+
+          <div class="title">
+            <h3>FIRST FLOOR</h3>
+          </div>
+
+          <div class="map-container">
+            <img src="images/firstfloormapgray - vertical.png" alt="Museum Map" class="map">
+
+            <!--numbers on the map-->
+            <div class="numbers">
+              <div class="number-m" id="number10" data-preview="preview10" data-item="item10" data-text="text10-m"
+                style="top: 55%; left: 25%;">10</div>
+              <div class="number-m" id="number11" data-preview="preview11" data-item="item11" data-text="text11-m"
+                style="top: 55%; left: 43%;">11</div>
+              <div class="number-m" id="number12" data-preview="preview12" data-item="item12" data-text="text12-m"
+                style="top: 40%; left: 40%;">12</div>
+              <div class="number-m" id="number13" data-preview="preview13" data-item="item13" data-text="text13-m"
+                style="top: 23%; left: 48%;">13</div>
+              <div class="number-m" id="number14" data-preview="preview14" data-item="item14" data-text="text14-m"
+                style="top: 6%; left: 45%;">14</div>
+              <div class="number-m" id="number15" data-preview="preview15" data-item="item15" data-text="text15-m"
+                style="top: 10%; left: 63%;">15</div>
+            </div>
+            <!--numbers on the map-->
+          </div>
+        </div>
+        <!--Map 2nd alternative-->
+
+        <!--Map buttons-->
+        <div class="map-btn-container">
+          <div class="btn-map" id="btn-map-1-m">
+            <i class="fa-solid fa-chevron-left d-md-none d-sm-block"></i>
+          </div>
+          <div class="btn-map" id="btn-map-2-m">
+            <i class="fa-solid fa-chevron-right d-md-none d-sm-block"></i>
+          </div>
+        </div>
+        <!--Map buttons-->
+      </div>
+      <!--Top Container-->
+
+      <!--Bottom Container-->
+
+      <!--Tab to Open the Hidden Container-->
+      <div class="tab">
+        <div class="tab-icon-container">
+          <i class="fa-solid fa-chevron-up" style="color: white;"></i>
+        </div>
+      </div>
+      <!--Tab to Open the Hidden Container-->
+
+      <!--Hidden Container-->
+      <div class="left-container-m" style="display: none;">
+        <div class="pop-up-icon-container">
+          <i class="fa-solid fa-chevron-down" style="color: white;"></i>
+        </div>
+        <!--1st alternative(floor description)-->
+        <!--Ground Floor-->
+        <div class="floor-description-m" id="description1-m">
+          <h3 class="title">GROUND FLOOR: MEDIEVAL INDUSTRY</h3>
+          <p id="ground-floor-description-m">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis egestas
+            justo, eget pellentesque nibh.
+            <br>
+            <br>
+            Nunc urna odio, convallis varius elit quis, volutpat eleifend lorem.
+            Mauris vestibulum velit non lectus fringilla venenatis. Fusce id risus vitae lectus auctor sollicitudin ut
+            vitae magna.
+            <br>
+            <br>
+            Cras tincidunt congue ligula, pharetra rutrum metus ornare quis. Nunc finibus arcu vitae placerat ultrices.
+            Maecenas vel odio condimentum, facilisis ante nec, dictum justo.
+          </p>
+        </div>
+        <!--Ground Floor-->
+
+        <!--First Floor-->
+        <div class="floor-description-m" id="description2-m" style="display: none;">
+          <h3 class="title">FIRST FLOOR: MEDIEVAL INDUSTRY</h3>
+          <p id="first-floor-description-m">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis egestas
+            justo, eget pellentesque nibh.
+            <br>
+            <br>
+            Nunc urna odio, convallis varius elit quis, volutpat eleifend lorem.
+            Mauris vestibulum velit non lectus fringilla venenatis. Fusce id risus vitae lectus auctor sollicitudin ut
+            vitae magna.
+            <br>
+            <br>
+            Cras tincidunt congue ligula, pharetra rutrum metus ornare quis. Nunc finibus arcu vitae placerat ultrices.
+            Maecenas vel odio condimentum, facilisis ante nec, dictum justo.
+          </p>
+        </div>
+        <!--First Floor-->
+        <!--1st alternative-->
+
+        <!--2nd alternative(descriptions for each item on click)-->
+        <div class="item-texts-m" style="display: none;">
+
+          <div class="text-m" id="text1-m">
+            <div class="content" data-user="kid" style="display: none;">
+              <h4>1st Item</h4>
+              <h3>Terracotta Mould</h3>
+              <img src="images/images11.png" style="left: 45%; top: 16%">
+              <p></p>
+            </div>
+            <div class="content" data-user="general">
+              <h4>1st Item</h4>
+              <h3>Terracotta Mould</h3>
+              <img src="images/images11.png" style="left: 45%; top: 16%">
+              <p></p>
+            </div>
+            <div class="content" data-user="expert" style="display: none;">
+              <h4>1st Item</h4>
+              <h3>Terracotta Mould</h3>
+              <img src="images/images11.png" style="left: 45%; top: 16%">
+              <p></p>
+            </div>
+          </div>
+
+          <div class="text-m" id="text2-m">
+            <div class="content" data-user="kid" style="display: none;">
+              <h4>2nd Item</h4>
+              <h3>Melted Brick</h3>
+              <img src="images/images12.png" style="left: 50%; top: 16%; width: 360px;">
+              <p></p>
+            </div>
+            <div class="content" data-user="general">
+              <h4>2nd Item</h4>
+              <h3>Melted Brick</h3>
+              <img src="images/images12.png" style="left: 50%; top: 16%; width: 360px;">
+              <p></p>
+            </div>
+            <div class="content" data-user="expert" style="display: none;">
+              <h4>2nd Item</h4>
+              <h3>Melted Brick</h3>
+              <img src="images/images12.png" style="left: 50%; top: 16%; width: 360px;">
+              <p></p>
+            </div>
+          </div>
+
+          <div class="text-m" id="text3-m">
+            <div class="content" data-user="kid" style="display: none;">
+              <h4>3rd Item</h4>
+              <h3>Aldini Steam Machine</h3>
+              <img src="">
+              <p></p>
+            </div>
+            <div class="content" data-user="general">
+              <h4>3rd Item</h4>
+              <h3>Aldini Steam Machine</h3>
+              <img src="">
+              <p></p>
+            </div>
+            <div class="content" data-user="expert" style="display: none;">
+              <h4>3rd Item</h4>
+              <h3>Aldini Steam Machine</h3>
+              <img src="">
+              <p></p>
+            </div>
+          </div>
+
+          <div class="text-m" id="text4-m">
+            <div class="content" data-user="kid" style="display: none;">
+              <h4>4th Item</h4>
+              <h3>Hoffmann Kiln</h3>
+              <img src="">
+              <p></p>
+            </div>
+            <div class="content" data-user="general">
+              <h4>4th Item</h4>
+              <h3>Hoffmann Kiln</h3>
+              <img src="">
+              <p></p>
+            </div>
+            <div class="content" data-user="expert" style="display: none;">
+              <h4>4th Item</h4>
+              <h3>Hoffmann Kiln</h3>
+              <img src="">
+              <p></p>
+            </div>
+          </div>
+
+          <div class="text-m" id="text5-m">
+            <div class="content" data-user="kid" style="display: none;">
+              <h4>5th Item</h4>
+              <h3>Power Hammer</h3>
+              <img src="images/images6.png"
+                style="left: 10%; top: 16%; height: 280px; width: auto; transform: scaleX(-1);">
+              <p></p>
+            </div>
+            <div class="content" data-user="general">
+              <h4>5th Item</h4>
+              <h3>Power Hammer</h3>
+              <img src="images/images6.png"
+                style="left: 10%; top: 16%; height: 280px; width: auto; transform: scaleX(-1);">
+              <p></p>
+            </div>
+            <div class="content" data-user="expert" style="display: none;">
+              <h4>5th Item</h4>
+              <h3>Power Hammer</h3>
+              <img src="images/images6.png"
+                style="left: 10%; top: 16%; height: 280px; width: auto; transform: scaleX(-1);">
+              <p></p>
+            </div>
+          </div>
+
+          <div class="text-m" id="text6-m">
+            <div class="content" data-user="kid" style="display: none;">
+              <h4>6th Item</h4>
+              <h3>Shaping Machine</h3>
+              <img src="images/images8.png" style="left: 50%; top: 1%; width: 300px;">
+              <p></p>
+            </div>
+            <div class="content" data-user="general">
+              <h4>6th Item</h4>
+              <h3>Shaping Machine</h3>
+              <img src="images/images8.png" style="left: 50%; top: 1%; width: 300px;">
+              <p></p>
+            </div>
+            <div class="content" data-user="expert" style="display: none;">
+              <h4>6th Item</h4>
+              <h3>Shaping Machine</h3>
+              <img src="images/images8.png" style="left: 50%; top: 1%; width: 300px;">
+              <p></p>
+            </div>
+          </div>
+
+          <div class="text-m" id="text7-m">
+            <div class="content" data-user="kid" style="display: none;">
+              <h4>7th Item</h4>
+              <h3>Hydraulic Pump</h3>
+              <img src="images/images5.png" style="width: 200px; left: 40%; top: 10%;">
+              <p></p>
+            </div>
+            <div class="content" data-user="general">
+              <h4>7th Item</h4>
+              <h3>Hydraulic Pump</h3>
+              <img src="images/images5.png" style="width: 200px; left: 40%; top: 12%;">
+              <p></p>
+            </div>
+            <div class="content" data-user="expert" style="display: none;">
+              <h4>7th Item</h4>
+              <h3>Hydraulic Pump</h3>
+              <img src="images/images5.png" style="width: 200px; left: 40%; top: 10%;">
+              <p></p>
+            </div>
+          </div>
+
+          <div class="text-m" id="text8-m">
+            <div class="content" data-user="kid" style="display: none;">
+              <h4>8th Item</h4>
+              <h3>Steam Hammer and Vacuum Pump</h3>
+              <img src="images/images9.png" style="width: 290px; left: 50%; top: 7%;">
+              <p></p>
+            </div>
+            <div class="content" data-user="general">
+              <h4>8th Item</h4>
+              <h3>Steam Hammer and Vacuum Pump</h3>
+              <img src="images/images9.png" style="width: 290px; left: 50%; top: 7%;">
+              <p></p>
+            </div>
+            <div class="content" data-user="expert" style="display: none;">
+              <h4>8th Item</h4>
+              <h3>Steam Hammer and Vacuum Pump</h3>
+              <img src="images/images9.png" style="width: 290px; left: 50%; top: 7%;">
+              <p></p>
+            </div>
+          </div>
+
+          <div class="text-m" id="text9-m">
+            <div class="content" data-user="kid" style="display: none;">
+              <h4>9th Item</h4>
+              <h3>Cube Brodo Packing Machine</h3>
+              <img src="images/images10.png" style="transform: scaleX(-1);">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore
+                magna aliqua. .</p>
+            </div>
+            <div class="content" data-user="general">
+              <h4>9th Item</h4>
+              <h3>Cube Brodo Packing Machine</h3>
+              <img src="images/images10.png" style="transform: scaleX(-1);">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore
+                magna aliqua. .</p>
+            </div>
+            <div class="content" data-user="expert" style="display: none;">
+              <h4>9th Item</h4>
+              <h3>Cube Brodo Packing Machine</h3>
+              <img src="images/images10.png" style="transform: scaleX(-1);">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore
+                magna aliqua. .</p>
+            </div>
+          </div>
+
+          <div class="text-m" id="text10-m">
+            <div class="content" data-user="kid" style="display: none;">
+              <h4>10th Item</h4>
+              <h3>Chocolate Packing Machine</h3>
+              <img src="images/images7.png" style="width: 340px; left: 50%; top: 15%;">
+              <p></p>
+            </div>
+            <div class="content" data-user="general">
+              <h4>10th Item</h4>
+              <h3>Chocolate Packing Machine</h3>
+              <img src="images/images7.png" style="width: 340px; left: 50%; top: 15%;">
+              <p></p>
+            </div>
+            <div class="content" data-user="expert" style="display: none;">
+              <h4>10th Item</h4>
+              <h3>Chocolate Packing Machine</h3>
+              <img src="images/images7.png" style="width: 340px; left: 50%; top: 15%;">
+              <p></p>
+            </div>
+          </div>
+
+          <div class="text-m" id="text11-m">
+            <div class="content" data-user="kid" style="display: none;">
+              <h4>11th Item</h4>
+              <h3>Tortellini Machine</h3>
+              <img src="images/images (2).png" style="width: 240px; left: 55%; top: 15%;">
+              <p></p>
+            </div>
+            <div class="content" data-user="general">
+              <h4>11th Item</h4>
+              <h3>Tortellini Machine</h3>
+              <img src="images/images (2).png" style="width: 240px; left: 55%; top: 15%;">
+              <p></p>
+            </div>
+            <div class="content" data-user="expert" style="display: none;">
+              <h4>11th Item</h4>
+              <h3>Tortellini Machine</h3>
+              <img src="images/images (2).png" style="width: 240px; left: 55%; top: 15%;">
+              <p></p>
+            </div>
+          </div>
+
+          <div class="text-m" id="text12-m">
+            <div class="content" data-user="kid" style="display: none;">
+              <h4>12th Item</h4>
+              <h3>Gelato Machine</h3>
+              <img src="images/images4 (1).png" style="height: 340px; width: auto; left: 30%; top: 20%;">
+              <p></p>
+            </div>
+            <div class="content" data-user="general">
+              <h4>12th Item</h4>
+              <h3>Gelato Machine</h3>
+              <img src="images/images4 (1).png" style="height: 340px; width: auto; left: 30%; top: 20%;">
+              <p></p>
+            </div>
+            <div class="content" data-user="expert" style="display: none;">
+              <h4>12th Item</h4>
+              <h3>Gelato Machine</h3>
+              <img src="images/images4 (1).png" style="height: 340px; width: auto; left: 30%; top: 20%;">
+              <p></p>
+            </div>
+          </div>
+
+          <div class="text-m" id="text13-m">
+            <div class="content" data-user="kid" style="display: none;">
+              <h4>13th Item</h4>
+              <h3>Silk Mill Model</h3>
+              <img src="images/images13.png" style="height: 340px; width: auto; left: 40%; top: 15%;">
+              <p></p>
+            </div>
+            <div class="content" data-user="general">
+              <h4>13th Item</h4>
+              <h3>Silk Mill Model</h3>
+              <img src="images/images13.png" style="height: 340px; width: auto; left: 40%; top: 15%;">
+              <p></p>
+            </div>
+            <div class="content" data-user="expert" style="display: none;">
+              <h4>13th Item</h4>
+              <h3>Silk Mill Model</h3>
+              <img src="images/images13.png" style="height: 340px; width: auto; left: 40%; top: 15%;">
+              <p></p>
+            </div>
+          </div>
+
+          <div class="text-m" id="text14-m">
+            <div class="content" data-user="kid" style="display: none;">
+              <h4>14th Item</h4>
+              <h3>Silk Loom Model</h3>
+              <img src="images/images2.png" style="height: 450px; width: auto; left: 47%; top: 1%;">
+              <p></p>
+            </div>
+            <div class="content" data-user="general">
+              <h4>14th Item</h4>
+              <h3>Silk Loom Model</h3>
+              <img src="images/images2.png" style="height: 450px; width: auto; left: 47%; top: 1%;">
+              <p></p>
+            </div>
+            <div class="content" data-user="expert" style="display: none;">
+              <h4>14th Item</h4>
+              <h3>Silk Loom Model</h3>
+              <img src="images/images2.png" style="height: 450px; width: auto; left: 47%; top: 1%;">
+              <p></p>
+            </div>
+          </div>
+
+          <div class="text-m" id="text15-m">
+            <div class="content" data-user="kid" style="display: none;">
+              <h4>15th Item</h4>
+              <h3>Silk</h3>
+              <img src="">
+              <p></p>
+            </div>
+            <div class="content" data-user="general">
+              <h4>15th Item</h4>
+              <h3>Silk</h3>
+              <img src="">
+              <p></p>
+            </div>
+            <div class="content" data-user="expert" style="display: none;">
+              <h4>15th Item</h4>
+              <h3>Silk</h3>
+              <img src="">
+              <p></p>
+            </div>
+          </div>
+
+        </div>
+        <!--3rd alternative-->
+
+        <!--User type buttons-->
+        <div class="user-btn-container-m">
+          <div class="user-btn-toggle-m"></div>
+          <div class="user-btn-m" id="user-btn1-m" data-user="kid" style="display: none;"></div>
+          <div class="user-btn-m" id="user-btn2-m" data-user="general" style="display: none;"></div>
+          <div class="user-btn-m" id="user-btn3-m" data-user="expert" style="display: none;"></div>
+        </div>
+        <!--User type buttons-->
+      </div>
+      <!--Hidden Container-->
+
+      <!--Bottom Container-->
+
+    </div>
+    <!--Section 2: Map and Description(Mobile)-->
+
+    <!--Footer(Mobile)-->
+    <footer class="footer">
+      <div class="container footer-content">
+        <!--Top-->
+        <div class="title-container">
+          <h1 id="home-title-m">ABOUT THE<br>GROUP</h1>
+          <img id="museum-logo-m" src="images/logoconscritta.png">
+        </div>
+        <!--Top-->
+
+        <!--Middle-->
+        <div class="contacts">
+          <h4>CONTACTS</h4>
+          <p>
+            Anna Nicoletti<br>
+            Ekaterina Krasnova<br>
+            Nadia Calvisi<br>
+            Rubens Fernandes Junior<br>
+          </p>
+        </div>
+
+        <div class="affiliations">
+          <h4>AFFILIATIONS</h4>
+          <p>
+            Digital Humanities and Digital Knowledge - <br>
+            DHDK Second Cycle Degree<br>
+            <br>
+            University of Bologna
+          </p>
+        </div>
+        <!--Middle-->
+
+        <!--Bottom-->
+        <div class="social-icons-container">
+          <a href=https://github.com/bolognaindustries/industrialheritage/blob/main/items/items.html""><img
+              class="social-icons" src="images/logoface.png" alt="Facebook Logo"></a>
+          <a href=""><img class="social-icons" src="images/logoinsta.png" alt="Instagram Logo"></a>
+          <a href=""><img class="social-icons" src="images/logounibo.png" alt="University of Bologna Logo"></a>
+        </div>
+        <!--Bottom-->
+      </div>
+    </footer>
+    <!--Footer(Mobile)-->
+
+  </div>
+  <!--MOBILE-->
+
+  <!--javascript-->
+  <script src="the-museum-main.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <!--javascript-->
+</body>
+
 </html>
