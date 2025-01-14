@@ -89,7 +89,7 @@ body {
       left: 50%;
       transform: translateX(-50%);
       font-family: 'Cooper Hewitt', sans-serif; 
-      padding-top: 5%;
+      padding-top: 8%;
     }
 
     .introduction-container h1 {
@@ -155,18 +155,20 @@ body {
           justify-content: center;
           text-align: left;
           margin-left: 10%;
+          margin-right: 10%;
           margin-top: 10%;
-          margin-bottom: 10%;
+          margin-bottom: 5%;
           color: white;
-          font-size: 24px;
-          line-height: 33px;
+          font-size: 26px;
+          line-height: 38px;
         }
 
         .left-container p {
-          font-size: 15px;
+          font-size: 16px;
           color: white;
           margin-right: 10%;
           margin-left: 10%;
+          letter-spacing: 0.7px;
         }
 
         .left-container p span {
@@ -175,11 +177,12 @@ body {
         }
 
         .left-container ol {
-          font-size: 15px;
+          font-size: 16px;
           color: white;
           margin-right: 10%;
-          margin-left: 5%;
+          margin-left: 8%;
           line-height: 35px;
+          letter-spacing: 0.7px;
         }
         
         .left-container .btn a {
@@ -228,7 +231,7 @@ body {
           text-underline-offset: 30%;
           left: 50%;
           transform: translateX(-50%);
-          font-size: 2em;
+          font-size: 33px;
           color: white;
           text-align: center;
           margin-top: 5%;
@@ -404,7 +407,7 @@ body {
         height: auto;
       }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1400px) {
   .section2 {
     height: 70vh;
   }
