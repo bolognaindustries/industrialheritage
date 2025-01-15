@@ -1,954 +1,1142 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>The Museum</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <script src="https://kit.fontawesome.com/b7dc8e0f7f.js" crossorigin="anonymous"></script>
-        <style>@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-        </style>
-    </head>
 
-    <body>
-        <!--Section 1: Introduction-->
-        <div class="section1">
-            <!--navbar-->
-            <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
-                <div class="container-fluid">
-                    <!--title and logo-->
-                    <a class="navbar-brand" href="index.html">
-                      <img src="images/LOGO.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-center"><span>INDUSTRIAL HERITAGE</span>
-                    </a>
-                    <!--title and logo-->
-                    <!--toggle for mobile view-->
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <!--toogle for mobile view-->
-                    <!--links-->
-                    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
-                        <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
-                          <hr class="link-lines">
-                        </li>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Museum</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/b7dc8e0f7f.js" crossorigin="anonymous"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+  </style>
+</head>
 
-                        <li>
-                          <div class="vr d-none d-lg-block text-light opacity-100"></div>
-                        </li>
+<body>
+  <!--Section 1: Introduction-->
+  <div class="section1">
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+      <div class="container-fluid">
+        <!--title and logo-->
+        <a class="navbar-brand" href="index.html">
+          <img src="images/LOGO.png" alt="Logo" width="30" height="24"
+            class="d-inline-block align-text-center"><span>INDUSTRIAL HERITAGE</span>
+        </a>
+        <!--title and logo-->
+        <!--toggle for mobile view-->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--toogle for mobile view-->
+        <!--links-->
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+              <hr class="link-lines">
+            </li>
 
-                        <li class="nav-item">
-                          <a class="nav-link active" href="katya-gallery/gallery.html">THE GALLERY</a>
-                          <hr class="link-lines">
-                        </li>
+            <li>
+              <div class="vr d-none d-lg-block text-light opacity-100"></div>
+            </li>
 
-                        <li>
-                          <div class="vr d-none d-lg-block text-light opacity-100"></div>
-                        </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="katya-gallery/gallery.html">THE GALLERY</a>
+              <hr class="link-lines">
+            </li>
 
-                        <li class="nav-item">
-                          <a class="nav-link active" href="#">THE PROJECT</a>
-                          <hr class="link-lines">
-                        </li>
+            <li>
+              <div class="vr d-none d-lg-block text-light opacity-100"></div>
+            </li>
 
-                        <li>
-                          <div class="vr d-none d-lg-block text-light opacity-100" text-light></div>
-                        </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">THE PROJECT</a>
+              <hr class="link-lines">
+            </li>
 
-                        <li class="nav-item">
-                          <a class="nav-link active" href="the-museum.html">THE MUSEUM</a>
-                          <hr class="link-lines">
-                        </li>
+            <li>
+              <div class="vr d-none d-lg-block text-light opacity-100" text-light></div>
+            </li>
 
-                        <li>
-                          <div class="vr d-none d-lg-block text-light opacity-100"></div>
-                        </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="the-museum.html">THE MUSEUM</a>
+              <hr class="link-lines">
+            </li>
 
-                        <li class="nav-item">
-                          <a class="nav-link active" href="#">ABOUT US</a>
-                          <hr class="link-lines">
-                        </li>
-                      </ul>
-                      <!--links-->
-                  </div>
-            </nav>
-            <!--navbar-->
+            <li>
+              <div class="vr d-none d-lg-block text-light opacity-100"></div>
+            </li>
 
-            <!--button-->
-            <div class="button-container mx-auto col-2 text-center" id="btn-target">
-              <a href="#target-section">
-              TAKE A LOOK AT THE MAPS
+            <li class="nav-item">
+              <a class="nav-link active" href="#">ABOUT US</a>
+              <hr class="link-lines">
+            </li>
+          </ul>
+          <!--links-->
+        </div>
+    </nav>
+    <!--navbar-->
+
+    <!--introduction text-->
+    <div class="introduction-container">
+      <h1>Welcome to the<br>
+        Museo del Patrimonio Industriale</h1>
+      <p class="introduction-text">Navigate through both floors by clicking on the numbers to dive deeper into each
+        section. Enjoy discovering the
+        stories behind the artifacts as you move through the museum!
+      </p>
+    </div>
+    <!--introduction text-->
+
+    <!--button-->
+    <div class="button-container mx-auto col-2 text-center" id="btn-target">
+      <a href="#target-section">
+        TAKE A LOOK AT THE MAPS
+        <br>
+        <i class="fa-solid fa-chevron-down"></i>
+      </a>
+    </div>
+    <!--button-->
+  </div>
+  <!--Section 1: Introduction-->
+
+  <!--DESKTOP-->
+  <div id="desktop" style="display: none;">
+
+    <!--Section 2: Map and Descriptions(Desktop)-->
+    <div class="section2" id="target-section">
+      <!--1st column-->
+      <div class="left-container">
+        <!--1st alternative(floor description)-->
+        <!--Ground Floor-->
+        <div class="floor-description" id="description1">
+          <h3 class="title">GROUND FLOOR: EARLY INDUSTRY & INNOVATION
+          </h3>
+          <p id="ground-floor-description">
+            <span>The ground floor is set within the Hoffmann kiln gallery, featuring models,
+              machines, and scientific instruments from the Aldini Valeriani collections, Bologna's oldest technical
+              school.</span>
+            <span>
+              These exhibits trace key technological milestones of the Industrial Revolution in Bologna and its
+              industrial development from the 19th to early 20th centuries. Highlights include the history of the
+              Galotti
+              Brickworks, home to the museum, and the introduction of Hoffmann kilns in the late 19th century.</span>
+            <span>Visitors can explore the kiln's structure and learn about brick production, from clay extraction to
+              firing.</span>
+          </p>
+        </div>
+        <!--Ground Floor-->
+
+        <!--First Floor-->
+        <div class="floor-description" id="description2" style="display:none;">
+          <h3 class="title">FIRST FLOOR: MODERN INDUSTRY & MECHANICS</h3>
+          <p id="first-floor-description">
+            <span>This floor showcases iconic products representing Bologna’s industrial
+              evolution, such as the Zamboni-Troncon tortellini machine and the ACMA 713 packaging machine.</span>
+            <span>The exhibits focus on the growth of technical knowledge, production systems, and innovative processes
+              that have
+              established Bologna as a leader in automation and manufacturing.</span>
+            <span>Visitors can delve into the dynamics of
+              industrial development, supported by local institutions that have driven competitiveness and advanced
+              production methods.</span>
+          </p>
+        </div>
+        <!--First Floor-->
+        <!--1st alternative-->
+
+        <!--2nd  alternative(list)-->
+        <!--ground floor list-->
+        <div class="list-of-items" id="list1" style="display: none;">
+          <h3 class="title">GROUND FLOOR ITEMS</h3>
+          <ol>
+            <li class="item" id="item1" data-preview="preview1" data-number="number1" data-text="text1">Terracotta Mould
+            </li>
+            <li class="item" id="item2" data-preview="preview2" data-number="number2" data-text="text2">Melted Brick
+            </li>
+            <li class="item" id="item3" data-preview="preview3" data-number="number3" data-text="text3">Aldini Steam
+              Machine</li>
+            <li class="item" id="item4" data-preview="preview4" data-number="number4" data-text="text4">Hoffmann Kiln
+            </li>
+            <li class="item" id="item5" data-preview="preview5" data-number="number5" data-text="text5">Power Hammer
+            </li>
+            <li class="item" id="item6" data-preview="preview6" data-number="number6" data-text="text6">Shaping Machine
+            </li>
+            <li class="item" id="item7" data-preview="preview7" data-number="number7" data-text="text7">Hydraulic Pump
+            </li>
+            <li class="item" id="item8" data-preview="preview8" data-number="number8" data-text="text8">Steam Hammer and
+              Vacuum Pump</li>
+            <li class="item" id="item9" data-preview="preview9" data-number="number9" data-text="text9">Cube Brodo
+              Packing Machine</li>
+          </ol>
+        </div>
+        <!--ground floor list-->
+
+        <!--first floor list-->
+        <div class="list-of-items" id="list2" style="display: none;">
+          <h3 class="title">FIRST FLOOR ITEMS</h3>
+          <ol start="10">
+            <li class="item" id="item10" data-preview="preview10" data-number="number10" data-text="text10">Chocolate
+              Packing Machine</li>
+            <li class="item" id="item11" data-preview="preview11" data-number="number11" data-text="text11">Tortellini
+              Machine</li>
+            <li class="item" id="item12" data-preview="preview12" data-number="number12" data-text="text12">Gelato
+              Machine</li>
+            <li class="item" id="item13" data-preview="preview13" data-number="number13" data-text="text13">Silk Mill
+              Model</li>
+            <li class="item" id="item14" data-preview="preview14" data-number="number14" data-text="text14">Silk Loom
+              Model</li>
+            <li class="item" id="item15" data-preview="preview15" data-number="number15" data-text="text15">Silk</li>
+          </ol>
+        </div>
+        <!--first floor list-->
+        <!--2nd alternative-->
+
+        <!--3rd alternative(descriptions for each item on click)-->
+        <div class="item-texts" style="display: none;">
+          <div class="text" id="text1">
+            <h3>Terracotta Mould</h3>
+            <p></p>
+          </div>
+          <div class="text" id="text2">
+            <h3>Melted Brick</h3>
+            <p></p>
+          </div>
+          <div class="text" id="text3">
+            <h3>Aldini Steam Machine</h3>
+            <p></p>
+          </div>
+          <div class="text" id="text4">
+            <h3>Hoffmann Kiln</h3>
+            <p></p>
+          </div>
+          <div class="text" id="text5">
+            <h3>Power Hammer</h3>
+            <p></p>
+          </div>
+          <div class="text" id="text6">
+            <h3>Shaping Machine</h3>
+            <p></p>
+          </div>
+          <div class="text" id="text7">
+            <h3>Hydraulic Pump</h3>
+            <p></p>
+          </div>
+          <div class="text" id="text8">
+            <h3>Steam Hammer and Vacuum Pump</h3>
+            <p></p>
+          </div>
+          <div class="text" id="text9">
+            <h3>Cube Brodo Packing Machine</h3>
+            <p></p>
+          </div>
+          <div class="text" id="text10">
+            <h3>Chocolate Packing Machine</h3>
+            <p></p>
+          </div>
+          <div class="text" id="text11">
+            <h3>Tortellini Machine</h3>
+            <p></p>
+          </div>
+          <div class="text" id="text12">
+            <h3>Gelato Machine</h3>
+            <p></p>
+          </div>
+          <div class="text" id="text13">
+            <h3>Silk Mill Model</h3>
+            <p></p>
+          </div>
+          <div class="text" id="text14">
+            <h3>Silk Loom Model</h3>
+            <p></p>
+          </div>
+          <div class="text" id="text15">
+            <h3>Silk</h3>
+            <p></p>
+          </div>
+        </div>
+        <!--3rd alternative-->
+
+        <!--button change to list-->
+        <div class="button-container-left mx-auto col-2 text-center" id="button-list">
+          <button id="btn" type="button" class="btn btn-block btn-transparent px-4"><a id="list-btn"
+              href="#section1">See the list of items
               <br>
-                  <i class="fa-solid fa-chevron-down"></i>
-              </a>
+              <i id="long-arrow" class="fa-solid fa-arrow-right-long"></i></a></button>
+        </div>
+        <!--button change to list-->
+
+        <!--button change to description-->
+        <div class="button-container-left mx-auto col-2 text-center" id="button-description" style="display: none;">
+          <button id="btn" type="button" class="btn btn-block btn-transparent px-4"><a id="list-btn"
+              href="#section1">Read the floor description
+              <br>
+              <i id="long-arrow" class="fa-solid fa-arrow-right-long"></i></a></button>
+        </div>
+        <!--button change to description-->
+
+
+
+      </div>
+      <!--1st column-->
+
+      <!--2nd column-->
+      <div class="right-container">
+
+        <!--map 1st alternative-->
+        <div class="maps" id="map-container1" style="display: block;">
+
+          <div class="title">
+            <h3>GROUND FLOOR</h3>
+          </div>
+
+          <div class="map-container">
+            <img src="images/groundfloormapgray.png" alt="Museum Map" class="map">
+
+            <!--numbers on the map-->
+            <div class="numbers">
+              <div class="number" id="number1" data-preview="preview1" data-item="item1" data-text="text1"
+                style="top: 12%; left: 46%">1</div>
+              <div class="number" id="number2" data-preview="preview2" data-item="item2" data-text="text2"
+                style="top: 33%; left: 30%;">2</div>
+              <div class="number" id="number3" data-preview="preview3" data-item="item3" data-text="text3"
+                style="top: 45%; left: 13%;">3</div>
+              <div class="number" id="number4" data-preview="preview4" data-item="item4" data-text="text4"
+                style="top: 51%; left: 65%;">4</div>
+              <div class="number" id="number5" data-preview="preview5" data-item="item5" data-text="text5"
+                style="top: 37%; left: 58%;">5</div>
+              <div class="number" id="number6" data-preview="preview6" data-item="item6" data-text="text6"
+                style="top: 30%; left: 68%;">6</div>
+              <div class="number" id="number7" data-preview="preview7" data-item="item7" data-text="text7"
+                style="top: 33%; left: 83%;">7</div>
+              <div class="number" id="number8" data-preview="preview8" data-item="item8" data-text="text8"
+                style="top: 61%; left: 88%;">8</div>
+              <div class="number" id="number9" data-preview="preview9" data-item="item9" data-text="text9"
+                style="top: 89%; left: 63%;">9</div>
             </div>
-            <!--button-->
-        </div>
-        <!--Section 1: Introduction-->
+            <!--numbers on the map-->
 
-        <!--DESKTOP-->
-        <div id="desktop" style="display: none;">
-          
-          <!--Section 2: Map and Descriptions(Desktop)-->
-          <div class="section2" id="target-section">
-              <!--1st column-->
-              <div class="left-container">
-                  <!--popup icon in the mobile version-->
-                  <div class="pop-up-icon-container d-md-none d-sm-block">
-                  <i class="fa-solid fa-chevron-up"></i>
-                  </div>
-                  <!--popup icon in the mobile version-->
-
-                  <!--1st alternative(floor description)-->
-                    <!--Ground Floor-->
-                    <div class="floor-description" id="description1">
-                        <h3 class="title">GROUND FLOOR: MEDIEVAL INDUSTRY</h3>
-                        <p id="ground-floor-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis egestas justo, eget pellentesque nibh. 
-                        <br>
-                        <br> 
-                        Nunc urna odio, convallis varius elit quis, volutpat eleifend lorem. 
-                        Mauris vestibulum velit non lectus fringilla venenatis. Fusce id risus vitae lectus auctor sollicitudin ut vitae magna. 
-                        <br>
-                        <br>      
-                        Cras tincidunt congue ligula, pharetra rutrum metus ornare quis. Nunc finibus arcu vitae placerat ultrices. Maecenas vel odio condimentum, facilisis ante nec, dictum justo. 
-                        </p>
-                    </div>
-                    <!--Ground Floor-->
-
-                    <!--First Floor-->
-                    <div class="floor-description" id="description2" style="display:none;">
-                      <h3 class="title">FIRST FLOOR: MEDIEVAL INDUSTRY</h3>
-                      <p id="first-floor-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis egestas justo, eget pellentesque nibh. 
-                      <br>
-                      <br> 
-                      Nunc urna odio, convallis varius elit quis, volutpat eleifend lorem. 
-                      Mauris vestibulum velit non lectus fringilla venenatis. Fusce id risus vitae lectus auctor sollicitudin ut vitae magna. 
-                      <br>
-                      <br>      
-                      Cras tincidunt congue ligula, pharetra rutrum metus ornare quis. Nunc finibus arcu vitae placerat ultrices. Maecenas vel odio condimentum, facilisis ante nec, dictum justo. 
-                      </p>
-                    </div>
-                    <!--First Floor-->
-                  <!--1st alternative-->
-
-                  <!--2nd  alternative(list)-->
-                    <!--ground floor list-->
-                    <div class="list-of-items" id="list1" style="display: none;">
-                      <h3 class="title">GROUND FLOOR ITEMS</h3>
-                        <ol>
-                            <li class="item" id="item1" data-preview="preview1" data-number="number1" data-text="text1">Terracotta Mould</li>
-                            <li class="item" id="item2" data-preview="preview2" data-number="number2" data-text="text2">Melted Brick</li>
-                            <li class="item" id="item3" data-preview="preview3" data-number="number3" data-text="text3">Aldini Steam Machine</li>
-                            <li class="item" id="item4" data-preview="preview4" data-number="number4" data-text="text4">Hoffmann Kiln</li>
-                            <li class="item" id="item5" data-preview="preview5" data-number="number5" data-text="text5">Power Hammer</li>
-                            <li class="item" id="item6" data-preview="preview6" data-number="number6" data-text="text6">Shaping Machine</li>
-                            <li class="item" id="item7" data-preview="preview7" data-number="number7" data-text="text7">Hydraulic Pump</li>
-                            <li class="item" id="item8" data-preview="preview8" data-number="number8" data-text="text8">Steam Hammer and Vacuum Pump</li>
-                            <li class="item" id="item9" data-preview="preview9" data-number="number9" data-text="text9">Cube Brodo Packing Machine</li>
-                        </ol>
-                    </div>
-                    <!--ground floor list-->
-
-                    <!--first floor list-->
-                    <div class="list-of-items" id="list2" style="display: none;">
-                      <h3 class="title">FIRST FLOOR ITEMS</h3>
-                      <ol start="10">
-                          <li class="item" id="item10" data-preview="preview10" data-number="number10" data-text="text10">Chocolate Packing Machine</li>
-                          <li class="item" id="item11" data-preview="preview11" data-number="number11" data-text="text11">Tortellini Machine</li>
-                          <li class="item" id="item12" data-preview="preview12" data-number="number12" data-text="text12">Gelato Machine</li>
-                          <li class="item" id="item13" data-preview="preview13" data-number="number13" data-text="text13">Silk Mill Model</li>
-                          <li class="item" id="item14" data-preview="preview14" data-number="number14" data-text="text14">Silk Loom Model</li>
-                          <li class="item" id="item15" data-preview="preview15" data-number="number15" data-text="text15">Silk</li>
-                      </ol>
-                    </div>
-                    <!--first floor list-->
-                  <!--2nd alternative-->
-
-                  <!--3rd alternative(descriptions for each item on click)-->
-                    <div class="item-texts" style="display: none;">
-                      <div class="text" id="text1">
-                        <h3>Terracotta Mould</h3>
-                        <p></p>
-                      </div>
-                      <div class="text" id="text2">
-                        <h3>Melted Brick</h3>
-                        <p></p>
-                      </div>
-                      <div class="text" id="text3">
-                        <h3>Aldini Steam Machine</h3>
-                        <p></p>
-                      </div>
-                      <div class="text" id="text4">
-                        <h3>Hoffmann Kiln</h3>
-                        <p></p>
-                      </div>
-                      <div class="text" id="text5">
-                        <h3>Power Hammer</h3>
-                        <p></p>
-                      </div>
-                      <div class="text" id="text6">
-                        <h3>Shaping Machine</h3>
-                        <p></p>
-                      </div>
-                      <div class="text" id="text7">
-                        <h3>Hydraulic Pump</h3>
-                        <p></p>
-                      </div>
-                      <div class="text" id="text8">
-                        <h3>Steam Hammer and Vacuum Pump</h3>
-                        <p></p>
-                      </div>
-                      <div class="text" id="text9">
-                        <h3>Cube Brodo Packing Machine</h3>
-                        <p></p>
-                      </div>
-                      <div class="text" id="text10">
-                        <h3>Chocolate Packing Machine</h3>
-                        <p></p>
-                      </div>
-                      <div class="text" id="text11">
-                        <h3>Tortellini Machine</h3>
-                        <p></p>
-                      </div>
-                      <div class="text" id="text12">
-                        <h3>Gelato Machine</h3>
-                        <p></p>
-                      </div>
-                      <div class="text" id="text13">
-                        <h3>Silk Mill Model</h3>
-                        <p></p>
-                      </div>
-                      <div class="text" id="text14">
-                        <h3>Silk Loom Model</h3>
-                        <p></p>
-                      </div>
-                      <div class="text" id="text15">
-                        <h3>Silk</h3>
-                        <p></p>
-                      </div>
-                    </div>
-                  <!--3rd alternative-->
-
-                  <!--button change to list-->
-                  <div class="button-container-left mx-auto col-2 text-center" id="button-list">
-                      <button id="btn" type="button" class="btn btn-block btn-transparent px-4"><a id="list-btn" href="#section1">See the list of items
-                      <br>
-                      <i id="long-arrow" class="fa-solid fa-arrow-right-long"></i></a></button>
-                  </div>
-                  <!--button change to list-->
-
-                  <!--button change to description-->
-                  <div class="button-container-left mx-auto col-2 text-center" id="button-description" style="display: none;">
-                    <button id="btn" type="button" class="btn btn-block btn-transparent px-4"><a id="list-btn" href="#section1">Read the floor description
-                    <br>
-                    <i id="long-arrow" class="fa-solid fa-arrow-right-long"></i></a></button>
-                  </div>
-                  <!--button change to description-->
-
-
-
+            <!--hidden previews-->
+            <div class="previews">
+              <div class="preview" id="preview1" style="top: -17%; left: -7%;">
+                <img src="images/1color.png" alt="Terracotta Mold">
+                <div class="preview-line" style="top: 65%; left: 180%; height: 89%; transform: rotate(110deg);"></div>
               </div>
-              <!--1st column-->
-
-              <!--2nd column-->
-              <div class="right-container">
-
-                  <!--map 1st alternative-->
-                  <div class="maps" id="map-container1" style="display: block;">
-                      
-                      <div class="title"><h3>GROUND FLOOR</h3>
-                      </div>
-
-                      <div class="map-container">
-                          <img src="images/groundfloormapgray.png" alt="Museum Map" class="map">
-                              <!--numbers on the map-->
-                              <div class="number" id="number1" data-preview="preview1" data-item="item1" data-text="text1" style="top: 18%; left: 57%">1</div>
-                              <div class="number" id="number2" data-preview="preview2" data-item="item2" data-text="text2" style="top: 38%; left: 42%;">2</div>
-                              <div class="number" id="number3" data-preview="preview3" data-item="item3" data-text="text3" style="top: 48%; left: 24%;">3</div>
-                              <div class="number" id="number4" data-preview="preview4" data-item="item4" data-text="text4" style="top: 54%; left: 71%;">4</div>
-                              <div class="number" id="number5" data-preview="preview5" data-item="item5" data-text="text5" style="top: 41%; left: 62%;">5</div>
-                              <div class="number" id="number6" data-preview="preview6" data-item="item6" data-text="text6" style="top: 36%; left: 78%;">6</div>
-                              <div class="number" id="number7" data-preview="preview7" data-item="item7" data-text="text7" style="top: 40%; left: 94%;">7</div>
-                              <div class="number" id="number8" data-preview="preview8" data-item="item8" data-text="text8" style="top: 63%; left: 96%;">8</div>
-                              <div class="number" id="number9" data-preview="preview9" data-item="item9" data-text="text9" style="top: 89%; left: 71%;">9</div>
-                              <!--numbers on the map-->
-
-                              <!--hidden previews-->
-                              <div class="previews">
-                                <div class="preview" id="preview1" style="top: -10%; left: 5%;">
-                                  <img src="images/1color.png" alt="Terracotta Mold">
-                                  <div class="preview-line" style="top: 70%; left: 108%; height: 120px; transform: rotate(258deg)"></div>
-                                </div>
-                                <div class="preview" id="preview2" style="top: -17%; left: -7%;">
-                                  <img src="images/2color.png" alt="Melted Brick">
-                                  <div class="preview-line" style="top: 76%; left: 106%; height: 120px; transform: rotate(309deg)"></div>
-                                </div>
-                                <div class="preview" id="preview3" style="top: 50%; left: 30%;">
-                                  <img src="images/14color.png" alt="Aldini Steam Engine">
-                                  <div class="preview-line" style="top: 5%; left: -5%; height: 82px; transform: rotate(320deg)"></div>
-                                </div>
-                                <div class="preview" id="preview4" style="top: -17%; left: -10%;">
-                                  <img src="" alt="Hoffmann Kiln">
-                                  <div class="preview-line" style="top: 100%; left: 80%; height: 300px; transform: rotate(180deg)"></div>
-                                </div>
-                                <div class="preview" id="preview5" style="top: -17%; left: -10%;">
-                                  <img src="images/12color.png" alt="Power Hammer">
-                                  <div class="preview-line" style="top: 60%; left: 110%; height: 280px; transform: rotate(298deg)"></div>
-                                </div>
-                                <div class="preview" id="preview6" style="top: -19%; left: 80%;">
-                                  <img src="images/13color.png" alt="Shaping Machine">
-                                  <div class="preview-line" style="top: 105%; left: 5%; height: 24%; transform: rotate(220deg)"></div>
-                                </div>
-                                <div class="preview" id="preview7" style="top: -19%; left: 80%;">
-                                  <img src="images/10color.png" alt="Hydraulic Pump">
-                                  <div class="preview-line" style="top: 105%; left: 50%; height: 6%; transform: rotate(5deg)"></div>
-                                </div>
-                                <div class="preview" id="preview8" style="top: 50%; left: 25%;">
-                                  <img src="images/11color.png" alt="Steam Hammer and Vacuum Pump">
-                                  <div class="preview-line" id="line1" style="top: 50%; left: 111%; height: 100%; transform: rotate(260deg)"></div>
-                                </div>
-                                <div class="preview" id="preview9" style="top: 50%; left: 17%;">
-                                  <img src="images/6color.png" alt="Cube Brodo Packing Machine">
-                                  <div class="preview-line" style="top: 55%; left: 110%; height: 51%; transform: rotate(296deg)"></div>
-                                </div>
-                              </div>
-                              <!--hidden previews-->
-                      </div>
-                                          
-                  </div>
-                  <!--map 1st alternative-->
-
-                  <!--2nd alternative-->
-                  <div class="maps" id="map-container2" style="display: none;">
-                      
-                      <div class="title"><h3>FIRST FLOOR</h3>
-                      </div>
-
-                      <div class="map-container">
-                          <img src="images/firstfloormapgray.png" alt="Museum Map" class="map">
-
-                              <!--numbers on the map-->
-                              <div class="number" id="number10" data-preview="preview10" data-item="item10" data-text="text10" style="top: 83%; left: 65%;">10</div>
-                              <div class="number" id="number11" data-preview="preview11" data-item="item11" data-text="text11" style="top: 55%; left: 66%;">11</div>
-                              <div class="number" id="number12" data-preview="preview12" data-item="item12" data-text="text12" style="top: 63%; left: 44%;">12</div>
-                              <div class="number" id="number13" data-preview="preview13" data-item="item13" data-text="text13" style="top: 50%; left: 30%;">13</div>
-                              <div class="number" id="number14" data-preview="preview14" data-item="item14" data-text="text14" style="top: 59%; left: 12%;">14</div>
-                              <div class="number" id="number15" data-preview="preview15" data-item="item15" data-text="text15" style="top: 28%; left: 18%;">15</div>
-                              <!--numbers on the map-->
-
-                              <!--hidden previews-->
-                              <div class="preview" id="preview10" style="top: 50%; left: 78%;">
-                                <img src="images/6color.png" alt="Chocolate Packing Machine">
-                                <div class="preview-line" style="top: 67%; left: -25%; height: 35%; transform: rotate(260deg)"></div>
-                              </div>
-                              <div class="preview" id="preview11" style="top: 1%; left: 75%;">
-                                <img src="images/4color.png" alt="Tortellini Machine">
-                                <div class="preview-line" style="top: 105%; left: -15%; height: 40%; transform: rotate(240deg)"></div>
-                              </div>
-                              <div class="preview" id="preview12" style="top: -15%; left: 80%;">
-                                <img src="images/3color.png" alt="Gelato Machine">
-                                <div class="preview-line" style="top: 155%; left: -100%; height: 138%; transform: rotate(240deg)"></div>
-                              </div>
-                              <div class="preview" id="preview13" style="top: 1%; left: 34%;">
-                                <img src="images/8color.png" alt="Silk Mill Model">
-                                <div class="preview-line" style="top: 98%; left: 1%; height: 22%; transform: rotate(240deg)"></div>
-                              </div>
-                              <div class="preview" id="preview14" style="top: 3%; left: 34%;">
-                                <img src="images/7color.png" alt="Silk Loom Model">
-                                <div class="preview-line" style="top: 108%; left: -50%; height: 72%; transform: rotate(240deg)"></div>
-                              </div>
-                              <div class="preview" id="preview15" style="top: -17%; left: -20%;">
-                                <img src="images/9color.png" alt="Silk">
-                                <div class="preview-line" style="top: 85%; left: 115%; height: 13%; transform: rotate(135deg)"></div>
-                              </div>                               
-                              <!--hidden previews-->
-                      </div>
-
-                  </div>
-                  <!--2nd alternative-->
-
-                  <!--user type buttons-->
-                    <div class="user-type-btn-container" style="display: none;">
-                      <input type="radio" class="user-type-btn btn-check" name="btnradio" id="user-type-btn1" autocomplete="off" checked>
-                      <label class="btn btn-outline-dark" for="user-type-btn1"><img src="images/ICONchildren.png"></label>
-                    
-                      <input type="radio" class="user-type-btn btn-check" name="btnradio" id="user-type-btn2" autocomplete="off">
-                      <label class="btn btn-outline-dark" for="user-type-btn2"><img src="images/ICONgeneral.png"></label>
-                    
-                      <input type="radio" class="user-type-btn btn-check" name="btnradio" id="user-type-btn3" autocomplete="off">
-                      <label class="btn btn-outline-dark" for="user-type-btn3"><img src="images/ICONexpert.png"></label>
-                    </div>
-                  <!--user type buttons-->                      
+              <div class="preview" id="preview2" style="top: -17%; left: -7%;">
+                <img src="images/2color.png" alt="Melted Brick">
+                <div class="preview-line" style="top: 79%; left: 94%; height: 40%; transform: rotate(309deg)"></div>
               </div>
-              <!--2nd column-->
-
-              <!--3rd column-->
-              <div class="map-btn-container">
-                <div class="btn-map" id="btn-map-1">
-                </div>
-                <div class="btn-map" id="btn-map-2">
-                </div>
+              <div class="preview" id="preview3" style="top: 50%; left: 30%;">
+                <img src="images/14color.png" alt="Aldini Steam Engine">
+                <div class="preview-line" style="top: 28%; left: 8%; height: 60%; transform: rotate(120deg)"></div>
               </div>
-              <!--3rd column-->
+              <div class="preview" id="preview4" style="top: -17%; left: -10%;">
+                <img src="" alt="Hoffmann Kiln">
+                <div class="preview-line" style="top: 0%; left: 70%; height: 300px; transform: rotate(180deg)"></div>
+              </div>
+              <div class="preview" id="preview5" style="top: -17%; left: -10%;">
+                <img src="images/12color.png" alt="Power Hammer">
+                <div class="preview-line" style="top: 55%; left: 100%; height: 141%; transform: rotate(295deg)"></div>
+              </div>
+              <div class="preview" id="preview6" style="top: -19%; left: 80%;">
+                <img src="images/13color.png" alt="Shaping Machine">
+                <div class="preview-line" style="top: 105%; left: -30%; height: 45%; transform: rotate(230deg)"></div>
+              </div>
+              <div class="preview" id="preview7" style="top: -19%; left: 80%;">
+                <img src="images/10color.png" alt="Hydraulic Pump">
+                <div class="preview-line" style="top: 105%; left: 20%; height: 9%; transform: rotate(195deg)"></div>
+              </div>
+              <div class="preview" id="preview8" style="top: 50%; left: 25%;">
+                <img src="images/11color.png" alt="Steam Hammer and Vacuum Pump">
+                <div class="preview-line" id="line1"
+                  style="top: 50%; left: 100%; height: 112%; transform: rotate(260deg)"></div>
+              </div>
+              <div class="preview" id="preview9" style="top: 50%; left: 17%;">
+                <img src="images/6color.png" alt="Cube Brodo Packing Machine">
+                <div class="preview-line" style="top:57%; left: 100%; height: 65%; transform: rotate(296deg)"></div>
+              </div>
+            </div>
+            <!--hidden previews-->
           </div>
-          <!--Section 2: Map and Descriptions(Desktop)-->
-
-          <!--Footer(Desktop)-->
-          <footer class="footer">
-              <div class="container footer-content">
-                  <!--row--> 
-                  <div class="row">
-                    <!--1st column-->
-                    <div class="title-container col-md-3 ">
-                      <h1 id="home-title">ABOUT THE<br>GROUP</h1>
-                      <img id="museum-logo" src="images/logoconscritta.png">
-                    </div>
-                    <!--1st column-->
-              
-                    <!--2nd column-->
-                    <div class="contacts col-md-3 ">
-                      <h4>CONTACTS</h4>
-                      <p>
-                        Anna Nicoletti<br>
-                        Ekaterina Krasnova<br>
-                        Nadia Calvisi<br>
-                        Rubens Fernandes Junior<br>
-                      </p>
-                    </div>
-                    <!--2nd column-->
-                    
-                    <!--3rd column-->
-                    <div class="affiliations col-md-4">
-                      <h4>AFFILIATIONS</h4>
-                      <p>
-                        Digital Humanities and Digital Knowledge - <br>
-                        DHDK Second Cycle Degree<br>
-                        <br>
-                        University of Bologna
-                      </p>
-                    <!--social icons-->
-                    <div class="social-icons-container">
-                      <a href=https://github.com/bolognaindustries/industrialheritage/blob/main/items/items.html""><img class="social-icons" src="images/logoface.png" alt="Facebook Logo"></a>
-                      <a href=""><img class="social-icons" src="images/logoinsta.png" alt="Instagram Logo"></a>
-                      <a href=""><img class="social-icons" src="images/logounibo.png" alt="University of Bologna Logo"></a>
-                    </div>
-                    <!--social icons-->
-                    </div>
-                    <!--3rd column-->
-                  </div>
-                  <!--row--> 
-              </div>
-          </footer>
-          <!--Footer(Desktop)-->
 
         </div>
-        <!--DESKTOP-->
+        <!--map 1st alternative-->
 
-        <!--MOBILE-->
-        <div id="mobile" style="display: none;">
+        <!--2nd alternative-->
+        <div class="maps" id="map-container2" style="display: none;">
 
-          <!--Section 2: Map and Descriptions(Mobile)--> 
-          <div class="section2" id="target-section">
-
-            <!--Top Container-->
-            <div class="right-container">
-
-                <!--Map 1st alternative-->
-                <div class="maps" id="map-container1-m" style="display: block;">
-                    
-                    <div class="title"><h3>GROUND FLOOR</h3>
-                    </div>
-
-                    <div class="map-container">
-                        <img src="images/groundfloormapgray - vertical.png" alt="Museum Map" class="map">
-                            <!--numbers on the map-->
-                            <div class="numbers">
-                                <div class="number-m" id="number1-m" data-preview="preview1" data-item="item1" data-text="text1-m" style="top: 50%; left: 71%;">1</div>
-                                <div class="number-m" id="number2-m" data-preview="preview2" data-item="item2" data-text="text2-m" style="top: 38%; left: 55%;">2</div>
-                                <div class="number-m" id="number3-m" data-preview="preview3" data-item="item3" data-text="text3-m" style="top: 18%; left: 50%;">3</div>
-                                <div class="number-m" id="number4-m" data-preview="preview4" data-item="item4" data-text="text4-m" style="top: 60%; left: 45%;">4</div>
-                                <div class="number-m" id="number5-m" data-preview="preview5" data-item="item5" data-text="text5-m" style="top: 50%; left: 58%;">5</div>
-                                <div class="number-m" id="number6-m" data-preview="preview6" data-item="item6" data-text="text6-m" style="top: 70%; left: 57%;">6</div>
-                                <div class="number-m" id="number7-m" data-preview="preview7" data-item="item7" data-text="text7-m" style="top: 84%; left: 55%;">7</div>
-                                <div class="number-m" id="number8-m" data-preview="preview8" data-item="item8" data-text="text8-m" style="top: 85%; left: 40%;">8</div>
-                                <div class="number-m" id="number9-m" data-preview="preview9" data-item="item9" data-text="text9-m" style="top: 60%; left: 20%;">9</div>
-                            </div>
-                            <!--numbers on the map-->
-                    </div>              
-                </div>
-                <!--Map 1st alternative-->
-
-                <!--Map 2nd alternative-->
-                <div class="maps" id="map-container2-m" style="display: none;">
-                    
-                    <div class="title">
-                        <h3>FIRST FLOOR</h3>
-                    </div>
-
-                    <div class="map-container">
-                        <img src="images/firstfloormapgray - vertical.png" alt="Museum Map" class="map">
-
-                            <!--numbers on the map-->
-                            <div class="numbers">
-                                <div class="number-m" id="number10" data-preview="preview10" data-item="item10" data-text="text10-m" style="top: 55%; left: 25%;">10</div>
-                                <div class="number-m" id="number11" data-preview="preview11" data-item="item11" data-text="text11-m" style="top: 55%; left: 43%;">11</div>
-                                <div class="number-m" id="number12" data-preview="preview12" data-item="item12" data-text="text12-m" style="top: 40%; left: 40%;">12</div>
-                                <div class="number-m" id="number13" data-preview="preview13" data-item="item13" data-text="text13-m" style="top: 23%; left: 48%;">13</div>
-                                <div class="number-m" id="number14" data-preview="preview14" data-item="item14" data-text="text14-m" style="top: 6%; left: 45%;">14</div>
-                                <div class="number-m" id="number15" data-preview="preview15" data-item="item15" data-text="text15-m" style="top: 10%; left: 63%;">15</div>
-                            </div>
-                            <!--numbers on the map-->
-                    </div>
-                </div>
-                <!--Map 2nd alternative-->
-
-                <!--Map buttons-->
-                <div class="map-btn-container">
-                  <div class="btn-map" id="btn-map-1-m">
-                    <i class="fa-solid fa-chevron-left d-md-none d-sm-block"></i>
-                  </div>
-                  <div class="btn-map" id="btn-map-2-m">
-                    <i class="fa-solid fa-chevron-right d-md-none d-sm-block"></i>
-                  </div>
-                </div>
-                <!--Map buttons-->
-                 </div>
-            <!--Top Container-->
-
-            <!--Bottom Container-->
-
-              <!--Tab to Open the Hidden Container-->
-              <div class="tab">
-                <div class="tab-icon-container">
-                  <i class="fa-solid fa-chevron-up" style="color: white;"></i>
-                </div>
-              </div> 
-              <!--Tab to Open the Hidden Container-->
-
-              <!--Hidden Container-->
-              <div class="left-container-m" style="display: none;">
-                <div class="pop-up-icon-container">
-                  <i class="fa-solid fa-chevron-down" style="color: white;"></i>
-                </div>
-                  <!--1st alternative(floor description)-->
-                    <!--Ground Floor-->
-                    <div class="floor-description-m" id="description1-m">
-                        <h3 class="title">GROUND FLOOR: MEDIEVAL INDUSTRY</h3>
-                        <p id="ground-floor-description-m">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis egestas justo, eget pellentesque nibh. 
-                        <br>
-                        <br> 
-                        Nunc urna odio, convallis varius elit quis, volutpat eleifend lorem. 
-                        Mauris vestibulum velit non lectus fringilla venenatis. Fusce id risus vitae lectus auctor sollicitudin ut vitae magna. 
-                        <br>
-                        <br>      
-                        Cras tincidunt congue ligula, pharetra rutrum metus ornare quis. Nunc finibus arcu vitae placerat ultrices. Maecenas vel odio condimentum, facilisis ante nec, dictum justo. 
-                        </p>
-                    </div>
-                    <!--Ground Floor-->
-
-                    <!--First Floor-->
-                    <div class="floor-description-m" id="description2-m" style="display: none;">
-                      <h3 class="title">FIRST FLOOR: MEDIEVAL INDUSTRY</h3>
-                      <p id="first-floor-description-m">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis egestas justo, eget pellentesque nibh. 
-                      <br>
-                      <br> 
-                      Nunc urna odio, convallis varius elit quis, volutpat eleifend lorem. 
-                      Mauris vestibulum velit non lectus fringilla venenatis. Fusce id risus vitae lectus auctor sollicitudin ut vitae magna. 
-                      <br>
-                      <br>      
-                      Cras tincidunt congue ligula, pharetra rutrum metus ornare quis. Nunc finibus arcu vitae placerat ultrices. Maecenas vel odio condimentum, facilisis ante nec, dictum justo. 
-                      </p>
-                    </div>
-                    <!--First Floor-->
-                  <!--1st alternative-->
-
-                  <!--2nd alternative(descriptions for each item on click)-->
-                    <div class="item-texts-m" style="display: none;">
-                      
-                      <div class="text-m" id="text1-m">
-                        <div class="content" data-user="kid" style="display: none;">
-                          <h4>1st Item</h4>
-                          <h3>Terracotta Mould</h3>
-                          <img src="images/images11.png" style="left: 45%; top: 16%">
-                          <p></p>
-                        </div>
-                        <div class="content" data-user="general">
-                          <h4>1st Item</h4>
-                          <h3>Terracotta Mould</h3>
-                          <img src="images/images11.png" style="left: 45%; top: 16%">
-                          <p></p>
-                        </div>
-                        <div class="content" data-user="expert" style="display: none;">
-                          <h4>1st Item</h4>
-                          <h3>Terracotta Mould</h3>
-                          <img src="images/images11.png" style="left: 45%; top: 16%">
-                          <p></p>
-                        </div>
-                      </div>
-
-                      <div class="text-m" id="text2-m">
-                        <div class="content" data-user="kid" style="display: none;">
-                          <h4>2nd Item</h4>
-                          <h3>Melted Brick</h3>
-                          <img src="images/images12.png" style="left: 50%; top: 16%; width: 360px;">
-                          <p></p>
-                        </div>
-                        <div class="content" data-user="general">
-                          <h4>2nd Item</h4>
-                          <h3>Melted Brick</h3>
-                          <img src="images/images12.png" style="left: 50%; top: 16%; width: 360px;">
-                          <p></p>
-                        </div>
-                        <div class="content" data-user="expert" style="display: none;">
-                          <h4>2nd Item</h4>
-                          <h3>Melted Brick</h3>
-                          <img src="images/images12.png" style="left: 50%; top: 16%; width: 360px;">
-                          <p></p>
-                        </div>
-                      </div>
-
-                      <div class="text-m" id="text3-m">
-                        <div class="content" data-user="kid" style="display: none;">
-                          <h4>3rd Item</h4>
-                          <h3>Aldini Steam Machine</h3>
-                          <img src="">
-                          <p></p>
-                        </div>
-                        <div class="content" data-user="general">
-                          <h4>3rd Item</h4>
-                          <h3>Aldini Steam Machine</h3>
-                          <img src="">
-                          <p></p>
-                        </div>
-                        <div class="content" data-user="expert" style="display: none;">
-                          <h4>3rd Item</h4>
-                          <h3>Aldini Steam Machine</h3>
-                          <img src="">
-                          <p></p>
-                        </div>
-                      </div>
-
-                      <div class="text-m" id="text4-m">
-                        <div class="content" data-user="kid" style="display: none;">
-                          <h4>4th Item</h4>
-                          <h3>Hoffmann Kiln</h3>
-                          <img src="">
-                          <p></p>
-                        </div>
-                        <div class="content" data-user="general">
-                          <h4>4th Item</h4>
-                          <h3>Hoffmann Kiln</h3>
-                          <img src="">
-                          <p></p>
-                        </div>
-                        <div class="content" data-user="expert" style="display: none;">
-                          <h4>4th Item</h4>
-                          <h3>Hoffmann Kiln</h3>
-                          <img src="">
-                          <p></p>
-                        </div>
-                      </div>
-
-                      <div class="text-m" id="text5-m">
-                        <div class="content" data-user="kid" style="display: none;">
-                          <h4>5th Item</h4>
-                          <h3>Power Hammer</h3>
-                          <img src="images/images6.png" style="left: 10%; top: 16%; height: 280px; width: auto; transform: scaleX(-1);">
-                          <p></p>
-                        </div>
-                        <div class="content" data-user="general">
-                          <h4>5th Item</h4>
-                          <h3>Power Hammer</h3>
-                          <img src="images/images6.png" style="left: 10%; top: 16%; height: 280px; width: auto; transform: scaleX(-1);">
-                          <p></p>
-                        </div>
-                        <div class="content" data-user="expert" style="display: none;">
-                          <h4>5th Item</h4>
-                          <h3>Power Hammer</h3>
-                          <img src="images/images6.png" style="left: 10%; top: 16%; height: 280px; width: auto; transform: scaleX(-1);">
-                          <p></p>
-                        </div>
-                      </div>
-
-                      <div class="text-m" id="text6-m">
-                        <div class="content" data-user="kid" style="display: none;">
-                          <h4>6th Item</h4>
-                          <h3>Shaping Machine</h3>
-                          <img src="images/images8.png" style="left: 50%; top: 1%; width: 300px;">
-                          <p></p>
-                        </div>
-                        <div class="content" data-user="general">
-                          <h4>6th Item</h4>
-                          <h3>Shaping Machine</h3>
-                          <img src="images/images8.png" style="left: 50%; top: 1%; width: 300px;">
-                          <p></p>
-                        </div>
-                        <div class="content" data-user="expert" style="display: none;">
-                          <h4>6th Item</h4>
-                          <h3>Shaping Machine</h3>
-                          <img src="images/images8.png" style="left: 50%; top: 1%; width: 300px;">
-                          <p></p>
-                        </div>
-                      </div>
-
-                      <div class="text-m" id="text7-m">
-                        <div class="content" data-user="kid" style="display: none;">
-                          <h4>7th Item</h4>
-                          <h3>Hydraulic Pump</h3>
-                          <img src="images/images5.png" style="width: 200px; left: 40%; top: 10%;">
-                          <p></p>
-                        </div>
-                        <div class="content" data-user="general">
-                          <h4>7th Item</h4>
-                          <h3>Hydraulic Pump</h3>
-                          <img src="images/images5.png" style="width: 200px; left: 40%; top: 12%;">
-                          <p></p>
-                        </div>
-                        <div class="content" data-user="expert" style="display: none;">
-                          <h4>7th Item</h4>
-                          <h3>Hydraulic Pump</h3>
-                          <img src="images/images5.png" style="width: 200px; left: 40%; top: 10%;">
-                          <p></p>
-                        </div>
-                      </div>
-
-                      <div class="text-m" id="text8-m">
-                        <div class="content" data-user="kid" style="display: none;">
-                          <h4>8th Item</h4>
-                          <h3>Steam Hammer and Vacuum Pump</h3>
-                          <img src="images/images9.png" style="width: 290px; left: 50%; top: 7%;">
-                          <p></p>
-                        </div>
-                        <div class="content" data-user="general">
-                          <h4>8th Item</h4>
-                          <h3>Steam Hammer and Vacuum Pump</h3>
-                          <img src="images/images9.png" style="width: 290px; left: 50%; top: 7%;">
-                          <p></p>
-                        </div>
-                        <div class="content" data-user="expert" style="display: none;">
-                          <h4>8th Item</h4>
-                          <h3>Steam Hammer and Vacuum Pump</h3>
-                          <img src="images/images9.png" style="width: 290px; left: 50%; top: 7%;">
-                          <p></p>
-                        </div>
-                      </div>
-
-                      <div class="text-m" id="text9-m">
-                        <div class="content" data-user="kid" style="display: none;">
-                          <h4>9th Item</h4>
-                          <h3>Cube Brodo Packing Machine</h3>
-                          <img src="images/images10.png" style="transform: scaleX(-1);">
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. .</p>
-                        </div>
-                        <div class="content" data-user="general">
-                          <h4>9th Item</h4>
-                          <h3>Cube Brodo Packing Machine</h3>
-                          <img src="images/images10.png" style="transform: scaleX(-1);">
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. .</p>
-                        </div>
-                        <div class="content" data-user="expert" style="display: none;">
-                          <h4>9th Item</h4>
-                          <h3>Cube Brodo Packing Machine</h3>
-                          <img src="images/images10.png" style="transform: scaleX(-1);">
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. .</p>
-                        </div>
-                      </div>
-
-                      <div class="text-m" id="text10-m">
-                        <div class="content" data-user="kid" style="display: none;">
-                          <h4>10th Item</h4>
-                          <h3>Chocolate Packing Machine</h3>
-                          <img src="images/images7.png" style="width: 340px; left: 50%; top: 15%;">
-                          <p></p>
-                        </div>
-                        <div class="content" data-user="general">
-                          <h4>10th Item</h4>
-                          <h3>Chocolate Packing Machine</h3>
-                          <img src="images/images7.png" style="width: 340px; left: 50%; top: 15%;">
-                          <p></p>
-                        </div>
-                        <div class="content" data-user="expert" style="display: none;">
-                          <h4>10th Item</h4>
-                          <h3>Chocolate Packing Machine</h3>
-                          <img src="images/images7.png" style="width: 340px; left: 50%; top: 15%;">
-                          <p></p>
-                        </div>
-                      </div>
-
-                      <div class="text-m" id="text11-m">
-                        <div class="content" data-user="kid" style="display: none;">
-                          <h4>11th Item</h4>
-                          <h3>Tortellini Machine</h3>
-                          <img src="images/images (2).png" style="width: 240px; left: 55%; top: 15%;">
-                          <p></p>
-                        </div>
-                        <div class="content" data-user="general">
-                          <h4>11th Item</h4>
-                          <h3>Tortellini Machine</h3>
-                          <img src="images/images (2).png" style="width: 240px; left: 55%; top: 15%;">
-                          <p></p>
-                        </div>
-                        <div class="content" data-user="expert" style="display: none;">
-                          <h4>11th Item</h4>
-                          <h3>Tortellini Machine</h3>
-                          <img src="images/images (2).png" style="width: 240px; left: 55%; top: 15%;">
-                          <p></p>
-                        </div>
-                      </div>
-
-                      <div class="text-m" id="text12-m">
-                        <div class="content" data-user="kid" style="display: none;">
-                          <h4>12th Item</h4>
-                          <h3>Gelato Machine</h3>
-                          <img src="images/images4 (1).png" style="height: 340px; width: auto; left: 30%; top: 20%;">
-                          <p></p>
-                        </div>
-                        <div class="content" data-user="general">
-                          <h4>12th Item</h4>
-                          <h3>Gelato Machine</h3>
-                          <img src="images/images4 (1).png" style="height: 340px; width: auto; left: 30%; top: 20%;">
-                          <p></p>
-                        </div>
-                        <div class="content" data-user="expert" style="display: none;">
-                          <h4>12th Item</h4>
-                          <h3>Gelato Machine</h3>
-                          <img src="images/images4 (1).png" style="height: 340px; width: auto; left: 30%; top: 20%;">
-                          <p></p>
-                        </div>
-                      </div>
-
-                      <div class="text-m" id="text13-m">
-                        <div class="content" data-user="kid" style="display: none;">
-                          <h4>13th Item</h4>
-                          <h3>Silk Mill Model</h3>
-                          <img src="images/images13.png" style="height: 340px; width: auto; left: 40%; top: 15%;">
-                          <p></p>
-                        </div>
-                        <div class="content" data-user="general">
-                          <h4>13th Item</h4>
-                          <h3>Silk Mill Model</h3>
-                          <img src="images/images13.png" style="height: 340px; width: auto; left: 40%; top: 15%;">
-                          <p></p>
-                        </div>
-                        <div class="content" data-user="expert" style="display: none;">
-                          <h4>13th Item</h4>
-                          <h3>Silk Mill Model</h3>
-                          <img src="images/images13.png" style="height: 340px; width: auto; left: 40%; top: 15%;">
-                          <p></p>
-                        </div>
-                      </div>
-
-                      <div class="text-m" id="text14-m">
-                        <div class="content" data-user="kid" style="display: none;">
-                          <h4>14th Item</h4>
-                          <h3>Silk Loom Model</h3>
-                          <img src="images/images2.png" style="height: 450px; width: auto; left: 47%; top: 1%;">
-                          <p></p>
-                        </div>
-                        <div class="content" data-user="general">
-                          <h4>14th Item</h4>
-                          <h3>Silk Loom Model</h3>
-                          <img src="images/images2.png" style="height: 450px; width: auto; left: 47%; top: 1%;">
-                          <p></p>
-                        </div>
-                        <div class="content" data-user="expert" style="display: none;">
-                          <h4>14th Item</h4>
-                          <h3>Silk Loom Model</h3>
-                          <img src="images/images2.png" style="height: 450px; width: auto; left: 47%; top: 1%;">
-                          <p></p>
-                        </div>
-                      </div>
-
-                      <div class="text-m" id="text15-m">
-                        <div class="content" data-user="kid" style="display: none;">
-                          <h4>15th Item</h4>
-                          <h3>Silk</h3>
-                          <img src="">
-                          <p></p>
-                        </div>
-                        <div class="content" data-user="general">
-                          <h4>15th Item</h4>
-                          <h3>Silk</h3>
-                          <img src="">
-                          <p></p>
-                        </div>
-                        <div class="content" data-user="expert" style="display: none;">
-                          <h4>15th Item</h4>
-                          <h3>Silk</h3>
-                          <img src="">
-                          <p></p>
-                        </div>
-                      </div>
-
-                    </div>
-                  <!--3rd alternative-->
-
-                  <!--User type buttons-->
-                  <div class="user-btn-container-m">
-                    <div class="user-btn-toggle-m"></div>
-                      <div class="user-btn-m" id="user-btn1-m" data-user="kid" style="display: none;"></div>
-                      <div class="user-btn-m" id="user-btn2-m" data-user="general" style="display: none;"></div>
-                      <div class="user-btn-m" id="user-btn3-m" data-user="expert" style="display: none;"></div>
-                  </div>
-                  <!--User type buttons-->
-              </div>
-              <!--Hidden Container-->
-
-            <!--Bottom Container-->
-
+          <div class="title">
+            <h3>FIRST FLOOR</h3>
           </div>
-          <!--Section 2: Map and Description(Mobile)-->
 
-          <!--Footer(Mobile)-->
-          <footer class="footer">
-              <div class="container footer-content">
-                  <!--Top-->
-                  <div class="title-container">
-                      <h1 id="home-title-m">ABOUT THE<br>GROUP</h1>
-                      <img id="museum-logo-m" src="images/logoconscritta.png">
-                  </div>
-                  <!--Top-->
-          
-                  <!--Middle-->
-                  <div class="contacts">
-                      <h4>CONTACTS</h4>
-                      <p>
-                          Anna Nicoletti<br>
-                          Ekaterina Krasnova<br>
-                          Nadia Calvisi<br>
-                          Rubens Fernandes Junior<br>
-                      </p>
-                  </div>
+          <div class="map-container">
+            <img src="images/firstfloormapgray.png" alt="Museum Map" class="map">
 
-                  <div class="affiliations">
-                      <h4>AFFILIATIONS</h4>
-                      <p>
-                          Digital Humanities and Digital Knowledge - <br>
-                          DHDK Second Cycle Degree<br>
-                          <br>
-                          University of Bologna
-                      </p>
-                  </div>
-                  <!--Middle-->
+            <!--numbers on the map-->
+            <div class="numbers">
+              <div class="number" id="number10" data-preview="preview10" data-item="item10" data-text="text10"
+                style="top: 83%; left: 50%;">10</div>
+              <div class="number" id="number11" data-preview="preview11" data-item="item11" data-text="text11"
+                style="top: 50%; left: 50%;">11</div>
+              <div class="number" id="number12" data-preview="preview12" data-item="item12" data-text="text12"
+                style="top: 63%; left: 37%;">12</div>
+              <div class="number" id="number13" data-preview="preview13" data-item="item13" data-text="text13"
+                style="top: 44%; left: 20%;">13</div>
+              <div class="number" id="number14" data-preview="preview14" data-item="item14" data-text="text14"
+                style="top: 56%; left: 3%;">14</div>
+              <div class="number" id="number15" data-preview="preview15" data-item="item15" data-text="text15"
+                style="top: 28%; left: 5%;">15</div>
+            </div>
+            <!--numbers on the map-->
 
-                  <!--Bottom-->
-                  <div class="social-icons-container">
-                      <a href=https://github.com/bolognaindustries/industrialheritage/blob/main/items/items.html""><img class="social-icons" src="images/logoface.png" alt="Facebook Logo"></a>
-                      <a href=""><img class="social-icons" src="images/logoinsta.png" alt="Instagram Logo"></a>
-                      <a href=""><img class="social-icons" src="images/logounibo.png" alt="University of Bologna Logo"></a>
-                  </div>
-                  <!--Bottom-->
+            <!--hidden previews-->
+            <div class="previews">
+              <div class="preview" id="preview10" style="top: 50%; left: 65%;">
+                <img src="images/6color.png" alt="Chocolate Packing Machine">
+                <div class="preview-line" style="top: 69%; left: -35%; height: 35%; transform: rotate(260deg)"></div>
               </div>
-          </footer>
-          <!--Footer(Mobile)-->
+              <div class="preview" id="preview11" style="top: 1%; left: 65%;">
+                <img src="images/4color.png" alt="Tortellini Machine">
+                <div class="preview-line" style="top: 100%; left: -40%; height: 50%; transform: rotate(240deg)"></div>
+              </div>
+              <div class="preview" id="preview12" style="top: 5%; left: 70%;">
+                <img src="images/3color.png" alt="Gelato Machine">
+                <div class="preview-line" style="top: 120%; left: -100%; height: 117%; transform: rotate(255deg)"></div>
+              </div>
+              <div class="preview" id="preview13" style="top: 1%; left: 25%;">
+                <img src="images/8color.png" alt="Silk Mill Model">
+                <div class="preview-line" style="top: 88%; left: -2%; height: 12%; transform: rotate(240deg)"></div>
+              </div>
+              <div class="preview" id="preview14" style="top: 1%; left: 25%;">
+                <img src="images/7color.png" alt="Silk Loom Model">
+                <div class="preview-line" style="top: 112%; left: -60%; height: 75%; transform: rotate(236deg)"></div>
+              </div>
+              <div class="preview" id="preview15" style="top: 1%; left: 25%;">
+                <img src="images/9color.png" alt="Silk">
+                <div class="preview-line" style="top: 60%; left: 0%; height: 52%; transform: rotate(91deg)"></div>
+              </div>
+            </div>
+            <!--hidden previews-->
+          </div>
 
         </div>
-        <!--MOBILE-->
+        <!--2nd alternative-->
 
-        <!--javascript-->
-        <script src="the-museum-main.js" defer></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-        <!--javascript-->
-    </body>
+        <!--user type buttons-->
+        <div class="user-type-btn-container" style="display: none;">
+          <input type="radio" class="user-type-btn btn-check" name="btnradio" id="user-type-btn1" autocomplete="off"
+            checked>
+          <label class="btn btn-outline-dark" for="user-type-btn1"><img src="images/ICONchildren.png"></label>
+
+          <input type="radio" class="user-type-btn btn-check" name="btnradio" id="user-type-btn2" autocomplete="off">
+          <label class="btn btn-outline-dark" for="user-type-btn2"><img src="images/ICONgeneral.png"></label>
+
+          <input type="radio" class="user-type-btn btn-check" name="btnradio" id="user-type-btn3" autocomplete="off">
+          <label class="btn btn-outline-dark" for="user-type-btn3"><img src="images/ICONexpert.png"></label>
+        </div>
+        <!--user type buttons-->
+      </div>
+      <!--2nd column-->
+
+      <!--3rd column-->
+      <div class="map-btn-container">
+        <div class="btn-map" id="btn-map-1">
+        </div>
+        <div class="btn-map" id="btn-map-2">
+        </div>
+      </div>
+      <!--3rd column-->
+    </div>
+    <!--Section 2: Map and Descriptions(Desktop)-->
+
+    <!--Footer(Desktop)-->
+    <footer class="footer">
+      <!--1st column-->
+      <div class="title-container">
+        <h1 id="home-title">ABOUT THE<br>GROUP</h1>
+        <img id="museum-logo" src="images/logoconscritta.png">
+      </div>
+      <!--1st column-->
+
+      <!--2nd column-->
+      <div class="contacts">
+        <h4>CONTACTS</h4>
+        <p>
+          Anna Nicoletti<br>
+          Ekaterina Krasnova<br>
+          Nadia Calvisi<br>
+          Rubens Fernandes Junior<br>
+        </p>
+      </div>
+      <!--2nd column-->
+
+      <!--3rd column-->
+      <div class="affiliations">
+        <h4>AFFILIATIONS</h4>
+        <p>
+          Digital Humanities and Digital Knowledge - <br>
+          DHDK Second Cycle Degree<br>
+          <br>
+          University of Bologna
+        </p>
+        <!--social icons-->
+        <div class="social-icons-container">
+          <a href=https://github.com/bolognaindustries/industrialheritage/blob/main/items/items.html""><img
+              class="social-icons" src="images/logoface.png" alt="Facebook Logo"></a>
+          <a href=""><img class="social-icons" src="images/logoinsta.png" alt="Instagram Logo"></a>
+          <a href=""><img class="social-icons" src="images/logounibo.png" alt="University of Bologna Logo"></a>
+        </div>
+        <!--social icons-->
+      </div>
+      <!--3rd column-->
+    </footer>
+    <!--Footer(Desktop)-->
+
+  </div>
+  <!--DESKTOP-->
+
+  <!--MOBILE-->
+  <div id="mobile" style="display: none;">
+
+    <!--Section 2: Map and Descriptions(Mobile)-->
+    <div class="section2" id="target-section">
+
+      <!--Top Container-->
+      <div class="right-container">
+
+        <!--Map 1st alternative-->
+        <div class="maps" id="map-container1-m" style="display: block;">
+
+          <div class="title">
+            <h3>GROUND FLOOR</h3>
+          </div>
+
+          <div class="map-container">
+            <img src="images/groundfloormapgray - vertical.png" alt="Museum Map" class="map">
+            <!--numbers on the map-->
+            <div class="numbers">
+              <div class="number-m" id="number1-m" data-preview="preview1" data-item="item1" data-text="text1-m"
+                style="top: 50%; left: 71%;">1</div>
+              <div class="number-m" id="number2-m" data-preview="preview2" data-item="item2" data-text="text2-m"
+                style="top: 38%; left: 55%;">2</div>
+              <div class="number-m" id="number3-m" data-preview="preview3" data-item="item3" data-text="text3-m"
+                style="top: 18%; left: 50%;">3</div>
+              <div class="number-m" id="number4-m" data-preview="preview4" data-item="item4" data-text="text4-m"
+                style="top: 60%; left: 45%;">4</div>
+              <div class="number-m" id="number5-m" data-preview="preview5" data-item="item5" data-text="text5-m"
+                style="top: 50%; left: 58%;">5</div>
+              <div class="number-m" id="number6-m" data-preview="preview6" data-item="item6" data-text="text6-m"
+                style="top: 70%; left: 57%;">6</div>
+              <div class="number-m" id="number7-m" data-preview="preview7" data-item="item7" data-text="text7-m"
+                style="top: 84%; left: 55%;">7</div>
+              <div class="number-m" id="number8-m" data-preview="preview8" data-item="item8" data-text="text8-m"
+                style="top: 85%; left: 40%;">8</div>
+              <div class="number-m" id="number9-m" data-preview="preview9" data-item="item9" data-text="text9-m"
+                style="top: 60%; left: 20%;">9</div>
+            </div>
+            <!--numbers on the map-->
+          </div>
+        </div>
+        <!--Map 1st alternative-->
+
+        <!--Map 2nd alternative-->
+        <div class="maps" id="map-container2-m" style="display: none;">
+
+          <div class="title">
+            <h3>FIRST FLOOR</h3>
+          </div>
+
+          <div class="map-container">
+            <img src="images/firstfloormapgray - vertical.png" alt="Museum Map" class="map">
+
+            <!--numbers on the map-->
+            <div class="numbers">
+              <div class="number-m" id="number10" data-preview="preview10" data-item="item10" data-text="text10-m"
+                style="top: 55%; left: 25%;">10</div>
+              <div class="number-m" id="number11" data-preview="preview11" data-item="item11" data-text="text11-m"
+                style="top: 55%; left: 43%;">11</div>
+              <div class="number-m" id="number12" data-preview="preview12" data-item="item12" data-text="text12-m"
+                style="top: 40%; left: 40%;">12</div>
+              <div class="number-m" id="number13" data-preview="preview13" data-item="item13" data-text="text13-m"
+                style="top: 23%; left: 48%;">13</div>
+              <div class="number-m" id="number14" data-preview="preview14" data-item="item14" data-text="text14-m"
+                style="top: 6%; left: 45%;">14</div>
+              <div class="number-m" id="number15" data-preview="preview15" data-item="item15" data-text="text15-m"
+                style="top: 10%; left: 63%;">15</div>
+            </div>
+            <!--numbers on the map-->
+          </div>
+        </div>
+        <!--Map 2nd alternative-->
+
+        <!--Map buttons-->
+        <div class="map-btn-container">
+          <div class="btn-map" id="btn-map-1-m">
+            <i class="fa-solid fa-chevron-left d-md-none d-sm-block"></i>
+          </div>
+          <div class="btn-map" id="btn-map-2-m">
+            <i class="fa-solid fa-chevron-right d-md-none d-sm-block"></i>
+          </div>
+        </div>
+        <!--Map buttons-->
+      </div>
+      <!--Top Container-->
+
+      <!--Bottom Container-->
+
+      <!--Tab to Open the Hidden Container-->
+      <div class="tab">
+        <div class="tab-icon-container">
+          <i class="fa-solid fa-chevron-up" style="color: #dfdfdf;"></i>
+        </div>
+      </div>
+      <!--Tab to Open the Hidden Container-->
+
+      <!--Hidden Container-->
+      <div class="left-container-m" style="display: none;">
+        <div class="pop-up-icon-container">
+          <i class="fa-solid fa-chevron-down" style="color: white;"></i>
+        </div>
+        <!--1st alternative(floor description)-->
+        <!--Ground Floor-->
+        <div class="floor-description-m" id="description1-m">
+          <h3 class="title">GROUND FLOOR: MEDIEVAL INDUSTRY</h3>
+          <p id="ground-floor-description-m">
+            <span>The ground floor is set within the Hoffmann kiln gallery, featuring models,
+            machines, and scientific instruments from the Aldini Valeriani collections, Bologna's oldest technical
+            school.</span>
+            <span>
+            These exhibits trace key technological milestones of the Industrial Revolution in Bologna and its
+            industrial development from the 19th to early 20th centuries. Highlights include the history of the
+            Galotti
+            Brickworks, home to the museum, and the introduction of Hoffmann kilns in the late 19th century.</span>
+            <span>Visitors can explore the kiln's structure and learn about brick production, from clay extraction to
+            firing.</span>
+          </p>
+        </div>
+        <!--Ground Floor-->
+
+        <!--First Floor-->
+        <div class="floor-description-m" id="description2-m" style="display: none;">
+          <h3 class="title">FIRST FLOOR: MEDIEVAL INDUSTRY</h3>
+          <p id="first-floor-description-m"> 
+            <span>This floor showcases iconic products representing Bologna’s industrial
+            evolution, such as the Zamboni-Troncon tortellini machine and the ACMA 713 packaging machine.</span>
+            <span>The exhibits focus on the growth of technical knowledge, production systems, and innovative processes
+            that have
+            established Bologna as a leader in automation and manufacturing.</span>
+            <span>Visitors can delve into the dynamics of
+            industrial development, supported by local institutions that have driven competitiveness and advanced
+            production methods.</span>
+          </p>
+        </div>
+        <!--First Floor-->
+        <!--1st alternative-->
+
+        <!--2nd alternative(descriptions for each item on click)-->
+        <div class="item-texts-m" style="display: none;">
+
+          <div class="text-m" id="text1-m">
+            <div class="content" data-user="kid" style="display: none;">
+              <h4>1st Item</h4>
+              <h3>Terracotta Mould</h3>
+              <img src="images/images11.png" style="left: 45%; top: 16%">
+              <p></p>
+            </div>
+            <div class="content" data-user="general">
+              <h4>1st Item</h4>
+              <h3>Terracotta Mould</h3>
+              <img src="images/images11.png" style="left: 45%; top: 16%">
+              <p></p>
+            </div>
+            <div class="content" data-user="expert" style="display: none;">
+              <h4>1st Item</h4>
+              <h3>Terracotta Mould</h3>
+              <img src="images/images11.png" style="left: 45%; top: 16%">
+              <p></p>
+            </div>
+          </div>
+
+          <div class="text-m" id="text2-m">
+            <div class="content" data-user="kid" style="display: none;">
+              <h4>2nd Item</h4>
+              <h3>Melted Brick</h3>
+              <img src="images/images12.png" style="left: 50%; top: 16%; width: 360px;">
+              <p></p>
+            </div>
+            <div class="content" data-user="general">
+              <h4>2nd Item</h4>
+              <h3>Melted Brick</h3>
+              <img src="images/images12.png" style="left: 50%; top: 16%; width: 360px;">
+              <p></p>
+            </div>
+            <div class="content" data-user="expert" style="display: none;">
+              <h4>2nd Item</h4>
+              <h3>Melted Brick</h3>
+              <img src="images/images12.png" style="left: 50%; top: 16%; width: 360px;">
+              <p></p>
+            </div>
+          </div>
+
+          <div class="text-m" id="text3-m">
+            <div class="content" data-user="kid" style="display: none;">
+              <h4>3rd Item</h4>
+              <h3>Aldini Steam Machine</h3>
+              <img src="">
+              <p>The Aldini Steam Machine is an iconic exhibit at the Museo del Patrimonio Industriale in Bologna. This
+                machine represents a critical advancement in the use of steam power during the Industrial Revolution.
+                Designed to drive various factory processes, it transformed steam energy into mechanical motion. Its
+                preserved structure allows visitors to appreciate its role in boosting industrial productivity in the
+                19th century.</p>
+            </div>
+            <div class="content" data-user="general">
+              <h4>3rd Item</h4>
+              <h3>Aldini Steam Machine</h3>
+              <img src="">
+              <p>This steam engine underscores Bologna's industrial transformation during the 19th century. It was part
+                of a broader technological shift where coal-powered boilers produced steam to drive pistons, enabling
+                factories to operate machinery at unprecedented scales. Specifically, Bologna's mechanical and textile
+                industries benefited greatly from such innovations. The Aldini Steam Machine reflects the city's
+                commitment to incorporating cutting-edge engineering into its production systems, a commitment rooted in
+                educational initiatives like those pioneered by Giovanni Aldini and the Aldini-Valeriani Institute.
+                The machine played a vital role in minimizing manual labor while optimizing efficiency, marking a leap
+                forward in industrial processes that relied on human or animal power. Its preservation at the museum
+                offers insight into the historical context of Bologna as a leader in Italian industrialization.
+              </p>
+            </div>
+            <div class="content" data-user="expert" style="display: none;">
+              <h4>3rd Item</h4>
+              <h3>Aldini Steam Machine</h3>
+              <img src="">
+              <p>The Aldini Steam Machine operates using a double-acting piston mechanism, where steam is introduced
+                alternately to both sides of a cylinder, creating continuous rotary motion. This motion drives a
+                flywheel, stabilizing the mechanical output and providing steady power for factory operations.
+                Key technical features include:
+                A boiler designed to generate high-pressure steam efficiently.
+                Precision-engineered valves and pressure gauges ensuring safe operation.
+                Cast-iron and brass components that exemplify 19th-century metallurgical advancements.
+                The machine's design embodies the principles of thermodynamics, particularly the conversion of heat
+                energy into mechanical work. Restorative efforts have preserved its operational aspects, allowing the
+                museum to demonstrate its functionality to visitors. For a deeper understanding of steam engine
+                mechanics, including applications similar to the Aldini model, see this technical analysis on Wikipedia
+                or consult resources from the Aldini-Valeriani archives
+              </p>
+            </div>
+          </div>
+
+          <div class="text-m" id="text4-m">
+            <div class="content" data-user="kid" style="display: none;">
+              <h4>4th Item</h4>
+              <h3>Hoffmann Kiln</h3>
+              <img src="">
+              <p></p>
+            </div>
+            <div class="content" data-user="general">
+              <h4>4th Item</h4>
+              <h3>Hoffmann Kiln</h3>
+              <img src="">
+              <p></p>
+            </div>
+            <div class="content" data-user="expert" style="display: none;">
+              <h4>4th Item</h4>
+              <h3>Hoffmann Kiln</h3>
+              <img src="">
+              <p></p>
+            </div>
+          </div>
+
+          <div class="text-m" id="text5-m">
+            <div class="content" data-user="kid" style="display: none;">
+              <h4>5th Item</h4>
+              <h3>Power Hammer</h3>
+              <img src="images/images6.png"
+                style="left: 10%; top: 16%; height: 280px; width: auto; transform: scaleX(-1);">
+              <p>The Power Hammer, on display at the Museo del Patrimonio Industriale in Bologna, is a significant
+                example of early mechanical forging technology. Designed to deliver controlled, high-impact strikes,
+                this machine was used to shape and refine metal for industrial purposes. With its characteristic
+                hammer-and-anvil structure, it automated a process traditionally reliant on manual labor, making
+                metalworking faster and more efficient.</p>
+            </div>
+            <div class="content" data-user="general">
+              <h4>5th Item</h4>
+              <h3>Power Hammer</h3>
+              <img src="images/images6.png"
+                style="left: 10%; top: 16%; height: 280px; width: auto; transform: scaleX(-1);">
+              <p>Power hammers emerged during the Industrial Revolution as a response to the growing demand for
+                large-scale metal shaping. These machines mechanized the forging process, which had previously relied on
+                the strength and skill of blacksmiths using hand tools. Initially steam-powered, later versions
+                incorporated electric motors, marking a transition into modern industry.
+                The Power Hammer at the Bologna museum is a testament to the city's metallurgical and engineering
+                legacy. It played a crucial role in producing components for heavy industries such as railroads,
+                shipbuilding, and machinery. By delivering repeated, consistent strikes, the hammer allowed for greater
+                precision and efficiency in forging processes, enabling the creation of high-quality, standardized
+                parts.
+              </p>
+            </div>
+            <div class="content" data-user="expert" style="display: none;">
+              <h4>5th Item</h4>
+              <h3>Power Hammer</h3>
+              <img src="images/images6.png"
+                style="left: 10%; top: 16%; height: 280px; width: auto; transform: scaleX(-1);">
+              <p>The Power Hammer at the Museo del Patrimonio Industriale exemplifies early applications of dynamic
+                force in industrial manufacturing. Its single-action design relies on a flywheel and crankshaft system
+                to convert rotational energy into the vertical motion required for the hammerhead's striking action.
+                This energy transfer allows the hammer to deliver high-impact, repetitive blows with remarkable
+                precision.
+                The machine's heavy anvil block, often made of cast iron, is engineered to absorb and dissipate the
+                immense forces generated during operation, preventing mechanical failure and ensuring worker safety. The
+                flywheel, a critical component, not only stabilizes energy output but also allows for adjustable stroke
+                rates, enabling the hammer to handle a range of forging tasks, from delicate shaping to heavy-duty
+                metalwork.
+                The precision of this power hammer underscores Bologna's industrial advancements. It was essential in
+                the production of standardized parts, contributing to the rise of mass production. The machine also
+                reflects the broader transition from manual craftsmanship to mechanized efficiency, marking a key moment
+                in metallurgical history. For more on forging technologies, refer to Power Hammers in Forging History
+                and related technical archives.
+              </p>
+            </div>
+          </div>
+
+          <div class="text-m" id="text6-m">
+            <div class="content" data-user="kid" style="display: none;">
+              <h4>6th Item</h4>
+              <h3>Shaping Machine</h3>
+              <img src="images/images8.png" style="left: 50%; top: 1%; width: 300px;">
+              <p>The Shaping Machine at the Museo del Patrimonio Industriale in Bologna is a representative example of
+                early machining technology used to cut and shape metal. Its design features a linear tool movement,
+                allowing it to produce precise flat surfaces, grooves, and other complex shapes. This machine was
+                essential for creating standardized components, contributing to the development of industrial
+                manufacturing.</p>
+            </div>
+            <div class="content" data-user="general">
+              <h4>6th Item</h4>
+              <h3>Shaping Machine</h3>
+              <img src="images/images8.png" style="left: 50%; top: 1%; width: 300px;">
+              <p>Shaping machines became a cornerstone of industrial workshops in the late 19th and early 20th
+                centuries, coinciding with the rise of mechanized manufacturing. Before these machines, workers relied
+                on labor-intensive manual filing or primitive lathes for metal shaping. The introduction of the shaping
+                machine automated these processes, increasing both precision and productivity.
+                The machine on display in Bologna exemplifies the city's innovation in mechanical tooling. It was used
+                extensively to produce parts for the city's burgeoning industries, including textiles, automotive, and
+                engineering. By automating the creation of geometric shapes and intricate designs, the shaping machine
+                helped meet the growing demand for high-quality, interchangeable components, fostering industrial
+                expansion.
+              </p>
+            </div>
+            <div class="content" data-user="expert" style="display: none;">
+              <h4>6th Item</h4>
+              <h3>Shaping Machine</h3>
+              <img src="images/images8.png" style="left: 50%; top: 1%; width: 300px;">
+              <p>The shaping machine employs a reciprocating motion driven by a crank-and-lever mechanism. The cutting
+                tool moves linearly across a stationary workpiece, enabling precise shaping of flat surfaces, slots, and
+                grooves. Its key components include:
+                Adjustable Cutting Head: Facilitates cutting at various angles and depths, increasing versatility.
+                Robust Framework: Ensures stability during operation, critical for maintaining precision.
+                Variable Stroke Length: Allows the machine to adapt to different workpiece sizes and cutting tasks.
+                Automatic Feed Mechanism: Moves the workpiece incrementally to ensure uniform cuts.
+                The shaping machine at the museum is a preserved example of engineering precision, reflecting Bologna's
+                industrial history. Its ability to produce complex parts laid the groundwork for the mass production
+                techniques that defined modern industry.
+                For additional insights into shaping technology and its impact on machining, explore Shaping Machines in
+                Industry and the museum's technical catalog
+              </p>
+            </div>
+          </div>
+
+          <div class="text-m" id="text7-m">
+            <div class="content" data-user="kid" style="display: none;">
+              <h4>7th Item</h4>
+              <h3>Hydraulic Pump</h3>
+              <img src="images/images5.png" style="width: 200px; left: 40%; top: 10%;">
+              <p>The Hydraulic Pump exhibited at the Museo del Patrimonio Industriale in Bologna is a fine example of a
+                machine designed to convert mechanical energy into hydraulic energy. By pressurizing fluids, it
+                facilitated the operation of industrial systems and machinery, becoming a cornerstone of 19th and
+                20th-century industrial advancements. This pump, like many others of its time, played a vital role in
+                streamlining production processes and improving operational efficiency.
+              </p>
+            </div>
+            <div class="content" data-user="general">
+              <h4>7th Item</h4>
+              <h3>Hydraulic Pump</h3>
+              <img src="images/images5.png" style="width: 200px; left: 40%; top: 12%;">
+              <p>Hydraulic pumps emerged as critical technologies during the Industrial Revolution, addressing the need
+                for efficient fluid transfer in various industries. Before their development, transporting and
+                pressurizing fluids was cumbersome, relying on gravity or manual methods. The introduction of hydraulic
+                systems allowed for continuous and consistent pressure, which transformed fields such as manufacturing,
+                construction, and urban water distribution.
+                The Bologna model, preserved in the museum, reflects the city's mechanical ingenuity. Its design
+                supported local industries, particularly textiles and metalworking, by powering machinery with high
+                precision. Additionally, hydraulic systems played a key role in urban infrastructure, facilitating the
+                distribution of water for both industrial and municipal use.
+              </p>
+            </div>
+            <div class="content" data-user="expert" style="display: none;">
+              <h4>7th Item</h4>
+              <h3>Hydraulic Pump</h3>
+              <img src="images/images5.png" style="width: 200px; left: 40%; top: 10%;">
+              <p>The hydraulic pump operates based on Pascal's principle, which states that pressure applied to a
+                confined fluid is transmitted equally in all directions. The pump at the Museo del Patrimonio
+                Industriale utilizes a piston-driven mechanism to create a pressure differential, forcing liquid through
+                intake and output valves. Key features include:
+                Precision-Machined Cylinders: Ensuring minimal leakage and maximum energy transfer.
+                High-Pressure Valves: Engineered to control fluid flow and prevent backflow.
+                Durable Construction Materials: Typically brass and cast iron, to withstand corrosion and high operating
+                pressures.
+                Integrated Safety Mechanisms: Designed to regulate pressure and prevent overloading.
+                This machine highlights the technical progress in fluid dynamics and mechanical design. Its efficiency
+                and reliability paved the way for modern hydraulic systems used in construction equipment, automotive
+                brakes, and aerospace technologies. For detailed analyses, refer to Hydraulic Pump Innovations and the
+                museum's technical manuals.
+              </p>
+            </div>
+          </div>
+
+          <div class="text-m" id="text8-m">
+            <div class="content" data-user="kid" style="display: none;">
+              <h4>8th Item</h4>
+              <h3>Steam Hammer and Vacuum Pump</h3>
+              <img src="images/images9.png" style="width: 290px; left: 50%; top: 7%;">
+              <p>
+              </p>
+            </div>
+            <div class="content" data-user="general">
+              <h4>8th Item</h4>
+              <h3>Steam Hammer and Vacuum Pump</h3>
+              <img src="images/images9.png" style="width: 290px; left: 50%; top: 7%;">
+              <p></p>
+            </div>
+            <div class="content" data-user="expert" style="display: none;">
+              <h4>8th Item</h4>
+              <h3>Steam Hammer and Vacuum Pump</h3>
+              <img src="images/images9.png" style="width: 290px; left: 50%; top: 7%;">
+              <p></p>
+            </div>
+          </div>
+
+          <div class="text-m" id="text9-m">
+            <div class="content" data-user="kid" style="display: none;">
+              <h4>9th Item</h4>
+              <h3>Cube Brodo Packing Machine</h3>
+              <img src="images/images10.png" style="transform: scaleX(-1);">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore
+                magna aliqua. .</p>
+            </div>
+            <div class="content" data-user="general">
+              <h4>9th Item</h4>
+              <h3>Cube Brodo Packing Machine</h3>
+              <img src="images/images10.png" style="transform: scaleX(-1);">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore
+                magna aliqua. .</p>
+            </div>
+            <div class="content" data-user="expert" style="display: none;">
+              <h4>9th Item</h4>
+              <h3>Cube Brodo Packing Machine</h3>
+              <img src="images/images10.png" style="transform: scaleX(-1);">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore
+                magna aliqua. .</p>
+            </div>
+          </div>
+
+          <div class="text-m" id="text10-m">
+            <div class="content" data-user="kid" style="display: none;">
+              <h4>10th Item</h4>
+              <h3>Chocolate Packing Machine</h3>
+              <img src="images/images7.png" style="width: 340px; left: 50%; top: 15%;">
+              <p></p>
+            </div>
+            <div class="content" data-user="general">
+              <h4>10th Item</h4>
+              <h3>Chocolate Packing Machine</h3>
+              <img src="images/images7.png" style="width: 340px; left: 50%; top: 15%;">
+              <p></p>
+            </div>
+            <div class="content" data-user="expert" style="display: none;">
+              <h4>10th Item</h4>
+              <h3>Chocolate Packing Machine</h3>
+              <img src="images/images7.png" style="width: 340px; left: 50%; top: 15%;">
+              <p></p>
+            </div>
+          </div>
+
+          <div class="text-m" id="text11-m">
+            <div class="content" data-user="kid" style="display: none;">
+              <h4>11th Item</h4>
+              <h3>Tortellini Machine</h3>
+              <img src="images/images (2).png" style="width: 240px; left: 55%; top: 15%;">
+              <p></p>
+            </div>
+            <div class="content" data-user="general">
+              <h4>11th Item</h4>
+              <h3>Tortellini Machine</h3>
+              <img src="images/images (2).png" style="width: 240px; left: 55%; top: 15%;">
+              <p></p>
+            </div>
+            <div class="content" data-user="expert" style="display: none;">
+              <h4>11th Item</h4>
+              <h3>Tortellini Machine</h3>
+              <img src="images/images (2).png" style="width: 240px; left: 55%; top: 15%;">
+              <p></p>
+            </div>
+          </div>
+
+          <div class="text-m" id="text12-m">
+            <div class="content" data-user="kid" style="display: none;">
+              <h4>12th Item</h4>
+              <h3>Gelato Machine</h3>
+              <img src="images/images4 (1).png" style="height: 340px; width: auto; left: 30%; top: 20%;">
+              <p></p>
+            </div>
+            <div class="content" data-user="general">
+              <h4>12th Item</h4>
+              <h3>Gelato Machine</h3>
+              <img src="images/images4 (1).png" style="height: 340px; width: auto; left: 30%; top: 20%;">
+              <p></p>
+            </div>
+            <div class="content" data-user="expert" style="display: none;">
+              <h4>12th Item</h4>
+              <h3>Gelato Machine</h3>
+              <img src="images/images4 (1).png" style="height: 340px; width: auto; left: 30%; top: 20%;">
+              <p></p>
+            </div>
+          </div>
+
+          <div class="text-m" id="text13-m">
+            <div class="content" data-user="kid" style="display: none;">
+              <h4>13th Item</h4>
+              <h3>Silk Mill Model</h3>
+              <img src="images/images13.png" style="height: 340px; width: auto; left: 40%; top: 15%;">
+              <p></p>
+            </div>
+            <div class="content" data-user="general">
+              <h4>13th Item</h4>
+              <h3>Silk Mill Model</h3>
+              <img src="images/images13.png" style="height: 340px; width: auto; left: 40%; top: 15%;">
+              <p></p>
+            </div>
+            <div class="content" data-user="expert" style="display: none;">
+              <h4>13th Item</h4>
+              <h3>Silk Mill Model</h3>
+              <img src="images/images13.png" style="height: 340px; width: auto; left: 40%; top: 15%;">
+              <p></p>
+            </div>
+          </div>
+
+          <div class="text-m" id="text14-m">
+            <div class="content" data-user="kid" style="display: none;">
+              <h4>14th Item</h4>
+              <h3>Silk Loom Model</h3>
+              <img src="images/images2.png" style="height: 450px; width: auto; left: 47%; top: 1%;">
+              <p></p>
+            </div>
+            <div class="content" data-user="general">
+              <h4>14th Item</h4>
+              <h3>Silk Loom Model</h3>
+              <img src="images/images2.png" style="height: 450px; width: auto; left: 47%; top: 1%;">
+              <p></p>
+            </div>
+            <div class="content" data-user="expert" style="display: none;">
+              <h4>14th Item</h4>
+              <h3>Silk Loom Model</h3>
+              <img src="images/images2.png" style="height: 450px; width: auto; left: 47%; top: 1%;">
+              <p></p>
+            </div>
+          </div>
+
+          <div class="text-m" id="text15-m">
+            <div class="content" data-user="kid" style="display: none;">
+              <h4>15th Item</h4>
+              <h3>Silk</h3>
+              <img src="">
+              <p></p>
+            </div>
+            <div class="content" data-user="general">
+              <h4>15th Item</h4>
+              <h3>Silk</h3>
+              <img src="">
+              <p></p>
+            </div>
+            <div class="content" data-user="expert" style="display: none;">
+              <h4>15th Item</h4>
+              <h3>Silk</h3>
+              <img src="">
+              <p></p>
+            </div>
+          </div>
+
+        </div>
+        <!--2nd alternative-->
+
+        <!--User type buttons-->
+        <div class="user-btn-container-m">
+          <div class="user-btn-toggle-m"></div>
+          <div class="user-btn-m" id="user-btn1-m" data-user="kid" style="display: none;"></div>
+          <div class="user-btn-m" id="user-btn2-m" data-user="general" style="display: none;"></div>
+          <div class="user-btn-m" id="user-btn3-m" data-user="expert" style="display: none;"></div>
+        </div>
+        <!--User type buttons-->
+      </div>
+      <!--Hidden Container-->
+
+      <!--Bottom Container-->
+
+    </div>
+    <!--Section 2: Map and Description(Mobile)-->
+
+    <!--Footer(Mobile)-->
+    <footer class="footer">
+      <div class="container footer-content">
+        <!--Top-->
+        <div class="title-container">
+          <h1 id="home-title-m">ABOUT THE<br>GROUP</h1>
+          <img id="museum-logo-m" src="images/logoconscritta.png">
+        </div>
+        <!--Top-->
+
+        <!--Middle-->
+        <div class="contacts">
+          <h4>CONTACTS</h4>
+          <p>
+            Anna Nicoletti<br>
+            Ekaterina Krasnova<br>
+            Nadia Calvisi<br>
+            Rubens Fernandes Junior<br>
+          </p>
+        </div>
+
+        <div class="affiliations">
+          <h4>AFFILIATIONS</h4>
+          <p>
+            Digital Humanities and Digital Knowledge - <br>
+            DHDK Second Cycle Degree<br>
+            <br>
+            University of Bologna
+          </p>
+        </div>
+        <!--Middle-->
+
+        <!--Bottom-->
+        <div class="social-icons-container">
+          <a href=https://github.com/bolognaindustries/industrialheritage/blob/main/items/items.html""><img
+              class="social-icons" src="images/logoface.png" alt="Facebook Logo"></a>
+          <a href=""><img class="social-icons" src="images/logoinsta.png" alt="Instagram Logo"></a>
+          <a href=""><img class="social-icons" src="images/logounibo.png" alt="University of Bologna Logo"></a>
+        </div>
+        <!--Bottom-->
+      </div>
+    </footer>
+    <!--Footer(Mobile)-->
+
+  </div>
+  <!--MOBILE-->
+
+  <!--javascript-->
+  <script src="the-museum-main.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <!--javascript-->
+</body>
+
 </html>

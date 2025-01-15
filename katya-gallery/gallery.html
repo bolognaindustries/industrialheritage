@@ -135,12 +135,25 @@
             </div>
         </div>
     </section>
+    
+    <!-- Modal Structure -->
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <div class="modal-content">
+            <span class="prev" onclick="scrollGallery(-1)">&#10094;</span>
+            <div class="scroll-container">
+                <!-- Images will be inserted here dynamically -->
+            </div>
+            <span class="next" onclick="scrollGallery(1)">&#10095;</span>
+        </div>
+    </div>
 
+    <!-- Explore Items Section -->
     <section class="explore-items">
             <div class="gallery-items" id="items">
                 <!-- Item 1 -->
                 <div class="gallery-item" id="item-1">
-                    <img src="images/14color.png" alt="Item 1">
+                    <img src="images/14color.png" alt="Item 1" onclick="openModal(['additional images/IMG_4931.JPG', 'additional images/IMG_4932.JPG', 'additional images/image3.jpg', 'additional images/image4.jpg'])">
                     <h4>Aldini Steam Machine</h4>
                     <p>The Aldini Steam Machine, built in the early 19th century, is a key example of Bologna’s role in the early development of steam power. Designed by Giovanni Aldini, it featured innovative engineering that enhanced mechanical efficiency and performance.</p>
                     <button class="btn-go-to-item">Go to item</button>
@@ -148,7 +161,7 @@
 
                 <!-- Item 2 -->
                 <div class="gallery-item" id="item-2">
-                    <img src="images/6color.png" alt="Item 2">
+                    <img src="images/6color.png" alt="Item 2" onclick="openModal(['additional images/IMG_4931.JPG', 'additional images/IMG_4932.JPG', 'additional images/image3.jpg', 'additional images/image4.jpg'])">
                     <h4>Brodo Packing Machine</h4>
                     <p>The Brodo Packing Machine, developed in the early 20th century, exemplifies Bologna's advancements in packaging technology. 
                         Designed to enhance the efficiency of food packing processes, this innovative machine revolutionized the way products were packaged for distribution.</p>
@@ -157,7 +170,7 @@
 
                 <!-- Item 3 -->
                 <div class="gallery-item" id="item-3">
-                    <img src="images/5color.png" alt="Item 3">
+                    <img src="images/5color.png" alt="Item 3" onclick="openModal(['additional images/IMG_4931.JPG', 'additional images/IMG_4932.JPG', 'additional images/image3.jpg', 'additional images/image4.jpg'])">
                     <h4>Easter Egg Packing Machine</h4>
                     <p>The Easter Egg Packing Machine, introduced in the mid-20th century, transformed the egg industry with its cutting-edge automation.
                         With its advanced mechanisms, the machine could quickly sort, pack, and seal eggs into cartons.
@@ -167,7 +180,7 @@
 
                 <!-- Item 4 -->
                 <div class="gallery-item" id="item-4">
-                    <img src="images/13color.png" alt="Item 4">
+                    <img src="images/13color.png" alt="Item 4" onclick="openModal(['additional images/IMG_4931.JPG', 'additional images/IMG_4932.JPG', 'additional images/image3.jpg', 'additional images/image4.jpg'])">
                     <h4>Gear Cutter Machine</h4>
                     <p>The Gear Cutter Machine, a vital tool from the early 20th century, played a crucial role in the precision manufacturing of gears. Known for its accuracy and efficiency, this machine enabled the mass production of gears essential to various industries.</p>
                     <button class="btn-go-to-item">Go to item</button>
@@ -175,7 +188,7 @@
 
                 <!-- Item 5 -->
                 <div class="gallery-item" id="item-5">
-                    <img src="images/3color.png" alt="Item 5">
+                    <img src="images/3color.png" alt="Item 5" onclick="openModal(['additional images/IMG_4931.JPG', 'additional images/IMG_4932.JPG', 'additional images/image3.jpg', 'additional images/image4.jpg'])">
                     <h4>Gelato Machine</h4>
                     <p>The Gelato Machine, a symbol of Italian culinary ingenuity, revolutionized the production of gelato in the early 20th century. This machine automated the traditional churning process, allowing for faster and more consistent gelato creation.</p>
                     <button class="btn-go-to-item">Go to item</button>
@@ -183,7 +196,7 @@
 
                 <!-- Item 6 -->
                 <div class="gallery-item" id="item-6">
-                    <img src="images/5color.png" alt="Item 6">
+                    <img src="images/15color.png" alt="Item 6" onclick="openModal(['additional images/IMG_4931.JPG', 'additional images/IMG_4932.JPG', 'additional images/image3.jpg', 'additional images/image4.jpg'])">
                     <h4>Hoffmann Klin</h4>
                     <p>The Hoffmann Klin, a pioneering industrial kiln from the 19th century, was instrumental in revolutionizing brick production. Its continuous firing process allowed for greater efficiency and output compared to traditional kilns.</p>
                     <button class="btn-go-to-item">Go to item</button>
@@ -191,7 +204,7 @@
 
                 <!-- Item 7 -->
                 <div class="gallery-item" id="item-7">
-                    <img src="images/2color.png" alt="Item 7">
+                    <img src="images/2color.png" alt="Item 7" onclick="openModal(['additional images/IMG_4931.JPG', 'additional images/IMG_4932.JPG', 'additional images/image3.jpg', 'additional images/image4.jpg'])">
                     <h4>Melted Brick</h4>
                     <p>The Melted Brick, a byproduct of extreme heat during industrial brick production, showcases the fascinating imperfections that occur in the manufacturing process. These deformed bricks offer a glimpse into the challenges faced in early kiln operations, where temperature control was still evolving.</p>
                     <button class="btn-go-to-item">Go to item</button>
@@ -199,7 +212,7 @@
 
                 <!-- Item 8 -->
                 <div class="gallery-item" id="item-8">
-                    <img src="images/12color.png" alt="Item 8">
+                    <img src="images/12color.png" alt="Item 8" onclick="openModal(['additional images/IMG_4931.JPG', 'additional images/IMG_4932.JPG', 'additional images/image3.jpg', 'additional images/image4.jpg'])">
                     <h4>Shaping Machine</h4>
                     <p>The Shaping Machine, an essential tool in early 20th-century manufacturing, was designed to precisely cut and shape metal into various forms. Known for its versatility and accuracy, this machine played a key role in producing components for machinery and industrial equipment.</p>
                     <button class="btn-go-to-item">Go to item</button>
@@ -207,7 +220,7 @@
 
                 <!-- Item 9 -->
                 <div class="gallery-item" id="item-9">
-                    <img src="images/9color.png" alt="Item 9">
+                    <img src="images/9color.png" alt="Item 9" onclick="openModal(['additional images/IMG_4931.JPG', 'additional images/IMG_4932.JPG', 'additional images/image3.jpg', 'additional images/image4.jpg'])">
                     <h4>Steam Trip Hammer</h4>
                     <p>The Steam Trip Hammer, an essential tool in 19th-century manufacturing, used steam power to deliver powerful, repetitive blows for forging and shaping metal. This machine significantly increased the efficiency and precision of metalworking.</p>
                     <button class="btn-go-to-item">Go to item</button>
@@ -215,7 +228,7 @@
 
                 <!-- Item 10 -->
                 <div class="gallery-item" id="item-10">
-                    <img src="images/7color.png" alt="Item 10">
+                    <img src="images/7color.png" alt="Item 10" onclick="openModal(['additional images/IMG_4931.JPG', 'additional images/IMG_4932.JPG', 'additional images/image3.jpg', 'additional images/image4.jpg'])">
                     <h4>Silk Loom</h4>
                     <p>The Silk Loom, a vital machine in Bologna’s historic silk industry, was used to weave delicate silk threads into luxurious fabrics. Dating back to the Renaissance, these looms were crucial for producing the fine textiles that made Bologna a renowned silk production hub.</p>
                     <button class="btn-go-to-item">Go to item</button>
@@ -223,7 +236,7 @@
 
                 <!-- Item 11 -->
                 <div class="gallery-item" id="item-11">
-                    <img src="images/8color.png" alt="Item 11">
+                    <img src="images/8color.png" alt="Item 11" onclick="openModal(['additional images/IMG_4931.JPG', 'additional images/IMG_4932.JPG', 'additional images/image3.jpg', 'additional images/image4.jpg'])">
                     <h4>Silk Mill</h4>
                     <p>The Silk Mill revolutionized silk production by automating the labor-intensive process of spinning and weaving. Raw silk threads from silkworm cocoons were carefully unwound, spun, and woven into luxurious fabrics, all under the precision of water-powered machines.</p>
                     <button class="btn-go-to-item">Go to item</button>
@@ -231,7 +244,7 @@
 
                 <!-- Item 12 -->
                 <div class="gallery-item" id="item-12">
-                    <img src="images/11color.png" alt="Item 12">
+                    <img src="images/11color.png" alt="Item 12" onclick="openModal(['additional images/IMG_4931.JPG', 'additional images/IMG_4932.JPG', 'additional images/image3.jpg', 'additional images/image4.jpg'])">
                     <h4>Water Turbine</h4>
                     <p>The Water Turbine, a vital piece of early industrial technology, harnessed the power of flowing water to generate mechanical energy. Used in mills and factories, it converted hydraulic energy into rotational motion, driving various industrial processes.</p>
                     <button class="btn-go-to-item">Go to item</button>
@@ -239,7 +252,7 @@
 
                 <!-- Item 13 -->
                 <div class="gallery-item" id="item-13">
-                    <img src="images/1color.png" alt="Item 13">
+                    <img src="images/1color.png" alt="Item 13" onclick="openModal(['additional images/IMG_4931.JPG', 'additional images/IMG_4932.JPG', 'additional images/image3.jpg', 'additional images/image4.jpg'])">
                     <h4>Terracotta Mold</h4>
                     <p>The Terracotta Mold, used in traditional ceramics and tile-making, shaped raw clay into intricate patterns and designs. Essential for creating decorative and functional terracotta pieces, these molds enabled consistent production and high-quality results.</p>
                     <button class="btn-go-to-item">Go to item</button>
@@ -247,7 +260,7 @@
 
                 <!-- Item 14 -->
                 <div class="gallery-item" id="item-14">
-                    <img src="images/4color.png" alt="Item 14">
+                    <img src="images/4color.png" alt="Item 14" onclick="openModal(['additional images/IMG_4931.JPG', 'additional images/IMG_4932.JPG', 'additional images/image3.jpg', 'additional images/image4.jpg'])">
                     <h4>Tortellini Machine</h4>
                     <p>The Tortellini Machine, a key innovation in culinary production, automated the process of crafting Bologna's iconic tortellini. Designed to create perfectly formed pasta with consistent quality, this machine streamlined the production of these beloved stuffed pasta pockets.</p>
                     <button class="btn-go-to-item">Go to item</button>
@@ -255,7 +268,7 @@
 
                 <!-- Item 15 -->
                 <div class="gallery-item" id="item-15">
-                    <img src="images/10color.png" alt="Item 15">
+                    <img src="images/10color.png" alt="Item 15" onclick="openModal(['additional images/IMG_4931.JPG', 'additional images/IMG_4932.JPG', 'additional images/image3.jpg', 'additional images/image4.jpg'])">
                     <h4>Steam Trip Hammer</h4>
                     <p>The Steam Trip Hammer, an essential tool in 19th-century manufacturing, used steam power to deliver powerful, repetitive blows for forging and shaping metal. This machine significantly increased the efficiency and precision of metalworking.</p>
                     <button class="btn-go-to-item">Go to item</button>
@@ -317,6 +330,44 @@
     <!-- Bootstrap JS and Dependencies -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/b7dc8e0f7f.js" crossorigin="anonymous"></script>
+    <script>
+        function openModal(images) {
+            const modal = document.getElementById("imageModal");
+            const scrollContainer = modal.querySelector(".scroll-container");
+            scrollContainer.innerHTML = ''; // Clear previous images
+        
+            // Create and append images
+            images.forEach(src => {
+                const img = document.createElement("img");
+                img.src = src;
+                scrollContainer.appendChild(img);
+            });
+        
+            modal.style.display = "block";
+        }
+        
+        function scrollGallery(direction) {
+            const scrollContainer = document.querySelector(".scroll-container");
+            const scrollAmount = scrollContainer.clientWidth;
+            
+            scrollContainer.scrollBy({
+                left: direction * scrollAmount,
+                behavior: 'smooth'
+            });
+        }
+        
+        // Close modal handlers
+        document.querySelector(".close").onclick = () => {
+            document.getElementById("imageModal").style.display = "none";
+        }
+        
+        window.onclick = (event) => {
+            const modal = document.getElementById("imageModal");
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
+        }
+        </script>
 
 </body>
 </html>

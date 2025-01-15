@@ -303,6 +303,12 @@
     max-width: 250px;  
     height: auto;  
     margin: 0 auto;  
+    cursor: zoom-in; 
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.02);
 }
 
 .gallery-item h4 {
@@ -348,6 +354,74 @@
   width: 100%; 
   margin: 0;
   border-top: 0.5px solid #6f6e6e;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+  position: relative;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+.scroll-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 20px;
+  padding: 20px;
+}
+
+.scroll-container img {
+  height: 70vh;
+  width: auto;
+  object-fit: contain;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  user-select: none;
+  background: rgba(0,0,0,0.5);
+  border-radius: 50%;
+}
+
+.prev {
+  left: -70px; /* Position outside the container */
+}
+
+.next {
+  right: -70px; /* Position outside the container */
+}
+
+.prev:hover, .next:hover {
+  background: rgba(128, 128, 128, 0.9);
+}
+
+.close {
+  position: absolute;
+  right: 25px;
+  top: 10px;
+  color: #fff;
+  font-size: 35px;
+  cursor: pointer;
 }
 
 /*footer*/
