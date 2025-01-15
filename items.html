@@ -8,67 +8,47 @@
 
   <body>
     
-  <!--navbar-->
-  <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg bg-trasparent nav-underline" data-bs-theme="dark">
       <div class="container-fluid">
           <!--title and logo-->
-          <a class="navbar-brand" href="index.html">
-            <img src="images/LOGO.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-center"><span>INDUSTRIAL HERITAGE</span>
-          </a>
+          <a class="navbar-brand" href="index.html"><img src="images/LOGO.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-center"><span>INDUSTRIAL HERITAGE</span></a>
           <!--title and logo-->
           <!--toggle for mobile view-->
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
           <!--toogle for mobile view-->
           <!--links-->
           <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
-                <hr class="link-lines">
+              <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">HOME</a></li>
+              <li><div class="vr d-none d-lg-block text-light opacity-100"></div></li> 
+              <li class="nav-item dropdown nav-underline">
+                  <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">THE ITEMS</a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="timeline.html">CHRONOLOGICAL PATH</a></li>
+                      <li class="dropdown-item dropdown">
+                          <a class="dropdown-toggle" id="thematicalTrigger" role="button">THEMATICAL PATH</a>
+                          <ul class="dropdown-menu nested-menu" id="thematicalMenu">
+                              <li><a class="dropdown-item" href="brick-by-boring-brick.html">Brick by Boring Brick</a></li>
+                              <li><a class="dropdown-item" href="la-dolce-vita-italiana.html">La Dolce Vita Italiana</a></li>
+                              <li><a class="dropdown-item" href="the-machines-world.html">The Machine's World</a></li>
+                              <li><a class="dropdown-item" href="the-silk-road.html">The Silk Road</a></li>
+                          </ul>
+                      </li>
+                      <li><a class="dropdown-item" href="geographical.html">GEOGRAPHICAL PATH</a></li>
+                  </ul>
               </li>
-
-              <li>
-                <div class="vr d-none d-lg-block text-light opacity-100"></div>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link active" href="katya-gallery/gallery.html">THE GALLERY</a>
-                <hr class="link-lines">
-              </li>
-
-              <li>
-                <div class="vr d-none d-lg-block text-light opacity-100"></div>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link active" href="#">THE PROJECT</a>
-                <hr class="link-lines">
-              </li>
-
-              <li>
-                <div class="vr d-none d-lg-block text-light opacity-100" text-light></div>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link active" href="the-museum.html">THE MUSEUM</a>
-                <hr class="link-lines">
-              </li>
-
-              <li>
-                <div class="vr d-none d-lg-block text-light opacity-100"></div>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link active" href="#">ABOUT US</a>
-                <hr class="link-lines">
-              </li>
+              <li><div class="vr d-none d-lg-block text-light opacity-100" text-light></div></li>
+              <li class="nav-item"><a class="nav-link" href="the-museum.html">THE MUSEUM</a></li>
+              <li><div class="vr d-none d-lg-block text-light opacity-100"></div></li>
+              <li class="nav-item"><a class="nav-link" href="katya-gallery/gallery.html">THE GALLERY</a></li>
+              <li><div class="vr d-none d-lg-block text-light opacity-100"></div></li>
+              <li class="nav-item"><a class="nav-link" href="#">ABOUT US</a></li>
             </ul>
-            <!--links-->
-        </div>
-  </nav>
-  <!--navbar-->
+          </div>  
+      </div>
+    </nav>
+    <!--navbar-->
 
   <!--section1-->
   <div class="section1">
@@ -76,18 +56,6 @@
       <div class="item-title-container">
         <h2 class="item-title" id="item-title1" style="display: none;">TERRACOTTA MOULD</h2>
         <h2 class="item-title" id="item-title2" style="display: none;">MELTED BRICK</h2>
-        <h2 class="item-title" id="item-title3" style="display: none;">GELATO MACHINE</h2>
-        <h2 class="item-title" id="item-title4" style="display: none;">TORTELLINI MACHINE</h2>
-        <h2 class="item-title" id="item-title5" style="display: none;">CHOCOLATE PACKING MACHINE</h2>
-        <h2 class="item-title" id="item-title6" style="display: none;">CUBE BRODO PACKING MACHINE</h2>
-        <h2 class="item-title" id="item-title7" style="display: none;">SILK LOOM MODEL</h2>
-        <h2 class="item-title" id="item-title8" style="display: none;">SILK MILL MODEL</h2>
-        <h2 class="item-title" id="item-title9" style="display: none;">SILK</h2>
-        <h2 class="item-title" id="item-title10" style="display: none;">HYDRAULIC PUMP</h2>
-        <h2 class="item-title" id="item-title11" style="display: none;">STEAM HAMMER AND VACUUM PUMP</h2>
-        <h2 class="item-title" id="item-title12" style="display: none;">POWER HAMMER</h2>
-        <h2 class="item-title" id="item-title13" style="display: none;">SHAPING MACHINE</h2>
-        <h2 class="item-title" id="item-title14" style="display: none;">ALDINI STEAM MACHINE</h2>
         <h2 class="item-title" id="item-title15" style="display: none;">HOFFMANN KILN</h2>
       </div>
     <!--titles of all of the items-->
@@ -97,19 +65,7 @@
         <div class="carousel-images">
             <img src="images/1color.png" id="slide1" alt="Terracotta Mold" data-info="info1" data-dot="dot1">
             <img src="images/2color.png" id="slide2" alt="Melted Brick" data-info="info2" data-dot="dot2">
-            <img src="images/3color.png" id="slide3" alt="Gelato Machine" data-info="info3" data-dot="dot3">
-            <img src="images/4color.png" id="slide4" alt="Tortellini Machine" data-info="info4" data-dot="dot4">
-            <img src="images/5color.png" id="slide5" alt="Chocolate Packing Machine" data-info="info5" data-dot="dot5">
-            <img src="images/6color.png" id="slide6" alt="Cube Brodo Packing Machine" data-info="info6" data-dot="dot6">
-            <img src="images/7color.png" id="slide7" alt="Silk Loom Model" data-info="info7" data-dot="dot7">
-            <img src="images/8color.png" id="slide8" alt="Silk Mill Model" data-info="info8" data-dot="dot8">
-            <img src="images/9color.png" id="slide9" alt="Silk" data-info="info9" data-dot="dot9">
-            <img src="images/10color.png" id="slide10" alt="Hydraulic Pump" data-info="info10" data-dot="dot10">
-            <img src="images/11color.png" id="slide11" alt="Steam Hammer and Vacuum Pump" data-info="info11" data-dot="dot11">
-            <img src="images/12color.png" id="slide12" alt="Power Hammer" data-info="info12" data-dot="dot12">
-            <img src="images/13color.png" id="slide13" alt="Shaping Machine" data-info="info13" data-dot="dot13">
-            <img src="images/14color.png" id="slide14" alt="Aldini Steam Machine" data-info="info14" data-dot="dot14">
-            <img src="" id="slide15" alt="Hoffmann Kiln" data-info="info15" data-dot="dot15">
+            <img src="images/15color.png" id="slide15" alt="Hoffmann Kiln" data-info="info15" data-dot="dot15">
         </div>
         <button class="prev" onclick="prevSlide()">❮</button>
         <button class="next" onclick="nextSlide()">❯</button>
@@ -162,19 +118,19 @@
           <tbody>
             <tr>
               <th scope="row">Made By</th>
-              <td></td>
+              <td>- -</td>
             </tr>
             <tr>
               <th scope="row">Brand</th>
-              <td></td>
+              <td>Società Laterizi Imola</td>
             </tr>
             <tr>
               <th scope="row">Year</th>
-              <td></td>
+              <td>1922</td>
             </tr>
             <tr>
               <th scope="row">Location</th>
-              <td></td>
+              <td>Fornace Galeotti</td>
             </tr>
           </tbody>
         </table>
@@ -624,20 +580,8 @@
 
       <!--titles of all of the items-->
         <div class="item-title-container">
-          <h2 class="item-title" id="item-title1" style="display: none;">TERRACOTTA MOULD</h2>
+          <h2 class="item-title" id="item-title1" style="display: none;">TERRACOTTA MOLD</h2>
           <h2 class="item-title" id="item-title2" style="display: none;">MELTED BRICK</h2>
-          <h2 class="item-title" id="item-title3" style="display: none;">GELATO MACHINE</h2>
-          <h2 class="item-title" id="item-title4" style="display: none;">TORTELLINI MACHINE</h2>
-          <h2 class="item-title" id="item-title5" style="display: none;">CHOCOLATE PACKING MACHINE</h2>
-          <h2 class="item-title" id="item-title6" style="display: none;">CUBE BRODO PACKING MACHINE</h2>
-          <h2 class="item-title" id="item-title7" style="display: none;">SILK LOOM MODEL</h2>
-          <h2 class="item-title" id="item-title8" style="display: none;">SILK MILL MODEL</h2>
-          <h2 class="item-title" id="item-title9" style="display: none;">SILK</h2>
-          <h2 class="item-title" id="item-title10" style="display: none;">HYDRAULIC PUMP</h2>
-          <h2 class="item-title" id="item-title11" style="display: none;">STEAM HAMMER AND VACUUM PUMP</h2>
-          <h2 class="item-title" id="item-title12" style="display: none;">POWER HAMMER</h2>
-          <h2 class="item-title" id="item-title13" style="display: none;">SHAPING MACHINE</h2>
-          <h2 class="item-title" id="item-title14" style="display: none;">ALDINI STEAM MACHINE</h2>
           <h2 class="item-title" id="item-title15" style="display: none;">HOFFMANN KILN</h2>
         </div>
       <!--titles of all of the items-->
