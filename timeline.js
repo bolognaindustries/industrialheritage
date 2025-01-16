@@ -6,19 +6,33 @@ const rightArrow = document.getElementById('rightArrow');
 // Verifica se gli elementi sono stati trovati
 if (timeline && leftArrow && rightArrow) {
     // Scorrimento a sinistra
-    leftArrow.addEventListener('click', scrollLeft);
-    function scrollLeft() {
-        timeline.scrollBy(-385, 0);
-    }
-}
-// Scorrimento a sinistra
-leftArrow.addEventListener('click', scrollLeft);
-function scrollLeft() {
-    timeline.scrollBy(-385,0);
+    leftArrow.addEventListener('click', () => {
+        timeline.scrollBy({
+            left: -timeline.offsetWidth, // Sposta della larghezza visibile
+            behavior: 'smooth' // Scorrimento fluido
+        });
+    });
+
+    // Scorrimento a destra
+    rightArrow.addEventListener('click', () => {
+        timeline.scrollBy({
+            left: timeline.offsetWidth, // Sposta della larghezza visibile
+            behavior: 'smooth' // Scorrimento fluido
+        });
+    });
 }
 
-// Scorrimento a destra
-rightArrow.addEventListener('click', scrollRight);
-function scrollRight() {
-    timeline.scrollBy(385,0);
-}
+
+$(document).ready(function(){
+    $('.row').slick({
+      setting-name: setting-value
+    });
+  });
+
+  
+$('.multiple-items').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 3
+  });
+      

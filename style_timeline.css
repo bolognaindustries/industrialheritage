@@ -1,6 +1,7 @@
 
 body {
     background-color: #1d1d1e;
+    overflow-x: hidden;
   }
   
   /*navbar*/
@@ -58,8 +59,8 @@ body {
 
 /*title and styles*/
 .title-container {
-   padding-left: 55px;
-   color: white;
+   padding-left: 5%;
+   color:  rgba(230, 230, 230, 1);
 }
 .page-title {
    color: transparent;
@@ -72,149 +73,81 @@ body {
  }
  
  .page-subtitle {
+   margin-top: 2%;
    font-size: 3vw;
  }
 
 
 
 /* Timeline */
-
-.timeline-carousel {
-   .row {
-      display: flex;
-      gap: 20px;
-      flex-wrap: nowrap;
-      overflow-x: auto;
-      scroll-snap-type: x mandatory;
-   }
-   &__item {
-      flex: 0 0 calc((100% - 40px) / 3);
-      scroll-snap-align: start;
-      cursor: pointer;
-      }
-
-   &__image {
-      background: center center;
-      background-size: cover;
-   }
+.row {
+   margin-top: 5%;
+   margin-left: 5%;
+   display: flex;
+   gap: 20px;
+   flex-wrap: nowrap;
+   overflow-x:scroll;
+}
    
-  .slick-list {
-     overflow: visible;
+.timeline-carousel__item {
+   flex: 0 0 calc((100% - 40px) / 3);
+   cursor: pointer;
+   }
+
+.timeline-carousel__image {
+   background: center center;
+   background-size: cover;
+   }
+
+  .timeline-carousel__item-inner {
+     margin-top: 8%;
   }
-  .slick-dots {
-     bottom: -73px;
-  }
-  h4 {
-     color: white rgba(255, 255, 255, 0.2);    
-     font-size: 46px;
-     line-height: 50pd;
-     margin-bottom: 40px;
-     font-weight: 900;
-  }
-     &:last-child {
-        .timeline-carousel__item-inner {
-           &:after {
-              width: calc(100% - 30px);
-           }
-        }
-     }
-  }
-  &__item-inner {
-     position: relative;
-     padding-top: 45px;
-     &:after {
-        position: absolute;
-        width: 100%;
-        top: 45px;
-        left: 0;
-        content: "";
-        border-bottom: 1px solid white rgba(255, 255, 255, 0.2);;
-     }
+
+   .item-inner-line {
+      border-top: 1px solid white;
+      margin-left: 3%;
+      width: 90%;
+   }
+
+   h4 {
+      color:  rgba(230, 230, 230, 1);    
+      font-size: 25px;
+      line-height: 50pd;
+      margin-bottom: 40px;
+      font-weight: 900;
+   }
      .year {
-        font-size: 36px;
+        font-size: 30px;
         line-height: 36px;
-        color: white rgba(255, 255, 255);
-        display: table;
-        letter-spacing: -1px;
-        padding-right: 10px;
+        flex-wrap: nowrap;
+        color: rgba(230, 230, 230, 1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        letter-spacing: 1px;
         position: relative;
         margin: -15px 0 20px;
         font-weight: 900;
-        &:after {
-           content: "";
-           position: absolute;
-           display: block;
-           left: -10px;
-           top: 0;
-           height: 100%;
-           width: 10px;
-        }
+        
      }
      p {
-        font-size: 12px;
-        line-height: 18px;
-        color: white rgba(255, 255, 255, 1);
-        width: 60%;
+        font-size: 16px;
+        line-height: 22px;
+        color: rgba(230, 230, 230, 1);
         font-weight: 400;
         margin-bottom: 15px;
      }
 
      .read-more {
-        font-size: 12px;
+        font-size: 16px;
         color: #b38c52;
         display: table;
         margin-bottom: 10px;
         font-weight: 900;
-        text-decoration: none;
+        text-decoration: underline;
         position: relative;
-        &:after {
-           content: "";
-           position: absolute;
-           left: 0;
-           bottom: -1px;
-           width: 0;
-           border-bottom: 2px solid #b38c52;
-           -webkit-transition: all 0.2s cubic-bezier(0.55, 0.085, 0.68, 0.53);
-           -o-transition: all 0.2s cubic-bezier(0.55, 0.085, 0.68, 0.53);
-           transition: all 0.2s cubic-bezier(0.55, 0.085, 0.68, 0.53);
-        }
-        &:hover {
-           &:after {
-              width: 100%;
-           }
-        }
       }
-    }
-    /* Stili delle frecce di navigazione */
-.nav-arrow {
-   position: relative;
-   margin-top: auto; /*per centrarla con l'immagine, spostare il div in carousel-image*/
-   margin-bottom: auto;
-   background-color: #E6E6FA;
-   border: none;
-   color: #2F4F4F;
-   width: 40px;
-   height: 37px;
-   cursor: pointer;
-   z-index: 10;
-   font-size: 20px;
-   top: 50%;
-   transform: translateY(-50%);
-   border-radius: 50%;
-   transition: background-color 0.3s;
-   align-items: center;
-   justify-content: center;
-}
-
-.left-arrow {
-   left: 0;
-}
-
-.right-arrow {
-   right: 0;
-}
-
-.nav-arrow:hover {
-   background-color: #B0C4DE;
-}
+    
+  
   
