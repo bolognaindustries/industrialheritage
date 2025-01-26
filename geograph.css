@@ -140,7 +140,7 @@ h3{
 }
 
 .dropdown-item {
-      background-color: transparent !important; 
+      background-color: black !important; 
       border: none;
       position: relative;
 }
