@@ -1,0 +1,653 @@
+@font-face {
+    font-family: 'Boecklins Universe';
+    src: url(fonts/boecklins-universe/Boecklins\ Universe.ttf);
+}
+
+body{
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(255, 255, 255);
+}
+
+/*navbar*/
+    .navbar { 
+        font-family: 'Cooper Hewitt', sans-serif;
+        font-weight: bold;
+        padding-left: 3%;
+        padding-right: 3%;
+        padding-top: 6px;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
+    .navbar-brand img {
+        height: 60px;
+        width: auto;
+    }
+
+    .navbar-brand span {
+        font-family: 'Cooper Hewitt', sans-serif;
+        font-size: 1rem;
+        margin-left: 9%;
+    }
+
+    .vr {
+        padding-left: 1px;
+        padding-right: 1px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .nav-item {
+    line-height: 2px;
+    }
+
+    .link-lines {
+        background-color: white;
+        height: 3px;
+        width: 0;
+        transition: width 0.3s ease;
+        opacity: 1;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 4px;
+    }
+
+    .nav-item:hover .link-lines {
+    width: 60%;
+    }
+
+    .navbar-nav .nav-link {
+        margin-top: 0;
+        padding-top:30px;
+    }
+/*navbar*/
+
+/*introduction section*/
+.introduction {
+    font-family: "Spectral SC", serif;
+    margin: 0;
+    padding: 0;
+    height: 120vh;
+    max-height: 120vh;
+    background: url(images/pink_background.jpg);
+    background-position: bottom;
+    background-size: cover;
+}
+
+.introduction-text-container {
+    position: relative;
+    width: 40%;
+    height: 70%;
+    background-color: #FEF7D7;
+    opacity: 0.95;
+    margin-left: 55%;
+    margin-top: 5%;
+}
+
+.introduction-title {
+    text-align: center;
+    color: #ac333e;
+    opacity: 1;
+    padding-top: 7%;
+    font-weight: bold;
+    font-size: 45px;
+}
+
+.introduction-text {
+    position: relative;
+    font-family: serif;
+    padding-left: 9%;
+    padding-right: 9%;
+    padding-top: 4%;
+    font-size: 1.25vw;
+    text-align: center;
+    letter-spacing: 0.5px;
+    line-height: 1.7em;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+/*introduction section*/
+
+/*main section*/
+.main-section {
+    background-color: #FEF7D7;
+    height: 170vh;
+}
+
+.row1 {
+    width: 85%;
+    height: 160vh;
+    display: flex;
+    flex-direction: row;
+    padding-top: 9%;
+    opacity: 1;
+    column-gap: 6%;
+    margin: 0 auto;
+}
+
+.element {
+    position: relative;
+    width: 27vw;
+    max-width: 27vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#element1 p, #element2 p, #element3 p {
+    font-family: serif;
+    font-size: 17px;
+    letter-spacing: 0.7px;
+    line-height: 1.9em;
+}
+
+#element2 {
+    align-items: start;
+}
+
+#element3 {
+    align-items: start;
+}
+
+#element1 img {
+    position: absolute;
+    height: 47vh;
+    max-height: 47vh;
+    width: auto;
+    top: 53%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#element2 img {
+    position: absolute;
+    height: 89vh;
+    width: auto;
+    max-height: 89vh;
+    top: 45%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#element3 img {
+    position: absolute;
+    height: 41vh;
+    max-height: 41vh;
+    width: auto;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+/*section1*/
+.section1 {
+    position: relative;
+    height: 150vh;
+    max-height: 150vh;
+    overflow: hidden;
+    background-color: #FEF7D7;
+}
+
+.section1_background {
+    position: absolute;
+    object-fit: cover;
+    height: 100%;
+    width: auto;
+    opacity: 0.4;
+}
+/*section1*/
+
+
+/*carousel*/
+    .carousel {
+        display: block;
+        width: 100%;
+        height: 55vh;
+        margin-top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 2;
+    }
+
+    .carousel-images {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .carousel-images img {
+        position: absolute;
+        display: block;
+        margin-left: 16%;
+        z-index: 100;
+    }
+
+    .button-container {
+        position: absolute;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        top: 40%;
+        align-items: center;
+        gap: 87%;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+
+    button {
+        background-color: #ac333e;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+        width: 8vh;
+        aspect-ratio: 1 / 1;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 4vh;
+    }
+
+    button:hover {
+        background-color: #ac333e;
+        opacity: 0.7;
+    }
+/*carousel*/
+
+/*titles*/
+    .section1 .item-title-container {
+        text-align: center;
+        margin-top: 2%;
+        margin-right: 10%;
+        z-index: 3;
+    }
+
+    .section1 .item-title {
+        font-family: "Spectral SC", serif;
+        position: relative;
+        text-align: left;
+        color: #ac333e;
+        font-size: 65px;
+        font-weight: 600;
+        margin-left: 5%;
+        word-wrap: break-word;
+        margin-bottom: 1%;
+        line-height: 0.9em;
+        z-index: 3;
+    }
+/*titles*/
+
+/*descriptions*/
+.item-texts {
+    position: absolute;
+    top: 17%;
+    width: 50vw;
+    font-size: 17px;
+    letter-spacing: 0.7px;
+    line-height: 1.9em;
+    left: 41%;
+    z-index: 50;
+    margin-bottom: 5%;
+}
+.text {
+    position: absolute;
+    font-family: serif;
+    text-align: right;
+    margin-bottom: 50%;
+}
+/*descriptions*/
+
+/*gallery button*/
+.gallery-button-container {
+    position: absolute;
+    display: flex;
+    right: 30%;
+    margin-top: 52%;
+}
+.gallery-button{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ac333e;
+    color: #FEF7D7;
+    font-family: serif;
+    width: 15vw;
+    height: 8vh;
+    text-align: center;
+    cursor: pointer;
+}
+/*gallery button*/
+
+/*user type buttons*/
+.user-btn-toggle {
+    cursor: pointer;
+    font-size: 30px;
+    margin-left: 5%;
+    aspect-ratio: 1/1;
+  }
+
+  .user-btn-container {
+    background-color: #ac333e;
+    cursor: pointer;
+    position: absolute;
+    width: 15vw;
+    height: 9vh;
+    left: 96%;
+    top: -5%;
+    display: flex;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px;
+  }
+
+  .user-btn-container img {
+    position: relative;
+    cursor: pointer;
+    width: 2em;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    z-index: 50;
+  }
+
+  .user-btn {
+    width: 2em;
+    height: 2em;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+  }
+
+  #user-btn1 {
+    background-image: url("images/ICONchildren.png");
+  }
+
+  #user-btn1.active {
+    background-image: url("");
+  }
+
+  #user-btn2 {
+    background-image: url("images/ICONgeneral.png");
+  }
+
+  #user-btn2.active {
+    background-image: url("");
+  }
+
+  #user-btn3 {
+    background-image: url("images/ICONexpert.png");
+  }
+
+  #user-btn3.active {
+    background-image: url("");
+  }
+/**user type buttons/
+
+/*info*/
+    .info-button {
+        font-family: "Spectral SC", serif;
+        position: absolute;
+        left: 1px;
+        top: 50%
+    }
+
+    .info-table-small {
+        font-family: "Spectral SC", serif;
+        text-align: center;
+        position: absolute;
+        right: -1%;
+        top: 10%;
+        transform: translateY(-50%) rotate(-90deg);
+        background-color: #ac333e;
+        color: #FEF7D7;
+        padding: 20px;
+        cursor: pointer;
+        font-size: 18px;
+        font-weight: bold;
+        z-index: 10;
+        border-radius: 10px;
+    }
+
+    .info-table-small:hover {
+        background-color: #ac333e;
+        opacity: 0.8;
+    }
+
+    .info-table-big {
+        font-family: "Spectral SC", serif;
+        margin-left: 70%;
+        position: absolute;
+        top: 5%;
+        width: 30%;
+        height: auto;
+        background-color: #ac333e;
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+        padding: 20px;
+        padding-left: 50px;
+        transition: right 0.5s ease;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow-y: auto;
+        z-index: 70;
+    }
+
+    .info-table-big h3 {
+        font-family: "Spectral SC", serif;
+        font-weight: bold;
+        margin-bottom: 20px;
+        color: #FEF7D7;;
+        text-align: center;
+        margin-top: 5%;
+    }
+
+    .info-table-big .information-container {
+        font-family: "Spectral SC", serif;
+        color: #FEF7D7;;
+        font-size: 18px;
+        font-family: 'Cooper Hewitt', sans-serif;
+        line-height: 45px;
+        margin-left: 2%;
+        margin-top: 10%;
+        max-width: 320px;
+        
+    }
+
+    .info-table-big .table-custom {
+        font-family: serif;
+        background-color: #ac333e !important;
+        color: #FEF7D7 !important;
+    }
+    
+    .info-table-big .table-custom th,
+    .info-table-big .table-custom td {
+        font-family: serif;
+        background-color: #ac333e !important;
+        color: #FEF7D7 !important;
+    }
+    
+    .info-table-big .table-custom thead th {
+        font-family: serif;
+        background-color: #ac333e !important;
+        color: #FEF7D7 !important;
+    }
+
+/*info*/
+
+
+/*lines and dots that change with the carousel*/
+    .line-container {
+        position: relative;
+        max-width: 66vh;
+        align-items: center;
+        margin-top: 6%;
+        margin-left: 8%;
+        cursor: pointer;
+    }
+
+    .active-line {
+        position: relative;
+        width: 10vh;
+        height: 3px;
+        background-color: #ac333e;
+        z-index: 3;
+    }
+
+    .inactive-line {
+        position: relative;
+        width: 100%;
+        height: 3px;
+        background-color: #ac333e;
+        opacity: 0.3;
+        top: -2px;
+        z-index: 1;
+    }
+
+    .dot-container {
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        top: 0;
+        z-index: 2;
+    }
+
+    .dot {
+        position: relative;
+        width: 1.7vh;
+        height: 1.7vh;
+        border-radius: 50%;
+        background-color: #ac333e;
+        margin-right: 3vh;
+        margin-left: 10vh;
+        top: -3.6px;
+        cursor: pointer;
+    }
+
+    .inner-dot {
+        position: absolute;
+        width: 4vh;
+        height: 4vh;
+        border-radius: 50%;
+        background-color: transparent;
+        border: 1px solid transparent;
+        top: -7px;
+        left: -7px;
+        cursor: pointer;
+    }
+
+    .dot.active .inner-dot {
+        border: 2px solid #ac333e;
+        cursor: pointer;
+    }
+/*lines and dots that change with the carousel*/
+
+
+/*footer*/
+    footer {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: black;
+    }
+  
+  footer .row {
+    margin-left: -5%;
+    margin-right: -5%
+  }
+  
+  footer .title-container {
+    text-align: left;
+    margin-right: 2%;
+    margin-top: 7%;
+    font-family: 'Cooper Hewitt', sans-serif; 
+    color: white;
+  }
+  
+  footer #home-title {
+    position: relative;
+    font-size: 3vw;
+    z-index: 100;
+    font-weight: bold;
+        -webkit-text-stroke: 2px white;
+        color: transparent;
+  }
+  
+  footer #home-subtitle {
+  font-size: 2vw;
+  }
+  
+  footer h4 {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  text-align: left;
+  color: white;
+  }
+  
+  #museum-logo {
+  position: relative;
+  width: 325px;
+  height: auto;
+  display: block;
+  margin-top: 10%;
+  left: -10%;
+  top: -10%;
+  z-index: 10;
+  }
+  
+  .contacts p, footer .affiliations p {
+  line-height: 1.5;
+  margin-bottom: 20px;
+  text-align: left;
+  color: white;
+  font-weight: bold;
+  }
+  
+  footer p {
+  font-size: 17px;
+  font-weight: normal;
+  text-align: left;
+  font-family: 'Cooper Hewitt', sans-serif;
+  }
+  
+  .contacts, .affiliations {
+  margin-top: 19%;
+  }
+  
+  .contacts {
+    margin-left: 7%;
+  }
+  
+  .affiliations {
+    margin-left: 4%;
+  }
+  
+  .contacts h4 {
+    margin-bottom: 10%;
+  }
+  
+  .affiliations h4 {
+    margin-bottom: 7%;
+  }
+  
+  .social-icons-container {
+    max-width: 200px;
+    margin-top: 10%;
+    position: relative;
+    left: 50%;
+  }
+  
+  
+  .social-icons {
+    width: 19%;
+    height: auto;
+    margin-left: 5%;
+  }
+  
+  /*footer*/
