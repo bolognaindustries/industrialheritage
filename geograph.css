@@ -49,10 +49,11 @@ h3{
 }
 
 /* specifics for the navbar in general */
-.navbar { 
+.navbar {
     font-family: 'Cooper Hewitt', sans-serif;
     font-weight: bold;
     background-color: transparent;
+    padding: 20px 0;
     margin-left: 3%;
     margin-right: 3%;
   }
@@ -61,10 +62,111 @@ h3{
 .navbar-brand img {
     height: 60px;
     width: auto;
-  }
+}
 
 .navbar-brand span {
     font-family: 'Cooper Hewitt', sans-serif;
     font-size: 1rem;
     margin-left: 9%;
+}
+
+/* Separator between links */
+.vr {
+
+    padding-left: 1px;
+    padding-right: 1px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+.nav-item {
+    line-height: 10px;
+    }
+
+.link-lines {
+        background-color: white;
+        height: 2px;
+        width: 0;
+        transition: width 0.3s ease;
+        opacity: 1;
+}
+
+.nav-item:hover .link-lines {
+    width: 60%;
+}
+
+    /* Ensure the dropdown menu appears on hover */
+.nav-item.dropdown:hover .dropdown-menu {
+        display: block;
+}
+    
+.navbar .dropdown-menu {
+        top: 100%;
+        margin-top: 0;
+        left: 0;
+}
+    
+.dropdown-menu {
+        display: none;
+        border-radius: 0;
+        background-color: transparent;
+        min-width: 160px;
+        border: 0;
+        box-shadow: 0px 8px 16px 0px rgba(255, 255, 255, 0.2);
+        z-index: 1;
+}
+    
+.dropdown-menu a {
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: flex; 
+        align-items: center;
+        justify-content: center; 
+        text-align: center;
+    }
+
+.link-lines-dropdown {
+      background-color: white;
+      height: 2px;
+      width: 0;
+      transition: width 0.3s ease;
+      opacity: 1;
+}
+
+.dropdown-item {
+      background-color: transparent !important; 
+      border: none;
+      position: relative;
+}
+    
+.dropdown-item:hover::after,
+.dropdown-item:focus::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        width: 60%;
+        height: 2px;
+        background-color: #ffffff;
+        transition: width 0.3s ease !important;
+}
+    
+#thematicalTrigger:hover {
+        background-color: transparent !important;
+}
+
+.dropdown-menu {
+      position: relative;
+}
+    
+#thematicalMenu {
+        display: none;
+        position: static;
+        background: none;
+        box-shadow: none;
+}
+    
+#thematicalMenu.show {
+        display: block;
 }
