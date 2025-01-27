@@ -206,8 +206,6 @@ if (mobile) {
         var activeNumber = document.querySelector(".number-m[style*='background-color: #8CB758']");
         
         if(!activeNumber) return;
-        
-        var temporaryUserType = currentUserType;
 
         var textId = activeNumber.getAttribute("data-text");
         var activeText = document.getElementById(textId);

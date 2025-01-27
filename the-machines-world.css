@@ -184,7 +184,7 @@ body{
 /*section1*/
 .section1 {
     position: relative;
-    height: 150vh;
+    height: 115vh;
     max-height: 150vh;
     overflow: hidden;
     background-color: #FEF7D7;
@@ -301,10 +301,10 @@ body{
 
 /*gallery button*/
 .gallery-button-container {
-    position: absolute;
+    position: relative;
     display: flex;
-    right: 30%;
-    margin-top: 52%;
+    margin-left: 70%;
+    margin-top: 10%;
 }
 .gallery-button{
     position: absolute;
