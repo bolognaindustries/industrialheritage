@@ -50,7 +50,7 @@ function prevSlide() {
 
     updateSlide();
     updateLine();
-    showRightText();
+    updateContent();
 }
 
 function nextSlide() {
@@ -62,7 +62,7 @@ function nextSlide() {
 
     updateSlide();
     updateLine();
-    showRightText();
+    updateContent();
 }
 
 infoSmall.addEventListener("click", function () {
@@ -83,6 +83,7 @@ dots.forEach(function (dot, index) {
         currentSlide = index;
         updateSlide();
         updateLine();
+        updateContent();
 
         isInfoOpen = false;
     });
@@ -115,23 +116,6 @@ if (isInfoOpen) {
     infoSmall.style.display = "block";
 }
 
-// 2nd FUNCTION
-// Showing the right description for each item
-var texts = document.querySelectorAll(".text");
-
-function showRightText() {
-    texts.forEach(function (text) {
-        text.style.display = "none";
-    });
-
-    var textId = slides[currentSlide].getAttribute("data-text");
-    var rightText = document.getElementById(textId);
-    
-    if (rightText) {
-        rightText.style.display = "block";
-    }
-}
-
 // 3rd FUNCTION
 // Clicking on the user button and making all the 3 choices pop up
 var userToggleBtn = document.querySelector(".user-btn-toggle");
@@ -149,9 +133,9 @@ userToggleBtn.addEventListener("pointerdown", function () {
     isUserMenuOpen = !isUserMenuOpen;
 
     if (isUserMenuOpen) {
-        userBtnContainer.style.left = "85%"; // Sposta il contenitore verso sinistra
+        userBtnContainer.style.left = "-13%"; // Sposta il contenitore verso sinistra
     } else {
-        userBtnContainer.style.left = "93%"; // Riporta il contenitore alla posizione originale
+        userBtnContainer.style.left = "0"; // Riporta il contenitore alla posizione originale
     }
 });
 
@@ -171,24 +155,44 @@ userBtns.forEach(function (userBtn) {
 
 });
 
-// clicking on an usertype changes the content of the text based on both the chosen user type and the current slide
+// clicking on an user type button changes the content chosen inside the texts
+var texts = document.querySelectorAll(".text");
+var contents = document.querySelectorAll(".content");
+
 function updateContent() {
     localStorage.setItem("userType", currentUserType);
 
-    // get the right content based on the active slide
-    var activeText = texts[currentSlide];
-    var userContent = activeText.querySelector(`.content[data-user="${currentUserType}"]`);
 
-    // hides all the texts
-    texts.forEach(function (txt) {
-        txt.style.display = "none";
-    })
+    var textId = slides[currentSlide].getAttribute("data-text");
+    if (textId) {
+        var rightText = document.getElementById(textId);
+        
+        console.log("Right text:", rightText);
 
-    // show the content based on the active usertype, where present
-    if (userContent) {
-        userContent.style.display = "block";
+        if (rightText) {
+            var userContent = rightText.querySelector(`.content[data-user="${currentUserType}"]`);
+
+            console.log("User content:", userContent);
+            if (userContent) {
+
+                texts.forEach(function (text) {
+                    text.style.display = "none";
+                });
+                contents.forEach(function (content) {
+                    content.style.display = "none";
+                });
+                
+                texts[currentSlide].style.display = "block";
+
+                userContent.style.display = "block";
+                
+                console.log("Text ID:", textId);
+            }
+        }
     }
 }
 
+
+
 updateSlide();
-showRightText();
+updateContent();
