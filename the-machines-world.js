@@ -193,6 +193,5 @@ function updateContent() {
 }
 
 
-
 updateSlide();
 updateContent();

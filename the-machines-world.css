@@ -132,7 +132,6 @@ body{
     max-width: 27vw;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 #element1 p, #element2 p, #element3 p {
@@ -142,12 +141,18 @@ body{
     line-height: 1.9em;
 }
 
+#element1 {
+    text-align: left;
+}
+
 #element2 {
     align-items: start;
+    text-align: center;
 }
 
 #element3 {
     align-items: start;
+    text-align: right;
 }
 
 #element1 img {
@@ -670,3 +675,90 @@ body{
     margin-left: 5%;
   }
   /*footer*/
+
+
+  /*Media Queries*/
+    @media (max-width: 575.98px) {
+    /*introduction section*/
+        .introduction {
+            height: 100vh;
+        }
+        .introduction-text-container {
+            position: relative;
+            width: 80%;
+            height: 65%;
+            margin-left: 0;
+            margin-top: 10%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .introduction-title {
+            font-size: 30px;
+        }
+        .introduction-text {
+            position: relative;
+            font-family: serif;
+            padding-left: 9%;
+            padding-right: 9%;
+            padding-top: 4%;
+            font-size: 15px;
+            text-align: center;
+            letter-spacing: 0.5px;
+            line-height: 1.7em;
+            overflow-wrap: break-word;
+            word-wrap: break-word;
+        }
+    /*introduction section*/    
+
+    /*main section*/
+        .main-section {
+            background-color: #FEF7D7;
+            height: 600vh;
+        }
+        .row1 {
+            width: 100vw;
+            height: 600vh;
+            flex-direction: column;
+            row-gap: 7%;
+            align-items: center;
+            text-align: center;
+        }
+        .element {
+            margin-top: 10%;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            width: 90%;
+            max-width: 90%;
+        }
+        #element1 p, #element2 p, #element3 p {
+            font-size: 17px;
+        }
+        #element1 {
+            text-align: center;
+        }
+        #element2 {
+            align-items: center;
+        }
+        #element3 {
+            text-align: center;
+            margin-top: 30%;
+        }
+        #element1 img {
+            height: 30vh;
+            max-height: 30vh;
+            top: 110%;
+        }
+        #element2 img {
+            height: 55vh;
+            max-height: 55vh;
+            top: 100%;
+        }
+        #element3 img {
+            height: 27vh;
+            max-height: 27vh;
+            top: 110%;
+        }
+    /*main section*/
+    }
+  /*Media Queries*/
