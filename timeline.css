@@ -1,0 +1,153 @@
+
+body {
+    background-color: #1d1d1e;
+    overflow-x: hidden;
+  }
+  
+  /*navbar*/
+  .navbar { 
+    font-family: 'Cooper Hewitt', sans-serif;
+    font-weight: bold;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 6px;
+    padding-bottom: 0;
+  }
+  
+  .navbar-brand img {
+    height: 60px;
+    width: auto;
+  }
+  
+  .navbar-brand span {
+    font-family: 'Cooper Hewitt', sans-serif;
+    font-size: 1rem;
+    margin-left: 9%;
+  }
+  
+  .vr {
+    padding-left: 1px;
+    padding-right: 1px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  .nav-item {
+  line-height: 2px;
+  }
+  
+  .link-lines {
+    background-color: white;
+    height: 3px;
+    width: 0;
+    transition: width 0.3s ease;
+    opacity: 1;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4px;
+  }
+  
+  .nav-item:hover .link-lines {
+  width: 60%;
+  }
+  
+  .navbar-nav .nav-link {
+    margin-top: 0;
+    padding-top:30px;
+  }
+  /*navbar*/
+
+/*title and styles*/
+.title-container {
+   padding-left: 5%;
+   color:  rgba(230, 230, 230, 1);
+}
+.page-title {
+   color: transparent;
+   -webkit-text-stroke: 1px white;
+   font-size: 90px;
+   font-weight: bold;
+   text-transform: uppercase;
+   margin-left: 0;
+   margin-right: -2px;
+ }
+ 
+ .page-subtitle {
+   margin-top: 2%;
+   font-size: 3vw;
+ }
+
+
+
+/* Timeline */
+.row {
+   margin-top: 5%;
+   margin-left: 5%;
+   display: flex;
+   gap: 20px;
+   flex-wrap: nowrap;
+   overflow-x:scroll;
+}
+   
+.timeline-carousel__item {
+   flex: 0 0 calc((100% - 40px) / 3);
+   cursor: pointer;
+   }
+
+.timeline-carousel__image {
+   background: center center;
+   background-size: cover;
+   }
+
+  .timeline-carousel__item-inner {
+     margin-top: 8%;
+  }
+
+   .item-inner-line {
+      border-top: 1px solid white;
+      margin-left: 3%;
+      width: 90%;
+   }
+
+   h4 {
+      color:  rgba(230, 230, 230, 1);    
+      font-size: 25px;
+      line-height: 50pd;
+      margin-bottom: 40px;
+      font-weight: 900;
+   }
+     .year {
+        font-size: 30px;
+        line-height: 36px;
+        flex-wrap: nowrap;
+        color: rgba(230, 230, 230, 1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        letter-spacing: 1px;
+        position: relative;
+        margin: -15px 0 20px;
+        font-weight: 900;
+        
+     }
+     p {
+        font-size: 16px;
+        line-height: 22px;
+        color: rgba(230, 230, 230, 1);
+        font-weight: 400;
+        margin-bottom: 15px;
+     }
+
+     .read-more {
+        font-size: 16px;
+        color: #b38c52;
+        display: table;
+        margin-bottom: 10px;
+        font-weight: 900;
+        text-decoration: underline;
+        position: relative;
+      }
+    
+  
+  
