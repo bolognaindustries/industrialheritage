@@ -70,17 +70,17 @@ body {
         position: relative;
         display: flex;
         flex-direction: column;
-        width: 80%;
+        width: 90%;
         align-items: center;
         left: 50%;
         transform: translateX(-50%);
-        padding-top: 15%;
+        padding-top: 40%;
       }
   
       .introduction-container h1 {
         color: white;
         font-weight: bold;
-        font-size: 24px;
+        font-size: 33px;
         margin-bottom: 10%;
         text-align: center;
         line-height: 1.5em;
@@ -245,18 +245,18 @@ body {
         }
 
         .left-container-m {
-          height: 70vh;
+          height: 45vh;
           width: 100vw;
           background: #373636;
-          position: absolute;
+          position: sticky;
           border-top-left-radius: 45px;
           border-top-right-radius: 45px;
           display: flex;
           justify-content: center;
-          overflow: hidden;
           bottom: 0;
-          z-index: 1;
+          z-index: 200;
           font-family: "Poppins", sans-serif;
+          margin-top: 25%;
         }
 
         .left-container-m i {
@@ -283,19 +283,20 @@ body {
         }
 
         .left-container-m p {
+            position: absolute;
             font-weight: bold;
             font-size: 11pt;
             color: white;
             padding: 0;
-            overflow: hidden;
-            margin-left: 10%;
-            margin-right: 15%;
-            text-align: left;
+            margin-left: 5%;
+            margin-right: 5%;
+            text-align: center;
             letter-spacing: 2px;
             font-family: "Poppins", serif;
             font-weight: 400;
             font-style: normal;
             padding-top: 5%;
+            max-height: 35vh;
         }
 
         .left-container-m span {
@@ -313,6 +314,20 @@ body {
 
         .floor-description-m {
           max-height: 50vh;
+          font-family: serif;
+          font-weight: bold;
+          font-size: 11pt;
+          color: #FEF7D7;
+          margin-top: 16%;
+          margin-left: 10%;
+          margin-right: 10%;
+          text-align: center;
+          letter-spacing: 2px;
+          font-weight: 400;
+          font-style: normal;
+          overflow-y: scroll;
+          z-index: 300;
+          max-height: 32vh;
         }
 
         .text-m {
@@ -435,7 +450,7 @@ footer {
   footer #home-title-m {
     font-weight: bold;
     -webkit-text-stroke: 2px white;
-    font-size: 9vw;
+    font-size: 12vw;
     text-align: center;
     margin-left: 0;
     margin-right: 0;

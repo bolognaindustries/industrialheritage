@@ -95,6 +95,14 @@ buttons.forEach(function (button, index) {
         infosBig[currentSlide].style.display = "none"
         infoSmall.style.display = "block";
         isInfoOpen = false;
+
+        if (window.innerWidth <= 575.98) {
+            button.classList.remove("fa-solid fa-xmark");
+            button.classList.add("fa-solid fa-chevron-left");
+        } else {
+            button.classList.remove("fa-solid fa-chevron-left");
+            button.classList.add("fa-solid fa-xmark");
+        }
     });
 });
 
@@ -133,9 +141,13 @@ userToggleBtn.addEventListener("pointerdown", function () {
     isUserMenuOpen = !isUserMenuOpen;
 
     if (isUserMenuOpen) {
-        userBtnContainer.style.left = "-13%"; // Sposta il contenitore verso sinistra
+        if (window.innerWidth <= 575.98) {
+            userBtnContainer.style.right = "-255%";
+        } else {
+            userBtnContainer.style.right = "-2vw";
+        }
     } else {
-        userBtnContainer.style.left = "0"; // Riporta il contenitore alla posizione originale
+        userBtnContainer.style.right = "-15vw"; 
     }
 });
 
@@ -192,6 +204,33 @@ function updateContent() {
     }
 }
 
+// 4th FUNCTION
+// Only operate on mobile devices
+    // Clicking on the tab to show the hidden descriptions container
+    var tabBtn = document.querySelector(".tab-icon-container i");
+    var tab = document.querySelector(".tab");
+    var hiddenTabBtn = document.querySelector(".chevron-container");
+    var hiddenTabs = document.querySelectorAll(".item-texts");
+    
+    tabBtn.addEventListener("pointerdown", function() {
+        tab.style.display = "none";
 
+        hiddenTabs.forEach(function(hiddenTab) {
+            hiddenTab.style.display = "block";
+        });
+    });
+
+    hiddenTabBtn.addEventListener("pointerdown", function() {
+        
+        hiddenTabs.forEach(function (hiddenTab) {
+            hiddenTab.style.display = "none";
+        });
+        
+        tab.style.display = "block";
+    });
+
+// INITIALIZE
+localStorage.setItem("userType", currentUserType);
 updateSlide();
 updateContent();
+
