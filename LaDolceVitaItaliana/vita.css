@@ -3,7 +3,6 @@
     src: url(fonts/boecklins-universe/Boecklins\ Universe.ttf);
 }
 
-/* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,700;1,400&family=Italianno&family=Playfair+Display:wght@400;700&family=Raleway:wght@400;600&display=swap');
 
 body {
@@ -529,35 +528,25 @@ button:hover {
     transform: scale(1.15);
     cursor: pointer;
   }
+
+/*improved this part */
   
-  .user-btn.active {
+.user-btn.active {
     border: 2px solid #FEF7D7;
     border-radius: 50%;
-    box-shadow: 0 0 8px rgba(254, 247, 215, 0.5);
-  }
+    transform: scale(1.4);
+}
 
 #user-btn1 {
     background-image: url("objects/ICONchildren.png");
-}
-
-#user-btn1.active {
-    background-image: url("");
 }
 
 #user-btn2 {
     background-image: url("objects/ICONgeneral.png");
 }
 
-#user-btn2.active {
-    background-image: url("");
-}
-
 #user-btn3 {
     background-image: url("objects/ICONexpert.png");
-}
-
-#user-btn3.active {
-    background-image: url("");
 }
 
 .user-btn::after {
@@ -580,6 +569,7 @@ button:hover {
   .user-btn:hover::after {
     opacity: 1;
   }
+
 /* Footer */
 footer {
     width: 100%;
