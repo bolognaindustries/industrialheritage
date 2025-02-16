@@ -2,7 +2,7 @@
 
 body{
     margin: 0px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Lora", serif;
     background-color: rgb(255, 255, 255);
     scroll-behavior: unset;
 }
@@ -63,7 +63,7 @@ body{
 
 /*introduction section*/
 .introduction {
-    font-family: "Bembo", serif;
+    font-family: "Lora", serif;
     margin: 0;
     padding: 0;
     height: 120vh;
@@ -94,7 +94,7 @@ body{
 
 .introduction-text {
     position: relative;
-    font-family: sans-serif;
+    font-family: serif;
     padding-left: 9%;
     padding-right: 9%;
     padding-top: 7%;
@@ -266,7 +266,7 @@ body{
     }
 
     .section1 .item-title {
-        font-family: "Bembo", serif;
+        font-family: "Lora", serif;
         position: relative;
         text-align: left;
         color: #6D1B3F;
@@ -336,8 +336,8 @@ body{
         border-radius: 50%;
         background-color: transparent;
         border: 1px solid transparent;
-        top: -7px;
-        left: -7px;
+        top: -8px;
+        left: -8px;
         cursor: pointer;
     }
 
@@ -386,7 +386,8 @@ body{
         align-items: center;
         background-color: #6D1B3F;
         color: #FEF7D7;
-        font-family: serif;
+        font-family: "Montserrat", sans-serif;
+        font-weight: bold;
         width: 15vw;
         height: 8vh;
         text-align: center;
@@ -416,7 +417,7 @@ body{
 
     /*info*/
     .info-button {
-        font-family: "Spectral SC", serif;
+        font-family: "Montserrat", sans-serif;
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
@@ -424,7 +425,7 @@ body{
     }
 
     .info-table-small {
-        font-family: "Spectral SC", serif;
+        font-family: "Montserrat", sans-serif;
         text-align: center;
         position: absolute;
         transform: translateY(-50%) rotate(-90deg);
@@ -444,7 +445,7 @@ body{
     }
 
     .info-table-big {
-        font-family: "Spectral SC", serif;
+        font-family: "Montserrat", sans-serif;
         margin-left: -25%;
         position: absolute;
         width: 30%;
@@ -463,7 +464,7 @@ body{
     }
 
     .info-table-big h3 {
-        font-family: "Spectral SC", serif;
+        font-family: "Montserrat", sans-serif;
         font-weight: bold;
         margin-bottom: 20px;
         color: #6D1B3F;;
@@ -472,10 +473,9 @@ body{
     }
 
     .info-table-big .information-container {
-        font-family: "Spectral SC", serif;
+        font-family: "Montserrat", sans-serif;
         color: #6D1B3F;;
         font-size: 18px;
-        font-family: 'Cooper Hewitt', sans-serif;
         line-height: 45px;
         margin-left: 2%;
         margin-top: 10%;
@@ -483,20 +483,20 @@ body{
     }
 
     .info-table-big .table-custom {
-        font-family: serif;
+        font-family: "Montserrat", sans-serif;
         background-color: #6D1B3F !important;
         color: #FEF7D7 !important;
     }
     
     .info-table-big .table-custom th,
     .info-table-big .table-custom td {
-        font-family: serif;
+        font-family: "Montserrat", sans-serif;
         background-color: #6D1B3F !important;
         color: #FEF7D7 !important;
     }
     
     .info-table-big .table-custom thead th {
-        font-family: serif;
+        font-family: "Montserrat", sans-serif;
         background-color: #6D1B3F !important;
         color: #FEF7D7 !important;
     }
@@ -549,27 +549,27 @@ body{
     }
 
     #user-btn1 {
-        background-image: url("../images/ICONchildren.png");
+        background-image: url("../SilkRoad/AnnaKidInverted.png");
     }
 
     #user-btn1.active {
-        background-image: url("");
+        background-image: url("../SilkRoad/AnnaKid.png");
     }
 
     #user-btn2 {
-        background-image: url("../images/ICONgeneral.png");
+        background-image: url("../SilkRoad/AnnaGeneralInverted.png");
     }
 
     #user-btn2.active {
-        background-image: url("");
+        background-image: url("../SilkRoad/AnnaGeneral.png");
     }
 
     #user-btn3 {
-        background-image: url("../images/ICONexpert.png");
+        background-image: url("../SilkRoad/AnnaExpertInverted.png");
     }
 
     #user-btn3.active {
-        background-image: url("");
+        background-image: url("../SilkRoad/AnnaExpert.png");
     }
     /*user type buttons*/
 
