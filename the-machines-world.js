@@ -12,6 +12,8 @@ var carousel = document.querySelector(".carousel");
 var btnPrev = document.querySelector(".prev")
 var btnNext = document.querySelector(".next")
 var titleContainers = document.querySelectorAll(".item-title-container");
+chevronBtns = document.querySelectorAll(".chevron-button");
+xBtns = document.querySelectorAll(".x-button");
 
 var currentSlide = 0;
 var isInfoOpen = false;
@@ -95,14 +97,6 @@ buttons.forEach(function (button, index) {
         infosBig[currentSlide].style.display = "none"
         infoSmall.style.display = "block";
         isInfoOpen = false;
-
-        if (window.innerWidth <= 575.98) {
-            button.classList.remove("fa-solid fa-xmark");
-            button.classList.add("fa-solid fa-chevron-left");
-        } else {
-            button.classList.remove("fa-solid fa-chevron-left");
-            button.classList.add("fa-solid fa-xmark");
-        }
     });
 });
 
@@ -124,6 +118,24 @@ if (isInfoOpen) {
     infoSmall.style.display = "block";
 }
 
+if (window.innerWidth <= 575.98) {
+    chevronBtns.forEach(function(chevronBtn) {
+        chevronBtn.style.display = "none";
+    });
+
+    xBtns.forEach(function(xBtn) {
+        xBtn.style.display = "block";
+    });
+} else {
+    xBtns.forEach(function(xBtn) {
+        xBtn.style.display = "none";
+    });
+
+    chevronBtns.forEach(function(chevronBtn) {
+        chevronBtn.style.display = "block;"
+    });
+}
+
 // 3rd FUNCTION
 // Clicking on the user button and making all the 3 choices pop up
 var userToggleBtn = document.querySelector(".user-btn-toggle");
@@ -142,12 +154,16 @@ userToggleBtn.addEventListener("pointerdown", function () {
 
     if (isUserMenuOpen) {
         if (window.innerWidth <= 575.98) {
-            userBtnContainer.style.right = "-255%";
+            userBtnContainer.style.right = "-40vw";
         } else {
             userBtnContainer.style.right = "-2vw";
         }
     } else {
-        userBtnContainer.style.right = "-15vw"; 
+        if (window.innerWidth <= 575.98) {
+            userBtnContainer.style.right = "-3vw"; 
+        } else {
+            userBtnContainer.style.right = "-15vw";
+        }
     }
 });
 
