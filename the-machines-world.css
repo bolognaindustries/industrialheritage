@@ -101,7 +101,8 @@ body{
 /*main section*/
     .main-section {
         background-color: #FEF7D7;
-        height: 170vh;
+        height: auto;
+        padding-bottom: 20px;
     }
     .row1 {
         width: 85%;
@@ -530,7 +531,8 @@ body{
             column-gap: 8%;
             display: flex;
             align-items: center;
-            border-radius: 8px;
+            border-top-left-radius: 8px;
+            border-bottom-left-radius: 8px;
             z-index: 100;
             right: -15vw;
             top: 20vh;
@@ -706,10 +708,12 @@ body{
             background-color: #FEF7D7;
             max-height: 270vh;
             height: auto;
+            padding-bottom: 30px;
+            margin-top: 30px;
         }
         .row1 {
             width: 100vw;
-            height: 238vh;
+            height: auto;
             flex-direction: column;
             align-items: center;
             text-align: center;

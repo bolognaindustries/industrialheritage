@@ -160,7 +160,7 @@ userToggleBtn.addEventListener("pointerdown", function () {
         }
     } else {
         if (window.innerWidth <= 575.98) {
-            userBtnContainer.style.right = "-3vw"; 
+            userBtnContainer.style.right = "0"; 
         } else {
             userBtnContainer.style.right = "-15vw";
         }
