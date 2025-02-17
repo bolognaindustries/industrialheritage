@@ -101,7 +101,7 @@ body{
 }
 
 .dropdown-item {
-      background-color: black; 
+      background-color: transparent !important; 
       border: none;
       position: relative;
 }
@@ -132,7 +132,7 @@ body{
         box-shadow: none;
 }
     
-#thematical-menu.show {
+#thematicalMenu.show {
         display: block;
 }
 
