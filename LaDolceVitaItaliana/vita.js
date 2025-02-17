@@ -245,8 +245,17 @@ function updateContent() {
         tab.style.display = "block";
     });
 
+// added smooth scrolling behavior for mobile
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
 // INITIALIZE
 localStorage.setItem("userType", currentUserType);
 updateSlide();
 updateContent();
-
