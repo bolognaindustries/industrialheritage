@@ -763,3 +763,62 @@ footer p {
     /*main section*/
     }
   /*Media Queries*/
+  /*Media Queries*/
+  @media (max-width: 575.98px) {
+    /* Introduction Section */
+    .introduction {
+        height: 70vh !important; /* Reduced height */
+        position: relative;
+    }
+
+    .introduction-text-container {
+        height: 55% !important;
+        margin-top: 15% !important;
+        overflow-y: auto; /* Add scrolling */
+    }
+
+    .introduction-title {
+        font-size: 24px !important;
+        padding-top: 12% !important;
+        line-height: 1.2 !important;
+    }
+
+    .introduction-text {
+        font-size: 14px !important;
+        padding: 6% 9% !important;
+        line-height: 1.6 !important;
+    }
+}
+
+@media (max-width: 575.98px) {
+    /* Main Section */
+    .main-section {
+        height: auto !important;
+        padding-bottom: 20px;
+    }
+
+    .row1 {
+        height: auto !important;
+        row-gap: 30px !important;
+        padding-top: 15% !important;
+    }
+
+    .element {
+        margin-top: 5% !important;
+        padding: 0 5% !important;
+    }
+
+    #element3 {
+        margin-top: 15% !important;
+    }
+
+    .image-section2 {
+        margin-top: 10% !important;
+        padding-bottom: 15%;
+    }
+
+    .image-section2 img {
+        max-width: 70% !important;
+        display: block !important;
+    }
+}
