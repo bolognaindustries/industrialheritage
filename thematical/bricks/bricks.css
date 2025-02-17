@@ -141,6 +141,7 @@ hr {
 }
 
 /*navbar*/
+
 /*introduction section*/
 .introduction {
     font-family: 'Golden Brick', sans-serif;
@@ -149,7 +150,7 @@ hr {
     padding: 0;
     height: 105vh;
     max-height: 105vh;
-    background: url(../../images/bricks/img/backbrick.jpg);
+    background: url(backbrick.jpg);
     background-position: bottom;
     background-size: cover;
 }
@@ -646,27 +647,27 @@ hr {
     }
 
     #user-btn1 {
-        background-image: url("../../images/bricks/img/KidInverted.png");
+        background-image: url("KidInverted.png");
     }
 
     #user-btn1.active {
-        background-image: url("../../images/bricks/img/Kid.png");
+        background-image: url("Kid.png");
     }
 
     #user-btn2 {
-        background-image: url("../../images/bricks/img/GeneralInverted.png");
+        background-image: url("GeneralInverted.png");
     }
 
     #user-btn2.active {
-        background-image: url("../../images/bricks/img/General.png");
+        background-image: url("General.png");
     }
 
     #user-btn3 {
-        background-image: url("../../images/bricks/img/ExpertInverted.png");
+        background-image: url("ExpertInverted.png");
     }
 
     #user-btn3.active {
-        background-image: url("../../images/bricks/img/Expert.png");
+        background-image: url("Expert.png");
     }
     /*user type buttons*/
 
