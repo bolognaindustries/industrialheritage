@@ -12,6 +12,8 @@ var carousel = document.querySelector(".carousel");
 var btnPrev = document.querySelector(".prev")
 var btnNext = document.querySelector(".next")
 var titleContainers = document.querySelectorAll(".item-title-container");
+chevronBtns = document.querySelectorAll(".chevron-button");
+xBtns = document.querySelectorAll(".x-button");
 
 var currentSlide = 0;
 var isInfoOpen = false;
@@ -116,6 +118,24 @@ if (isInfoOpen) {
     infoSmall.style.display = "block";
 }
 
+if (window.innerWidth <= 575.98) {
+    chevronBtns.forEach(function(chevronBtn) {
+        chevronBtn.style.display = "none";
+    });
+
+    xBtns.forEach(function(xBtn) {
+        xBtn.style.display = "block";
+    });
+} else {
+    xBtns.forEach(function(xBtn) {
+        xBtn.style.display = "none";
+    });
+
+    chevronBtns.forEach(function(chevronBtn) {
+        chevronBtn.style.display = "block;"
+    });
+}
+
 // 3rd FUNCTION
 // Clicking on the user button and making all the 3 choices pop up
 var userToggleBtn = document.querySelector(".user-btn-toggle");
@@ -133,27 +153,35 @@ userToggleBtn.addEventListener("pointerdown", function () {
     isUserMenuOpen = !isUserMenuOpen;
 
     if (isUserMenuOpen) {
-        userBtnContainer.style.left = "-13%"; // Sposta il contenitore verso sinistra
+        if (window.innerWidth <= 575.98) {
+            userBtnContainer.style.right = "-40vw";
+        } else {
+            userBtnContainer.style.right = "-2vw";
+        }
     } else {
-        userBtnContainer.style.left = "0"; // Riporta il contenitore alla posizione originale
+        if (window.innerWidth <= 575.98) {
+            userBtnContainer.style.right = "0"; 
+        } else {
+            userBtnContainer.style.right = "-15vw";
+        }
     }
 });
 
-// Update the active class handling
-userBtns.forEach(function(userBtn) {
-    userBtn.addEventListener("pointerdown", function() {
-      userBtns.forEach(btn => btn.classList.remove("active"));
-      this.classList.add("active");
-      currentUserType = this.dataset.user;
-      updateContent();
+// clicking on an user type button changes its look
+userBtns.forEach(function (userBtn) {
+    userBtn.addEventListener("pointerdown", function () {
+
+        userBtns.forEach(function (btn) {
+            btn.classList.remove("active");
+        });
+
+        this.classList.add("active");
+
+        currentUserType = this.getAttribute("data-user");
+        updateContent();
     });
-  });
-  
-  // Initialize active state based on localStorage
-  document.addEventListener('DOMContentLoaded', () => {
-    const savedUserType = localStorage.getItem("userType") || "general";
-    document.querySelector(`[data-user="${savedUserType}"]`).classList.add("active");
-  });
+
+});
 
 // clicking on an user type button changes the content chosen inside the texts
 var texts = document.querySelectorAll(".text");
@@ -192,6 +220,33 @@ function updateContent() {
     }
 }
 
+// 4th FUNCTION
+// Only operate on mobile devices
+    // Clicking on the tab to show the hidden descriptions container
+    var tabBtn = document.querySelector(".tab-icon-container i");
+    var tab = document.querySelector(".tab");
+    var hiddenTabBtn = document.querySelector(".chevron-container");
+    var hiddenTabs = document.querySelectorAll(".item-texts");
+    
+    tabBtn.addEventListener("pointerdown", function() {
+        tab.style.display = "none";
 
+        hiddenTabs.forEach(function(hiddenTab) {
+            hiddenTab.style.display = "block";
+        });
+    });
+
+    hiddenTabBtn.addEventListener("pointerdown", function() {
+        
+        hiddenTabs.forEach(function (hiddenTab) {
+            hiddenTab.style.display = "none";
+        });
+        
+        tab.style.display = "block";
+    });
+
+// INITIALIZE
+localStorage.setItem("userType", currentUserType);
 updateSlide();
 updateContent();
+
