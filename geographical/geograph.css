@@ -82,8 +82,7 @@ hr {
 }
     
 .dropdown-menu {
-        left: 50%;
-        transform: translateX(-50%);
+        transform: translateX(-22%);
         display: none;
         border-radius: 0;
         background-color: black;
@@ -140,6 +139,8 @@ hr {
         position: static;
         background: none;
         box-shadow: none;
+        transform: translateX(0%);
+        border:0;
 }
     
 #thematicalMenu.show {
