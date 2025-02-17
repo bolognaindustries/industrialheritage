@@ -52,6 +52,7 @@ hr {
     border-top: 2px solid white;
 }
 
+
 .nav-item {
     line-height: 10px;
     max-height: 28px;
@@ -81,11 +82,13 @@ hr {
 }
     
 .dropdown-menu {
+        left: 50%;
+        transform: translateX(-50%);
         display: none;
-        border: 1px solid white;
+        border-radius: 0;
         background-color: black;
         min-width: 160px;
-        border: 0;
+        border: 1 solid white;
         z-index: 1;
 }
     
@@ -101,7 +104,7 @@ hr {
 
 .link-lines-dropdown {
       background-color: white;
-      height: 1px;
+      height: 2px;
       width: 0;
       transition: width 0.3s ease;
       opacity: 1;
