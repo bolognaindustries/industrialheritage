@@ -117,7 +117,7 @@ body{
         transition: width 0.3s ease !important;
 }
     
-#thematical-trigger:hover {
+#thematicalTrigger:hover {
         background-color: transparent !important;
 }
 
@@ -125,7 +125,7 @@ body{
       position: relative;
 }
     
-#thematical-menu {
+#thematicalMenu {
         display: none;
         position: static;
         background: none;
