@@ -15,7 +15,7 @@ body{
     height: 100vh;
 }
 
-/* specifics for the navbar in general */
+/* navbar */
 .navbar {
     font-family: 'Cooper Hewitt', sans-serif;
     font-weight: bold;
@@ -24,7 +24,6 @@ body{
     margin-right: 3%;
   }
 
-/*logo and text*/
 .navbar-brand img {
     height: 60px;
     width: auto;
@@ -36,7 +35,7 @@ body{
     margin-left: 9%;
 }
 
-/* Separator between links */
+/* Separator bar between links */
 .vr {
 
     padding-left: 1px;
@@ -70,7 +69,7 @@ hr {
     width: 60%;
 }
 
-    /* Ensure the dropdown menu appears on hover */
+
 .nav-item.dropdown:hover .dropdown-menu {
         display: block;
 }
@@ -190,3 +189,108 @@ h3{
     width: 80%;
     padding: 2em;
 }
+
+/*footer*/
+footer {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+}
+
+footer .row {
+margin-left: -5%;
+margin-right: -5%
+}
+
+footer .title-container {
+text-align: left;
+margin-right: 2%;
+margin-top: 7%;
+font-family: 'Cooper Hewitt', sans-serif; 
+color: white;
+}
+
+footer #home-title {
+position: relative;
+font-size: 3vw;
+z-index: 100;
+font-weight: bold;
+    -webkit-text-stroke: 2px white;
+    color: transparent;
+}
+
+footer #home-subtitle {
+font-size: 2vw;
+}
+
+footer h4 {
+font-size: 24px;
+font-weight: bold;
+text-transform: uppercase;
+letter-spacing: 1.5px;
+text-align: left;
+color: white;
+}
+
+#museum-logo {
+position: relative;
+width: 325px;
+height: auto;
+display: block;
+margin-top: 10%;
+left: -10%;
+top: -10%;
+z-index: 10;
+}
+
+.contacts p, footer .affiliations p {
+line-height: 1.5;
+margin-bottom: 20px;
+text-align: left;
+color: white;
+font-weight: bold;
+}
+
+footer p {
+font-size: 17px;
+font-weight: normal;
+text-align: left;
+font-family: 'Cooper Hewitt', sans-serif;
+}
+
+.contacts, .affiliations {
+margin-top: 19%;
+}
+
+.contacts {
+margin-left: 7%;
+}
+
+.affiliations {
+margin-left: 4%;
+}
+
+.contacts h4 {
+margin-bottom: 10%;
+}
+
+.affiliations h4 {
+margin-bottom: 7%;
+}
+
+.social-icons-container {
+max-width: 200px;
+margin-top: 10%;
+position: relative;
+left: 50%;
+}
+
+
+.social-icons {
+width: 19%;
+height: auto;
+margin-left: 5%;
+}
+
+/*footer*/
