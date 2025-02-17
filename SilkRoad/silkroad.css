@@ -189,7 +189,6 @@ body{
     position: relative;
     height: auto;
     min-height: 87vh;
-    overflow: visible;
     background-color: #FAF3E0;
     margin-bottom: 10%;
 }
@@ -298,7 +297,6 @@ body{
     .item-texts i {
         display: none;
     }
-    
     /*description that pops up*/
 
     /*lines and dots that change with the carousel*/
