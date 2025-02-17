@@ -23,7 +23,7 @@ updateTitle();
 document.querySelector("#myCarousel").addEventListener("slid.bs.carousel", updateTitle);
 
 document.getElementById('toggle-image').addEventListener('click', function (e) {
-    e.preventDefault(); // Prevent default behavior if needed
+    e.preventDefault();
     const hiddenImages = document.getElementById('hidden-images');
     hiddenImages.style.display = hiddenImages.style.display === 'flex' ? 'none' : 'flex';
 });
@@ -49,12 +49,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const thematicalMenu = document.getElementById('thematicalMenu');
 
     thematicalTrigger.addEventListener('click', (e) => {
-        e.preventDefault(); // Prevent link default behavior
+        e.preventDefault(); 
         const isExpanded = thematicalMenu.classList.contains('show');
         thematicalMenu.classList.toggle('show', !isExpanded); // Toggle visibility
     });
 
-    // Optional: Close nested menu if clicking outside
+    // Close nested menu if clicking outside
     document.addEventListener('click', (e) => {
         if (!thematicalTrigger.contains(e.target) && !thematicalMenu.contains(e.target)) {
             thematicalMenu.classList.remove('show');
