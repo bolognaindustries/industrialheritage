@@ -76,7 +76,7 @@ body{
     
 .dropdown-menu {
         display: none;
-        border-radius: 0;
+        border: 1px solid white;
         background-color: black;
         min-width: 160px;
         border: 0;
