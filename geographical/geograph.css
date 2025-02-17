@@ -69,7 +69,6 @@ hr {
     width: 60%;
 }
 
-
 .nav-item.dropdown:hover .dropdown-menu {
         display: block;
 }
@@ -195,7 +194,7 @@ footer {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    background-color: black;
+    background-color: #531f00;
 }
 
 footer .row {
@@ -208,7 +207,7 @@ text-align: left;
 margin-right: 2%;
 margin-top: 7%;
 font-family: 'Cooper Hewitt', sans-serif; 
-color: white;
+color: #fcf5e9;
 }
 
 footer #home-title {
@@ -216,7 +215,7 @@ position: relative;
 font-size: 3vw;
 z-index: 100;
 font-weight: bold;
-    -webkit-text-stroke: 2px white;
+    -webkit-text-stroke: 2px #fcf5e9;
     color: transparent;
 }
 
@@ -230,7 +229,7 @@ font-weight: bold;
 text-transform: uppercase;
 letter-spacing: 1.5px;
 text-align: left;
-color: white;
+color: #fcf5e9;
 }
 
 #museum-logo {
@@ -248,7 +247,7 @@ z-index: 10;
 line-height: 1.5;
 margin-bottom: 20px;
 text-align: left;
-color: white;
+color: #fcf5e9;
 font-weight: bold;
 }
 
@@ -292,5 +291,4 @@ width: 19%;
 height: auto;
 margin-left: 5%;
 }
-
 /*footer*/
