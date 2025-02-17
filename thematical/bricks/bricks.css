@@ -72,7 +72,7 @@ body{
     padding: 0;
     height: 105vh;
     max-height: 105vh;
-    background: url(backbrick.jpg);
+    background: url(images/bricks/img/backbrick.jpg);
     background-position: bottom;
     background-size: cover;
 }
