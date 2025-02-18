@@ -150,7 +150,7 @@ hr {
     padding: 0;
     height: 105vh;
     max-height: 105vh;
-    background: url(backbrick.jpg);
+    background: url(../images/bricks/img/backbrick.jpg);
     background-position: bottom;
     background-size: cover;
 }
@@ -647,27 +647,27 @@ hr {
     }
 
     #user-btn1 {
-        background-image: url("KidInverted.png");
+        background-image: url("../images/bricks/img/KidInverted.png");
     }
 
     #user-btn1.active {
-        background-image: url("Kid.png");
+        background-image: url("../images/bricks/img/Kid.png");
     }
 
     #user-btn2 {
-        background-image: url("GeneralInverted.png");
+        background-image: url("../images/bricks/img/GeneralInverted.png");
     }
 
     #user-btn2.active {
-        background-image: url("General.png");
+        background-image: url("../images/bricks/img/General.png");
     }
 
     #user-btn3 {
-        background-image: url("ExpertInverted.png");
+        background-image: url("../images/bricks/img/ExpertInverted.png");
     }
 
     #user-btn3.active {
-        background-image: url("Expert.png");
+        background-image: url("../images/bricks/img/Expert.png");
     }
     /*user type buttons*/
 
