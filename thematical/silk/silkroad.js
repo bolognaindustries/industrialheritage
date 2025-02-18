@@ -1,3 +1,4 @@
+
 // 0 FUNCTION Navbar
 
 document.addEventListener('DOMContentLoaded', () => {
