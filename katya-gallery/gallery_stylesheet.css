@@ -418,30 +418,24 @@ footer h4 {
 
 /* Intro */
 @media (max-width: 786px) {
-  .background-image .title-container {
-    text-align: center;
-    padding-top: 15%; 
+  .background-image {
+    height: 400px; 
+    background-size: cover; 
+    background-position: center;
   }
 
-  .background-image #home-title {
-    font-size: 7vw; 
-    -webkit-text-stroke: 1.5px white; 
-    color: transparent;
+  .the-gallery-title {
+    font-size: 10vw;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px; 
   }
 
-  .background-image #home-subtitle {
-    font-size: 4vw;
-    margin-bottom: 5%; 
-  }
-
-  .background-image .title-container p {
-    font-size: 3vw; 
-    padding: 0 10%; 
-  }
-
-  .background-image .button_container {
-    white-space: nowrap;
-    margin-top: 5%; 
+  .gallery-description {
+    font-size: 4vw; 
+    color: white;
+    padding: 0 20px; 
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); 
   }
 }
   
