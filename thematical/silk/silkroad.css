@@ -7,200 +7,278 @@ body{
     scroll-behavior: unset;
 }
 
-/*navbar*/
-    .navbar { 
+/* navbar */
+    .navbar {
         font-family: 'Cooper Hewitt', sans-serif;
         font-weight: bold;
         padding-left: 3%;
         padding-right: 3%;
-        padding-top: 6px;
-        padding-bottom: 0;
-        margin-bottom: 0;
-    }
-
+        height: 9%;
+      }
+    
     .navbar-brand img {
-        height: 60px;
+        height: 55px;
         width: auto;
     }
-
+    
     .navbar-brand span {
         font-family: 'Cooper Hewitt', sans-serif;
         font-size: 1rem;
         margin-left: 9%;
     }
-
+    
+    
+    /* Separator bar between links */
     .vr {
+    
         padding-left: 1px;
         padding-right: 1px;
         margin-left: 20px;
         margin-right: 20px;
     }
-
+    
+    hr {
+        width: 90%; 
+        margin: 0 auto;
+        color: black;
+        border-top: 2px solid black;
+    }
+    
+    
     .nav-item {
-    line-height: 2px;
+        line-height: 10px;
+        max-height: 28px;
     }
-
+    
     .link-lines {
-        background-color: white;
-        height: 3px;
-        width: 0;
-        transition: width 0.3s ease;
-        opacity: 1;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 4px;
+            background-color: black;
+            height: 2px;
+            width: 0;
+            transition: width 0.3s ease;
+            opacity: 1;
     }
-
+    
     .nav-item:hover .link-lines {
-    width: 60%;
+        width: 60%;
     }
-
-    .navbar-nav .nav-link {
-        margin-top: 0;
-        padding-top:30px;
+    
+    .nav-item.dropdown:hover .dropdown-menu {
+            display: block;
     }
-/*navbar*/
-
-/*introduction section*/
-.introduction {
-    font-family: "Lora", serif;
-    margin: 0;
-    padding: 0;
-    height: 120vh;
-    max-height: 120vh;
-    background: url("../SilkRoad/Italy, 19th century-EmbroideredPanel-1800s.jpg");
-    background-position: bottom;
-    background-size: cover;
-}
-
-.introduction-text-container {
-    position: relative;
-    width: 40%;
-    height: 70%;
-    background-color: #FAF3E0;
-    opacity: 0.95;
-    margin-left: 55%;
-    margin-top: 5%;
-
-}
-
-.introduction-title {
-    text-align: center;
-    color: #6D1B3F;
-    opacity: 1;
-    padding-top: 7%;
-    font-weight: bold;
-    font-size: 65px;
-}
-
-.introduction-text {
-    position: relative;
-    font-family: serif;
-    padding-left: 9%;
-    padding-right: 9%;
-    padding-top: 7%;
-    font-size: 1.25vw;
-    text-align: center;
-    letter-spacing: 0.5px;
-    line-height: 1.7em;
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-}
-/*introduction section*/
-
-/*main section*/
-.main-section {
-    background-color: #FAF3E0;
-    height: auto;
-    padding-bottom: 20px;
-}
-
-.row1 {
-    width: 85%;
-    height: 160vh;
-    display: flex;
-    flex-direction: row;
-    padding-top: 9%;
-    opacity: 1;
-    column-gap: 6%;
-    margin: 0 auto;
-}
-
-.element {
-    position: relative;
-    width: 27vw;
-    max-width: 27vw;
-    display: flex;
-    flex-direction: column;
-}
-
-#element1 p, #element2 p, #element3 p {
-    font-family: serif;
-    font-size: 17px;
-    letter-spacing: 0.7px;
-    line-height: 1.9em;
-}
-
-#element1 {
-    text-align: left;
-}
-
-#element2 {
-    align-items: start;
-    text-align: center;
-}
-
-#element3 {
-    align-items: start;
-    text-align: right;
-}
-
-#element1 img {
-    position: absolute;
-    height: 47vh;
-    max-height: 47vh;
-    width: auto;
-    top: 53%;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-#element2 img {
-    position: absolute;
-    height: 60vh;
-    width: auto;
-    top: 45%;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-#element3 img {
-    position: absolute;
-    height: 60vh;
-    width: auto;
-    top: 45%;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-
-/*section1*/
-.section1 {
-    position: relative;
-    height: auto;
-    min-height: 87vh;
-    background-color: #FAF3E0;
-    margin-bottom: 10%;
-}
-
-.section1_background {
-    position: absolute;
-    object-fit: cover;
-    height: 100%;
-    width: auto;
-    opacity: 0.4;
-}
-/*section1*/
+        
+    .navbar .dropdown-menu {
+            top: 100%;
+            margin-top: 0;
+            left: 0;
+    }
+        
+    .dropdown-menu {
+            transform: translateX(-24%);
+            display: none;
+            border-radius: 0;
+            background-color: rgb(255, 255, 255);
+            min-width: 160px;
+            border: 1 solid rgb(0, 0, 0);
+            z-index: 1;
+    }
+        
+    .dropdown-menu a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: flex; 
+            align-items: center;
+            justify-content: center; 
+            text-align: center;
+        }
+    
+    .link-lines-dropdown {
+          background-color: rgb(0, 0, 0);
+          height: 2px;
+          width: 0;
+          transition: width 0.3s ease;
+          opacity: 1;
+    }
+    
+    .dropdown-item {
+          background-color: transparent !important; 
+          border: none;
+          position: relative;
+    }
+        
+    .dropdown-item:hover::after,
+    .dropdown-item:focus::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            width: 60%;
+            height: 2px;
+            background-color: #000000;
+            transition: width 0.3s ease !important;
+    }
+        
+    #thematicalTrigger:hover {
+            background-color: transparent !important;
+    }
+    
+    .dropdown-menu {
+          position: relative;
+    }
+        
+    #thematicalMenu {
+            display: none;
+            position: static;
+            background: none;
+            box-shadow: none;
+            transform: translateX(0%);
+            border:0;
+    }
+        
+    #thematicalMenu.show {
+            display: block;
+    }
+    
+    /*navbar*/
+    /*introduction section*/
+    .introduction {
+        font-family: "Lora", serif;
+        margin: 0;
+        padding: 0;
+        height: 120vh;
+        max-height: 120vh;
+        background: url("../../images/silk/img/Italy19thcentury-EmbroideredPanel-1800s.jpg");
+        background-position: bottom;
+        background-size: cover;
+    }
+    
+    .introduction-text-container {
+        position: relative;
+        width: 40%;
+        height: 70%;
+        background-color: #FAF3E0;
+        opacity: 0.95;
+        margin-left: 55%;
+        margin-top: 5%;
+    
+    }
+    
+    .introduction-title {
+        text-align: center;
+        color: #6D1B3F;
+        opacity: 1;
+        padding-top: 7%;
+        font-weight: bold;
+        font-size: 65px;
+    }
+    
+    .introduction-text {
+        position: relative;
+        font-family: serif;
+        padding-left: 9%;
+        padding-right: 9%;
+        padding-top: 7%;
+        font-size: 1.25vw;
+        text-align: center;
+        letter-spacing: 0.5px;
+        line-height: 1.7em;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+    }
+    /*introduction section*/
+    
+    /*main section*/
+    .main-section {
+        background-color: #FAF3E0;
+        height: auto;
+        padding-bottom: 20px;
+    }
+    
+    .row1 {
+        width: 85%;
+        height: 160vh;
+        display: flex;
+        flex-direction: row;
+        padding-top: 9%;
+        opacity: 1;
+        column-gap: 6%;
+        margin: 0 auto;
+    }
+    
+    .element {
+        position: relative;
+        width: 27vw;
+        max-width: 27vw;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #element1 p, #element2 p, #element3 p {
+        font-family: serif;
+        font-size: 17px;
+        letter-spacing: 0.7px;
+        line-height: 1.9em;
+    }
+    
+    #element1 {
+        text-align: left;
+    }
+    
+    #element2 {
+        align-items: start;
+        text-align: center;
+    }
+    
+    #element3 {
+        align-items: start;
+        text-align: right;
+    }
+    
+    #element1 img {
+        position: absolute;
+        height: 47vh;
+        max-height: 47vh;
+        width: auto;
+        top: 53%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    #element2 img {
+        position: absolute;
+        height: 60vh;
+        width: auto;
+        top: 45%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    #element3 img {
+        position: absolute;
+        height: 60vh;
+        width: auto;
+        top: 45%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    
+    /*section1*/
+    .section1 {
+        position: relative;
+        height: auto;
+        min-height: 87vh;
+        background-color: #FAF3E0;
+        margin-bottom: 10%;
+    }
+    
+    .section1_background {
+        position: absolute;
+        object-fit: cover;
+        height: 100%;
+        width: auto;
+        opacity: 0.4;
+    }
+    /*section1*/
 
 
 /*carousel*/
@@ -575,27 +653,27 @@ body{
     }
 
     #user-btn1 {
-        background-image: url("../SilkRoad/AnnaKidInverted.png");
+        background-image: url("../../images/silk/logo/AnnaKidInverted.png");
     }
 
     #user-btn1.active {
-        background-image: url("../SilkRoad/AnnaKid.png");
+        background-image: url("../../images/silk/logo/AnnaKid.png");
     }
 
     #user-btn2 {
-        background-image: url("../SilkRoad/AnnaGeneralInverted.png");
+        background-image: url("../../images/silk/logo/AnnaGeneralInverted.png");
     }
 
     #user-btn2.active {
-        background-image: url("../SilkRoad/AnnaGeneral.png");
+        background-image: url("../../images/silk/logo/AnnaGeneral.png");
     }
 
     #user-btn3 {
-        background-image: url("../SilkRoad/AnnaExpertInverted.png");
+        background-image: url("../../images/silk/logo/AnnaExpertInverted.png");
     }
 
     #user-btn3.active {
-        background-image: url("../SilkRoad/AnnaExpert.png");
+        background-image: url("../../images/silk/logo/AnnaExpert.png");
     }
     /*user type buttons*/
 
