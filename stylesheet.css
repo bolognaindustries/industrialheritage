@@ -987,6 +987,7 @@
     }
     
     #thematicalMenu {
+        transform: translateX(0%);
         display: none;
         position: static;
         background: none;
