@@ -75,7 +75,7 @@ hr {
 }
     
 .dropdown-menu {
-        transform: translateX(-22%);
+        transform: translateX(-24%);
         display: none;
         border-radius: 0;
         background-color: black;
