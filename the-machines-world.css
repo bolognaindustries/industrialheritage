@@ -176,13 +176,6 @@ body{
         overflow: visible;
         margin-bottom: 10%;
     }
-    .section1_background {
-        position: absolute;
-        object-fit: cover;
-        height: 100%;
-        width: auto;
-        opacity: 0.4;
-    }
 
     /*carousel*/
         .carousel {
@@ -275,7 +268,6 @@ body{
     .item-texts i {
         display: none;
     }
-    
     /*description that pops up*/
 
     /*titles*/
