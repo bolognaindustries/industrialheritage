@@ -513,21 +513,48 @@ footer h4 {
     height: auto;
   }
 
-  /* Modal Adjustments */
-  .modal-content {
-    width: 95%;
-  }
+  @media (max-width: 768px) {
+    /* Modal adjustments */
+    .modal {
+        padding-top: 20% !important; 
+    }
 
-  .scroll-container img {
-    height: 50vh;
-  }
+    .modal-content {
+        width: 95% !important;
+        max-width: 95% !important;
+    }
 
-  .prev, .next {
-    top: 45%;
-    padding: 12px;
-    font-size: 20px;
-  }
+    .scroll-container {
+        gap: 10px !important; 
+        padding: 10px !important;
+    }
 
+    .scroll-container img {
+        height: 50vh !important;
+        max-width: 90% !important;
+    }
+
+    .prev, .next {
+        top: 50% !important;
+        padding: 10px !important;
+        font-size: 20px !important;
+        background: rgba(0, 0, 0, 0.7) !important;
+    }
+
+    .prev {
+        left: 5px !important;
+    }
+
+    .next {
+        right: 5px !important; 
+    }
+
+    .close {
+        right: 10px !important;
+        top: 10px !important;
+        font-size: 30px !important;
+    }
+}
   /* Footer */
   footer .row {
     flex-direction: column;
