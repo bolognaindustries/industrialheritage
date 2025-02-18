@@ -416,41 +416,87 @@ footer h4 {
     margin-left: 5%;
   }
 
-  /* 1st Section */
+  /* Intro */
+ @media (max-width: 768px) {
   .background-image {
-    height: 500px;
-    background-size: cover;
-    background-position: center 35%;
+    height: 70vh !important;
+    background-position: center 55% !important;
+    background-size: cover !important;
   }
 
   .the-gallery-title {
-    font-size: 2.5rem;
-    padding-top: 20%;
-    line-height: 1.2;
+    font-size: 2.5rem !important;
+    padding-top: 25% !important;
+    margin-left: 0 !important;
+    line-height: 1.1 !important;
+    text-align: center !important;
   }
 
   .gallery-description {
-    padding-right: 15px;
-    margin: 20px 0;
-    font-size: 1rem;
+    display: block !important;
+    color: #fff;
+    padding: 0 15px !important;
+    margin: 20px auto !important;
+    font-size: 1rem !important;
+    line-height: 1.5 !important;
+    text-align: center !important;
+    max-width: 90% !important;
+    background: rgba(0,0,0,0.5);
+    border-radius: 8px;
+  }
+}
+  
+  /* Paths */
+  @media (max-width: 768px) {
+  .explore-items-section {
+    padding: 30px 15px !important;
   }
 
-  /* Path Items */
   .path-item {
-    flex-direction: column;
-    text-align: center;
-    margin-bottom: 30px;
+    flex-direction: column !important;
+    text-align: center !important;
+    margin-bottom: 30px !important;
   }
 
   .icon-container {
-    margin-right: 0;
-    margin-bottom: 15px;
+    margin-right: 0 !important;
+    margin-bottom: 15px !important;
   }
 
   .theme-separator {
-    margin: 20px auto;
+    margin: 25px auto !important;
+    width: 80% !important;
   }
 
+  .section-description {
+    width: 100% !important;
+    padding: 0 15px !important;
+    font-size: 1rem !important;
+  }
+}
+
+  @media (max-width: 768px) {
+  /* Fix content overflow */
+  .container {
+    max-width: 100% !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+  
+  /* Ensure proper stacking */
+  .row {
+    flex-direction: column !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  
+  /* Fix text alignment */
+  .col-md-6, .col-xl-6 {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}
+  
   /* Gallery Items */
   .gallery-items {
     flex-direction: column;
