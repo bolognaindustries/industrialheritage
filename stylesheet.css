@@ -883,12 +883,13 @@
         font-family: 'Cooper Hewitt', sans-serif;
         font-weight: bold;
         background-color: transparent;
-        margin-left: 3%;
-        margin-right: 3%;
+        padding-left: 3%;
+        padding-right: 3%;
+        height: 9%;
       }
 
     .navbar-brand img {
-        height: 60px;
+        height: 55px;
         width: auto;
     }
   
@@ -933,6 +934,7 @@
       }
     
     .dropdown-menu {
+        transform: translateX(-24%);
         display: none;
         border-radius: 0;
         background-color: transparent;
