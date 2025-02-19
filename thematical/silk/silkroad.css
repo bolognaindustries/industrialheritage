@@ -1,22 +1,16 @@
 body{
-    margin: 0;
+    max-width: 100vw;
     font-family: "Lora", serif;
     background-color: #FAF3E0; 
     overflow-x: hidden;
 }
 
-<<<<<<< Updated upstream:thematical/silk/silkroad.css
+*  {
+    box-sizing: border-box;
+}
+
 /* navbar */
     .navbar {
-=======
-* {
-    box-sizing: border-box;
-  }
-  
-
-/*navbar*/
-    .navbar { 
->>>>>>> Stashed changes:SilkRoad/silkroad.css
         font-family: 'Cooper Hewitt', sans-serif;
         font-weight: bold;
         padding-left: 3%;
