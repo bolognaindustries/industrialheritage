@@ -811,6 +811,15 @@ footer p {
     #element3 {
         text-align: center;
     }
+
+    .image-section2 {
+        margin-top: 5%; 
+        order: 1; 
+    }
+    .row1 {
+        gap: 30px; 
+    }
+    
     /*main section*/
 
     /*section1*/
@@ -838,10 +847,10 @@ footer p {
             justify-content: center;  
             margin-top: 17%;
         }
+
         .carousel-images img {
-            position: absolute;          
-            z-index: 100;
-            margin-left: 0;
+            width: 80% !important;
+            height: auto;
             left: 50%;
             transform: translateX(-50%);
         }
@@ -853,18 +862,24 @@ footer p {
             padding-top: 5%;
         }
 
-        #slide12 {
-            width: 25%;
+        #slide11 {
+            width: 80%; 
             height: auto;
-            margin-left: 10%;
-            top: -1%;
+            margin-left: 0;
+            padding-top: 5%;
+        }
+
+        #slide12 {
+            width: 25% !important;
+            height: auto;
+            margin-left: -10%;
+            top: 5%;
         }
 
         #slide13 {
-            width: 13%;
+            width: 60% !important;
             height: auto;
-            transform: scaleX(-1);
-            margin-left: 12%;
+            margin-left: -35%;
         }
 
         .button-container {
