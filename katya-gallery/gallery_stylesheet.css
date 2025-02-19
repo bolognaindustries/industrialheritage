@@ -1,12 +1,14 @@
-/* specifics for the navbar in general */
+/* Navbar */
 
-.navbar {
+.navbar { 
   font-family: 'Cooper Hewitt', sans-serif;
   font-weight: bold;
-  width: 100%;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 6px;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
-
-/* logo and text */
 
 .navbar-brand img {
   height: 60px;
@@ -19,13 +21,35 @@
   margin-left: 9%;
 }
 
-/* Separator between links */
-
 .vr {
   padding-left: 1px;
   padding-right: 1px;
   margin-left: 20px;
   margin-right: 20px;
+}
+
+.nav-item {
+line-height: 2px;
+}
+
+.link-lines {
+  background-color: white;
+  height: 3px;
+  width: 0;
+  transition: width 0.3s ease;
+  opacity: 1;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4px;
+}
+
+.nav-item:hover .link-lines {
+width: 60%;
+}
+
+.navbar-nav .nav-link {
+  margin-top: 0;
+  padding-top:30px;
 }
 
 /* Background image and general section styles */
@@ -562,152 +586,316 @@ footer p {
     }
 }
   
-/*Footer*/
-    footer {
-        display: flex;
-        text-align: center;
-        flex-direction: column;
-        position: absolute;
-        flex-direction: column;
-        padding-bottom: 10%;
-        z-index: 10;
-        max-width: 100vw;
-    }
+/* Footer */
 
-    footer .row {
-        position: relative;
-        max-width: 100vw;
-        width: 100vw;
-        display: flex;
-        justify-content: center;
-        margin-left: 0;
-        margin-right: auto;
-        left: 50%;
-        transform: translateX(-50%);
-    }
+footer {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: black;
+}
 
-    footer .title-container {
-        text-align: center;
-        align-items: center;
-        margin-top: 20%;
-        margin-right: 0;
-        padding-left: 0;
-        padding-right: 0;
-    }
+footer .row {
+  margin-left: -5%;
+  margin-right: -5%;
+}
 
-    footer #home-title {
-        font-weight: bold;
-        -webkit-text-stroke: 2px white;
-        text-align: center;
-        margin-left: 0;
-        margin-right: auto;
-        font-size: 12vw;
-    } 
+footer .title-container {
+  text-align: left;
+  margin-right: 2%;
+  margin-top: 7%;
+  font-family: 'Raleway', sans-serif; 
+  color: white;
+}
 
-    footer .title-container p{
-        font-size: 3vw;
-    }
+footer #home-title {
+  position: relative;
+  font-size: 3vw;
+  z-index: 100;
+  font-weight: bold;
+  -webkit-text-stroke: 2px white;
+  color: transparent;
+}
 
-    footer h4 {
-        margin: 0;
-        font-weight: bold;
-        text-align: center;
-        color: white;
-    }
+footer #home-subtitle {
+  font-size: 2vw;
+}
 
-    #museum-logo {
-        position: relative;
-        width: 50%;
-        height: auto;
-        padding: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        margin-top: 10%;
-    }
+footer h4 {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  text-align: left;
+  color: white;
+}
 
-    .contacts, .affiliations {
-        margin: 0;
-    }
+#museum-logo {
+  position: relative;
+  width: 325px;
+  height: auto;
+  display: block;
+  margin-top: 10%;
+  left: -10%;
+  top: -10%;
+  z-index: 10;
+}
 
-    .contacts h4 {
-        margin: 2%;
-    }
+.contacts p, footer .affiliations p {
+  line-height: 1.5;
+  margin-bottom: 20px;
+  text-align: left;
+  color: white;
+  font-weight: bold;
+}
 
-    .affiliations h4 {
-        margin: 2%;
-        margin-top: 10%;
-    }
+footer p {
+  font-size: 17px;
+  font-weight: normal;
+  text-align: left;
+  font-family: 'Alegreya', serif; 
+}
 
-    .contacts p, footer .affiliations p {
-        text-align: center;
-        color: white;
-        font-weight: bold;
-    }
+.contacts, .affiliations {
+  margin-top: 19%;
+}
 
-    .contacts {
-        margin-top: 7%;
-        margin-bottom: 0;
-        margin-left: auto;
-        margin-right: auto;
-    }
+.contacts {
+  margin-left: 7%;
+}
 
-    .affiliations {
-        margin-left: auto;
-        margin-right: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
+.affiliations {
+  margin-left: 4%;
+}
 
-    .social-icons-container {
-        justify-content: center;
-        width: auto;
-        display: flex;
-        flex-direction: row;
-        gap: 5%;
-        margin: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        padding-top: 5%;
-    }
+.contacts h4 {
+  margin-bottom: 10%;
+}
 
-    .social-icons {
-        margin: 0;
-        width: 2em;
-        height: auto;
-    }
+.affiliations h4 {
+  margin-bottom: 7%;
+}
 
-    .social-icons-container a {
-        margin: 0;
-        width: auto;
-        height: auto;
-    }
+.social-icons-container {
+  max-width: 200px;
+  margin-top: 10%;
+  position: relative;
+  left: 50%;
+}
 
-  /* Utility Classes */
-  .d-mobile-none {
-    display: none !important;
+.social-icons {
+  width: 19%;
+  height: auto;
+  margin-left: 5%;
+}
+
+/* Mobile Responsiveness  */
+@media (max-width: 768px) {
+  /* ----- Global Adjustments ----- */
+  body { overflow-x: hidden; }
+  
+  .container {
+    max-width: 100% !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+  
+  .row {
+    flex-direction: column !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
   }
 
-  .text-center-mobile {
-    text-align: center !important;
+  /* ----- Navbar ----- */
+  .navbar-brand span {
+    font-size: 0.9rem;
+    margin-left: 5%;
   }
+
+  /* ----- Hero Section ----- */
+  .background-image {
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .the-gallery-title {
+    font-size: 2.5rem;
+    margin-top: 20%;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  .gallery-description {
+    font-size: 1rem;
+    padding: 0 15px;
+    margin: 20px auto;
+    text-align: center;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  }
+
+  /* ----- Paths Section ----- */
+  .explore-items-section { padding: 20px 10px; }
+
+  .section-title {
+    font-size: 6vw;
+    margin-bottom: 10px;
+    padding: 0 10px;
+  }
+
+  .section-description {
+    width: 100%;
+    font-size: 4vw;
+    margin-bottom: 20px;
+    padding: 0 10px;
+  }
+
+  .path-item {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 15px;
+  }
+
+  .icon-container {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .path-title {
+    font-size: 5vw;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .learn-more {
+    font-size: 4vw;
+    text-align: center;
+  }
+
+  .theme-separator { margin: 20px auto; }
+
+  /* ----- Gallery Items ----- */
+  .gallery-items {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .gallery-item {
+    flex: 1 1 100%;
+    padding: 20px;
+    margin: 10px 0;
+  }
+
+  .gallery-item img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* ----- Modal ----- */
+  .modal {
+    padding-top: 20% !important;
+  }
+
+  .modal-content {
+    width: 95% !important;
+    max-width: 95% !important;
+  }
+
+  .scroll-container {
+    gap: 10px !important;
+    padding: 10px !important;
+  }
+
+  .scroll-container img {
+    height: 50vh !important;
+    max-width: 90% !important;
+  }
+
+  .prev, .next {
+    top: 50% !important;
+    padding: 10px !important;
+    font-size: 20px !important;
+    background: rgba(0, 0, 0, 0.7) !important;
+  }
+
+  .prev { left: 5px !important; }
+  .next { right: 5px !important; }
+  .close {
+    right: 10px !important;
+    top: 10px !important;
+    font-size: 30px !important;
+  }
+
+  /* ----- Footer ----- */
+  footer {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    padding-bottom: 10%;
+    max-width: 100vw;
+  }
+
+  footer .row {
+    width: 100vw;
+    justify-content: center;
+    margin-left: 0;
+    margin-right: auto;
+  }
+
+  footer .title-container {
+    margin-top: 20%;
+    text-align: center;
+  }
+
+  footer #home-title {
+    font-size: 12vw;
+    -webkit-text-stroke: 2px white;
+  }
+
+  #museum-logo {
+    width: 50%;
+    margin: 10% auto;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .contacts, .affiliations {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .social-icons-container {
+    gap: 5%;
+    padding-top: 5%;
+  }
+
+  .social-icons {
+    width: 2em;
+    margin: 0;
+  }
+
+  /* ----- Utility Classes ----- */
+  .d-mobile-none { display: none !important; }
+  .text-center-mobile { text-align: center !important; }
 }
 
 @media (max-width: 480px) {
-  .the-gallery-title {
-    font-size: 2rem;
-  }
-
-  .gallery-item h4 {
-    font-size: 1.2rem;
-  }
-
-  .gallery-item p {
-    font-size: 0.9rem;
+  /* ----- Ultra Mobile Adjustments ----- */
+  .the-gallery-title { font-size: 2rem; }
+  
+  .gallery-item {
+    h4 { font-size: 1.3rem; }
+    p { font-size: 0.9rem; }
   }
 
   .btn-go-to-item {
-    padding: 8px 15px;
+    padding: 10px 15px;
     font-size: 0.9rem;
   }
+
+  /* ----- Footer Tweaks ----- */
+  footer #home-title { font-size: 24px; }
+  #museum-logo { width: 200px; }
+  .social-icons { width: 30px; }
 }
