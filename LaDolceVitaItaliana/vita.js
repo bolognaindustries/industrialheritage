@@ -245,6 +245,25 @@ function updateContent() {
         tab.style.display = "block";
     });
 
+    //when the info pop up opens up an x is gonna show on mobile, a chevron for larger screens
+    if (window.innerWidth <= 575.98) {
+        chevronBtns.forEach(function(chevronBtn) {
+            chevronBtn.style.display = "none";
+        });
+    
+        xBtns.forEach(function(xBtn) {
+            xBtn.style.display = "block";
+        });
+    } else {
+        xBtns.forEach(function(xBtn) {
+            xBtn.style.display = "none";
+        });
+    
+        chevronBtns.forEach(function(chevronBtn) {
+            chevronBtn.style.display = "block;"
+        });
+    }
+
 // added smooth scrolling behavior for mobile
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
