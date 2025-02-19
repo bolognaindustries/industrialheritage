@@ -1,12 +1,22 @@
 body{
-    margin: 0px;
+    margin: 0;
     font-family: "Lora", serif;
-    background-color: #FAF3E0;
-    scroll-behavior: unset;
+    background-color: #FAF3E0; 
+    overflow-x: hidden;
 }
 
+<<<<<<< Updated upstream:thematical/silk/silkroad.css
 /* navbar */
     .navbar {
+=======
+* {
+    box-sizing: border-box;
+  }
+  
+
+/*navbar*/
+    .navbar { 
+>>>>>>> Stashed changes:SilkRoad/silkroad.css
         font-family: 'Cooper Hewitt', sans-serif;
         font-weight: bold;
         padding-left: 3%;
@@ -862,11 +872,12 @@ body{
             position: relative;
         }
         #element2 img {
-            height: 55vh;
-            max-height: 55vh;
+            height: 30vh;
+            max-height: 30vh;
             top: 0;
+            display: block;
             position: relative;
-            margin: 0 auto;
+            margin: auto;
         }
         #element3 img {
             height: 27vh;
@@ -887,7 +898,7 @@ body{
                 font-family: "Spectral SC", serif;
                 position: relative;
                 text-align: center;
-                color: #ac333e;
+                color: #6D1B3F;
                 font-size: 45px;
                 font-weight: 600;
                 margin-bottom: 0;
@@ -909,28 +920,24 @@ body{
                 left: 50%;
                 transform: translateX(-50%);
             }
-            #slide10 {
-                width: 80%;
+            #slide8 {
+                max-width: 50%;
                 height: auto;
-                margin-left: 5%;
+                margin-left: 0;
             }
-            #slide11 {
+            #slide7 {
                 width: 25%;
                 height: auto;
-                margin-left: 10%;
+                margin-left: 0;
                 top: -1%;
             }
-            #slide12 {
+            #slide9 {
                 width: 13%;
                 height: auto;
                 transform: scaleX(-1);
-                margin-left: 12%;
+                margin-left: 0;
             }
-            #slide13 {
-                width: 22%;
-                height: auto;
-                margin-left: 12%;
-            }
+            
             .button-container {
                 position: absolute;
                 width: 100vw;
@@ -948,7 +955,7 @@ body{
                 padding-right: 4%;
             }
             button {
-                background-color: #ac333e;
+                background-color: #6D1B3F;
                 border: none;
                 padding: 1%;
                 cursor: pointer;
@@ -972,7 +979,7 @@ body{
             .tab {
                 height: 10vh;
                 width: 100vw;
-                background: #ac333e;
+                background: #6D1B3F;
                 border-top-left-radius: 45px;
                 border-top-right-radius: 45px;
                 display: flex;
@@ -990,7 +997,7 @@ body{
             .item-texts {
                 height: 45vh;
                 width: 100vw;
-                background: #ac333e;
+                background: #6D1B3F;
                 border-top-left-radius: 45px;
                 border-top-right-radius: 45px;
                 justify-content: center;
@@ -1004,7 +1011,7 @@ body{
             .chevron-container {
                 height: 10vh;
                 width: 80vw;
-                color: #ac333e;
+                color: #6D1B3F;
                 z-index: 800;
                 position: absolute;
                 left: 50%;
@@ -1065,7 +1072,7 @@ body{
                     right: -7vw;
                 }
                 .info-table-small:hover {
-                    background-color: #ac333e;
+                    background-color: #6D1B3F;
                     opacity: 0.9;
                 }
                 .info-table-big {
@@ -1100,18 +1107,18 @@ body{
                 }
                 .info-table-big .table-custom {
                     font-family: serif;
-                    background-color: #ac333e !important;
+                    background-color: #6D1B3F !important;
                     color: #FEF7D7 !important;
                 }
                 .info-table-big .table-custom th,
                 .info-table-big .table-custom td {
                     font-family: serif;
-                    background-color: #ac333e !important;
+                    background-color: #6D1B3F !important;
                     color: #FEF7D7 !important;
                 }
                 .info-table-big .table-custom thead th {
                     font-family: serif;
-                    background-color: #ac333e !important;
+                    background-color: #6D1B3F !important;
                     color: #FEF7D7 !important;
                 }
             /*info*/
