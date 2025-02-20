@@ -629,28 +629,6 @@ footer p {
     width: 2em;
     margin: 0;
   }
-
-  /* ----- Utility Classes ----- */
-  .d-mobile-none { display: none !important; }
-  .text-center-mobile { text-align: center !important; }
 }
 
-@media (max-width: 480px) {
-  /* ----- Ultra Mobile Adjustments ----- */
-  .the-gallery-title { font-size: 2rem; }
-  
-  .gallery-item {
-    h4 { font-size: 1.3rem; }
-    p { font-size: 0.9rem; }
-  }
 
-  .btn-go-to-item {
-    padding: 10px 15px;
-    font-size: 0.9rem;
-  }
-
-  /* ----- Footer Tweaks ----- */
-  footer #home-title { font-size: 24px; }
-  #museum-logo { width: 200px; }
-  .social-icons { width: 30px; }
-}
