@@ -486,29 +486,46 @@ footer p {
 
   /* ----- Introduction Section ----- */
   .background-image {
-    height: 400px; 
+    height: 400px;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+  }
+
+  .background-image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+  }
+
+  .background-image .container {
+    position: relative;
+    z-index: 2;
   }
 
   .gallery-section .container .row {
     flex-direction: column;
-    text-align: center; 
-}
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
 
   .the-gallery-title {
     font-size: 3rem; 
     text-align: center; 
-    margin-top: 20%;
-    margin-left: 0; 
-    margin-right: 0; 
   }
 
   .gallery-description {
     font-size: 1rem; 
     text-align: center; 
-    margin-top: 20px; 
+    margin-top: 10px; 
+    margin-bottom: 20px;
     padding: 0 15px; 
-    margin-left: 0; 
-    margin-right: 0; 
   }
   
   /* ----- Paths Section ----- */
