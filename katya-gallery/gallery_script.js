@@ -86,15 +86,16 @@ function handleTouchStart(event) {
 function handleTouchEnd(event) {
   touchEndX = event.changedTouches[0].clientX;
   if (touchEndX < touchStartX) {
-    scrollGallery(1); // Swipe left
+    scrollGallery(1); // swipe left
   } else if (touchEndX > touchStartX) {
-    scrollGallery(-1); // Swipe right
+    scrollGallery(-1); // swipe right
   }
 }
 
 document.querySelector('.scroll-container').addEventListener('touchstart', handleTouchStart);
 document.querySelector('.scroll-container').addEventListener('touchend', handleTouchEnd);
 
+  // Paths improvement
 function togglePath(pathItem) {
     const description = pathItem.querySelector('.path-description');
     description.classList.toggle('active');

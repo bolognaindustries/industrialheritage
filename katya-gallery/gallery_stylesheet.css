@@ -130,14 +130,25 @@ width: 60%;
   margin-bottom: 15px; 
 }
 
+.path-title:hover {
+  color: #8d9399;
+  cursor: pointer;
+}
+
+.path-title:hover .toggle-icon {
+  color: #8d9399; /* Change arrow color on hover */
+}
+
 .path-description {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.3s ease-out;
+  transition: max-height 0.5s ease-out, opacity 0.3s ease-out;
+  opacity: 0;
 }
 
 .path-description.active {
-  max-height: 200px; 
+  max-height: 200px;
+  opacity: 1;
 }
 
 .learn-more {
@@ -145,9 +156,6 @@ width: 60%;
   transition: color 0.3s;
 }
 
-.learn-more:hover {
-  color: #8d9399; 
-}
 .theme-separator { 
   width: 100%; 
   margin: 30px auto 30px auto; 
@@ -575,10 +583,7 @@ footer p {
   }
 
   .close {
-    top: 20px;
-    right: 20px;
-    font-size: 30px;
-    z-index: 1001; 
+    display: none !important;
   }
 
   .modal-content {
@@ -591,18 +596,13 @@ footer p {
     padding: 10px !important;
   }
 
-  .scroll-container img.zoomed {
-    transform: scale(1.5);
-    max-width: 100vw;
-  }
-
   .image-container {
     min-width: calc(100% - 40px);
     padding: 0 20px;
   }
 
   .prev, .next {
-    display: none !important; /* hide arrows on mobile */
+    display: none !important;
 }
 
 .scroll-container {
