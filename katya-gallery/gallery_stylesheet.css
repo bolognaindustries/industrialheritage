@@ -471,6 +471,11 @@ footer p {
     background-position: center;
   }
 
+  .gallery-section .container .row {
+    flex-direction: column;
+    text-align: center; 
+}
+
   .the-gallery-title {
     font-size: 3rem; 
     text-align: center; 
@@ -570,19 +575,12 @@ footer p {
   }
 
   .prev, .next {
-    top: 50% !important;
-    padding: 10px !important;
-    font-size: 20px !important;
-    background: rgba(0, 0, 0, 0.7) !important;
-  }
+    display: none !important; /* hide arrows on mobile */
+}
 
-  .prev { left: 5px !important; }
-  .next { right: 5px !important; }
-  .close {
-    right: 10px !important;
-    top: 10px !important;
-    font-size: 30px !important;
-  }
+.scroll-container {
+  overflow-x: scroll; 
+}
 
   /* ----- Footer ----- */
   footer {
