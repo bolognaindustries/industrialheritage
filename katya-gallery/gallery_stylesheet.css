@@ -1,5 +1,4 @@
-/* Navbar */
-
+/*navbar*/
 .navbar { 
   font-family: 'Cooper Hewitt', sans-serif;
   font-weight: bold;
@@ -9,29 +8,24 @@
   padding-bottom: 0;
   margin-bottom: 0;
 }
-
 .navbar-brand img {
   height: 60px;
   width: auto;
 }
-
 .navbar-brand span {
   font-family: 'Cooper Hewitt', sans-serif;
   font-size: 1rem;
   margin-left: 9%;
 }
-
 .vr {
   padding-left: 1px;
   padding-right: 1px;
   margin-left: 20px;
   margin-right: 20px;
 }
-
 .nav-item {
 line-height: 2px;
 }
-
 .link-lines {
   background-color: white;
   height: 3px;
@@ -42,15 +36,14 @@ line-height: 2px;
   margin-right: auto;
   margin-top: 4px;
 }
-
 .nav-item:hover .link-lines {
 width: 60%;
 }
-
 .navbar-nav .nav-link {
   margin-top: 0;
   padding-top:30px;
 }
+/*navbar*/
 
 /* Background image and general section styles */
 .gallery-section {
@@ -60,7 +53,7 @@ width: 60%;
 
 .background-image {
   background-image: url('galleryimage.jpg');
-  height: 725px;
+  height: 750px;
   background-position: center 45%;
   background-size: 140%;
   background-attachment: fixed;
@@ -253,7 +246,7 @@ width: 60%;
 }
 
 .modal {
-  display: none;
+  display: block;
   position: fixed;
   z-index: 1000;
   padding-top: 60px;
@@ -320,272 +313,6 @@ width: 60%;
   cursor: pointer;
 }
 
-/* Footer */
-footer {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: black;
-}
-
-footer .row {
-    margin-left: -5%;
-    margin-right: -5%;
-}
-
-footer .title-container {
-    text-align: left;
-    margin-right: 2%;
-    margin-top: 7%;
-    font-family: 'Raleway', sans-serif; 
-    color: white;
-}
-
-footer #home-title {
-    position: relative;
-    font-size: 3vw;
-    z-index: 100;
-    font-weight: bold;
-    -webkit-text-stroke: 2px white;
-    color: transparent;
-}
-
-footer #home-subtitle {
-    font-size: 2vw;
-}
-
-footer h4 {
-    font-size: 24px;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    text-align: left;
-    color: white;
-}
-
-#museum-logo {
-    position: relative;
-    width: 325px;
-    height: auto;
-    display: block;
-    margin-top: 10%;
-    left: -10%;
-    top: -10%;
-    z-index: 10;
-}
-
-.contacts p, footer .affiliations p {
-    line-height: 1.5;
-    margin-bottom: 20px;
-    text-align: left;
-    color: white;
-    font-weight: bold;
-}
-
-footer p {
-    font-size: 17px;
-    font-weight: normal;
-    text-align: left;
-    font-family: 'Alegreya', serif; 
-}
-
-.contacts, .affiliations {
-    margin-top: 19%;
-}
-
-.contacts {
-    margin-left: 7%;
-}
-
-.affiliations {
-    margin-left: 4%;
-}
-
-.contacts h4 {
-    margin-bottom: 10%;
-}
-
-.affiliations h4 {
-    margin-bottom: 7%;
-}
-
-.social-icons-container {
-    max-width: 200px;
-    margin-top: 10%;
-    position: relative;
-    left: 50%;
-}
-
-.social-icons {
-    width: 19%;
-    height: auto;
-    margin-left: 5%;
-}
-}
-
-/*Media additions for mobile*/
-@media (max-width: 768px) {
-  /* General Adjustments */
-  body {
-    overflow-x: hidden;
-  }
-  
-  /* Navbar */
-  .navbar-brand span {
-    font-size: 0.8rem;
-    margin-left: 5%;
-  }
-
-/* Intro */
-@media (max-width: 786px) {
-  .background-image {
-    height: 400px; 
-    background-size: cover; 
-    background-position: center;
-  }
-
-  .the-gallery-title {
-    font-size: 10vw;
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    margin-bottom: 20px; 
-  }
-
-  .gallery-description {
-    font-size: 4vw; 
-    color: white;
-    padding: 0 20px; 
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); 
-  }
-}
-  
-/* Paths */
-@media (max-width: 786px) {
-  .explore-items-section {
-    padding: 20px 10px; 
-  }
-
-  .section-title {
-    font-size: 6vw; 
-    margin-bottom: 10px;
-    padding: 0 10px; 
-  }
-
-  .section-description {
-    width: 100%; 
-    font-size: 4vw; 
-    margin-bottom: 20px; 
-    padding: 0 10px; 
-  }
-
-  .path-item {
-    flex-direction: column; 
-    align-items: center; 
-    margin-bottom: 20px; 
-  }
-
-  .icon-container {
-    margin-right: 0; 
-    margin-bottom: 10px;
-  }
-
-  .path-title {
-    font-size: 5vw; 
-    margin-bottom: 10px; 
-    text-align: center; 
-  }
-
-  .learn-more {
-    font-size: 4vw; 
-    text-align: center; 
-  }
-
-  .theme-separator {
-    margin: 20px auto;
-  }
-}
-
-  @media (max-width: 768px) {
-  /* For content overflow */
-  .container {
-    max-width: 100% !important;
-    padding-left: 15px !important;
-    padding-right: 15px !important;
-  }
-  
-  /* Proper stacking */
-  .row {
-    flex-direction: column !important;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-  }
-  
-  /* Text alignment */
-  .col-md-6, .col-xl-6 {
-    width: 100% !important;
-    max-width: 100% !important;
-  }
-}
-  
-  /* Gallery Items */
-  .gallery-items {
-    flex-direction: column;
-    gap: 30px;
-  }
-
-  .gallery-item {
-    flex: 1 1 100%;
-    padding: 20px;
-  }
-
-  .gallery-item img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  @media (max-width: 768px) {
-    /* Modal adjustments */
-    .modal {
-        padding-top: 20% !important; 
-    }
-
-    .modal-content {
-        width: 95% !important;
-        max-width: 95% !important;
-    }
-
-    .scroll-container {
-        gap: 10px !important; 
-        padding: 10px !important;
-    }
-
-    .scroll-container img {
-        height: 50vh !important;
-        max-width: 90% !important;
-    }
-
-    .prev, .next {
-        top: 50% !important;
-        padding: 10px !important;
-        font-size: 20px !important;
-        background: rgba(0, 0, 0, 0.7) !important;
-    }
-
-    .prev {
-        left: 5px !important;
-    }
-
-    .next {
-        right: 5px !important; 
-    }
-
-    .close {
-        right: 10px !important;
-        top: 10px !important;
-        font-size: 30px !important;
-    }
-}
-  
 /* Footer */
 
 footer {
