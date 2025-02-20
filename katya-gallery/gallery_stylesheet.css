@@ -56,7 +56,8 @@ width: 60%;
   height: 750px;
   background-position: center 45%;
   background-size: 140%;
-  background-attachment: fixed;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
 }
 
 
@@ -127,6 +128,16 @@ width: 60%;
 .path-title {
   font-size: 25px; 
   margin-bottom: 15px; 
+}
+
+.path-description {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.path-description.active {
+  max-height: 200px; 
 }
 
 .learn-more {
@@ -272,6 +283,7 @@ width: 60%;
   gap: 20px;
   padding: 20px;
   align-items: center;
+  touch-action: pan-y;
 }
 
 .scroll-container:has(> .image-container:only-child) {
@@ -467,8 +479,6 @@ footer p {
   /* ----- Introduction Section ----- */
   .background-image {
     height: 400px; 
-    background-size: cover;
-    background-position: center;
   }
 
   .gallery-section .container .row {
@@ -551,7 +561,24 @@ footer p {
 
   /* ----- Modal ----- */
   .modal {
-    padding-top: 20% !important;
+    padding-top: 10% !important;
+  }
+
+  .scroll-container {
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory; 
+  }
+
+  .image-container {
+    scroll-snap-align: center; 
+    min-width: 100vw; 
+  }
+
+  .close {
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    z-index: 1001; 
   }
 
   .modal-content {

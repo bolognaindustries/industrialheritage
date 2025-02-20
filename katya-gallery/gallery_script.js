@@ -76,3 +76,26 @@ window.onclick = (event) => {
         modal.style.display = "none";
     }
 }
+let touchStartX = 0;
+let touchEndX = 0;
+
+function handleTouchStart(event) {
+  touchStartX = event.touches[0].clientX;
+}
+
+function handleTouchEnd(event) {
+  touchEndX = event.changedTouches[0].clientX;
+  if (touchEndX < touchStartX) {
+    scrollGallery(1); // Swipe left
+  } else if (touchEndX > touchStartX) {
+    scrollGallery(-1); // Swipe right
+  }
+}
+
+document.querySelector('.scroll-container').addEventListener('touchstart', handleTouchStart);
+document.querySelector('.scroll-container').addEventListener('touchend', handleTouchEnd);
+
+function togglePath(pathItem) {
+    const description = pathItem.querySelector('.path-description');
+    description.classList.toggle('active');
+  }
