@@ -634,22 +634,22 @@ hr {
             cursor: pointer;
         }
         #user-btn1 {
-            background-image: url("images/ICONchildren.png");
+            background-image: url("images/machines/logo/NadiaKidInverted.png");
         }
         #user-btn1.active {
-            background-image: url("");
+            background-image: url("images/machines/logo/NadiaKid.png");
         }
         #user-btn2 {
-            background-image: url("images/ICONgeneral.png");
+            background-image: url("images/machines/logo/NadiaGeneralInverted.png");
         }
         #user-btn2.active {
-            background-image: url("");
+            background-image: url("images/machines/logo/NadiaGeneral.png");
         }
         #user-btn3 {
-            background-image: url("images/ICONexpert.png");
+            background-image: url("images/machines/logo/NadiaExpertInverted.png");
         }
         #user-btn3.active {
-            background-image: url("");
+            background-image: url("images/machines/logo/NadiaExpert.png");
         }
     /*user type buttons*/
 /*side tabs*/
