@@ -76,6 +76,9 @@ window.onclick = (event) => {
         modal.style.display = "none";
     }
 }
+
+// Swipe gestures for better navigation
+
 let touchStartX = 0;
 let touchEndX = 0;
 
@@ -85,10 +88,13 @@ function handleTouchStart(event) {
 
 function handleTouchEnd(event) {
   touchEndX = event.changedTouches[0].clientX;
-  if (touchEndX < touchStartX) {
-    scrollGallery(1); // swipe left
-  } else if (touchEndX > touchStartX) {
-    scrollGallery(-1); // swipe right
+  const scrollContainer = document.querySelector(".scroll-container");
+  const scrollAmount = scrollContainer.clientWidth;
+
+  if (touchEndX < touchStartX - 50) { // Swipe left
+    scrollContainer.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+  } else if (touchEndX > touchStartX + 50) { // Swipe right
+    scrollContainer.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
   }
 }
 

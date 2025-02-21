@@ -236,7 +236,6 @@ width: 60%;
   margin-bottom: auto; 
 }
 
-/* Style for the horizontal rule in the Gallery Items Section */
 .gallery-divider {
   border: 1px solid #444; 
   width: 100%; 
@@ -244,7 +243,6 @@ width: 60%;
   margin: 20px auto; 
 }
 
-/* Button Gallery Styles */
 .btn-go-to-item {
   background-color: #6d7175;
   color: white; 
@@ -258,7 +256,6 @@ width: 60%;
   margin-bottom: 0; 
 }
 
-/* Hover Effect */
 .btn-go-to-item:hover {
   background-color: #8d9399;
 }
@@ -272,7 +269,7 @@ width: 60%;
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,0.9);
+  background-color: rgba(0,0,0,0.95);
 }
 
 .modal-content {
@@ -337,11 +334,11 @@ width: 60%;
 }
 
 .prev {
-  left: -70px; /* Position outside the container */
+  left: -70px; 
 }
 
 .next {
-  right: -70px; /* Position outside the container */
+  right: -70px; 
 }
 
 .prev:hover, .next:hover {
@@ -350,11 +347,16 @@ width: 60%;
 
 .close {
   position: absolute;
+  border-radius: 20%;
   right: 25px;
   top: 10px;
   color: #fff;
   font-size: 35px;
   cursor: pointer;
+}
+
+.close:hover {
+  background: rgba(128, 128, 128, 0.9);
 }
 
 /* Footer */
@@ -486,6 +488,20 @@ footer p {
   /* ----- Introduction Section ----- */
   .background-image {
     height: 500px;
+    background-size: cover;
+    position: relative;
+    
+  }
+
+  .background-image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
   }
 
   .background-image .container {
@@ -494,11 +510,10 @@ footer p {
   }
 
   .gallery-section .container .row {
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    text-align: center;
   }
 
   .the-gallery-title {
@@ -580,45 +595,39 @@ footer p {
 
   /* ----- Modal ----- */
   .modal {
-    padding-top: 10% !important;
-  }
-
-  .scroll-container {
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory; 
-  }
-
-  .image-container {
-    scroll-snap-align: center; 
-    min-width: 100vw; 
-  }
-
-  .close {
-    display: none !important;
+    padding-top: 20px; 
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
   }
 
   .modal-content {
-    width: 95% !important;
-    max-width: 95% !important;
+    width: 85%; 
+    max-width: 95%; 
+    height: 70vh;
+    margin-top: 100px;
+    overflow: hidden;
   }
 
   .scroll-container {
-    gap: 10px !important;
-    padding: 10px !important;
+    height: 80vh;
+    gap: 10px; 
+    scroll-snap-type: x mandatory; 
   }
 
-  .image-container {
-    min-width: calc(100% - 40px);
-    padding: 0 20px;
+  .scroll-container img {
+    max-width: 80%;
+    max-height: 60vh; 
+    object-fit: contain; 
   }
 
   .prev, .next {
-    display: none !important;
+    display: none;
 }
-
-.scroll-container {
-  overflow-x: scroll; 
-}
+  .close {
+    display: none;
+  }
 
   /* ----- Footer ----- */
   footer {
