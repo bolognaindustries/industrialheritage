@@ -8,7 +8,7 @@
   padding-top: 6px;
   padding-bottom: 0;
   margin-bottom: 0;
-  
+
 .navbar-brand img {
   height: 60px;
   width: auto;
@@ -18,15 +18,18 @@
   font-size: 1rem;
   margin-left: 9%;
 }
+
 .vr {
   padding-left: 1px;
   padding-right: 1px;
   margin-left: 20px;
   margin-right: 20px;
 }
+
 .nav-item {
 line-height: 2px;
 }
+
 .link-lines {
   background-color: white;
   height: 3px;
@@ -37,9 +40,11 @@ line-height: 2px;
   margin-right: auto;
   margin-top: 4px;
 }
+
 .nav-item:hover .link-lines {
 width: 60%;
 }
+
 .navbar-nav .nav-link {
   margin-top: 0;
   padding-top:30px;
@@ -554,7 +559,7 @@ footer p {
   .path-description {
     padding-left: 0; 
   }
-}
+
   .learn-more {
     font-size: 4vw;
     text-align: center;
@@ -645,4 +650,4 @@ footer p {
     margin: 0 5px; 
   }
 }
-
+}
