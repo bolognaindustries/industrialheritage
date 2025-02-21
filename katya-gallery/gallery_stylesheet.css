@@ -257,13 +257,6 @@ width: 60%;
   background-color: #8d9399;
 }
 
-/*line separator*/
-.footer-separator {
-  width: 100%; 
-  margin: 0;
-  border-top: 0.5px solid #6f6e6e;
-}
-
 .modal {
   display: none;
   position: fixed;
@@ -516,16 +509,16 @@ footer p {
   }
 
   .the-gallery-title {
-    font-size: 3rem; 
-    text-align: center; 
+    font-size: 2.5rem; 
+    margin-top: 10%; 
+    padding: 0 15px; 
   }
 
   .gallery-description {
     font-size: 1rem; 
+    margin-top: 10px;
+    padding: 0 15px;
     text-align: center; 
-    margin-top: 10px; 
-    margin-bottom: 20px;
-    padding: 0 15px; 
   }
   
   /* ----- Paths Section ----- */
@@ -544,22 +537,24 @@ footer p {
   }
 
   .path-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-  
-  .icon-container {
-    margin-right: 15px; 
-  }
-  
-  .path-title {
-    font-size: 25px;
-    margin-bottom: 10px; 
-    display: flex;
-    align-items: center; 
+    flex-direction: column; 
+    align-items: flex-start; 
   }
 
+  .icon-container {
+    margin-right: 0; 
+    margin-bottom: 10px; 
+  }
+
+  .path-title, .path-description {
+    text-align: left; 
+    width: 100%; 
+  }
+
+  .path-description {
+    padding-left: 0; 
+  }
+}
   .learn-more {
     font-size: 4vw;
     text-align: center;
@@ -628,51 +623,27 @@ footer p {
 
   /* ----- Footer ----- */
   footer {
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    padding-bottom: 10%;
-    max-width: 100vw;
+    text-align: center; 
   }
 
   footer .row {
-    width: 100vw;
-    justify-content: center;
-    margin-left: 0;
-    margin-right: auto;
+    flex-direction: column; 
+    align-items: center; 
   }
 
-  footer .title-container {
-    margin-top: 20%;
-    text-align: center;
-  }
-
-  footer #home-title {
-    font-size: 12vw;
-    -webkit-text-stroke: 2px white;
-  }
-
-  #museum-logo {
-    width: 50%;
-    margin: 10% auto;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  .contacts, .affiliations {
-    margin: 0 auto;
-    text-align: center;
+  footer .title-container, .contacts, .affiliations {
+    text-align: center; 
+    margin-left: 0; 
   }
 
   .social-icons-container {
-    gap: 5%;
-    padding-top: 5%;
+    justify-content: center; 
+    gap: 10px; 
   }
 
   .social-icons {
-    width: 2em;
-    margin: 0;
+    margin: 0 5px; 
   }
-}
+
 
 
