@@ -576,9 +576,19 @@ body{
         margin-right: auto;
         background-color: black;
     }
+
     footer .row {
         margin-left: -5%;
-        margin-right: -5%
+        margin-right: -5%;
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: wrap;
+    }
+
+    .row {
+        display: flex !important;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
     footer .title-container {
         text-align: left;
@@ -592,8 +602,8 @@ body{
         font-size: 3vw;
         z-index: 100;
         font-weight: bold;
-            -webkit-text-stroke: 2px white;
-            color: transparent;
+        -webkit-text-stroke: 2px white;
+        color: transparent;
     }
     footer #home-subtitle {
     font-size: 2vw;

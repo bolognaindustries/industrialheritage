@@ -245,8 +245,9 @@ function updateContent() {
         tab.style.display = "block";
     });
 
+    
+
 // INITIALIZE
 localStorage.setItem("userType", currentUserType);
 updateSlide();
 updateContent();
-
