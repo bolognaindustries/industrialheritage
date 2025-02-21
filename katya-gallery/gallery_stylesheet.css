@@ -8,6 +8,7 @@
   padding-top: 6px;
   padding-bottom: 0;
   margin-bottom: 0;
+}
 
 .navbar-brand img {
   height: 60px;
@@ -649,5 +650,4 @@ footer p {
   .social-icons {
     margin: 0 5px; 
   }
-}
 }
