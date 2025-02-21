@@ -678,15 +678,15 @@ button:hover {
 }
 
 #user-btn1 {
-    background-image: url("objects/ICONchildren.png");
+    background-image: url("../images/italy/logo/KatyaKidInverted.png");
 }
 
 #user-btn2 {
-    background-image: url("objects/ICONgeneral.png");
+    background-image: url("../images/italy/logo/KatyaGeneralInverted.png");
 }
 
 #user-btn3 {
-    background-image: url("objects/ICONexpert.png");
+    background-image: url("../images/italy/logo/KatyaExpertInverted.png");
 }
 
 .user-btn::after {
