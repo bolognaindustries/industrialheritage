@@ -259,6 +259,8 @@
 }
 
 .section3 {
+  margin: 0;
+  padding: 0;
   height: 100vh;
   background-color: black;
 
@@ -292,12 +294,12 @@
   /*paths*/
 
   .path-container {
+    background-color: black;
     position: relative;
     display: flex;
     flex-direction: column; 
     align-items: center; 
-    gap: 25px; 
-    padding-bottom: 300px; 
+    gap: 25px;
   }
   
   .main-images, .hidden-images {
@@ -341,6 +343,7 @@
   }
   
   .hidden-images {
+      background-color: black;
       display: none;
       width: 100%;
   }
@@ -365,6 +368,9 @@
 }
 
 .section4 {
+  margin: 0;
+  padding: 0;
+  z-index: 1;
   height: 100vh;
   background-color: black;
 
