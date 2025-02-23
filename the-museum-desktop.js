@@ -11,7 +11,6 @@ if (desktop) {
     var lastTextId = "";
     var activeNumber = null;
 
-
     // variables for triggering numbers, items and their texts
     var numbers = document.querySelectorAll(".number");
     var allItems = document.querySelectorAll(".item");
@@ -45,6 +44,9 @@ if (desktop) {
     var userBtnContainer = document.querySelector(".user-btn-container");
     var userBtns = document.querySelectorAll(".user-btn");
     var contents = document.querySelectorAll(".content");
+
+    //variables for the introduction
+    var targetBtn = document.querySelector("#btn-target a");
 
     // user status
     var defaultUserType = "general";
@@ -170,6 +172,11 @@ if (desktop) {
         map2.style.display = "block";
         btnMap2.classList.add("active");
         changeToDescr();
+    }
+
+    // scroll to section 1 for mobile and for computer
+    function changeHref() {
+            targetBtn.href = "#target-section-desktop";
     }
 
 
@@ -498,6 +505,8 @@ if (desktop) {
     localStorage.setItem("userType", currentUserType);
     changeToMap1();
     changeToDescr();
+    changeHref();
+    window.addEventListener("resize", changeHref);
 }
 
 

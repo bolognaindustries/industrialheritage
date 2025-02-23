@@ -312,7 +312,7 @@ body {
 
         .scroll-container {
           overflow-y: scroll;
-          max-height: 60vh;
+          max-height: 65vh;
           scrollbar-width: none;
         }
 
