@@ -10,42 +10,84 @@
 </head>
 
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark" data-bs-theme="dark">
+       <!--navbar-->
+       <nav class="navbar navbar-expand-lg bg-transparent" data-bs-theme="dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
-                <img src="images/LOGO.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-center">
-                <span>INDUSTRIAL HERITAGE</span>
+            <!--title and logo-->
+            <a class="navbar-brand" href="../index.html">
+              <img src="../images/LOGO.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-center"><span>INDUSTRIAL HERITAGE</span>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <!--title and logo-->
+            <!--toggle for mobile view-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
             </button>
+            <!--toogle for mobile view-->
+            <!--links-->
             <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="https://bolognaindustries.github.io/industrialheritage/index.html">HOME</a>
-                    </li>
-                    <li class="vr d-none d-lg-block text-light opacity-100"></li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">THE GALLERY</a>
-                    </li>
-                    <li class="vr d-none d-lg-block text-light opacity-100"></li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">THE PROJECT</a>
-                    </li>
-                    <li class="vr d-none d-lg-block text-light opacity-100"></li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">THE MUSEUM</a>
-                    </li>
-                    <li class="vr d-none d-lg-block text-light opacity-100"></li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">ABOUT US</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="../index.html">HOME</a>
+                  <hr class="link-lines">
+                </li>
+ 
+                <li>
+                  <div class="vr d-none d-lg-block text-light opacity-100"></div>
+                </li>
+                    
+                <li class="nav-item dropdown">
+                    <a class="nav-link active dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">THE ITEMS</a>
+                    <hr class="link-lines">
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li>
+                            <a class="dropdown-item" href="timeline.html">CHRONOLOGICAL PATH</a>
+                        </li>
+                        <li class="dropdown-item dropdown">
+                            <a class="dropdown-toggle" id="thematicalTrigger" role="button">THEMATICAL PATH</a>
+                            <ul class="dropdown-menu" id="thematicalMenu">
+                                <li><a class="dropdown-item" href="../thematical/bricks/bricks.html">Brick by Boring Brick</a></li>
+                                <li><a class="dropdown-item" href="la-dolce-vita-italiana.html">La Dolce Vita Italiana</a></li>
+                                <li><a class="dropdown-item" href="the-machines-world.html">The Machine's World</a></li>
+                                <li><a class="dropdown-item" href="the-silk-road.html">The Silk Road</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">GEOGRAPHICAL PATH</a>
+                        </li>
+                    </ul>
+                </li>
+                 
+                <li>
+                  <div class="vr d-none d-lg-block text-light opacity-100" text-light></div>
+                </li>
+ 
+                <li class="nav-item">
+                  <a class="nav-link active" href="the-museum.html">THE MUSEUM</a>
+                  <hr class="link-lines">
+                </li>  
+ 
+                <li>
+                  <div class="vr d-none d-lg-block text-light opacity-100"></div>
+                </li>  
+                     
+                <li class="nav-item">
+                  <a class="nav-link active" href="katya-gallery/gallery.html">THE GALLERY</a>
+                  <hr class="link-lines">
+                </li>
+ 
+                <li>
+                  <div class="vr d-none d-lg-block text-light opacity-100"></div>
+                </li>
+ 
+                  <li class="nav-item">
+               <a class="nav-link active" href="#">ABOUT US</a>
+                <hr class="link-lines">
+             </li>
+           </ul>
+           <!--links-->
+       </div>
+ </nav>
+
 
     <!-- Section: Explore the Gallery -->
     <section class="gallery-section">
@@ -60,10 +102,6 @@
             </div>
         </div>
     
-        
-        <!-- Separator with Background Color -->
-        <div class="separator"></div> 
-
             <!-- Section: Explore the Items -->
     <section id="banner2" class="explore-items-section">
         <div class="container text-white bg-dark border rounded border-0">
@@ -84,20 +122,23 @@
                     </p>
                 </div>
                 <div class="col-md-8 col-xl-6 col-xxl-5 offset-xxl-1">
-                    <div class="path-item">
+                    <div class="path-item" onclick="togglePath(this)">
                         <div class="icon-container" id="paths">
                             <svg xmlns="http://www.w3.org/2000/svg" width="3em" height="3em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-arrow-right-circle-fill">
                                 <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"></path>
                             </svg>
                         </div>
                         <div>
-                            <h4 class="path-title">Chronological path</h4>
-                            <p>Explore the progression of Bologna's industrial development from its early days to modern times, highlighting key milestones and innovations.</p>
-                            <a href="https://bolognaindustries.github.io/industrialheritage/timeline.html" class="learn-more">Learn More</a>
+                            <h4 class="path-title">Chronological path
+                            </h4>
+                            <div class="path-description">
+                                <p>Explore the progression of Bologna's industrial development from its early days to modern times, highlighting key milestones and innovations.</p>
+                                <a href="https://bolognaindustries.github.io/industrialheritage/timeline.html" class="learn-more">Learn More</a>
+                            </div>
                         </div>
                     </div>
                     <hr class="theme-separator">
-                    <div class="path-item">
+                    <div class="path-item" onclick="togglePath(this)">
                         <div class="icon-container" id="paths">
                             <svg xmlns="http://www.w3.org/2000/svg" width="3em" height="3em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-arrow-right-circle-fill">
                                 <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"></path>
@@ -105,12 +146,14 @@
                         </div>
                         <div>
                             <h4 class="path-title">Thematical path</h4>
+                            <div class="path-description">
                             <p>Focus on specific industries, technologies, or innovations, allowing you to dive deep into particular aspects of Bologna's industrial history.</p>
                             <a href="#" class="learn-more">Learn More</a>
                         </div>
                     </div>
+                    </div>
                     <hr class="theme-separator">
-                    <div class="path-item">
+                    <div class="path-item" onclick="togglePath(this)">
                         <div class="icon-container">
                             <svg xmlns="http://www.w3.org/2000/svg" width="3em" height="3em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-arrow-right-circle-fill">
                                 <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"></path>
@@ -118,16 +161,18 @@
                         </div>
                         <div>
                             <h4 class="path-title">Geographical path</h4>
+                            <div class="path-description">
                             <p>Discover how industrialization impacted different neighborhoods, tracing the influence of Bologna's industry across various locations.</p>
-                            <a href="https://github.com/bolognaindustries/industrialheritage/geographical.html" class="learn-more">Learn More</a>
+                            <a href="https://bolognaindustries.github.io/industrialheritage/geographical.html" class="learn-more">Learn More</a>
                         </div>
+                     </div>
                     </div>
                 </div>
             </div>
 
     <!-- Gallery Items Section -->
     <section id="banner">
-        <hr class="separator">
+        <hr>
         <div class="container">
             <div class="header">
                 <h2 class="gallery-title">
@@ -154,7 +199,7 @@
             <div class="gallery-items" id="items">
                 <!-- Item 1 -->
                 <div class="gallery-item" id="item-1">
-                    <img src="images/14color.png" alt="Item 1" onclick="openModal(["additional-images-gallery/Aldini1.JPG", "additional-images-gallery/Aldini2.JPG", "additional-images-gallery/Aldini3.JPG", "additional-images-gallery/Aldini4.JPG"])">
+                    <img src="images/14color.png" alt="Item 1" onclick="openModal(['additional-images-gallery/Aldini1.JPG', 'additional-images-gallery/Aldini2.JPG', 'additional-images-gallery/Aldini3.JPG', 'additional-images-gallery/Aldini4.JPG'])">
                     <h4>Aldini Steam Machine</h4>
                     <p>The Aldini Steam Machine, built in the early 19th century, is a key example of Bologna’s role in the early development of steam power. Designed by Giovanni Aldini, it featured innovative engineering that enhanced mechanical efficiency and performance.</p>
                     <button class="btn-go-to-item">Go to item</button>
@@ -162,7 +207,7 @@
 
                 <!-- Item 2 -->
                 <div class="gallery-item" id="item-2">
-                    <img src="images/6color.png" alt="Item 2" onclick="openModal(["additional-images-gallery/Brodo1.JPG", "additional-images-gallery/Brodo2.JPG", "additional-images-gallery/Brodo3.JPG", "additional-images-gallery/Brodo.MOV"])">
+                    <img src="images/6color.png" alt="Item 2" onclick="openModal(['additional-images-gallery/Brodo1.JPG', 'additional-images-gallery/brodo2.JPG', 'additional-images-gallery/Brodo3.JPG'])">
                     <h4>Brodo Packing Machine</h4>
                     <p>The Brodo Packing Machine, developed in the early 20th century, exemplifies Bologna's advancements in packaging technology. 
                         Designed to enhance the efficiency of food packing processes, this innovative machine revolutionized the way products were packaged for distribution.</p>
@@ -171,7 +216,7 @@
 
                 <!-- Item 3 -->
                 <div class="gallery-item" id="item-3">
-                    <img src="images/5color.png" alt="Item 3" onclick="openModal(["additional-images-gallery/Chocolate1.JPG", "additional-images-gallery/Chocolate2.JPG", "additional-images-gallery/Chocolate3.JPG", "additional-images-gallery/Chocolate4.JPG"])">
+                    <img src="images/5color.png" alt="Item 3" onclick="openModal(['additional-images-gallery/Chocolate1.JPG', 'additional-images-gallery/Chocolate2.JPG', 'additional-images-gallery/Chocolate3.JPG', 'additional-images-gallery/Chocolate4.JPG'])">
                     <h4>Easter Egg Packing Machine</h4>
                     <p>The Easter Egg Packing Machine, introduced in the mid-20th century, transformed the egg industry with its cutting-edge automation.
                         With its advanced mechanisms, the machine could quickly sort, pack, and seal eggs into cartons.
@@ -213,7 +258,7 @@
 
                 <!-- Item 8 -->
                 <div class="gallery-item" id="item-8">
-                    <img src="images/12color.png" alt="Item 8" onclick="openModal(['additional-images-gallery/IMG_4931.JPG', 'additional-images-gallery/IMG_4932.JPG', 'additional-images-gallery/image3.jpg', 'additional-images-gallery/image4.jpg'])">
+                    <img src="images/12color.png" alt="Item 8" onclick="openModal(['additional-images-gallery/Shaping.JPG'])">
                     <h4>Shaping Machine</h4>
                     <p>The Shaping Machine, an essential tool in early 20th-century manufacturing, was designed to precisely cut and shape metal into various forms. Known for its versatility and accuracy, this machine played a key role in producing components for machinery and industrial equipment.</p>
                     <button class="btn-go-to-item">Go to item</button>
@@ -237,7 +282,7 @@
 
                 <!-- Item 11 -->
                 <div class="gallery-item" id="item-11">
-                    <img src="images/8color.png" alt="Item 11" onclick="openModal(['additional-images-gallery/SilkMill1.JPG', 'additional-images-gallery/SilkMill2.JPG', 'additional-images-gallery/SilkMill3.JPG', 'additional-images-gallery/SilkMill4.JPG', 'additional-images-gallery/MVI_4880.MOV'])">
+                    <img src="images/8color.png" alt="Item 11" onclick="openModal(['additional-images-gallery/SilkMill1.JPG', 'additional-images-gallery/SilkMill2.JPG', 'additional-images-gallery/SilkMill3.JPG', 'additional-images-gallery/SilkMill4.JPG'])">
                     <h4>Silk Mill</h4>
                     <p>The Silk Mill revolutionized silk production by automating the labor-intensive process of spinning and weaving. Raw silk threads from silkworm cocoons were carefully unwound, spun, and woven into luxurious fabrics, all under the precision of water-powered machines.</p>
                     <button class="btn-go-to-item">Go to item</button>
@@ -278,98 +323,58 @@
         </div>
     </section>
 
-
-    <hr class="footer-separator">
-
-    <!--footer-->
+    <!--Footer-->
     <footer class="footer">
-        <div class="container footer-content">
-            <!--row--> 
-            <div class="row">
-              <!--1st column-->
-              <div class="title-container col-md-3 ">
-                <h1 id="home-title">ABOUT THE<br>GROUP</h1>
-                <img id="museum-logo" src="images/LOGO.png" alt="Museum logo">
-              </div>
-              <!--1st column-->
-        
-              <!--2nd column-->
-              <div class="contacts col-md-3 ">
-                <h4>CONTACTS</h4>
-                <p>
-                  Anna Nicoletti<br>
-                  Ekaterina Krasnova<br>
-                  Nadia Calvisi<br>
-                  Rubens Fernandes Junior<br>
-                </p>
-              </div>
-              <!--2nd column-->
-              
-              <!--3rd column-->
-              <div class="affiliations col-md-4">
-                <h4>AFFILIATIONS</h4>
-                <p>
-                  Digital Humanities and Digital Knowledge - <br>
-                  DHDK Second Cycle Degree<br>
-                  <br>
-                  University of Bologna
-                </p>
-              <!--social icons-->
-              <div class="social-icons-container">
-                <a href="https://www.facebook.com/MuseodelPatrimonioIndustriale/?locale=it_IT">
-                <img class="social-icons" src="images/logoface.png" alt="Facebook Logo"></a>
-                <a href="https://www.instagram.com/museopat/"><img class="social-icons" src="images/logoinsta.png" alt="Instagram Logo"></a>
-                <a href="https://corsi.unibo.it/2cycle/DigitalHumanitiesKnowledge"><img class="social-icons" src="images/logounibo.png" alt="University of Bologna Logo"></a>
-              </div>
-              <!--social icons-->
-              </div>
-              <!--3rd column-->
+      <div class="container footer-content">
+        <!--row-->
+        <div class="row">
+          <!--1st column-->
+          <div class="title-container col-md-3 ">
+            <h1 id="home-title">ABOUT THE<br>GROUP</h1>
+            <img src="images/logoconscritta.png" id="museum-logo" alt="Museum Logo">
+          </div>
+          <!--1st column-->
+
+          <!--2nd column-->
+          <div class="contacts col-md-3 ">
+            <h4>CONTACTS</h4>
+            <p>
+              Anna Nicoletti<br>
+              Ekaterina Krasnova<br>
+              Nadia Calvisi<br>
+              Rubens Fernandes Junior<br>
+            </p>
+          </div>
+          <!--2nd column-->
+
+          <!--3rd column-->
+          <div class="affiliations col-md-4">
+            <h4>AFFILIATIONS</h4>
+            <p>
+              Digital Humanities and Digital Knowledge - <br>
+              DHDK Second Cycle Degree<br>
+              <br>
+              University of Bologna
+            </p>
+            <!--social icons-->
+            <div class="social-icons-container">
+              <a href=https://github.com/bolognaindustries/industrialheritage/blob/main/items/items.html""><img
+                class="social-icons" src="images/logoface.png" alt="Facebook Logo"></a>
+              <a href=""><img class="social-icons" src="images/logoinsta.png" alt="Instagram Logo"></a>
+              <a href=""><img class="social-icons" src="images/logounibo.png" alt="University of Bologna Logo"></a>
             </div>
-            <!--row--> 
+            <!--social icons-->
+          </div>
+          <!--3rd column-->
         </div>
+        <!--row-->
+      </div>
     </footer>
+  <!--Footer-->
 
     <!-- Bootstrap JS and Dependencies -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/b7dc8e0f7f.js" crossorigin="anonymous"></script>
-    <script>
-        function openModal(images) {
-            const modal = document.getElementById("imageModal");
-            const scrollContainer = modal.querySelector(".scroll-container");
-            scrollContainer.innerHTML = ''; // Clear previous images
-        
-            // Create and append images
-            images.forEach(src => {
-                const img = document.createElement("img");
-                img.src = src;
-                scrollContainer.appendChild(img);
-            });
-        
-            modal.style.display = "block";
-        }
-        
-        function scrollGallery(direction) {
-            const scrollContainer = document.querySelector(".scroll-container");
-            const scrollAmount = scrollContainer.clientWidth;
-            
-            scrollContainer.scrollBy({
-                left: direction * scrollAmount,
-                behavior: 'smooth'
-            });
-        }
-        
-        // Close modal handlers
-        document.querySelector(".close").onclick = () => {
-            document.getElementById("imageModal").style.display = "none";
-        }
-        
-        window.onclick = (event) => {
-            const modal = document.getElementById("imageModal");
-            if (event.target === modal) {
-                modal.style.display = "none";
-            }
-        }
-        </script>
-
+    <script src="gallery_script.js"></script>
 </body>
 </html>

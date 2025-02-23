@@ -8,51 +8,137 @@ body{
     background-color: #FEF7D7;
 }
 
-/*navbar*/
-    .navbar { 
-        font-family: 'Cooper Hewitt', sans-serif;
-        font-weight: bold;
-        padding-left: 3%;
-        padding-right: 3%;
-        padding-top: 6px;
-        padding-bottom: 0;
-        margin-bottom: 0;
-    }
-    .navbar-brand img {
-        height: 60px;
-        width: auto;
-    }
-    .navbar-brand span {
-        font-family: 'Cooper Hewitt', sans-serif;
-        font-size: 1rem;
-        margin-left: 9%;
-    }
-    .vr {
-        padding-left: 1px;
-        padding-right: 1px;
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-    .nav-item {
-    line-height: 2px;
-    }
-    .link-lines {
-        background-color: white;
-        height: 3px;
+/* navbar */
+.navbar {
+    font-family: 'Cooper Hewitt', sans-serif;
+    font-weight: bold;
+    padding-left: 3%;
+    padding-right: 3%;
+    height: 9%;
+  }
+
+.navbar-brand img {
+    height: 55px;
+    width: auto;
+}
+
+.navbar-brand span {
+    font-family: 'Cooper Hewitt', sans-serif;
+    font-size: 1rem;
+    margin-left: 9%;
+}
+
+
+/* Separator bar between links */
+.vr {
+
+    padding-left: 1px;
+    padding-right: 1px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+hr {
+    width: 90%; 
+    margin: 0 auto;
+    color: black;
+    border-top: 2px solid black;
+}
+
+
+.nav-item {
+    line-height: 10px;
+    max-height: 28px;
+}
+
+.link-lines {
+        background-color: black;
+        height: 2px;
         width: 0;
         transition: width 0.3s ease;
         opacity: 1;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 4px;
-    }
-    .nav-item:hover .link-lines {
+}
+
+.nav-item:hover .link-lines {
     width: 60%;
-    }
-    .navbar-nav .nav-link {
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+        display: block;
+}
+    
+.navbar .dropdown-menu {
+        top: 100%;
         margin-top: 0;
-        padding-top:30px;
+        left: 0;
+}
+    
+.dropdown-menu {
+        transform: translateX(-24%);
+        display: none;
+        border-radius: 0;
+        background-color: rgb(255, 255, 255);
+        min-width: 160px;
+        border: 1 solid rgb(0, 0, 0);
+        z-index: 1;
+}
+    
+.dropdown-menu a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: flex; 
+        align-items: center;
+        justify-content: center; 
+        text-align: center;
     }
+
+.link-lines-dropdown {
+      background-color: rgb(0, 0, 0);
+      height: 2px;
+      width: 0;
+      transition: width 0.3s ease;
+      opacity: 1;
+}
+
+.dropdown-item {
+      background-color: transparent !important; 
+      border: none;
+      position: relative;
+}
+    
+.dropdown-item:hover::after,
+.dropdown-item:focus::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        width: 60%;
+        height: 2px;
+        background-color: #000000;
+        transition: width 0.3s ease !important;
+}
+    
+#thematicalTrigger:hover {
+        background-color: transparent !important;
+}
+
+.dropdown-menu {
+      position: relative;
+}
+    
+#thematicalMenu {
+        display: none;
+        position: static;
+        background: none;
+        box-shadow: none;
+        transform: translateX(0%);
+        border:0;
+}
+    
+#thematicalMenu.show {
+        display: block;
+}
+
 /*navbar*/
 
 /*introduction section*/
@@ -548,22 +634,22 @@ body{
             cursor: pointer;
         }
         #user-btn1 {
-            background-image: url("images/ICONchildren.png");
+            background-image: url("images/machines/logo/NadiaKidInverted.png");
         }
         #user-btn1.active {
-            background-image: url("");
+            background-image: url("images/machines/logo/NadiaKid.png");
         }
         #user-btn2 {
-            background-image: url("images/ICONgeneral.png");
+            background-image: url("images/machines/logo/NadiaGeneralInverted.png");
         }
         #user-btn2.active {
-            background-image: url("");
+            background-image: url("images/machines/logo/NadiaGeneral.png");
         }
         #user-btn3 {
-            background-image: url("images/ICONexpert.png");
+            background-image: url("images/machines/logo/NadiaExpertInverted.png");
         }
         #user-btn3.active {
-            background-image: url("");
+            background-image: url("images/machines/logo/NadiaExpert.png");
         }
     /*user type buttons*/
 /*side tabs*/

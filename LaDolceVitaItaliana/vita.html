@@ -1,5 +1,7 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>La Dolce Vita Italiana</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -16,77 +18,70 @@
 <body>
   <!--Section -1: Introduction-->
     <div class="introduction">
-      <!--Navbar-->
-        <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+      <nav class="navbar navbar-expand-lg bg-white" data-bs-theme="white">
           <div class="container-fluid">
-            <!--title and logo-->
-            <a class="navbar-brand" href="index.html">
-              <img src="objects/LOGO.png" alt="Logo" width="30" height="24"
-                class="d-inline-block align-text-center"><span>INDUSTRIAL HERITAGE</span>
-            </a>
-            <!--title and logo-->
-            <!--toggle for mobile view-->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <!--toogle for mobile view-->
-            <!--links-->
-            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-              <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
-                  <hr class="link-lines">
-                </li>
+                <!--title and logo-->
+                <a class="navbar-brand" href="../index.html">
+                  <img src="objects/LOGO.png" alt="Logo"><span>INDUSTRIAL HERITAGE</span>
+                </a>
+                <!--toggle for mobile view-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <!--links-->
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                  <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="../../index.html">HOME</a>
+                      <hr class="link-lines">
+                    </li>
 
-                <li>
-                  <div class="vr d-none d-lg-block text-light opacity-100"></div>
-                </li>
+                    <li><div class="vr d-none d-lg-block text-dark opacity-100"></div></li>
+                      
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">THE ITEMS</a>
+                        <hr class="link-lines">
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li>
+                                <a class="dropdown-item" href="../../timeline.html">CHRONOLOGICAL PATH</a>
+                            </li>
+                            <li class="dropdown-item dropdown">
+                                <a class="dropdown-toggle" id="thematicalTrigger" role="button">THEMATICAL PATH</a>
+                                <ul class="dropdown-menu" id="thematicalMenu">
+                                    <li><a class="dropdown-item" href="../thematical/bricks/bricks.html">Brick by Boring Brick</a></li>
+                                    <li><a class="dropdown-item" href="la-dolce-vita-italiana.html">La Dolce Vita Italiana</a></li>
+                                    <li><a class="dropdown-item" href="the-machines-world.html">The Machine's World</a></li>
+                                    <li><a class="dropdown-item" href="../../thematical/silk/silkroad.html">The Silk Road</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="dropdown-item" href="#">GEOGRAPHICAL PATH</a></li>
+                        </ul>
+                    </li>
+                  
+                    <li><div class="vr d-none d-lg-block text-dark opacity-100"></div></li>
 
-                <li class="nav-item">
-                  <a class="nav-link active" href="katya-gallery/gallery.html">THE GALLERY</a>
-                  <hr class="link-lines">
-                </li>
+                    <li class="nav-item"><a class="nav-link active" href="../../the-museum.html">THE MUSEUM</a><hr class="link-lines"></li>
 
-                <li>
-                  <div class="vr d-none d-lg-block text-light opacity-100"></div>
-                </li>
+                    <li><div class="vr d-none d-lg-block text-dark opacity-100"></div></li>
 
-                <li class="nav-item">
-                  <a class="nav-link active" href="#">THE PROJECT</a>
-                  <hr class="link-lines">
-                </li>
+                    <li class="nav-item"><a class="nav-link active" href="../../katya-gallery/gallery.html">THE GALLERY</a><hr class="link-lines"></li>
 
-                <li>
-                  <div class="vr d-none d-lg-block text-light opacity-100" text-light></div>
-                </li>
+                    <li><div class="vr d-none d-lg-block text-dark opacity-100"></div></li>
 
-                <li class="nav-item">
-                  <a class="nav-link active" href="the-museum.html">THE MUSEUM</a>
-                  <hr class="link-lines">
-                </li>
-
-                <li>
-                  <div class="vr d-none d-lg-block text-light opacity-100"></div>
-                </li>
-
-                <li class="nav-item">
-                  <a class="nav-link active" href="#">ABOUT US</a>
-                  <hr class="link-lines">
-                </li>
-              </ul>
-              <!--links-->
-            </div>
-        </nav>
-      <!--Navbar-->
+                    <li class="nav-item"><a class="nav-link active" href="#">ABOUT US</a><hr class="link-lines"></li>
+                  </ul>
+                  <!--links-->
+          </div>
+      </nav>
+      <!--navbar-->
 
       <!--Introduction Text-->
-        <div class="introduction-text-container">
+      <div class="introduction-text-container">
           <h2 class="introduction-title">La Dolce Vita Italiana</h2>
           <p class="introduction-text">This section highlights machinery used for prepping, measuring, and packaging, featuring examples from Bologna's leading manufacturing companies between 1920 and 1980. While some belong to the museum, others are preserved through donation, loan, or long-term storage.
             The Museum's approach emphasizes the original identity of these machines, aligning with its methodology of showcasing Bologna's modern industrial heritage. Through historical, documentary, and typological research, it traces the evolution of local businesses.
             By maintaining a connection to the region's economic fabric, the useum actively promotes Bologna's industrial excellence—its internationally recognized products, innovations across different eras, skilled workforce, and evolving production models.</p>
-        </div>
+      </div>
       <!--Introduction Text-->
     </div>
   <!--Section -1: Introduction-->
@@ -283,7 +278,7 @@
                 <!--gallery button-->
             </div>
 
-            <div class="content" data-user=expert" style="display: none;">
+            <div class="content" data-user="expert" style="display: none;">
               <p>The 1956 gelato machine represents a significant milestone in the history of frozen dessert production and distribution. Designed and built in Bologna, it was the first European machine to automate the preparation and serving of soft ice cream, a product initially referred to as "espresso" ice cream for its quick, fresh production.
                 The machine's operation begins with the addition of ingredients through two black rubber-sealed doors at the top, ensuring cleanliness and preserving the freshness of the materials. Inside, a mechanical arm mixes and processes the ingredients to create a smooth, creamy gelato consistency.
                  The top-mounted control panel enables operators to power the machine on and off, while a dial allows for fine-tuning of the mixing and freezing process.
