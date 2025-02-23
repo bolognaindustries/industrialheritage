@@ -260,7 +260,8 @@ if (mobile) {
 
     // 4th EVENT:
     // clicking on the toggle button moves the whole menu either out of view (when closed) or in view (when open)
-    userToggleBtn.addEventListener("pointerdown", function () {
+    userToggleBtn.addEventListener("pointerdown", function (event) {
+        event.preventDefault();
         isUserMenuOpen = !isUserMenuOpen;
         console.log("User toggle button clicked");
         
