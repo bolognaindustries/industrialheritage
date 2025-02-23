@@ -135,6 +135,7 @@ body {
       height: 100vh;
       max-height: 100%;
       position: relative;
+      overflow: hidden;
     }
 
     .section2 .title-container {
@@ -148,6 +149,12 @@ body {
           width: 35vw;
           height: 100vh;
           background: #0b0b0b;
+          overflow: hidden;
+          padding-bottom: 60px;
+        }
+
+        .scroll-container::-webkit-scrollbar {
+          display: none;
         }
 
         .left-container .title {
@@ -185,28 +192,77 @@ body {
           letter-spacing: 0.7px;
         }
         
-        .left-container .btn a {
-          color: #fff;
+        .button-container-left {
           text-decoration: none;
           font-family: 'Cooper Hewitt', sans-serif;
           font-weight: bold;
           display: flex;
           flex-direction: column;
           align-items: flex-end;
-        }
-        
-        #button-list {
           position: absolute;
-          bottom: 20px;
-          right: 153px;
-          white-space: nowrap;
+          right: 0;
+          bottom: 0;
         }
 
-        #button-description {
-          position: absolute;
-          bottom: 20px;
-          right: 200px;
+        .button-container-left button {
           white-space: nowrap;
+          right: 0;
+          bottom: 0;
+          position: absolute;
+          border: none;
+          text-align: right;
+          padding-bottom: 30%;
+          color: white;
+          transition: color 0.4s ease, color 0.4s ease, opacity 0.3s ease;
+        }
+
+        .button-container-left button:hover {
+          color: white;
+          opacity: 0.4;
+        }
+
+        .button-container-left a {
+          color: white;
+          text-decoration: none;
+        }
+
+        .item-texts h3 {
+          position: sticky;
+          top: 0;
+          margin-bottom: 10%;
+        }
+
+        .scroll-container {
+          overflow-y: scroll;
+          max-height: 60vh;
+          scrollbar-width: none;
+        }
+
+        .gallery-button-container {
+          left: 0;
+          padding-left: 10%;
+          position: absolute;
+          bottom: 5vh;
+        }
+
+        .gallery-button{
+          font-family: 'Cooper Hewitt', sans-serif;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: #CD5909;
+          font-weight: bold;
+          color: white;
+          width: 8vw;
+          height: 7vh;
+          text-align: center;
+          cursor: pointer;
+          border-radius: 5px;
+          letter-spacing: 0.2vh;
+        }
+
+        .gallery-button:hover {
+            opacity: 0.9;
         }
 
         /* Right Container: Maps and Numbers */
@@ -252,33 +308,47 @@ body {
           width: 36px;
           height: 36px;
           background-color: white;
-          color: #8CB758;
+          color: #CD5909;
           text-align: center;
           border-radius: 50%;
           cursor: pointer;
           font-size: 17px;
-          font-weight: bold;
+          font-weight: 750;
           display: flex;
           align-items: center;
           justify-content: center;
+          transition: background-color 0.2s ease, color 0.2s ease;
         }
                 
         .preview {
           position: absolute;
-          display: none;
           width: 225px;
           height: 225px;
           text-align: center;
+          opacity: 0; /* Inizialmente nascosta */
+          transition: opacity 0.3s ease, visibility 0.3s ease;
+          visibility: hidden; /* Transizione fluida */
+        }
+
+        .preview-show {
+          opacity: 1; 
+          visibility: visible;/* Quando aggiungi questa classe, la preview appare gradualmente */
         }
         
         .item {
           cursor: pointer;
+          transition: color 0.4s ease, color 0.4s ease, opacity 0.5s ease;
+        }
+
+        .item-hover {
+          color: white;
+          opacity: 0.4;
         }
     
         .preview-line {
           position: absolute;
           width: 2px;
-          background-color: #8CB758;
+          background-color: #CD5909;
           transform-origin: top left;
         }
 
@@ -311,6 +381,73 @@ body {
         .text {
           display: none;
         }
+
+    /*side tabs*/
+    
+  
+  /*user type buttons*/
+      .user-btn-toggle {
+          cursor: pointer;
+          font-size: 30px;
+          margin-left: 4%;
+          aspect-ratio: 1/1;
+          margin-right: 5%;
+      }
+      .user-btn-container {
+          background-color: #CD5909;
+          cursor: pointer;
+          position: absolute;
+          width: 18vw;
+          height: 9vh;
+          flex-direction: row;
+          column-gap: 8%;
+          display: flex;
+          align-items: center;
+          border-top-left-radius: 8px;
+          border-bottom-left-radius: 8px;
+          z-index: 100;
+          right: -15vw;
+          top: 20vh;
+      }
+      .user-btn-container:hover {
+          background-color: #CD5909;
+          opacity: 0.9;
+      }
+      .user-btn-container img {
+          position: relative;
+          cursor: pointer;
+          width: 2em;
+          height: auto;
+          aspect-ratio: 1 / 1;
+          z-index: 50;
+      }
+      .user-btn {
+          width: 2em;
+          height: 2em;
+          background-size: cover;
+          background-position: center;
+          cursor: pointer;
+      }
+      #user-btn1 {
+          background-image: url("images/ICONchildren.png");
+      }
+      #user-btn1.active {
+          background-image: url("");
+      }
+      #user-btn2 {
+          background-image: url("images/ICONgeneral.png");
+      }
+      #user-btn2.active {
+          background-image: url("");
+      }
+      #user-btn3 {
+          background-image: url("images/ICONexpert.png");
+      }
+      #user-btn3.active {
+          background-image: url("");
+      }
+  /*user type buttons*/
+/*side tabs*/
 
     /* Footer */
     footer {
