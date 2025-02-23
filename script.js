@@ -7,10 +7,9 @@ document.addEventListener('DOMContentLoaded', () => {
     thematicalTrigger.addEventListener('click', (e) => {
         e.preventDefault(); 
         const isExpanded = thematicalMenu.classList.contains('show');
-        thematicalMenu.classList.toggle('show', !isExpanded); // Toggle visibility
+        thematicalMenu.classList.toggle('show', !isExpanded);
     });
 
-    // Close nested menu if clicking outside
     document.addEventListener('click', (e) => {
         if (!thematicalTrigger.contains(e.target) && !thematicalMenu.contains(e.target)) {
             thematicalMenu.classList.remove('show');
@@ -22,19 +21,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
 document.addEventListener("DOMContentLoaded", function () {
     const users = document.querySelectorAll(".user-img");
-    let activeUser = null; // Store the currently active user
+    let activeUser = null;
 
     users.forEach(user => {
         user.addEventListener("click", function () {
-            // Reset the previous active user's image
             if (activeUser && activeUser !== user) {
                 activeUser.src = activeUser.src.replace("Inverted.png", ".png");
             }
 
-            // Toggle the clicked user's image
             if (user === activeUser) {
                 user.src = user.src.replace("Inverted.png", ".png");
-                activeUser = null; // Deselect if clicked again
+                activeUser = null;
             } else {
                 user.src = user.src.replace(".png", "Inverted.png");
                 activeUser = user;
@@ -44,33 +41,34 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-// hidden path images
+//hidden images and dynamic height
 
-document.addEventListener("DOMContentLoaded", function () {
-    const toggleButton = document.getElementById("toggle-button");
-    const hiddenImages = document.getElementById("hidden-images");
-    const pathContainer = document.querySelector(".path-container");
+document.addEventListener('DOMContentLoaded', function () {
+    const toggleButton = document.getElementById('toggle-button');
+    const hiddenImages = document.querySelector('.hidden-images');
+    const section4 = document.querySelector('.section4');
 
-    toggleButton.addEventListener("click", function (event) {
+    toggleButton.addEventListener('click', function (event) {
         event.preventDefault();
 
-        if (hiddenImages.style.display === "none" || hiddenImages.style.display === "") {
-            hiddenImages.style.display = "flex";
-            pathContainer.style.minHeight = "400px"; 
+        if (hiddenImages.style.display === 'none' || hiddenImages.style.display === '') {
+            hiddenImages.style.display = 'flex';
+
+            const hiddenImagesHeight = hiddenImages.offsetHeight - 75;
+            section4.style.marginTop = `${hiddenImagesHeight}px`;
 
             setTimeout(() => {
                 window.scrollBy({
                     top: 100,
-                    behavior: "smooth"
+                    behavior: 'smooth'
                 });
             }, 100);
         } else {
-            hiddenImages.style.display = "none";
-            pathContainer.style.minHeight = "200px";
+            hiddenImages.style.display = 'none';
+            section4.style.marginTop = '0';
         }
     });
 });
-
 
 
 // museum carousel
