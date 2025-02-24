@@ -126,7 +126,17 @@ hr {
       display: block;
 }
 
-/* Background image and general section styles */
+/* black background */
+body {
+  background-color: black !important;
+}
+
+.container, .container-fluid {
+  background-color: transparent !important;
+}
+
+
+/* background image and general section styles */
 .gallery-section {
   padding-bottom: 0;
   margin-bottom: -596px;
@@ -142,7 +152,7 @@ hr {
 }
 
 
-/* Title and description styles */
+/* title and description styles */
 .the-gallery-title {
   color: white;
   font-size: 85px;
@@ -154,7 +164,7 @@ hr {
 }
 
 .gallery-description {
-  color: var(--bs-body-bg);
+  color: white;
   font-size: 20px;
   padding-right: 401px;
   margin-top: 401px;
@@ -164,9 +174,8 @@ hr {
 }
 
 
-/*Explore the Gallery*/
+/* explore the gallery */
 .explore-items-section {
-  background: #212529; 
   padding: 100px 20px; 
 }
 
@@ -204,12 +213,12 @@ hr {
 }
 
 .path-title:hover {
-  color: #8d9399;
+  color: #CD5909;
   cursor: pointer;
 }
 
 .path-title:hover .toggle-icon {
-  color: #8d9399; /* Change arrow color on hover */
+  color: #8d9399; 
 }
 
 .path-description {
@@ -234,13 +243,19 @@ hr {
   margin: 30px auto 30px auto; 
 }
 
-/* Banner Section */
+/* banner section */
 #banner {
   padding: 40px 20px; 
 }
 
+.gallery-separator {
+  width: 100%;
+  margin: 30px auto;
+  border-top: 2px solid white;
+}
+
 .header {
-  padding: 20px; 
+  padding: 40px; 
 }
 
 .gallery-title {
@@ -250,7 +265,7 @@ hr {
 
 }
 
-/* Gallery Items */
+/* items */
 .gallery-items {
   display: flex;
   justify-content: space-between;  
@@ -261,7 +276,6 @@ hr {
 
 .gallery-item {
   flex: 1 1 calc(33.33% - 20px);  
-  background-color: #212529;  
   color: #fff;
   padding: 15px;
   text-align: center;
@@ -311,7 +325,7 @@ hr {
 }
 
 .btn-go-to-item {
-  background-color: #6d7175;
+  background-color: #CD5909;
   color: white; 
   border: none;
   border-radius: 5px;
@@ -324,7 +338,7 @@ hr {
 }
 
 .btn-go-to-item:hover {
-  background-color: #8d9399;
+  opacity: 0.9;
 }
 
 .modal {
@@ -422,13 +436,13 @@ hr {
   cursor: pointer;
 }
 
-/* Footer */
+/* footer */
 
 footer {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  background-color: black;
+  background-color: #000000;
 }
 
 footer .row {
@@ -525,7 +539,7 @@ footer p {
   margin-left: 5%;
 }
 
-/* Mobile Responsiveness  */
+/* mobile responsiveness  */
 @media (max-width: 768px) {
   /* ----- Global Adjustments ----- */
   body { overflow-x: hidden; }
@@ -542,13 +556,13 @@ footer p {
     margin-right: 0 !important;
   }
 
-  /* ----- Navbar ----- */
+  /* navbar */
   .navbar-brand span {
     font-size: 0.9rem;
     margin-left: 5%;
   }
 
-  /* ----- Introduction Section ----- */
+  /* intro */
   .background-image {
     height: 500px;
     background-size: cover;
@@ -598,7 +612,7 @@ footer p {
     margin-right: 0;
   }
   
-  /* ----- Paths Section ----- */
+  /* paths */
   .explore-items-section { padding: 60px 10px; }
 
   .section-title {
@@ -639,7 +653,7 @@ footer p {
 
   .theme-separator { margin: 20px auto; }
 
-  /* ----- Gallery Items ----- */
+  /* items */
   .gallery-items {
     flex-direction: column;
     gap: 30px;
@@ -656,11 +670,11 @@ footer p {
     height: auto;
   }
 
-  /* ----- Modal ----- */
+  /* modal */
   .modal {
     padding-top: 20px; 
     padding-bottom: 20px;
-    display: block;
+    display: none;
 
     align-items: center;
     justify-content: center; 
@@ -693,7 +707,7 @@ footer p {
     display: none;
   }
 
-  /* ----- Footer ----- */
+  /* footer */
   footer {
     display: flex;
     text-align: center;
