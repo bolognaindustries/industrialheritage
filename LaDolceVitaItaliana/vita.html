@@ -1,581 +1,599 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Dolce Vita Italiana</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="vita.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,700;1,400&family=Italianno&family=Playfair+Display:wght@400;700&family=Raleway:wght@400;600&display=swap" rel="stylesheet">
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Spectral+SC:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
-      rel="stylesheet">
-  </head>
-  <body>
-    <!--Section -1: Introduction-->
-      <div class="introduction">
-        <!--navbar-->
-        <nav class="navbar navbar-expand-lg bg-white" data-bs-theme="white">
-            <div class="container-fluid">
-                  <!--title and logo-->
-                  <a class="navbar-brand" href="../../index.html">
-                    <img src="../../images/LOGO.png" alt="Logo"><span>INDUSTRIAL HERITAGE</span>
-                  </a>
-                  <!--toggle for mobile view-->
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <!--links-->
-                  <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="../../index.html">HOME</a>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Dolce Vita Italiana</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="vita.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,700;1,400&family=Italianno&family=Playfair+Display:wght@400;700&family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Spectral+SC:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <!--Section -1: Introduction-->
+    <div class="introduction">
+      <nav class="navbar navbar-expand-lg bg-white" data-bs-theme="white">
+          <div class="container-fluid">
+                <!--title and logo-->
+                <a class="navbar-brand" href="../index.html">
+                  <img src="objects/LOGO.png" alt="Logo"><span>INDUSTRIAL HERITAGE</span>
+                </a>
+                <!--toggle for mobile view-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <!--links-->
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                  <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="../../index.html">HOME</a>
+                      <hr class="link-lines">
+                    </li>
+
+                    <li><div class="vr d-none d-lg-block text-dark opacity-100"></div></li>
+                      
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">THE ITEMS</a>
                         <hr class="link-lines">
-                      </li>
-                      <li><div class="vr d-none d-lg-block text-dark opacity-100"></div></li>
-                      <li class="nav-item dropdown">
-                          <a class="nav-link active dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">THE ITEMS</a>
-                          <hr class="link-lines">
-                          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                              <li>
-                                  <a class="dropdown-item" href="../../timeline.html">CHRONOLOGICAL PATH</a>
-                              </li>
-                              <li class="dropdown-item dropdown">
-                                  <a class="dropdown-toggle" id="thematicalTrigger" role="button">THEMATICAL PATH</a>
-                                  <ul class="dropdown-menu" id="thematicalMenu">
-                                      <li><a class="dropdown-item" href="../thematical/bricks/bricks.html">Brick by Boring Brick</a></li>
-                                      <li><a class="dropdown-item" href="la-dolce-vita-italiana.html">La Dolce Vita Italiana</a></li>
-                                      <li><a class="dropdown-item" href="the-machines-world.html">The Machine's World</a></li>
-                                      <li><a class="dropdown-item" href="../../thematical/silk/silkroad.html">The Silk Road</a></li>
-                                  </ul>
-                              </li>
-                              <li><a class="dropdown-item" href="#">GEOGRAPHICAL PATH</a></li>
-                          </ul>
-                      </li>
-                      <li><div class="vr d-none d-lg-block text-dark opacity-100"></div></li>
-                      <li class="nav-item"><a class="nav-link active" href="../../the-museum.html">THE MUSEUM</a><hr class="link-lines"></li>
-                      <li><div class="vr d-none d-lg-block text-dark opacity-100"></div></li>
-                      <li class="nav-item"><a class="nav-link active" href="../../katya-gallery/gallery.html">THE GALLERY</a><hr class="link-lines"></li>
-                      <li><div class="vr d-none d-lg-block text-dark opacity-100"></div></li>
-                      <li class="nav-item"><a class="nav-link active" href="#">DOCUMENTATION</a><hr class="link-lines"></li>
-                    </ul>
-                    <!--links-->
-            </div>
-        </nav>
-        <!--navbar-->
-  
-        <!--Introduction Text-->
-        <div class="introduction-text-container">
-            <h2 class="introduction-title">La Dolce Vita Italiana</h2>
-            <p class="introduction-text">This section highlights machinery used for prepping, measuring, and packaging, featuring examples from Bologna's leading manufacturing companies between 1920 and 1980. While some belong to the museum, others are preserved through donation, loan, or long-term storage.
-              The Museum's approach emphasizes the original identity of these machines, aligning with its methodology of showcasing Bologna's modern industrial heritage. Through historical, documentary, and typological research, it traces the evolution of local businesses.
-              By maintaining a connection to the region's economic fabric, the useum actively promotes Bologna's industrial excellence—its internationally recognized products, innovations across different eras, skilled workforce, and evolving production models.</p>
-        </div>
-        <!--Introduction Text-->
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li>
+                                <a class="dropdown-item" href="../../timeline.html">CHRONOLOGICAL PATH</a>
+                            </li>
+                            <li class="dropdown-item dropdown">
+                                <a class="dropdown-toggle" id="thematicalTrigger" role="button">THEMATICAL PATH</a>
+                                <ul class="dropdown-menu" id="thematicalMenu">
+                                    <li><a class="dropdown-item" href="../thematical/bricks/bricks.html">Brick by Boring Brick</a></li>
+                                    <li><a class="dropdown-item" href="la-dolce-vita-italiana.html">La Dolce Vita Italiana</a></li>
+                                    <li><a class="dropdown-item" href="the-machines-world.html">The Machine's World</a></li>
+                                    <li><a class="dropdown-item" href="../../thematical/silk/silkroad.html">The Silk Road</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="dropdown-item" href="#">GEOGRAPHICAL PATH</a></li>
+                        </ul>
+                    </li>
+                  
+                    <li><div class="vr d-none d-lg-block text-dark opacity-100"></div></li>
+
+                    <li class="nav-item"><a class="nav-link active" href="../../the-museum.html">THE MUSEUM</a><hr class="link-lines"></li>
+
+                    <li><div class="vr d-none d-lg-block text-dark opacity-100"></div></li>
+
+                    <li class="nav-item"><a class="nav-link active" href="../../katya-gallery/gallery.html">THE GALLERY</a><hr class="link-lines"></li>
+
+                    <li><div class="vr d-none d-lg-block text-dark opacity-100"></div></li>
+
+                    <li class="nav-item"><a class="nav-link active" href="#">ABOUT US</a><hr class="link-lines"></li>
+                  </ul>
+                  <!--links-->
+          </div>
+      </nav>
+      <!--navbar-->
+
+      <!--Introduction Text-->
+      <div class="introduction-text-container">
+          <h2 class="introduction-title">La Dolce Vita Italiana</h2>
+          <p class="introduction-text">This section highlights machinery used for prepping, measuring, and packaging, featuring examples from Bologna's leading manufacturing companies between 1920 and 1980. While some belong to the museum, others are preserved through donation, loan, or long-term storage.
+            The Museum's approach emphasizes the original identity of these machines, aligning with its methodology of showcasing Bologna's modern industrial heritage. Through historical, documentary, and typological research, it traces the evolution of local businesses.
+            By maintaining a connection to the region's economic fabric, the useum actively promotes Bologna's industrial excellence—its internationally recognized products, innovations across different eras, skilled workforce, and evolving production models.</p>
       </div>
-    <!--Section -1: Introduction-->
-  
-    <!--Section 0: Explaination Section-->
-      <div class="main-section">
-        <div class="row1">
-          <div class="element" id="element1">
-              <p>The mid-20th century saw Bologna emerge as a hub of Italian industrial innovation, where the manufacturing of machines for food production, packaging, and processing became a key part of its economic growth. From precision instruments to large-scale machines, Bologna’s factories introduced equipment that not only supported local businesses but set standards for the Italian food industry. This period marked the blend of artisanal craftsmanship with modern techniques, reinforcing Bologna’s reputation as the heart of Italy’s industrial might.</p>
-            </div>
-            <div class="element" id="element2">
-              <p>The evolution of machinery in Bologna wasn’t just a response to demand; it was a statement of innovation. Companies during this time focused on perfecting the balance between functionality and aesthetic design, ensuring that their machines didn’t just work well but reflected the elegance and attention to detail that is characteristic of Italian craftsmanship. These machines were integral to both the production of culinary staples and the preservation of local traditions, showing how industrial progress could harmonize with cultural heritage.</p>
-            </div>
-            <div class="element" id="element3">
-              <p>Exhibitions of these machines in Bologna's museums offer a glimpse into the craftsmanship behind Italy’s industrial legacy. Showcasing the intricate details of machinery that once powered the city’s food industry, these displays highlight both the technological advancements and the cultural pride embedded in each piece. The Museum continues to collect and preserve these historic machines, ensuring that Bologna’s rich industrial past remains a part of the city’s present, celebrated not only for its technical achievements but for its deep connection to Italian life and tradition.</p>
-            </div>          
-        </div>
-        <div class="image-section2">
-          <img src="bologna_outline.png" alt="Bologna Outline">
-        </div>
+      <!--Introduction Text-->
+    </div>
+  <!--Section -1: Introduction-->
+
+  <!--Section 0: Explaination Section-->
+    <div class="main-section">
+      <div class="row1">
+        <div class="element" id="element1">
+            <p>The mid-20th century saw Bologna emerge as a hub of Italian industrial innovation, where the manufacturing of machines for food production, packaging, and processing became a key part of its economic growth. From precision instruments to large-scale machines, Bologna’s factories introduced equipment that not only supported local businesses but set standards for the Italian food industry. This period marked the blend of artisanal craftsmanship with modern techniques, reinforcing Bologna’s reputation as the heart of Italy’s industrial might.</p>
+          </div>
+          <div class="element" id="element2">
+            <p>The evolution of machinery in Bologna wasn’t just a response to demand; it was a statement of innovation. Companies during this time focused on perfecting the balance between functionality and aesthetic design, ensuring that their machines didn’t just work well but reflected the elegance and attention to detail that is characteristic of Italian craftsmanship. These machines were integral to both the production of culinary staples and the preservation of local traditions, showing how industrial progress could harmonize with cultural heritage.</p>
+          </div>
+          <div class="element" id="element3">
+            <p>Exhibitions of these machines in Bologna's museums offer a glimpse into the craftsmanship behind Italy’s industrial legacy. Showcasing the intricate details of machinery that once powered the city’s food industry, these displays highlight both the technological advancements and the cultural pride embedded in each piece. The Museum continues to collect and preserve these historic machines, ensuring that Bologna’s rich industrial past remains a part of the city’s present, celebrated not only for its technical achievements but for its deep connection to Italian life and tradition.</p>
+          </div>          
       </div>
-    <!--Section 0: Explaination Section-->
-  
-    <!--Section 1: Carousel Section-->
-      <div class="section1">
-        <!--Titles-->
-          <div class="item-title-container">
-            <h2 class="item-title" id="item-title10" style="display: none;">Brodo Packing<br>Machine</h2>
-            <h2 class="item-title" id="item-title11" style="display: none;">Easter Egg<br>Packing Machine</h2>
-            <h2 class="item-title" id="item-title13" style="display: none;">Gelato<br>Machine</h2>
-            <h2 class="item-title" id="item-title12" style="display: none;">Tortellini<br>Machine</h2>
-          </div>
-        <!--Titles-->
-  
-        <!--Actual Carousel-->
-          <div class="carousel">
-            <!--carousel images-->
-              <div class="carousel-images">
-                <img src="objects/brodo.png" id="slide10" alt="Brodo Packing Machine" data-info="info10" data-dot="dot10" data-text="text1">
-                <img src="objects/easter.png" id="slide11" alt="Easter Egg Packing Machine" data-info="info11" data-text="text2"
-                  data-dot="dot11">
-                <img src="objects/gelato.png" id="slide12" alt="Gelato Machine" data-info="info12" data-dot="dot12" data-text="text3">
-                  <img src="objects/tortellini.png" id="slide13" alt="Tortellini Machine" data-info="info13" data-dot="dot13" data-text="text4">
-              </div>
-            <!--carousel images-->
-  
-            <!--carousel buttons-->
-              <div class="button-container">
-                <button class="prev" onclick="prevSlide()">
-                  <i class="fa-solid fa-chevron-left" style="color: #FEF7D7;"></i>
-                </button>
-                <button class="next" onclick="nextSlide()">
-                  <i class="fa-solid fa-chevron-right" style="color: #FEF7D7;"></i>
-                </button>
-              </div>
-            <!--carousel buttons-->
-          </div>
-        <!--Actual Carousel-->
-  
-        <!--Item Descriptions-->
-          <!--MOBILE ONLY: tab to open the hidden container-->
-          <div class="tab">
-            <div class="tab-icon-container">
-              <i class="fa-solid fa-chevron-up" style="color: #dfdfdf;"></i>
+      <div class="image-section2">
+        <img src="bologna_outline.png" alt="Bologna Outline">
+      </div>
+    </div>
+  <!--Section 0: Explaination Section-->
+
+  <!--Section 1: Carousel Section-->
+    <div class="section1">
+      <!--Titles-->
+        <div class="item-title-container">
+          <h2 class="item-title" id="item-title10" style="display: none;">Brodo Packing<br>Machine</h2>
+          <h2 class="item-title" id="item-title11" style="display: none;">Easter Egg<br>Packing Machine</h2>
+          <h2 class="item-title" id="item-title13" style="display: none;">Gelato<br>Machine</h2>
+          <h2 class="item-title" id="item-title12" style="display: none;">Tortellini<br>Machine</h2>
+        </div>
+      <!--Titles-->
+
+      <!--Actual Carousel-->
+        <div class="carousel">
+          <!--carousel images-->
+            <div class="carousel-images">
+              <img src="objects/brodo.png" id="slide10" alt="Brodo Packing Machine" data-info="info10" data-dot="dot10" data-text="text1">
+              <img src="objects/easter.png" id="slide11" alt="Easter Egg Packing Machine" data-info="info11" data-text="text2"
+                data-dot="dot11">
+              <img src="objects/gelato.png" id="slide12" alt="Gelato Machine" data-info="info12" data-dot="dot12" data-text="text3">
+                <img src="objects/tortellini.png" id="slide13" alt="Tortellini Machine" data-info="info13" data-dot="dot13" data-text="text4">
             </div>
-          </div>
+          <!--carousel images-->
+
+          <!--carousel buttons-->
+            <div class="button-container">
+              <button class="prev" onclick="prevSlide()">
+                <i class="fa-solid fa-chevron-left" style="color: #FEF7D7;"></i>
+              </button>
+              <button class="next" onclick="nextSlide()">
+                <i class="fa-solid fa-chevron-right" style="color: #FEF7D7;"></i>
+              </button>
+            </div>
+          <!--carousel buttons-->
+        </div>
+      <!--Actual Carousel-->
+
+      <!--Item Descriptions-->
         <!--MOBILE ONLY: tab to open the hidden container-->
-  
-          <div class="item-texts">
-            <!--MOBILE ONLY: chevron-->
-            <div class="chevron-container">
-              <i class="fa-solid fa-chevron-down" style="color: #FEF7D7;"></i>
-            </div>
-            <!--MOBILE ONLY: chevron-->
-            
-            <div class="text" id="text1" style="display: none;">
-              <div class="content" data-user="kid" style="display: none; margin-top: 17%;">
-                  <p>The Brodo packing machine is like a magic helper that fills and seals containers with tasty soup broth all by itself! 
-                      Built in the 1960s, it makes sure every container gets just the right amount of warm, yummy broth so that everyone can enjoy a delicious bowl of soup. 
-                      Its clever design helps keep the broth fresh and ready to share.</p>
-      
-                  <!--gallery button-->
-                  <div class="gallery-button-container">
-                    <a><div class="gallery-button">GO TO GALLERY</div><a>
-                  </div>
-                  <!--gallery button-->
-              </div>
-  
-              <div class="content" data-user="general" style="display: none;">
-                  <p>The Brodo packing machine represents a milestone in food packaging innovation. 
-                      Introduced in the early 1960s, this machine automated the process of filling and sealing containers with savory broth, ensuring both efficiency and hygiene. 
-                      Its design features a precise metering system and a reliable sealing mechanism that work together to preserve the broth's quality.
-                       This breakthrough not only streamlined production but also reflected Bologna's commitment to merging culinary traditions with modern industrial technology.</p>
-                  
+        <div class="tab">
+          <div class="tab-icon-container">
+            <i class="fa-solid fa-chevron-up" style="color: #dfdfdf;"></i>
+          </div>
+        </div>
+      <!--MOBILE ONLY: tab to open the hidden container-->
+
+        <div class="item-texts">
+          <!--MOBILE ONLY: chevron-->
+          <div class="chevron-container">
+            <i class="fa-solid fa-chevron-down" style="color: #FEF7D7;"></i>
+          </div>
+          <!--MOBILE ONLY: chevron-->
+          
+          <div class="text" id="text1" style="display: none;">
+            <div class="content" data-user="kid" style="display: none; margin-top: 17%;">
+                <p>The Brodo packing machine is like a magic helper that fills and seals containers with tasty soup broth all by itself! 
+                    Built in the 1960s, it makes sure every container gets just the right amount of warm, yummy broth so that everyone can enjoy a delicious bowl of soup. 
+                    Its clever design helps keep the broth fresh and ready to share.</p>
+    
                 <!--gallery button-->
                 <div class="gallery-button-container">
                   <a><div class="gallery-button">GO TO GALLERY</div><a>
                 </div>
                 <!--gallery button-->
-  
-              </div>
-  
-              <div class="content" data-user="expert" style="display: none;">
-                  <p>The Brodo packing machine is a prime example of post-war automation in the food packaging industry.
-                       Engineered in Bologna during the early 1960s, it seamlessly integrated mechanical precision with pneumatic control systems to achieve accurate dosing, filling, and sealing of broth containers. 
-                       The apparatus employs calibrated valves and sensors to regulate liquid flow, while its heat-sealing mechanism ensures an airtight closure that maintains product integrity and shelf life. 
-                       Constructed with robust stainless-steel components to meet stringent hygiene standards, this machine not only enhanced production efficiency but also set new benchmarks for quality control in the packaging of liquid food products. 
-                       Its design and functionality underscore Bologna's innovative approach to merging culinary heritage with advanced industrial engineering.</p>
-                <!--gallery button-->
-                <div class="gallery-button-container" style="margin-top: 3%;">
-                  <a><div class="gallery-button">GO TO GALLERY</div><a>
-                </div>
-                <!--gallery button-->
-              </div>
             </div>
-  
-            <div class="text" id="text2" style="display: none;">
-              <div class="content" data-user="kid" style="display: none; margin-top: 17%;">
-                <p>The Easter egg packing shows how technology made packaging easier. 
-                  Chocolate eggs are placed on a platform, and shiny foil rolls are ready on the side. 
-                  Mechanical arms grab the foil, carefully wrap it around each egg, and then drop them onto a chute for collection. 
-                  This invention by FIMA helped speed up the process and ensured the eggs looked neat and ready for sale.</p>
-                  
-                  <!--gallery button-->
-                  <div class="gallery-button-container">
-                    <a><div class="gallery-button">GO TO GALLERY</div><a>
-                  </div>
-                  <!--gallery button-->
-              </div>
-  
-              <div class="content" data-user="general" style="display: none;">
-                <p>The Easter egg wrapping machine automates the entire process of packaging chocolate eggs, combining speed and precision. 
-                  Eggs are placed on a central feeding platform connected to a side conveyor. 
-                  Wrapping material is drawn from two foil rollers positioned on the left side, where it's aligned and cut to size. 
-                  Rotating mechanical arms use a synchronized movement to grasp the foil and wrap it neatly around the eggs, tucking and sealing the edges to ensure durability during transport.
-                   Once wrapped, the eggs roll down a side chute, ready for collection or further processing. 
-                   The machine is controlled via a panel on the right, allowing operators to adjust settings for various egg sizes and materials. 
-                   This design revolutionized seasonal confectionery packaging, making large-scale production both efficient and reliable.
-                </p>
+
+            <div class="content" data-user="general" style="display: none;">
+                <p>The Brodo packing machine represents a milestone in food packaging innovation. 
+                    Introduced in the early 1960s, this machine automated the process of filling and sealing containers with savory broth, ensuring both efficiency and hygiene. 
+                    Its design features a precise metering system and a reliable sealing mechanism that work together to preserve the broth's quality.
+                     This breakthrough not only streamlined production but also reflected Bologna's commitment to merging culinary traditions with modern industrial technology.</p>
                 
-                <!--gallery button-->
-                <div class="gallery-button-container">
-                  <a><div class="gallery-button">GO TO GALLERY</div><a>
-                </div>
-                <!--gallery button-->
-  
+              <!--gallery button-->
+              <div class="gallery-button-container">
+                <a><div class="gallery-button">GO TO GALLERY</div><a>
               </div>
-  
-              <div class="content" data-user="expert" style="display: none;">
-                <p>The Easter egg packing machine represents a significant leap in mid-20th-century industrial automation, particularly in the confectionery sector. Its operation begins with eggs being placed on a centrally located feeding platform, which aligns them for transport via a side conveyor. 
-                  This conveyor ensures a steady flow of products to the wrapping station, maintaining efficiency even during high-output production runs.
-                  Two foil rollers, positioned on the machine's left, supply wrapping material. 
-                  These rollers are equipped with tension control systems to prevent tearing and ensure uniform feeding. 
-                  The foil is drawn and cut precisely to match the dimensions of the eggs. At the heart of the operation are the rotating mechanical arms, which perform a coordinated wrapping sequence. These arms grab the foil, position it around the egg, and execute a series of folds, sealing the edges with consistent pressure to create a smooth, secure wrap.
-                  Wrapped eggs are then deposited onto a lateral chute for collection. 
-                  The machine's control panel, located on its right side, features dials and switches that allow operators to adjust parameters such as conveyor speed, foil tension, and wrapping pressure.
-                  Powered by an electric motor concealed within the lower structure, the machine exemplifies engineering efficiency.
-                </p>
-                
-                <!--gallery button-->
-                <div class="gallery-button-container" style="margin-top: 3%;">
-                  <a><div class="gallery-button">GO TO GALLERY</div><a>
-                </div>
-                <!--gallery button-->
-  
-              </div>
+              <!--gallery button-->
+
             </div>
-  
-            <div class="text" id="text3" style="display: none;">
-              <div class="content" data-user="kid" style="display: none; margin-top: 17%;">
-                <p>The gelato machine was the first in Europe to make and serve soft ice cream automatically. 
-                  Built in 1956, it has a control panel for mixing ingredients and a lever to dispense the gelato.
-                  Its design made it much easier to enjoy fresh, creamy treats.</p>
-                  
-                  <!--gallery button-->
-                  <div class="gallery-button-container">
-                    <a><div class="gallery-button">GO TO GALLERY</div><a>
-                  </div>
-                  <!--gallery button-->
+
+            <div class="content" data-user="expert" style="display: none;">
+                <p>The Brodo packing machine is a prime example of post-war automation in the food packaging industry.
+                     Engineered in Bologna during the early 1960s, it seamlessly integrated mechanical precision with pneumatic control systems to achieve accurate dosing, filling, and sealing of broth containers. 
+                     The apparatus employs calibrated valves and sensors to regulate liquid flow, while its heat-sealing mechanism ensures an airtight closure that maintains product integrity and shelf life. 
+                     Constructed with robust stainless-steel components to meet stringent hygiene standards, this machine not only enhanced production efficiency but also set new benchmarks for quality control in the packaging of liquid food products. 
+                     Its design and functionality underscore Bologna's innovative approach to merging culinary heritage with advanced industrial engineering.</p>
+              <!--gallery button-->
+              <div class="gallery-button-container" style="margin-top: 3%;">
+                <a><div class="gallery-button">GO TO GALLERY</div><a>
               </div>
-  
-              <div class="content" data-user="general" style="display: none;">
-                <p>The 1956 gelato machine at the Museum of Industrial Heritage in Bologna was the first in Europe to automate the production and serving of soft ice cream, also known as "espresso" ice cream at the time. 
-                  This innovative machine features a mechanical arm that mixes the ingredients, placed in a compartment with rubber-sealed doors.
-                   A control panel on the top allows operators to start and stop the machine, while a dial adjusts the processing.
-                  To dispense the gelato, users pull a plastic lever in the center, releasing the ice cream through a nozzle into a cone or cup. 
-                  A funnel below collects any drips, keeping the area tidy. This invention made soft ice cream production faster and more accessible, marking a turning point in the history of frozen desserts.                
-                </p>
-                
-                  <!--gallery button-->
-                  <div class="gallery-button-container">
-                    <a><div class="gallery-button">GO TO GALLERY</div><a>
-                  </div>
-                  <!--gallery button-->
-              </div>
-  
-              <div class="content" data-user="expert" style="display: none;">
-                <p>The 1956 gelato machine represents a significant milestone in the history of frozen dessert production and distribution. Designed and built in Bologna, it was the first European machine to automate the preparation and serving of soft ice cream, a product initially referred to as "espresso" ice cream for its quick, fresh production.
-                  The machine's operation begins with the addition of ingredients through two black rubber-sealed doors at the top, ensuring cleanliness and preserving the freshness of the materials. Inside, a mechanical arm mixes and processes the ingredients to create a smooth, creamy gelato consistency.
-                   The top-mounted control panel enables operators to power the machine on and off, while a dial allows for fine-tuning of the mixing and freezing process.
-                  At the heart of the machine is its dispensing system. A centrally located plastic lever, when pulled, releases the gelato through a spout positioned above a collection area. The nozzle ensures precision in serving, while a funnel directly below catches any excess or dripped ice cream, maintaining operational tidiness.
-                  This gelato machine reflects the broader post-war shift towards industrial automation, blending culinary tradition with modern technology. 
-                  Its introduction marked a turning point, enabling efficient mass production and distribution of soft ice cream.
-                </p>
-                
-                  <!--gallery button-->
-                  <div class="gallery-button-container" style="margin-top: 3%;">
-                    <a><div class="gallery-button">GO TO GALLERY</div><a>
-                  </div>
-                  <!--gallery button-->
-              </div>
-            </div>
-  
-            <div class="text" id="text4" style="display: none;">
-              <div class="content" data-user="kid" style="display: none; margin-top: 17%;">
-                <p>The tortellini machine is an impressive invention from the 1950s. Powered by an electric motor, it rolls dough, fills it with stuffing, and folds it into perfect tortellini shapes.
-                  It could produce huge amounts daily, helping local bakeries make this classic Italian pasta more efficiently.</p>
-                  
-                  <!--gallery button-->
-                  <div class="gallery-button-container">
-                    <a><div class="gallery-button">GO TO GALLERY</div><a>
-                  </div>
-                  <!--gallery button-->
-              </div>
-  
-              <div class="content" data-user="general" style="display: none;">
-                <p>The tortellini machine, built in Bologna in the 1950s, revolutionized pasta production by automating the process of making this iconic Italian dish. It consists of two main parts: a motor and a working mechanism. The motor, a Marelli electric engine located on the lower left, powers the machine.
-                  The working part includes a rolling system that flattens the dough to the perfect thickness and a filling and shaping unit. A lateral container mixes and dispenses the stuffing while mechanical arms continuously stir it. Six punches cut the dough into shapes, and metal hooks fold it into tortellini. Below the punches, sieves collect the finished pasta.
-                  This machine, capable of producing up to 10–15 quintals of tortellini daily, was originally used in a bakery in Florence. During the Arno River flood in 1966, it was submerged, but it was repaired quickly to resume production. 
-                  Restored and preserved, it now showcases the ingenuity of 20th-century pasta-making technology.                
-                </p>
-                
-                <!--gallery button-->
-                <div class="gallery-button-container">
-                  <a><div class="gallery-button">GO TO GALLERY</div><a>
-                </div>
-                <!--gallery button-->
-  
-              </div>
-  
-              <div class="content" data-user="expert" style="display: none;">
-                <p>The 1950s tortellini machine represents a pivotal development in automating traditional Italian pasta production. 
-                  The machine is divided into two primary systems: the motor and the operational mechanism. The operational system begins with a roller section at the top, which refines the dough to achieve the ideal thickness for tortellini. 
-                  The central component houses the filling and shaping mechanism.
-                   A lateral container holds the stuffing, kept evenly mixed by mechanical arms to maintain consistency.
-                    The machine employs six precision punches to cut the dough into uniform shapes, while metal hooks fold and seal the dough into the signature tortellini form. Below the shaping section, two sieves collect and organize the finished pasta for easy handling.
-                  This machine could produce an impressive 10–15 quintals of tortellini daily, enabling a scale of production that was previously unattainable. 
-                  Originally used in a bakery on Via dei Neri in Florence, it played a critical role in local pasta production. During the catastrophic Arno River flood in November 1966, the machine was submerged but was restored to working condition within 20 days by Zamboni, a Bologna-based company, underscoring its importance to the bakery’s operations.
-                  In 1999, Anna Zangheri, the bakery's last owner, donated the machine to the museum upon retiring. 
-                  Restored and displayed, it serves as a testament to the ingenuity of mid-20th-century industrial food processing.
-                </p>
-                
-                <!--gallery button-->
-                <div class="gallery-button-container" style="margin-top: 3%;">
-                  <a><div class="gallery-button">GO TO GALLERY</div><a>
-                </div>
-                <!--gallery button-->
-  
-              </div>
+              <!--gallery button-->
             </div>
           </div>
-        <!--Item Descriptions-->
-  
-        <!--Progress Line-->
-          <div class="line-container">
-            <div class="progress-line">
-              <div class="active-line"></div>
-              <div class="inactive-line"></div>
-            </div>
-            <!--lines-->
-  
-            <!--dots-->
-            <div class="dot-container">
-              <div class="dot" id="dot10" data-size="17">
-                <div class="inner-dot"></div>
-              </div>
-              <div class="dot" id="dot11" data-size="40">
-                <div class="inner-dot"></div>
-              </div>
-              <div class="dot" id="dot12" data-size="60">
-                <div class="inner-dot"></div>
-              </div>
-              <div class="dot" id="dot13" data-size="84">
-                <div class="inner-dot"></div>
-              </div>
-            </div>
-            <!--dots-->
-  
-          </div>
-        <!--Progress Line-->
-  
-        <!--Side Tabs-->
-          <div class="side-tab">
-            <!--small info table-->
-                <div class="info-table-small" id="info-table-small">
-                  <p>INFO</p>
+
+          <div class="text" id="text2" style="display: none;">
+            <div class="content" data-user="kid" style="display: none; margin-top: 17%;">
+              <p>The Easter egg packing shows how technology made packaging easier. 
+                Chocolate eggs are placed on a platform, and shiny foil rolls are ready on the side. 
+                Mechanical arms grab the foil, carefully wrap it around each egg, and then drop them onto a chute for collection. 
+                This invention by FIMA helped speed up the process and ensured the eggs looked neat and ready for sale.</p>
+                
+                <!--gallery button-->
+                <div class="gallery-button-container">
+                  <a><div class="gallery-button">GO TO GALLERY</div><a>
                 </div>
+                <!--gallery button-->
+            </div>
+
+            <div class="content" data-user="general" style="display: none;">
+              <p>The Easter egg wrapping machine automates the entire process of packaging chocolate eggs, combining speed and precision. 
+                Eggs are placed on a central feeding platform connected to a side conveyor. 
+                Wrapping material is drawn from two foil rollers positioned on the left side, where it's aligned and cut to size. 
+                Rotating mechanical arms use a synchronized movement to grasp the foil and wrap it neatly around the eggs, tucking and sealing the edges to ensure durability during transport.
+                 Once wrapped, the eggs roll down a side chute, ready for collection or further processing. 
+                 The machine is controlled via a panel on the right, allowing operators to adjust settings for various egg sizes and materials. 
+                 This design revolutionized seasonal confectionery packaging, making large-scale production both efficient and reliable.
+              </p>
+              
+              <!--gallery button-->
+              <div class="gallery-button-container">
+                <a><div class="gallery-button">GO TO GALLERY</div><a>
+              </div>
+              <!--gallery button-->
+
+            </div>
+
+            <div class="content" data-user="expert" style="display: none;">
+              <p>The Easter egg packing machine represents a significant leap in mid-20th-century industrial automation, particularly in the confectionery sector. Its operation begins with eggs being placed on a centrally located feeding platform, which aligns them for transport via a side conveyor. 
+                This conveyor ensures a steady flow of products to the wrapping station, maintaining efficiency even during high-output production runs.
+                Two foil rollers, positioned on the machine's left, supply wrapping material. 
+                These rollers are equipped with tension control systems to prevent tearing and ensure uniform feeding. 
+                The foil is drawn and cut precisely to match the dimensions of the eggs. At the heart of the operation are the rotating mechanical arms, which perform a coordinated wrapping sequence. These arms grab the foil, position it around the egg, and execute a series of folds, sealing the edges with consistent pressure to create a smooth, secure wrap.
+                Wrapped eggs are then deposited onto a lateral chute for collection. 
+                The machine's control panel, located on its right side, features dials and switches that allow operators to adjust parameters such as conveyor speed, foil tension, and wrapping pressure.
+                Powered by an electric motor concealed within the lower structure, the machine exemplifies engineering efficiency.
+              </p>
+              
+              <!--gallery button-->
+              <div class="gallery-button-container" style="margin-top: 3%;">
+                <a><div class="gallery-button">GO TO GALLERY</div><a>
+              </div>
+              <!--gallery button-->
+
+            </div>
+          </div>
+
+          <div class="text" id="text3" style="display: none;">
+            <div class="content" data-user="kid" style="display: none; margin-top: 17%;">
+              <p>The gelato machine was the first in Europe to make and serve soft ice cream automatically. 
+                Built in 1956, it has a control panel for mixing ingredients and a lever to dispense the gelato.
+                Its design made it much easier to enjoy fresh, creamy treats.</p>
+                
+                <!--gallery button-->
+                <div class="gallery-button-container">
+                  <a><div class="gallery-button">GO TO GALLERY</div><a>
+                </div>
+                <!--gallery button-->
+            </div>
+
+            <div class="content" data-user="general" style="display: none;">
+              <p>The 1956 gelato machine at the Museum of Industrial Heritage in Bologna was the first in Europe to automate the production and serving of soft ice cream, also known as "espresso" ice cream at the time. 
+                This innovative machine features a mechanical arm that mixes the ingredients, placed in a compartment with rubber-sealed doors.
+                 A control panel on the top allows operators to start and stop the machine, while a dial adjusts the processing.
+                To dispense the gelato, users pull a plastic lever in the center, releasing the ice cream through a nozzle into a cone or cup. 
+                A funnel below collects any drips, keeping the area tidy. This invention made soft ice cream production faster and more accessible, marking a turning point in the history of frozen desserts.                
+              </p>
+              
+                <!--gallery button-->
+                <div class="gallery-button-container">
+                  <a><div class="gallery-button">GO TO GALLERY</div><a>
+                </div>
+                <!--gallery button-->
+            </div>
+
+            <div class="content" data-user="expert" style="display: none;">
+              <p>The 1956 gelato machine represents a significant milestone in the history of frozen dessert production and distribution. Designed and built in Bologna, it was the first European machine to automate the preparation and serving of soft ice cream, a product initially referred to as "espresso" ice cream for its quick, fresh production.
+                The machine's operation begins with the addition of ingredients through two black rubber-sealed doors at the top, ensuring cleanliness and preserving the freshness of the materials. Inside, a mechanical arm mixes and processes the ingredients to create a smooth, creamy gelato consistency.
+                 The top-mounted control panel enables operators to power the machine on and off, while a dial allows for fine-tuning of the mixing and freezing process.
+                At the heart of the machine is its dispensing system. A centrally located plastic lever, when pulled, releases the gelato through a spout positioned above a collection area. The nozzle ensures precision in serving, while a funnel directly below catches any excess or dripped ice cream, maintaining operational tidiness.
+                This gelato machine reflects the broader post-war shift towards industrial automation, blending culinary tradition with modern technology. 
+                Its introduction marked a turning point, enabling efficient mass production and distribution of soft ice cream.
+              </p>
+              
+                <!--gallery button-->
+                <div class="gallery-button-container" style="margin-top: 3%;">
+                  <a><div class="gallery-button">GO TO GALLERY</div><a>
+                </div>
+                <!--gallery button-->
+            </div>
+          </div>
+
+          <div class="text" id="text4" style="display: none;">
+            <div class="content" data-user="kid" style="display: none; margin-top: 17%;">
+              <p>The tortellini machine is an impressive invention from the 1950s. Powered by an electric motor, it rolls dough, fills it with stuffing, and folds it into perfect tortellini shapes.
+                It could produce huge amounts daily, helping local bakeries make this classic Italian pasta more efficiently.</p>
+                
+                <!--gallery button-->
+                <div class="gallery-button-container">
+                  <a><div class="gallery-button">GO TO GALLERY</div><a>
+                </div>
+                <!--gallery button-->
+            </div>
+
+            <div class="content" data-user="general" style="display: none;">
+              <p>The tortellini machine, built in Bologna in the 1950s, revolutionized pasta production by automating the process of making this iconic Italian dish. It consists of two main parts: a motor and a working mechanism. The motor, a Marelli electric engine located on the lower left, powers the machine.
+                The working part includes a rolling system that flattens the dough to the perfect thickness and a filling and shaping unit. A lateral container mixes and dispenses the stuffing while mechanical arms continuously stir it. Six punches cut the dough into shapes, and metal hooks fold it into tortellini. Below the punches, sieves collect the finished pasta.
+                This machine, capable of producing up to 10–15 quintals of tortellini daily, was originally used in a bakery in Florence. During the Arno River flood in 1966, it was submerged, but it was repaired quickly to resume production. 
+                Restored and preserved, it now showcases the ingenuity of 20th-century pasta-making technology.                
+              </p>
+              
+              <!--gallery button-->
+              <div class="gallery-button-container">
+                <a><div class="gallery-button">GO TO GALLERY</div><a>
+              </div>
+              <!--gallery button-->
+
+            </div>
+
+            <div class="content" data-user="expert" style="display: none;">
+              <p>The 1950s tortellini machine represents a pivotal development in automating traditional Italian pasta production. 
+                The machine is divided into two primary systems: the motor and the operational mechanism. The operational system begins with a roller section at the top, which refines the dough to achieve the ideal thickness for tortellini. 
+                The central component houses the filling and shaping mechanism.
+                 A lateral container holds the stuffing, kept evenly mixed by mechanical arms to maintain consistency.
+                  The machine employs six precision punches to cut the dough into uniform shapes, while metal hooks fold and seal the dough into the signature tortellini form. Below the shaping section, two sieves collect and organize the finished pasta for easy handling.
+                This machine could produce an impressive 10–15 quintals of tortellini daily, enabling a scale of production that was previously unattainable. 
+                Originally used in a bakery on Via dei Neri in Florence, it played a critical role in local pasta production. During the catastrophic Arno River flood in November 1966, the machine was submerged but was restored to working condition within 20 days by Zamboni, a Bologna-based company, underscoring its importance to the bakery’s operations.
+                In 1999, Anna Zangheri, the bakery's last owner, donated the machine to the museum upon retiring. 
+                Restored and displayed, it serves as a testament to the ingenuity of mid-20th-century industrial food processing.
+              </p>
+              
+              <!--gallery button-->
+              <div class="gallery-button-container" style="margin-top: 3%;">
+                <a><div class="gallery-button">GO TO GALLERY</div><a>
+              </div>
+              <!--gallery button-->
+
+            </div>
+          </div>
+        </div>
+      <!--Item Descriptions-->
+
+      <!--Progress Line-->
+        <div class="line-container">
+          <div class="progress-line">
+            <div class="active-line"></div>
+            <div class="inactive-line"></div>
+          </div>
+          <!--lines-->
+
+          <!--dots-->
+          <div class="dot-container">
+            <div class="dot" id="dot10" data-size="17">
+              <div class="inner-dot"></div>
+            </div>
+            <div class="dot" id="dot11" data-size="40">
+              <div class="inner-dot"></div>
+            </div>
+            <div class="dot" id="dot12" data-size="60">
+              <div class="inner-dot"></div>
+            </div>
+            <div class="dot" id="dot13" data-size="84">
+              <div class="inner-dot"></div>
+            </div>
+          </div>
+          <!--dots-->
+
+        </div>
+      <!--Progress Line-->
+
+      <!--Side Tabs-->
+        <div class="side-tab">
+          <!--small info table-->
+              <div class="info-table-small" id="info-table-small">
+                <p>INFO</p>
+              </div>
+            </a>
+          <!--small info table-->
+
+          <!--all possible options for the big table-->
+            <div class="info-table-big" id="Brodo Packing Machine" style="display: none;">
+              <div class="info-button">
+                <button class="closing-button" id="closing-button10" data-info="info10">
+                  <i class="fa-solid fa-chevron-right chevron-button" style="color: #FEF7D7;"></i>
+                  <i class="fa-solid fa-xmark x-button" style="color: #fef7d7; display: none;"></i>
+                </button>
+              </div>
+              <h3>INFORMATION</h3>
+              <div class="information-container">
+                <table class="table table-custom">
+                  <tbody>
+                    <tr>
+                        <th scope="row">DESIGNED BY</th>
+                        <td>Natalino Corazza</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">BRAND</th>
+                      <td>Corazza</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">YEAR</th>
+                      <td>1959</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">LOCATION</th>
+                      <td>Bologna</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="info-table-big" id="Easter Egg Packing Machine" style="display: none;">
+              <div class="info-button">
+                <button class="closing-button" id="closing-button11" data-info="info11">
+                  <i class="fa-solid fa-chevron-right chevron-button" style="color: #FEF7D7;"></i>
+                  <i class="fa-solid fa-xmark x-button" style="color: #fef7d7; display: none;"></i>
+                </button>
+              </div>
+              <h3>INFORMATION</h3>
+              <div class="information-container">
+                <table class="table table-custom">
+                  <tbody>
+                    <tr>
+                      <th scope="row">BRAND</th>
+                      <td>FIMA</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">YEAR</th>
+                      <td>1966</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">LOCATION</th>
+                      <td>Bologna</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="info-table-big" id="Gelato Machine" style="display: none;">
+              <div class="info-button">
+                <button class="closing-button" id="closing-button12" data-info="info12">
+                  <i class="fa-solid fa-chevron-right chevron-button" style="color: #FEF7D7;"></i>
+                  <i class="fa-solid fa-xmark x-button" style="color: #fef7d7; display: none;"></i>
+                </button>
+              </div>
+              <h3>INFORMATION</h3>
+              <div class="information-container">
+                <table class="table table-custom">
+                  <tbody>
+                    <tr>
+                      <th scope="row">BRAND</th>
+                      <td>Carpigiani</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">YEAR</th>
+                      <td>1956</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">LOCATION</th>
+                      <td>Bologna</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="info-table-big" id="Tortellini Machine" style="display: none;">
+              <div class="info-button">
+                <button class="closing-button" id="closing-button13" data-info="info13">
+                  <i class="fa-solid fa-chevron-right chevron-button" style="color: #FEF7D7;"></i>
+                  <i class="fa-solid fa-xmark x-button" style="color: #fef7d7; display: none;"></i>
+                </button>
+              </div>
+              <h3>INFORMATION</h3>
+              <div class="information-container">
+                <table class="table table-custom">
+                  <tbody>
+                    <tr>
+                      <th scope="row">BRAND</th>
+                      <td>Zamboni</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">YEAR</th>
+                      <td>1950</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">LOCATION</th>
+                      <td>Bologna</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          <!--all possible options for the big table-->
+
+          <!--User type buttons-->
+            <div class="user-btn-container">
+              <div class="user-btn-toggle"><i class="fa-solid fa-gear" style="color: #FEF7D7;"></i></div>
+              <div class="user-btn" id="user-btn1" data-user="kid"></div>
+              <div class="user-btn" id="user-btn2" data-user="general"></div>
+              <div class="user-btn" id="user-btn3" data-user="expert"></div>
+            </div>
+          <!--User type buttons-->
+        </div>
+      <!--Side Tabs-->
+    </div>
+  <!--Section 1: Carousel Section-->
+  <!--Section 4: Paths Section-->
+    <div class="path-container">
+        <!-- Path Images -->
+        <div class="main-images">
+          <div class="title">Try another path!</div>
+          <div class="hidden-img" id="hidden1">
+              <a href="SilkRoad/silkroad.html" class="path-link">
+                  <img src="../images/logos/thema1pb.png" alt="Brick by Boring Brick" class="path-img">
+                  <span class="path-name">BRICK BY BORING BRICK</span>
               </a>
-            <!--small info table-->
-  
-            <!--all possible options for the big table-->
-              <div class="info-table-big" id="Brodo Packing Machine" style="display: none;">
-                <div class="info-button">
-                  <button class="closing-button" id="closing-button10" data-info="info10">
-                    <i class="fa-solid fa-chevron-right chevron-button" style="color: #FEF7D7;"></i>
-                    <i class="fa-solid fa-xmark x-button" style="color: #fef7d7; display: none;"></i>
-                  </button>
-                </div>
-                <h3>INFORMATION</h3>
-                <div class="information-container">
-                  <table class="table table-custom">
-                    <tbody>
-                      <tr>
-                          <th scope="row">DESIGNED BY</th>
-                          <td>Natalino Corazza</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">BRAND</th>
-                        <td>Corazza</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">YEAR</th>
-                        <td>1959</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">LOCATION</th>
-                        <td>Bologna</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-  
-              <div class="info-table-big" id="Easter Egg Packing Machine" style="display: none;">
-                <div class="info-button">
-                  <button class="closing-button" id="closing-button11" data-info="info11">
-                    <i class="fa-solid fa-chevron-right chevron-button" style="color: #FEF7D7;"></i>
-                    <i class="fa-solid fa-xmark x-button" style="color: #fef7d7; display: none;"></i>
-                  </button>
-                </div>
-                <h3>INFORMATION</h3>
-                <div class="information-container">
-                  <table class="table table-custom">
-                    <tbody>
-                      <tr>
-                        <th scope="row">BRAND</th>
-                        <td>FIMA</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">YEAR</th>
-                        <td>1966</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">LOCATION</th>
-                        <td>Bologna</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-  
-              <div class="info-table-big" id="Gelato Machine" style="display: none;">
-                <div class="info-button">
-                  <button class="closing-button" id="closing-button12" data-info="info12">
-                    <i class="fa-solid fa-chevron-right chevron-button" style="color: #FEF7D7;"></i>
-                    <i class="fa-solid fa-xmark x-button" style="color: #fef7d7; display: none;"></i>
-                  </button>
-                </div>
-                <h3>INFORMATION</h3>
-                <div class="information-container">
-                  <table class="table table-custom">
-                    <tbody>
-                      <tr>
-                        <th scope="row">BRAND</th>
-                        <td>Carpigiani</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">YEAR</th>
-                        <td>1956</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">LOCATION</th>
-                        <td>Bologna</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-  
-              <div class="info-table-big" id="Tortellini Machine" style="display: none;">
-                <div class="info-button">
-                  <button class="closing-button" id="closing-button13" data-info="info13">
-                    <i class="fa-solid fa-chevron-right chevron-button" style="color: #FEF7D7;"></i>
-                    <i class="fa-solid fa-xmark x-button" style="color: #fef7d7; display: none;"></i>
-                  </button>
-                </div>
-                <h3>INFORMATION</h3>
-                <div class="information-container">
-                  <table class="table table-custom">
-                    <tbody>
-                      <tr>
-                        <th scope="row">BRAND</th>
-                        <td>Zamboni</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">YEAR</th>
-                        <td>1950</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">LOCATION</th>
-                        <td>Bologna</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-            <!--all possible options for the big table-->
-  
-            <!--User type buttons-->
-              <div class="user-btn-container">
-                <div class="user-btn-toggle"><i class="fa-solid fa-gear" style="color: #FEF7D7;"></i></div>
-                <div class="user-btn" id="user-btn1" data-user="kid"></div>
-                <div class="user-btn" id="user-btn2" data-user="general"></div>
-                <div class="user-btn" id="user-btn3" data-user="expert"></div>
-              </div>
-            <!--User type buttons-->
           </div>
-        <!--Side Tabs-->
-      </div>
-    <!--Section 1: Carousel Section-->
-    <!--Section 4: Paths Section-->
-      <div class="path-container">
-          <!-- Path Images -->
-          <div class="main-images">
-            <div class="title">Try another path!</div>
-            <div class="hidden-img" id="hidden1">
-                <a href="SilkRoad/silkroad.html" class="path-link">
-                    <img src="../images/logos/thema1pb.png" alt="Brick by Boring Brick" class="path-img">
-                    <span class="path-name">BRICK BY BORING BRICK</span>
-                </a>
-            </div>
-            <div class="hidden-img" id="hidden3">
-                <a href="machine.html" class="path-link">
-                    <img src="../images/logos/thema3pb.png" alt="The Machine's World" class="path-img">
-                    <span class="path-name">THE MACHINE'S WORLD</span>
-                </a>
-            </div>
-            <div class="hidden-img" id="hidden4">
-                <a href="italian.html" class="path-link">
-                    <img src="../images/logos/thema4pb.png" alt="Bologna's Silk Road" class="path-img">
-                    <span class="path-name">THE SILK ROAD</span>
-                </a>
-            </div>
+          <div class="hidden-img" id="hidden3">
+              <a href="machine.html" class="path-link">
+                  <img src="../images/logos/thema3pb.png" alt="The Machine's World" class="path-img">
+                  <span class="path-name">THE MACHINE'S WORLD</span>
+              </a>
           </div>
-      </div>
-    <!--Section 4: Paths Section-->
-  
-    <!--Footer-->
-      <footer class="footer">
-        <div class="hr-container">
-            <hr id="hr1">
-        </div>
-        <div class="footer-content">
-          <div class="title-container">
-              <h1 id="home-title">ABOUT THE<br>GROUP</h1>
-          </div>
-          <div class="row">
-            <div class="logo">
-              <img id="museum-logo" src="../../images/logoconscritta.png">
-            </div>
-            <div class="affiliations">
-              <h4>AFFILIATIONS</h4>
-              <p>
-                Digital Humanities and Digital Knowledge<br>
-                DHDK - Second Cycle Degree<br>
-                <br>
-                University of Bologna
-              </p>
-              <div class="social-icons-container">
-                <a href="https://github.com/bolognaindustries/industrialheritage/blob/main/items/items.html"><img
-                    class="social-icons" src="../../images/logoface.png" alt="Facebook Logo"></a>
-                <a href=""><img class="social-icons" src="../../images/logoinsta.png" alt="Instagram Logo"></a>
-                <a href=""><img class="social-icons" src="../../images/logounibo.png" alt="University of Bologna Logo"></a>
-              </div>
-            </div>
-            <div class="contacts">
-              <h4>CONTACTS</h4>
-              <p>
-                Anna Nicoletti<br>
-                Ekaterina Krasnova<br>
-                Nadia Calvisi<br>
-                Rubens Fernandes Jr.<br>
-              </p>
-            </div>
+          <div class="hidden-img" id="hidden4">
+              <a href="italian.html" class="path-link">
+                  <img src="../images/logos/thema4pb.png" alt="Bologna's Silk Road" class="path-img">
+                  <span class="path-name">THE SILK ROAD</span>
+              </a>
           </div>
         </div>
-      </footer>
-    <!--Footer-->
-  
-    <!--Javascript-->
-      <script src="https://kit.fontawesome.com/b7dc8e0f7f.js" crossorigin="anonymous"></script>
-      <script src="vita.js"></script>
-    <!--Javascript-->
-  </body>
+    </div>
+  <!--Section 4: Paths Section-->
+
+  <!--Footer-->
+  <footer class="footer">
+    <div class="hr-container">
+      <hr id="hr1">
+    </div>
+    <div class="container footer-content">
+      <!--row-->
+      <div class="row">
+        <!--1st column-->
+        <div class="title-container col-md-3 ">
+          <h1 id="home-title">ABOUT THE<br>GROUP</h1>
+          <img id="museum-logo" src="objects/logoconscritta.png">
+        </div>
+        <!--1st column-->
+
+        <!--2nd column-->
+        <div class="contacts col-md-3 ">
+          <h4>CONTACTS</h4>
+          <p>
+            Anna Nicoletti<br>
+            Ekaterina Krasnova<br>
+            Nadia Calvisi<br>
+            Rubens Fernandes Junior<br>
+          </p>
+        </div>
+        <!--2nd column-->
+
+        <!--3rd column-->
+        <div class="affiliations col-md-4">
+          <h4>AFFILIATIONS</h4>
+          <p>
+            Digital Humanities and Digital Knowledge - <br>
+            DHDK Second Cycle Degree<br>
+            <br>
+            University of Bologna
+          </p>
+          <!--social icons-->
+          <div class="social-icons-container">
+            <a href="https://github.com/bolognaindustries/industrialheritage/blob/main/items/items.html"><img
+                class="social-icons" src="objects/logoface.png" alt="Facebook Logo"></a>
+            <a href=""><img class="social-icons" src="objects/logoinsta.png" alt="Instagram Logo"></a>
+            <a href=""><img class="social-icons" src="objects/logounibo.png" alt="University of Bologna Logo"></a>
+          </div>
+          <!--social icons-->
+        </div>
+        <!--3rd column-->
+      </div>
+      <!--row-->
+    </div>
+  </footer>
+<!--Footer-->
+
+  <!--Javascript-->
+    <script src="https://kit.fontawesome.com/b7dc8e0f7f.js" crossorigin="anonymous"></script>
+    <script src="vita.js"></script>
+  <!--Javascript-->
+</body>
 </html>
