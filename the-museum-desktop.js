@@ -238,7 +238,13 @@ if (desktop) {
             number.style.color = "#CD5909";
             currentItem.style.color = "white";
 
-            preview.classList.remove("preview-show");
+            texts.forEach(function(text) {
+                text.style.display = "none";
+            });
+
+            previews.forEach(function(preview) {
+                preview.classList.remove("preview-show");
+            });
             
             if(btnMap1.classList.contains("active")) {
                 list2.style.display = "none";
@@ -268,6 +274,18 @@ if (desktop) {
                 this.style.color = "#CD5909";
                 activeNumber = null; // Reset del numero attivo
                 isMouseEnterPaused = false; // Riprendi l'hover
+
+                
+
+                texts.forEach(function (text) {
+                    text.style.display = "none";
+                });
+
+                changeToList();
+                
+                previews.forEach(function(preview) {
+                    preview.classList.remove("preview-show");
+                });
             } else {
                 // Se un altro numero è attivo, lo deselezioniamo
                 if (activeNumber) {
@@ -288,7 +306,7 @@ if (desktop) {
         
             // Reset di tutte le preview e descrizioni
             previews.forEach(function(preview) {
-                preview.style.display = "none";
+                preview.classList.remove("preview-show");
             });
         
             floorDescriptions.forEach(function(floorDescription) {
@@ -302,7 +320,7 @@ if (desktop) {
             // Modifiche per il numero cliccato
             var previewId = this.getAttribute("data-preview");
             var preview = document.getElementById(previewId);
-            preview.style.display = "block";
+            preview.classList.add("preview-show");
             
             if (textId) {
                 updateContent(textId);
@@ -326,7 +344,7 @@ if (desktop) {
 
             item.classList.add("item-hover");
 
-            preview.style.display = "block";
+            preview.classList.add("preview-show");
             }
         });
 
@@ -347,7 +365,14 @@ if (desktop) {
                 item.classList.remove("item-hover");
             });
 
-            preview.style.display = "none";
+            if (preview) { 
+                previews.forEach(function(preview) {
+                            preview.classList.remove("preview-show");
+                        });
+            } else {
+                console.warn("Elemento preview non trovato per ID:", previewId);
+            }
+            
             }
         });
 
@@ -379,7 +404,10 @@ if (desktop) {
                     var previewId = numberElem.getAttribute("data-preview");
                     var preview = document.getElementById(previewId);
                     if (preview) {
-                        preview.style.display = "none";
+                        previews.forEach(function(preview) {
+                            preview.classList.remove("preview-show");
+                        });
+                        
                     }
                 }
             }
@@ -472,7 +500,7 @@ if (desktop) {
             // Nascondi la preview
             previews.forEach(function(preview) {
                 if(preview) {
-                    preview.style.display = "none";
+                    preview.classList.remove("preview-show");
                 }
             });
 
