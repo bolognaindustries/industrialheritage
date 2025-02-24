@@ -709,7 +709,68 @@ button:hover {
   .user-btn:hover::after {
     opacity: 1;
   }
+    /* theme section */
+    .path-container {
+        background-color: black;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .title {
+        font-size: 24px;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .main-images {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+    
+    .hidden-img {
+        display: inline-block;
+        text-align: center;
+        margin: 30px;
+        width: 200px;
+        height: auto;
+    }
+    
+    .path-img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    
+    .path-name {
+        display: block;
+        margin-top: 10px;
+        font-size: 16px;
+        font-weight: bold;
+        color: white;
+    }
+    
+    .path-link {
+        text-decoration: none;
+        color: white;
+    }
 
+    #hidden1 a:hover img {
+        content: url("../../../images/logos/thema1change.png");
+    }
+    
+    #hidden3 a:hover img {
+        content: url("../../../images/logos/thema3change.png");
+    }
+    
+    #hidden4 a:hover img {
+        content: url("../../../images/logos/thema4change.png");
+    }
+    /* theme section */
 /* Footer */
 footer {
     width: 100%;
