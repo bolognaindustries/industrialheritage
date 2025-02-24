@@ -70,17 +70,17 @@ body {
         position: relative;
         display: flex;
         flex-direction: column;
-        width: 80%;
+        width: 90%;
         align-items: center;
         left: 50%;
         transform: translateX(-50%);
-        padding-top: 15%;
+        padding-top: 40%;
       }
   
       .introduction-container h1 {
         color: white;
         font-weight: bold;
-        font-size: 24px;
+        font-size: 33px;
         margin-bottom: 10%;
         text-align: center;
         line-height: 1.5em;
@@ -115,13 +115,12 @@ body {
 
     /*Section2: Maps and Descriptions*/
     .section2 {
-        height: 100vh;
+        height: auto;
+        min-height: 100vh;
         position: relative;
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-between;
-        gap: 5vh;
     }
 
         /*Top Container*/
@@ -172,7 +171,7 @@ body {
           width: auto;
           height: 2em;
           background-color: white;
-          color: #8CB758;
+          color: #CD5909;
           text-align: center;
           aspect-ratio: 1 / 1;
           border-radius: 50%;
@@ -182,31 +181,39 @@ body {
           display: flex;
           align-items: center;
           justify-content: center;
+          z-index: 300;
         }
 
         .map-btn-container {
-            width: 95%;
+            width: 100%;
             position: absolute;
             display: flex;
             flex-direction: row;
             align-items: center;
             justify-content: space-between;
-            top: 50vh;
+            margin-left: 0;
+            margin-right: auto;
+            gap: 77%;
+            padding-left: 4%;
+            padding-right: 4%;
+            top: 48vh;
             left: 50%;
             transform: translateX(-50%);
+            z-index: 200;
         }
 
         .btn-map {
             position: relative;
             display: flex;
             cursor: pointer;
-            width: 2em;
-            height: auto;
-            aspect-ratio: 1 / 1;
+            width: 5vh;
+            height: 5vh;
+            padding: 1%;;
             border-radius: 50%;
             align-items: center;
             justify-content: center;
             background-color: white;
+            font-size: 1.9vh;
         }
 
         .btn-map i {
@@ -232,36 +239,44 @@ body {
             border-top-right-radius: 45px;
             display: flex;
             justify-content: center;
-            overflow: hidden;
             bottom: 0;
+            z-index: 400;
         }
 
         .tab i {
             position: absolute;
-            margin-top: 4%;
+            margin-top: 5%;
             left: 50%;
             transform: translateX(-50%);
             cursor: pointer;
         }
 
         .left-container-m {
-          height: 70vh;
+          height: 55vh;
           width: 100vw;
           background: #373636;
-          position: absolute;
+          position: sticky;
           border-top-left-radius: 45px;
           border-top-right-radius: 45px;
           display: flex;
           justify-content: center;
-          overflow: hidden;
           bottom: 0;
-          z-index: 1;
+          z-index: 400;
           font-family: "Poppins", sans-serif;
+          overflow: hidden;
+        }
+
+        .scroll-container {
+          position: relative;
+          overflow-y: scroll;
+          height: 40vh;
+          scrollbar-width: none;
+          width: 95%;
         }
 
         .left-container-m i {
           position: absolute;
-          margin-top: 4%;
+          margin-top: 7%;
           margin-bottom: 5%;
           left: 50%;
           transform: translateX(-50%);
@@ -274,28 +289,27 @@ body {
             color: white;
             line-height: 1.5em;
             font-weight: bold;
-            margin-left: 10%;
+            margin-left: 5%;
             font-size: 23pt;
             text-align: left;
             font-weight: 700;
             letter-spacing: 3px;
-            margin-top: 15%;
+            margin-top: 5%;
+            font-family: "Poppins", sans-serif;
         }
 
         .left-container-m p {
+            position: relative;
             font-weight: bold;
             font-size: 11pt;
             color: white;
-            padding: 0;
-            overflow: hidden;
-            margin-left: 10%;
+            margin-left: 5%;
             margin-right: 15%;
             text-align: left;
             letter-spacing: 2px;
             font-family: "Poppins", serif;
-            font-weight: 400;
             font-style: normal;
-            padding-top: 5%;
+            line-height: 2.9vh;
         }
 
         .left-container-m span {
@@ -312,16 +326,46 @@ body {
         }
 
         .floor-description-m {
-          max-height: 50vh;
+          font-family: serif;
+          font-weight: bold;
+          font-size: 11pt;
+          color: white;
+          margin-top: 16%;
+          margin-left: 5%;
+          margin-right: 7%;
+          text-align: center;
+          letter-spacing: 2px;
+          overflow-y: scroll;
+          z-index: 300;
+          height: 75%;
+          width: 100%;
+          position: absolute;
+        }
+
+        .item-texts {
+          overflow-y: scroll;
         }
 
         .text-m {
-          display: none;
+          display: block;
+          position: absolute;
+          font-family: serif;
+          font-weight: bold;
+          font-size: 11pt;
+          color: #FEF7D7;
+          margin-top: 16%;
+          margin-left: 5%;
+          margin-right: 7%;
+          text-align: center;
+          letter-spacing: 2px;
+          z-index: 300;
+          height: 70%;
+          width: 100%;
         }
 
         .text-m h4 {
-          margin-top: 15%;
-          margin-left: 10%;
+          margin-top: 0;
+          margin-left: 5%;
           position: relative;
           color: white;
           font-size: 23pt;
@@ -332,7 +376,7 @@ body {
         }
 
         .text-m h3 {
-          margin-left: 10%;
+          margin-left: 5%;
           position: relative;
           color: white;
           font-size: 29pt;
@@ -350,69 +394,118 @@ body {
           height: auto;
           top: 20%;
           left: 10%;
-          margin-right: 70%;
         }
 
-        .user-btn-toggle-m {
-          position: relative;
-          background-color: white;
-          border-radius: 20px;  
+        .gallery-button-container {
+          left: 0;
+          padding-left: 5%;
+          position: sticky;
+          bottom: 0;
+          margin-top: 3%;
+        }
+
+        .gallery-button{
+          font-family: 'Cooper Hewitt', sans-serif;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: #CD5909;
+          font-weight: bold;
+          color: white;
+          width: 30vw;
+          height: 4vh;
+          text-align: center;
           cursor: pointer;
-          width: 2em;
-          height: 3em;
-          aspect-ratio: 1 / 1;
-          margin-bottom: 20%;
+          border-radius: 5px;
+          letter-spacing: 0.2vh;
+        }
+
+        .gallery-button:hover {
+            opacity: 0.9;
+        }
+
+        /*user type buttons*/
+        .side-tab {
+          height: 5.5vh;
+          width: 50vw;
+          top: 16vh;
+          right: 0;
+          overflow: hidden;
+          position: absolute;
+        }
+        .user-btn-toggle-m {
+          cursor: pointer;
+          aspect-ratio: 1/1;
+          margin-right: 5%;
+          font-size: 35px;
+          margin-left: 5%;
         }
 
         .user-btn-container-m {
-          position: absolute;
-          left: 90%;
-          top: 68%;
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
-          gap: 7px;
+            background-color: #CD5909;
+            cursor: pointer;
+            position: absolute;
+            width: 50vw;
+            height: 5.5vh;
+            flex-direction: row;
+            column-gap: 8%;
+            display: flex;
+            align-items: center;
+            border-top-left-radius: 8px;
+            border-bottom-left-radius: 8px;
+            z-index: 350;
+            right: -37vw;
+        }
+
+        .user-btn-container-m:hover {
+            background-color: #CD5909;
+            opacity: 0.9;
         }
 
         .user-btn-container-m img {
-          position: relative;
-          cursor: pointer;
-          width: 2em;
-          height: auto;
-          aspect-ratio: 1 / 1;
+            position: relative;
+            cursor: pointer;
+            width: 2em;
+            height: auto;
+            aspect-ratio: 1 / 1;
+            z-index: 370;
         }
 
         .user-btn-m {
-          width: 2em;
-          height: 2em;
-          background-size: cover;
-          background-position: center;
-          cursor: pointer;
+            width: 2em;
+            height: 2em;
+            background-size: cover;
+            background-position: center;
+            cursor: pointer;
+            z-index: 370;
         }
 
-        #user-btn1-m {
-          background-image: url("images/ICONchildren.png");
+        #user-btn1 {
+            background-image: url("images/ICONroundedSquaredChildren.png");
         }
 
-        #user-btn1-m.active {
-          background-image: url("");
+        #user-btn1.active {
+            background-image: url("images/machines/logo/NadiaKid.png");
         }
 
         #user-btn2-m {
-          background-image: url("images/ICONgeneral.png");
+            background-image: url("images/machines/logo/NadiaGeneralInverted.png");
         }
 
-        #user-btn2-m.active {
-          background-image: url("");
+        #user-btn2.active {
+            background-image: url("images/machines/logo/NadiaGeneral.png");
         }
 
-        #user-btn3-m {
-          background-image: url("images/ICONexpert.png");
+        #user-btn3 {
+            background-image: url("images/machines/logo/NadiaExpertInverted.png");
         }
 
-        #user-btn3-m.active {
-          background-image: url("");
+        #user-btn3.active {
+            background-image: url("images/machines/logo/NadiaExpert.png");
         }
+
+      /*user type buttons*/
+
     
 
 /*Footer*/
@@ -435,7 +528,7 @@ footer {
   footer #home-title-m {
     font-weight: bold;
     -webkit-text-stroke: 2px white;
-    font-size: 9vw;
+    font-size: 12vw;
     text-align: center;
     margin-left: 0;
     margin-right: 0;
