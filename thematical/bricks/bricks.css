@@ -721,15 +721,15 @@ hr {
     }
     
     #hidden2 a:hover img {
-        content: url("../../../images/logos/thema2change.png");
+        content: url("../../images/logos/thema2change.png");
     }
     
     #hidden3 a:hover img {
-        content: url("../../../images/logos/thema3change.png");
+        content: url("../../images/logos/thema3change.png");
     }
     
     #hidden4 a:hover img {
-        content: url("../../../images/logos/thema4change.png");
+        content: url("../../images/logos/thema4change.png");
     }
 
     /* theme section */
