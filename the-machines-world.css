@@ -716,6 +716,23 @@ hr {
         content: url("images/logos/thema4change.png");
     }
     /* theme section */
+/* Line separator */
+.hr-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding: 20px 0;
+  
+  
+    hr {
+      width: 90%;
+      border: none;
+      border-top: 2px solid white;
+      margin: 0 auto;
+   }
+}
+  
 
 /*footer*/
     footer {
