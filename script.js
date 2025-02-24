@@ -54,9 +54,6 @@ document.addEventListener('DOMContentLoaded', function () {
         if (hiddenImages.style.display === 'none' || hiddenImages.style.display === '') {
             hiddenImages.style.display = 'flex';
 
-            const hiddenImagesHeight = hiddenImages.offsetHeight - 75;
-            section4.style.marginTop = `${hiddenImagesHeight}px`;
-
             setTimeout(() => {
                 window.scrollBy({
                     top: 100,
@@ -65,7 +62,6 @@ document.addEventListener('DOMContentLoaded', function () {
             }, 100);
         } else {
             hiddenImages.style.display = 'none';
-            section4.style.marginTop = '0';
         }
     });
 });
