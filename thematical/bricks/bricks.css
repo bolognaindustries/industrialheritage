@@ -66,6 +66,7 @@ hr {
 
 .nav-item.dropdown:hover .dropdown-menu {
         display: block;
+        border: 0;
 }
     
 .navbar .dropdown-menu {
@@ -93,29 +94,10 @@ hr {
         text-align: center;
     }
 
-.link-lines-dropdown {
-      background-color: rgb(0, 0, 0);
-      height: 2px;
-      width: 0;
-      transition: width 0.3s ease;
-      opacity: 1;
-}
-
 .dropdown-item {
       background-color: transparent !important; 
       border: none;
       position: relative;
-}
-    
-.dropdown-item:hover::after,
-.dropdown-item:focus::after {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        width: 60%;
-        height: 2px;
-        background-color: #000000;
-        transition: width 0.3s ease !important;
 }
     
 #thematicalTrigger:hover {
