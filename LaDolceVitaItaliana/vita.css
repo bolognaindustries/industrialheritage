@@ -31,8 +31,6 @@ body {
     margin-left: 9%;
 }
 
-
-/* Separator bar between links */
 .vr {
 
     padding-left: 1px;
@@ -47,7 +45,6 @@ hr {
     color: black;
     border-top: 2px solid black;
 }
-
 
 .nav-item {
     line-height: 10px;
@@ -68,6 +65,7 @@ hr {
 
 .nav-item.dropdown:hover .dropdown-menu {
         display: block;
+        border: 0;
 }
     
 .navbar .dropdown-menu {
@@ -82,7 +80,6 @@ hr {
         border-radius: 0;
         background-color: rgb(255, 255, 255);
         min-width: 160px;
-        border: 1 solid rgb(0, 0, 0);
         z-index: 1;
 }
     
@@ -96,29 +93,10 @@ hr {
         text-align: center;
     }
 
-.link-lines-dropdown {
-      background-color: rgb(0, 0, 0);
-      height: 2px;
-      width: 0;
-      transition: width 0.3s ease;
-      opacity: 1;
-}
-
 .dropdown-item {
       background-color: transparent !important; 
       border: none;
       position: relative;
-}
-    
-.dropdown-item:hover::after,
-.dropdown-item:focus::after {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        width: 60%;
-        height: 2px;
-        background-color: #000000;
-        transition: width 0.3s ease !important;
 }
     
 #thematicalTrigger:hover {
@@ -790,103 +768,124 @@ hr {
     margin: 0 auto;
     }
   
-/* footer */
+/* Footer */
 footer {
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: black;
+    margin: 0;
+    background-color: #000000;
   }
   
-  footer .row {
-    margin-left: -5%;
-    margin-right: -5%;
-    display: flex !important;
-    flex-direction: row !important;
-    flex-wrap: wrap;
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 5%;
   }
   
-  .row {
-    display: flex !important;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  footer .title-container {
+  .title-container {
+    width: 100%;
     text-align: left;
-    margin-right: 2%;
+    font-family: 'Cooper Hewitt', sans-serif;
+    color: #ffffff;
     margin-top: 7%;
-    font-family: 'Cooper Hewitt', sans-serif; 
-    color: white;
   }
-  footer #home-title {
-    position: relative;
+  
+  #home-title {
     font-size: 3vw;
-    z-index: 100;
     font-weight: bold;
-    -webkit-text-stroke: 2px white;
+    -webkit-text-stroke: 2px #ffffff;
     color: transparent;
   }
-  footer #home-subtitle {
-  font-size: 2vw;
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
   }
-  footer h4 {
-  font-size: 24px;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
-  text-align: left;
-  color: white;
+  
+  .logo {
+    width: 30%;
+    text-align: left;
   }
+  
   #museum-logo {
-  position: relative;
-  width: 325px;
-  height: auto;
-  display: block;
-  margin-top: 10%;
-  left: -10%;
-  top: -10%;
-  z-index: 10;
-  }
-  .contacts p, footer .affiliations p {
-  line-height: 1.5;
-  margin-bottom: 20px;
-  text-align: left;
-  color: white;
-  font-weight: bold;
-  }
-  footer p {
-  font-size: 17px;
-  font-weight: normal;
-  text-align: left;
-  font-family: 'Cooper Hewitt', sans-serif;
-  }
-  .contacts, .affiliations {
-  margin-top: 19%;
-  }
-  .contacts {
-    margin-left: 7%;
-  }
-  .affiliations {
-    margin-left: 4%;
-  }
-  .contacts h4 {
-    margin-bottom: 10%;
-  }
-  .affiliations h4 {
-    margin-bottom: 7%;
-  }
-  .social-icons-container {
-    max-width: 200px;
-    margin-top: 10%;
-    position: relative;
-    left: 50%;
-  }
-  .social-icons {
-    width: 19%;
+    width: 100%;
+    width: 15vw;
     height: auto;
-    margin-left: 5%;
+  }
+  
+  .contacts {
+    width: 30%;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 1%;
+  }
+  
+  .contacts h4 {
+    font-size: 1.5vw;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 10px;
+  }
+  
+  .contacts p {
+    font-weight: bold;
+    font-size: 1vw;
+  }
+  
+  .affiliations {
+    margin-top: 1%;
+    width: 30%;
+    text-align: center;
+    color: #ffffff;
+  }
+  
+  .affiliations h4 {
+    font-size: 1.5vw;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 10px;
+  }
+  
+  .affiliations p {
+    font-weight: bold;
+    font-size: 1vw;
   }
 
+  .social-icons-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    justify-content: center;
+  }
+  
+  .social-icons {
+    width: 30px;
+    height: auto;
+  }
+  
+/* Footer*/  
+
+/* Line separator */
+.hr-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding: 20px 0;
+  
+  
+    hr {
+      width: 90%;
+      border: none;
+      border-top: 2px solid white;
+      margin: 0 auto;
+    }
+  }
+  
 /* Media Queries */
 @media (max-width: 575.98px) {
     /* Introduction Section */
