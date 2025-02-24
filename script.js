@@ -5,6 +5,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const thematicalMenu = document.getElementById('thematicalMenu');
 
     thematicalTrigger.addEventListener('click', (e) => {
+
+        
         e.preventDefault(); 
         const isExpanded = thematicalMenu.classList.contains('show');
         thematicalMenu.classList.toggle('show', !isExpanded);

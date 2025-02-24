@@ -1,6 +1,36 @@
 // Only operate on desktop devices
 var desktop = document.getElementById("desktop");
 
+document.addEventListener('DOMContentLoaded', () => {
+        const thematicalTrigger = document.getElementById('thematicalTrigger');
+        const thematicalMenu = document.getElementById('thematicalMenu');
+
+        console.log('thematicalTrigger:', thematicalTrigger);
+        console.log('thematicalMenu:', thematicalMenu);
+
+        if (!thematicalTrigger) {
+            console.error('Elemento con ID "thematicalTrigger" non trovato!');
+        }
+        if (!thematicalMenu) {
+            console.error('Elemento con ID "thematicalMenu" non trovato!');
+        }
+    
+        thematicalTrigger.addEventListener('click', (e) => {
+            console.log("thematical button triggered");
+
+            e.preventDefault(); 
+            e.stopPropagation();
+            const isExpanded = thematicalMenu.classList.contains('show');
+            thematicalMenu.classList.toggle('show', !isExpanded);
+        });
+    
+        document.addEventListener('click', (e) => {
+            if (!thematicalTrigger.contains(e.target) && !thematicalMenu.contains(e.target)) {
+                thematicalMenu.classList.remove('show');
+            }
+        });
+    });
+
 
 if (desktop) {
 
@@ -553,7 +583,7 @@ function updateLines(number) {
 
     });
 
-    // 4TH EVENT: Everything else
+    // 6TH EVENT: Everything else
     // clicking outside the numbers is going to make the click on the numbers disappear
     document.addEventListener("click", function(e) {
         if (e.target.closest(".user-btn-container") || e.target.closest(".user-btn-toggle")) {
@@ -590,7 +620,7 @@ function updateLines(number) {
             console.log("Elemento target non trovato!");
         }
     });
-    
+  
 
     
 

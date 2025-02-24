@@ -69,15 +69,32 @@ body {
           margin-top: 0;
           left: 0;
   }
+
+    /* Aggiungi questo stile per mantenere l'aspetto del link */
+  .btn.btn-link {
+    color: white;
+    text-decoration: none;
+    background: none;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+  }
+
+  .btn.btn-link:hover {
+    color: white;
+    opacity: 0.7;
+  }
       
   .dropdown-menu {
-          transform: translateX(-24%);
-          display: none;
-          border-radius: 0;
-          background-color: black;
-          min-width: 160px;
-          border: 1 solid white;
-          z-index: 1;
+      transform: translateX(-24%);
+      display: none;
+      border-radius: 0;
+      background-color: transparent;
+      min-width: 160px;
+      border: 0;
+      box-shadow: 0px 8px 16px 0px rgba(255, 255, 255, 0.2);
+      z-index: 1;
   }
       
   .dropdown-menu a {
@@ -90,13 +107,15 @@ body {
           text-align: center;
       }
   
-  .link-lines-dropdown {
-        background-color: white;
-        height: 2px;
-        width: 0;
-        transition: width 0.3s ease;
-        opacity: 1;
-  }
+      .link-lines, 
+      .link-lines-dropdown {
+          width: 0;
+          height: 2px;
+          background-color: white;
+          transition: width 0.3s ease;
+          margin: auto;
+          display: block;
+      }
   
   .dropdown-item {
         background-color: transparent !important; 
@@ -124,12 +143,11 @@ body {
   }
       
   #thematicalMenu {
-          display: none;
-          position: static;
-          background: none;
-          box-shadow: none;
-          transform: translateX(0%);
-          border:0;
+      transform: translateX(0%);
+      display: none;
+      position: static;
+      background: none;
+      box-shadow: none;
   }
       
   #thematicalMenu.show {
