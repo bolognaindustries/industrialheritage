@@ -714,6 +714,7 @@ button:hover {
         background-color: black;
         padding: 20px;
         text-align: center;
+        font-family: 'Cooper Hewitt', sans-serif; 
     }
     
     .title {
