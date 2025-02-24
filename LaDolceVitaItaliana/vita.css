@@ -709,109 +709,183 @@ button:hover {
   .user-btn:hover::after {
     opacity: 1;
   }
+    /* theme section */
+    .path-container {
+        background-color: black;
+        padding: 20px;
+        text-align: center;
+        font-family: 'Cooper Hewitt', sans-serif; 
+    }
+    
+    .title {
+        font-size: 24px;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .main-images {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+    
+    .hidden-img {
+        display: inline-block;
+        text-align: center;
+        margin: 30px;
+        width: 200px;
+        height: auto;
+    }
+    
+    .path-img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    
+    .path-name {
+        display: block;
+        margin-top: 10px;
+        font-size: 16px;
+        font-weight: bold;
+        color: white;
+    }
+    
+    .path-link {
+        text-decoration: none;
+        color: white;
+    }
 
-/* Footer */
+    #hidden1 a:hover img {
+        content: url("../images/logos/thema1change.png");
+    }
+    
+    #hidden3 a:hover img {
+        content: url("../images/logos/thema3change.png");
+    }
+    
+    #hidden4 a:hover img {
+        content: url("../images/logos/thema4change.png");
+    }
+    /* theme section */
+
+/* Line separator */
+.hr-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding: 20px 0;
+    }
+  
+  
+hr {
+    width: 90%;
+    border: none;
+    border-top: 2px solid white;
+    margin: 0 auto;
+    }
+  
+/* footer */
 footer {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
     background-color: black;
-}
-
-footer .row {
+  }
+  
+  footer .row {
     margin-left: -5%;
     margin-right: -5%;
-}
-
-footer .title-container {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap;
+  }
+  
+  .row {
+    display: flex !important;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  footer .title-container {
     text-align: left;
     margin-right: 2%;
     margin-top: 7%;
-    font-family: 'Raleway', sans-serif; 
+    font-family: 'Cooper Hewitt', sans-serif; 
     color: white;
-}
-
-footer #home-title {
+  }
+  footer #home-title {
     position: relative;
     font-size: 3vw;
     z-index: 100;
     font-weight: bold;
     -webkit-text-stroke: 2px white;
     color: transparent;
-}
-
-footer #home-subtitle {
-    font-size: 2vw;
-}
-
-footer h4 {
-    font-size: 24px;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    text-align: left;
-    color: white;
-}
-
-#museum-logo {
-    position: relative;
-    width: 325px;
-    height: auto;
-    display: block;
-    margin-top: 10%;
-    left: -10%;
-    top: -10%;
-    z-index: 10;
-}
-
-.contacts p, footer .affiliations p {
-    line-height: 1.5;
-    margin-bottom: 20px;
-    text-align: left;
-    color: white;
-    font-weight: bold;
-}
-
-footer p {
-    font-size: 17px;
-    font-weight: normal;
-    text-align: left;
-    font-family: 'Alegreya', serif; 
-}
-
-.contacts, .affiliations {
-    margin-top: 19%;
-}
-
-.contacts {
+  }
+  footer #home-subtitle {
+  font-size: 2vw;
+  }
+  footer h4 {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  text-align: left;
+  color: white;
+  }
+  #museum-logo {
+  position: relative;
+  width: 325px;
+  height: auto;
+  display: block;
+  margin-top: 10%;
+  left: -10%;
+  top: -10%;
+  z-index: 10;
+  }
+  .contacts p, footer .affiliations p {
+  line-height: 1.5;
+  margin-bottom: 20px;
+  text-align: left;
+  color: white;
+  font-weight: bold;
+  }
+  footer p {
+  font-size: 17px;
+  font-weight: normal;
+  text-align: left;
+  font-family: 'Cooper Hewitt', sans-serif;
+  }
+  .contacts, .affiliations {
+  margin-top: 19%;
+  }
+  .contacts {
     margin-left: 7%;
-}
-
-.affiliations {
+  }
+  .affiliations {
     margin-left: 4%;
-}
-
-.contacts h4 {
+  }
+  .contacts h4 {
     margin-bottom: 10%;
-}
-
-.affiliations h4 {
+  }
+  .affiliations h4 {
     margin-bottom: 7%;
-}
-
-.social-icons-container {
+  }
+  .social-icons-container {
     max-width: 200px;
     margin-top: 10%;
     position: relative;
     left: 50%;
-}
-
-.social-icons {
+  }
+  .social-icons {
     width: 19%;
     height: auto;
     margin-left: 5%;
-}
-
+  }
 
 /* Media Queries */
 @media (max-width: 575.98px) {

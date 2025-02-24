@@ -658,7 +658,86 @@ hr {
         }
     /*user type buttons*/
 /*side tabs*/
+    /* theme section */
+    .path-container {
+        background-color: black;
+        padding: 20px;
+        text-align: center;
+        font-family: 'Cooper Hewitt', sans-serif; 
+    }
+    
+    .title {
+        font-size: 24px;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .main-images {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+    
+    .hidden-img {
+        display: inline-block;
+        text-align: center;
+        margin: 30px;
+        width: 200px;
+        height: auto;
+    }
+    
+    .path-img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    
+    .path-name {
+        display: block;
+        margin-top: 10px;
+        font-size: 16px;
+        font-weight: bold;
+        color: white;
+    }
+    
+    .path-link {
+        text-decoration: none;
+        color: white;
+    }
 
+    #hidden1 a:hover img {
+        content: url("images/logos/thema1change.png");
+    }
+    
+    #hidden2 a:hover img {
+        content: url("images/logos/thema2change.png");
+    }
+    
+    #hidden4 a:hover img {
+        content: url("images/logos/thema4change.png");
+    }
+    /* theme section */
+/* Line separator */
+.hr-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding: 20px 0;
+  
+  
+    hr {
+      width: 90%;
+      border: none;
+      border-top: 2px solid white;
+      margin: 0 auto;
+   }
+}
+  
 
 /*footer*/
     footer {
@@ -1177,7 +1256,7 @@ hr {
             /*user type buttons*/
         /*side tabs*/
     /*section1*/
-
+        
     /*footer*/
         footer {
             display: flex;
