@@ -179,23 +179,86 @@ if (desktop) {
             targetBtn.href = "#target-section-desktop";
     }
 
+    document.addEventListener("DOMContentLoaded", updateLines);
+
+window.addEventListener("resize", updateLines);
+
+function positionLine(startElem, endElem, line) {
+    console.log("Invocazione di positionLine()");
+
+    // Ottieni i rettangoli in coordinate viewport (includono scroll)
+    const startRect = startElem.getBoundingClientRect();
+    const endRect = endElem.getBoundingClientRect();
+    const scrollX = window.pageXOffset || window.scrollX;
+    const scrollY = window.pageYOffset || window.scrollY;
+
+    // Calcola il centro degli elementi in coordinate assolute
+    const startX = startRect.left + startRect.width / 2 + scrollX;
+    const startY = startRect.top + startRect.height / 2 + scrollY;
+    const endX = endRect.left + endRect.width / 2 + scrollX;
+    const endY = endRect.top + endRect.height / 2 + scrollY;
+
+    // Differenze, distanza e angolo
+    const deltaX = endX - startX;
+    const deltaY = endY - startY;
+    const distance = Math.sqrt(deltaX ** 2 + deltaY ** 2);
+    const angle = Math.atan2(deltaY, deltaX) * (180 / Math.PI);
+
+    console.log("Coordinate assolute partenza:", { startX, startY });
+    console.log("Coordinate assolute arrivo:", { endX, endY });
+    console.log("DeltaX:", deltaX, "DeltaY:", deltaY, "Distanza:", distance, "Angolo:", angle);
+
+    // Usa l'offsetParent della linea per convertire le coordinate assolute in coordinate relative
+    const parent = line.offsetParent || document.body;
+    const parentRect = parent.getBoundingClientRect();
+
+    // Le coordinate relative devono essere calcolate in base all'offset del parent
+    const relativeLeft = startX - (parentRect.left + scrollX);
+    const relativeTop  = startY - (parentRect.top  + scrollY);
+
+    console.log("Coordinate relative per la linea:", { relativeLeft, relativeTop });
+
+    // Applica gli stili: forza lo spessore a 3px
+    line.style.width = `${distance}px`;
+    line.style.transform = `rotate(${angle}deg)`;
+    line.style.left = `${relativeLeft}px`;
+    line.style.top = `${relativeTop}px`;
+    line.style.height = "3px";
+
+    console.log("Stile finale della linea:", line.style.cssText);
+}
+
+
+function updateLines(number) {
+    const itemId = number.getAttribute("data-item");
+    const preview = document.querySelector(`.preview[data-item='${itemId}']`);
+    const line = document.querySelector(`.preview-line[data-item='${itemId}']`);
+    
+    console.log(`Aggiornamento linea per item ${itemId}`, { number, preview, line });
+    
+    if (preview && line) {
+        positionLine(number, preview, line);
+    }
+}
+
 
     // EVENT LISTENERS
     // 1ST EVENT: 
     // mouseenter, mouseleave and click on all NUMBERS
     numbers.forEach(function(number) {
         number.addEventListener("mouseenter", function() {
-            
-            if(!isMouseEnterPaused) {
             var previewId = number.getAttribute("data-preview");
             var itemId = number.getAttribute("data-item");
 
             var preview = document.getElementById(previewId);
             var currentItem = document.getElementById(itemId);
 
+            if(!isMouseEnterPaused) {
             number.style.backgroundColor = "#CD5909";
             number.style.color = "white";
             currentItem.style.color = "#CD5909";
+
+            updateLines(number);
 
             preview.classList.add("preview-show");
 
@@ -206,9 +269,9 @@ if (desktop) {
             if(btnMap1.classList.contains("active")) {
                 list2.style.display = "none";
                 list1.style.display = "block";
-            } else if (btnMap2.classList.contains("active")) {
-                list1.style.display = "none";
-                list2.style.display = "block";
+                } else if (btnMap2.classList.contains("active")) {
+                    list1.style.display = "none";
+                    list2.style.display = "block";
             }
 
             allItems.forEach(function(item) {
@@ -218,8 +281,10 @@ if (desktop) {
 
             currentItem.classList.add("item-hover");
 
-            } else {
-                return;
+            updateLines(number);
+
+                } else {
+                    return;
             }
             
             changeToList();
@@ -267,15 +332,16 @@ if (desktop) {
             // Impedisce che l'evento di click si propaghi al document (evita che venga trattato come un clic fuori)
             e.stopPropagation();
         
-            // Se il numero è già attivo, lo deselezioniamo
             if (activeNumber === this) {
-                // Desattiviamo il numero e ripristiniamo l'hover
+
                 this.style.backgroundColor = "white";
                 this.style.color = "#CD5909";
-                activeNumber = null; // Reset del numero attivo
-                isMouseEnterPaused = false; // Riprendi l'hover
+                activeNumber = null;
+                isMouseEnterPaused = false;
 
-                
+                previews.forEach(function(preview) {
+                    preview.classList.remove("preview-show")
+                });
 
                 texts.forEach(function (text) {
                     text.style.display = "none";
@@ -283,11 +349,10 @@ if (desktop) {
 
                 changeToList();
                 
-                previews.forEach(function(preview) {
-                    preview.classList.remove("preview-show");
-                });
+                
             } else {
-                // Se un altro numero è attivo, lo deselezioniamo
+                
+                // if the active number is another one:
                 if (activeNumber) {
                     activeNumber.style.backgroundColor = "white";
                     activeNumber.style.color = "#CD5909";
@@ -298,6 +363,8 @@ if (desktop) {
                 this.style.color = "white";
                 activeNumber = this; // Impostiamo questo numero come attivo
                 isMouseEnterPaused = true; // Pausa l'hover
+
+                updateLines(number);
             }
         
             console.log("Numero cliccato:", this);
@@ -343,6 +410,8 @@ if (desktop) {
             number.style.color = "white";
 
             item.classList.add("item-hover");
+
+            updateLines(number);
 
             preview.classList.add("preview-show");
             }
@@ -396,6 +465,8 @@ if (desktop) {
             if(currentText) {
                 currentText.style.display = "block";
             }
+
+            updateLines(number);
 
             if (!isMouseEnterPaused) {
                 var numberId = item.getAttribute("data-number");
@@ -509,11 +580,6 @@ if (desktop) {
         }
     });
 
-
-    window.addEventListener("scroll", function() {
-        console.log("Pagina scesa! Offset attuale:", window.scrollY);
-        console.trace(); // Mostra lo stack delle funzioni che hanno portato allo scroll
-    });
 
     document.addEventListener("DOMContentLoaded", function() {
         const target = document.getElementById("target-section");

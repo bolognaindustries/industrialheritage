@@ -249,7 +249,7 @@ body {
         }
 
         .left-container p {
-          font-size: 16px;
+          font-size: 19px;
           color: white;
           margin-right: 10%;
           margin-left: 10%;
@@ -262,7 +262,7 @@ body {
         }
 
         .left-container ol {
-          font-size: 16px;
+          font-size: 19px;
           color: white;
           margin-right: 10%;
           margin-left: 8%;
@@ -292,6 +292,7 @@ body {
           padding-bottom: 30%;
           color: white;
           transition: color 0.4s ease, color 0.4s ease, opacity 0.3s ease;
+          font-size: 19px;
         }
 
         .button-container-left button:hover {
@@ -396,6 +397,7 @@ body {
           align-items: center;
           justify-content: center;
           transition: background-color 0.2s ease, color 0.2s ease;
+          z-index: 3;
         }
                 
         .preview {
@@ -406,11 +408,13 @@ body {
           opacity: 0; /* Inizialmente nascosta */
           transition: opacity 0.3s ease, visibility 0.3s ease;
           visibility: hidden; /* Transizione fluida */
+          z-index: 2;
         }
 
         .preview-show {
           opacity: 1; 
-          visibility: visible;/* Quando aggiungi questa classe, la preview appare gradualmente */
+          visibility: visible;
+          z-index: 2;
         }
         
         .item {
@@ -425,9 +429,10 @@ body {
     
         .preview-line {
           position: absolute;
-          width: 2px;
+          height: 2px;
           background-color: #CD5909;
-          transform-origin: top left;
+          transform-origin: left center;
+          z-index: -1;
         }
 
         .map-btn-container {
