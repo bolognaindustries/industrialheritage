@@ -105,17 +105,6 @@
     position: relative;
   }
 
-  .dropdown-item:hover::after,
-  .dropdown-item:focus::after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      width: 60%;
-      height: 2px;
-      background-color: #ffffff;
-      transition: width 0.3s ease !important;
-  }
-
   #thematicalTrigger:hover {
       background-color: transparent !important;
   }
@@ -156,6 +145,7 @@
   }
 
   .title-container #home-subtitle {
+    font-size: 2vw;
     font-weight: bold;
     margin-bottom: 1%;
   }
@@ -182,7 +172,8 @@
 }
 
 .section2 {
-  height: 100vh;
+  height: auto;
+  min-height: 100vh;
   background-color: black;
 
   /*title and subtitle*/
@@ -203,6 +194,7 @@
   }
 
   .title-container #home-subtitle {
+    font-size: 2vw;
     font-weight: bold;
     margin-bottom: 1%;
   }
@@ -262,6 +254,7 @@
   margin: 0;
   padding: 0;
   height: auto;
+  min-height: 100vh;;
   background-color: black;
 
   /*title and subtitle*/
@@ -282,6 +275,7 @@
   }
  
   .title-container #home-subtitle {
+    font-size: 2vw;
     font-weight: bold;
     margin-bottom: 1%;
   }
@@ -372,7 +366,7 @@
   padding: 0;
   z-index: 1;
   height: auto;
-  min-height: 110vh;
+  min-height: 100vh;
   background-color: black;
 
   /*title*/
@@ -392,6 +386,8 @@
                 
   #home-subtitle {
     font-size: 2vw;
+    font-weight: bold;
+    margin-bottom: 1%;
   }
   /*title*/
   /*carousel*/
@@ -415,7 +411,7 @@
 
 
   .carousel-item img {
-    width: 550px; 
+    width: 35vw; 
     height: auto; 
     margin: 0 auto; 
   }
@@ -454,7 +450,8 @@
 }
 
 .section5 {
-  height: 100vh;
+  height: auto;
+  min-height: 100vh;
   background-color: black;
 
     /*title and subtitle*/
@@ -475,6 +472,7 @@
     }
    
     .title-container #home-subtitle {
+      font-size: 2vw;
       font-weight: bold;
       margin-bottom: 1%;
     }
@@ -518,106 +516,121 @@
 }
 /*line separator*/
 
+/* Footer */
 footer {
-  background-color: black;
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  
+  min-height: 50vh;
+  margin: 0;
+  background-color: #000000;
 
-  .row {
-    margin-left: -5%;
-    margin-right: -5%
-  }
-
-  .title-container {
-    text-align: left;
-    margin-right: 2%;
-    margin-top: 7%;
-  }
-
-  #home-title {
-    font-size: 3vw;
-    font-weight: bold;
-    -webkit-text-stroke: 2px white;
-    color: transparent;
-    margin-bottom: 20px;
-    margin-top: 0;
-    z-index: 1;
-  }
-
-  #home-subtitle {
-    font-size: 2vw;
-  }
-
-  h4 {
-    font-size: 24px;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    text-align: left;
-    color: white;
-  }
-
-  #museum-logo {
-    position: relative;
-    width: 300px;
-    height: auto;
-    display: block;
-    padding-top: 10%;
-    left: -10%;
-    top: -10%;
-    z-index: 10;
-  }
-
-  .contacts p, .affiliations p {
-    line-height: 1.5;
-    margin-bottom: 20px;
-    text-align: left;
-    color: white;
-    font-weight: bold;
-  }
-
-  p {
-    font-size: 17px;
-    font-weight: normal;
-    text-align: left;
-    font-family: 'Cooper Hewitt', sans-serif;
-  }
-
-  .contacts, .affiliations {
-    margin-top: 19%;
-  }
-
-  .contacts {
-    margin-left: 7%;
-  }
-
-  .affiliations {
-    margin-left: 4%;
-  }
-
-  .contacts h4 {
-    margin-bottom: 10%;
-  }
-
-  .affiliations h4 {
-    margin-bottom: 7%;
-  }
-
-  .social-icons-container {
-    max-width: 200px;
-    margin-top: 10%;
-    position: relative;
-    left: 50%;
-  }
-    
-  .social-icons {
-    width: 19%;
-    height: auto;
-    margin-left: 5%;
-  }
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 5%;
 }
+
+.title-container {
+  width: 100%;
+  text-align: left;
+  font-family: 'Cooper Hewitt', sans-serif;
+  color: #ffffff;
+  margin-top: 1%;
+}
+
+#home-title {
+  font-size: 3vw;
+  font-weight: bold;
+  -webkit-text-stroke: 2px #ffffff;
+  color: transparent;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.logo {
+  width: 30%;
+  text-align: left;
+}
+
+#museum-logo {
+  width: 100%;
+  width: 12vw;
+  height: auto;
+}
+
+.affiliations {
+  transform: translateY(-20%);
+  width: 30%;
+  text-align: center;
+  color: #ffffff;
+}
+
+.affiliations h4 {
+  font-size: 1vw;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 10px;
+}
+
+.affiliations p {
+  font-size: 0.8vw;
+}
+
+.social-icons-container {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+
+.social-icons {
+  width: 30px;
+  height: auto;
+}
+.contacts {
+  transform: translateY(-20%);
+  width: 30%;
+  text-align: right;
+  color: #ffffff;
+}
+
+.contacts h4 {
+  font-size: 1vw;
+}
+
+.contacts span {
+  font-size: 0.8vw;
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.contacts span::after {
+  content: attr(data-email);
+  position: absolute;
+  right: 0;
+  top: 100%;
+  color: white;
+  font-size: 0.7vw;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.contacts span:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+}
+
+/* Footer*/  
 
 /* Line separator */
 .hr-container {
