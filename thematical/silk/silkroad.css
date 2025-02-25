@@ -467,9 +467,15 @@ body{
         position: absolute;
         font-family: serif;
         text-align: right;
-        margin-bottom: 50%;
-        
+        margin-bottom: 50%; 
     }
+
+    .content{ 
+    height: 60vh; 
+    overflow-y: auto; 
+    overflow-x: hidden;
+}
+
     /*descriptions*/
 
     /*gallery button*/
@@ -946,19 +952,16 @@ body{
             position: relative;
         }
         #element2 img {
-            height: 30vh;
-            max-height: 30vh;
-            top: 0;
-            display: block;
+            height: 27vh;
+            max-height: 27vh;
             position: relative;
             margin: auto;
+            
         }
         #element3 img {
             height: 27vh;
             max-height: 27vh;
-            top: 0;
             position: relative;
-            margin-top: 9%;
         }
     /*main section*/
 
