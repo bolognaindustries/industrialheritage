@@ -522,6 +522,7 @@ footer {
   min-height: 50vh;
   margin: 0;
   background-color: #000000;
+  font-family: 'Cooper Hewitt', sans-serif;
 
 .footer-content {
   display: flex;
@@ -601,8 +602,11 @@ footer {
 }
 
 .contacts h4 {
-  font-weight: bold;
   font-size: 1vw;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 10px;
 }
 
 .contacts span {
