@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,7 +8,6 @@
         <link href="stylesheet.css" rel="stylesheet">
         <script src="https://kit.fontawesome.com/b7dc8e0f7f.js" crossorigin="anonymous"></script>
     </head>
-
     <body>
         <div class="section1">
             <!--navbar-->
@@ -28,7 +27,7 @@
                     <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
                         <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                        <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
                         <hr class="link-lines">
                         </li>
         
@@ -49,13 +48,13 @@
                                     <a class="dropdown-toggle" id="thematicalTrigger" role="button">THEMATICAL PATH</a>
                                     <ul class="dropdown-menu" id="thematicalMenu">
                                         <li><a class="dropdown-item" href="thematical/bricks/bricks.html">Brick by Boring Brick</a></li>
-                                        <li><a class="dropdown-item" href="la-dolce-vita-italiana.html">La Dolce Vita Italiana</a></li>
+                                        <li><a class="dropdown-item" href="LaDolceVitaItaliana/vita.html">La Dolce Vita Italiana</a></li>
                                         <li><a class="dropdown-item" href="the-machines-world.html">The Machine's World</a></li>
-                                        <li><a class="dropdown-item" href="SilkRoad\silkroad.html">The Silk Road</a></li>
+                                        <li><a class="dropdown-item" href="thematical/silk/silkroad.html">The Silk Road</a></li>
                                     </ul>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="geographical.html">GEOGRAPHICAL PATH</a>
+                                    <a class="dropdown-item" href="geographical/geographical.html">GEOGRAPHICAL PATH</a>
                                     <hr class="link-lines-dropdown">
                                 </li>
                             </ul>
@@ -121,7 +120,7 @@
             <!--title-->
             <div class="title-container">
                 <h1 id="home-title">CHOOSE YOUR<br>EXPERIENCE</h1>
-                <h2 id="home-subtitle">which user are you?</h2>
+                <h2 id="home-subtitle">Which user are you?</h2>
             </div>
             <!--title-->
 
@@ -153,7 +152,7 @@
             <!--title-->
             <div class="title-container">
                 <h1 id="home-title">EXPLORE THE<br>ITEMS</h1>
-                <h2 id="home-subtitle">Chose your path</h2>
+                <h2 id="home-subtitle">Choose your path</h2>
             </div>
             <!--title-->
 
@@ -173,7 +172,7 @@
                         </a>
                     </div>
                     <div class="path" id="path3">
-                        <a href="geographical.html" class="path-link" target="_blank">
+                        <a href="geographical/geographical.html" class="path-link" target="_blank">
                             <img src="images/path3.png" alt="Geographic Path" class="path-img">
                             <span class="path-name">GEOGRAPHICAL PATH</span>
                         </a>
@@ -183,25 +182,25 @@
                 <!-- Hidden Images -->
                 <div class="hidden-images" id="hidden-images">
                     <div class="hidden-img" id="hidden1">
-                        <a href="SilkRoad/silkroad.html" class="path-link">
+                        <a href="thematical/bricks/bricks.html" class="path-link">
                             <img src="images/logos/thema1pb.png" alt="Brick by Boring Brick" class="path-img">
                             <span class="path-name">BRICK BY BORING BRICK</span>
                         </a>
                     </div>
                     <div class="hidden-img" id="hidden2">
-                        <a href="brick.html" class="path-link">
+                        <a href="LaDolceVitaItaliana/vita.html" class="path-link">
                             <img src="images/logos/thema2pb.png" alt="La Dolce Vita" class="path-img">
                             <span class="path-name">LA DOLCE VITA ITALIANA</span>
                         </a>
                     </div>
                     <div class="hidden-img" id="hidden3">
-                        <a href="machine.html" class="path-link">
+                        <a href="the-machines-world.html" class="path-link">
                             <img src="images/logos/thema3pb.png" alt="The Machine's World" class="path-img">
                             <span class="path-name">THE MACHINE'S WORLD</span>
                         </a>
                     </div>
                     <div class="hidden-img" id="hidden4">
-                        <a href="italian.html" class="path-link">
+                        <a href="thematical/silk/silkroad.html" class="path-link">
                             <img src="images/logos/thema4pb.png" alt="Bologna's Silk Road" class="path-img">
                             <span class="path-name">THE SILK ROAD</span>
                         </a>
@@ -219,7 +218,7 @@
             <!--title and subtitle-->
             <div class="title-container">
                 <h1 id="home-title">EXPLORE THE<br>MUSEUM</h1>
-                <h2 id="home-subtitle">and its floors</h2>        
+                <h2 id="home-subtitle">And its floors</h2>        
             </div>
             <!--title and subtitle-->
       
@@ -242,22 +241,22 @@
                       </a>
                     </div>
                     
-                    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-                        <span class="custom-prev" aria-hidden="true">
-                            <span class="custom-arrow">
-                                <i class="fa-solid fa-arrow-left-long"></i></span>
-                        </span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-                        <span class="custom-next" aria-hidden="true">
-                            <span class="custom-arrow">
-                                <i class="fa-solid fa-arrow-right-long"></i>
-                            </span>
-                        </span>
-                    </button>
-            
-                </div>
-            </div>
+                    <div class="carousel-controls-container">
+                        <button class="carousel-control-prev" type="button"  data-bs-target="#myCarousel" 
+                        data-bs-slide="prev" title="Previous">
+                          <span class="custom-prev">
+                            <i class="fa-solid fa-arrow-left-long"></i>
+                          </span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" 
+                        data-bs-slide="next" title="Next">
+                          <span class="custom-next">
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                          </span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
         <!--carousel-->
         </div>
 
@@ -271,7 +270,7 @@
           <div class="gallery">
             <div class="title-container">
                 <h1 id="home-title">EXPLORE THE<br>GALLERY</h1>
-                <h2 id="home-subtitle">discover each detail</h2>
+                <h2 id="home-subtitle">Discover each detail</h2>
               </div>
               <div class="carousel-container"><a href="url">
                   <div class="carousel2" id="carousel2">
@@ -286,57 +285,46 @@
           </div>
         </div>
 
-        <!--line separator-->
-        <div class="hr-container">
-            <hr id="hr1">
-        </div>
-        <!--line separator-->
 
+    <!--Footer-->
         <footer class="footer">
-            <div class="container footer-content">
-                <!--row--> 
-                <div class="row">
-                  <!--1st column-->
-                  <div class="title-container col-md-3 ">
-                    <h1 id="home-title">ABOUT THE<br>GROUP</h1>
-                    <img id="museum-logo" src="images/logoconscritta.png">
-                  </div>
-                  <!--1st column-->
-            
-                  <!--2nd column-->
-                  <div class="contacts col-md-3 ">
-                    <h4>CONTACTS</h4>
-                    <p>
-                      Anna Nicoletti<br>
-                      Ekaterina Krasnova<br>
-                      Nadia Calvisi<br>
-                      Rubens Fernandes Junior<br>
-                    </p>
-                  </div>
-                  <!--2nd column-->
-                  
-                  <!--3rd column-->
-                  <div class="affiliations col-md-4">
-                    <h4>AFFILIATIONS</h4>
-                    <p>
-                      Digital Humanities and Digital Knowledge - <br>
-                      DHDK Second Cycle Degree<br>
-                      <br>
-                      University of Bologna
-                    </p>
-                  <!--social icons-->
-                  <div class="social-icons-container">
-                    <a href=https://github.com/bolognaindustries/industrialheritage/blob/main/items/items.html""><img class="social-icons" src="images/logoface.png" alt="Facebook Logo"></a>
+            <div class="hr-container">
+                <hr id="hr1">
+            </div>
+            <div class="footer-content">
+            <div class="title-container">
+                <h1 id="home-title">ABOUT THE<br>GROUP</h1>
+            </div>
+            <div class="rows">
+                <div class="logo">
+                <img id="museum-logo" src="images/logoconscritta.png">
+                </div>
+                <div class="affiliations">
+                <h4>AFFILIATIONS</h4>
+                <p>
+                    Digital Humanities and Digital Knowledge<br>
+                    DHDK - Second Cycle Degree<br>
+                    <br>
+                    University of Bologna
+                </p>
+                <div class="social-icons-container">
+                    <a href="https://github.com/bolognaindustries/industrialheritage/blob/main/items/items.html"><img
+                        class="social-icons" src="images/logoface.png" alt="Facebook Logo"></a>
                     <a href=""><img class="social-icons" src="images/logoinsta.png" alt="Instagram Logo"></a>
                     <a href=""><img class="social-icons" src="images/logounibo.png" alt="University of Bologna Logo"></a>
-                  </div>
-                  <!--social icons-->
-                  </div>
-                  <!--3rd column-->
                 </div>
-                <!--row--> 
+                </div>
+                <div class="contacts">
+                    <h4>CONTACTS</h4>
+                    <span data-email="anna.nicoletti5@studio.unibo.it">Anna Nicoletti</span><br><br>
+                    <span data-email="ekaterina.krasnova@studio.unibo.it">Ekaterina Krasnova</span><br><br>
+                    <span data-email="nadia.calvisi@studio.unibo.it">Nadia Calvisi</span><br><br>
+                    <span data-email="rubens.fernandes@studio.unibo.it">Rubens Fernandes Jr.</span>
+                </div>
+            </div>
             </div>
         </footer>
+        <!--Footer-->
           <!--javascript-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
         <script src="script.js" defer></script>

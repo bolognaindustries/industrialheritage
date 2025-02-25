@@ -15,7 +15,7 @@ body{
     font-weight: bold;
     padding-left: 3%;
     padding-right: 3%;
-    height: 9%;
+    height: 60px;
   }
 
 .navbar-brand img {
@@ -29,8 +29,6 @@ body{
     margin-left: 9%;
 }
 
-
-/* Separator bar between links */
 .vr {
 
     padding-left: 1px;
@@ -45,7 +43,6 @@ hr {
     color: black;
     border-top: 2px solid black;
 }
-
 
 .nav-item {
     line-height: 10px;
@@ -703,24 +700,25 @@ hr {
     }
     
     #hidden2 a:hover img {
-        content: url("../../images/logos/thema2change.png");
+        content: url("../../../images/logos/thema2change.png");
     }
     
     #hidden3 a:hover img {
-        content: url("../../images/logos/thema3change.png");
+        content: url("../../../images/logos/thema3change.png");
     }
     
     #hidden4 a:hover img {
-        content: url("../../images/logos/thema4change.png");
+        content: url("../../../images/logos/thema4change.png");
     }
 
     /* theme section */
 /* Footer */
 footer {
     width: 100%;
+    min-height: 50vh;
     margin: 0;
     background-color: #000000;
-  }
+    font-family: 'Cooper Hewitt', sans-serif;
   
   .footer-content {
     display: flex;
@@ -734,7 +732,7 @@ footer {
     text-align: left;
     font-family: 'Cooper Hewitt', sans-serif;
     color: #ffffff;
-    margin-top: 7%;
+    margin-top: 1%;
   }
   
   #home-title {
@@ -743,7 +741,7 @@ footer {
     -webkit-text-stroke: 2px #ffffff;
     color: transparent;
   }
-
+  
   .row {
     display: flex;
     justify-content: space-between;
@@ -757,39 +755,19 @@ footer {
   
   #museum-logo {
     width: 100%;
-    width: 15vw;
+    width: 12vw;
     height: auto;
   }
   
-  .contacts {
-    width: 30%;
-    text-align: center;
-    color: #ffffff;
-    margin-top: 1%;
-  }
-  
-  .contacts h4 {
-    font-size: 1.5vw;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    margin-bottom: 10px;
-  }
-  
-  .contacts p {
-    font-weight: bold;
-    font-size: 1vw;
-  }
-  
   .affiliations {
-    margin-top: 1%;
+    transform: translateY(-20%);
     width: 30%;
     text-align: center;
     color: #ffffff;
   }
   
   .affiliations h4 {
-    font-size: 1.5vw;
+    font-size: 1vw;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1.5px;
@@ -797,10 +775,9 @@ footer {
   }
   
   .affiliations p {
-    font-weight: bold;
-    font-size: 1vw;
+    font-size: 0.8vw;
   }
-
+  
   .social-icons-container {
     display: flex;
     gap: 10px;
@@ -813,23 +790,63 @@ footer {
     width: 30px;
     height: auto;
   }
+  .contacts {
+    transform: translateY(-20%);
+    width: 30%;
+    text-align: right;
+    color: #ffffff;
+  }
   
-/* Footer*/  
-
-/* Line separator */
-.hr-container {
+  .contacts h4 {
+    font-size: 1vw;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 10px;
+  }
+  
+  .contacts span {
+    font-size: 0.8vw;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+  }
+  
+  .contacts span::after {
+    content: attr(data-email);
+    position: absolute;
+    right: 0;
+    top: 100%;
+    color: white;
+    font-size: 0.7vw;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .contacts span:hover::after {
+    opacity: 1;
+    visibility: visible;
+  }
+  }
+  
+  /* Footer*/  
+  
+  /* Line separator */
+  .hr-container {
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Center the hr */
     align-items: center;
-    background-color: black;
-    padding: 20px 0;
+    background-color: black; /* Ensure background is black */
+    padding: 20px 0; /* Add some spacing */
   
   
     hr {
-      width: 90%;
-      border: none;
-      border-top: 2px solid white;
-      margin: 0 auto;
+      width: 90%; /* Set width */
+      border: none; /* Remove default styling */
+      border-top: 2px solid white; /* Custom separator line */
+      margin: 0 auto; /* Center the hr */
     }
   }
   
