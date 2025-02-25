@@ -637,16 +637,16 @@ footer {
 /* Line separator */
 .hr-container {
   display: flex;
-  justify-content: center; /* Center the hr */
+  justify-content: center;
   align-items: center;
-  background-color: black; /* Ensure background is black */
-  padding: 20px 0; /* Add some spacing */
+  background-color: black;
+  padding: 20px 0;
 
 
   hr {
-    width: 90%; /* Set width */
-    border: none; /* Remove default styling */
-    border-top: 2px solid white; /* Custom separator line */
-    margin: 0 auto; /* Center the hr */
+    width: 90%;
+    border: none;
+    border-top: 2px solid white;
+    margin: 0 auto;
   }
 }
