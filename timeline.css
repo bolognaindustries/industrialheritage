@@ -173,14 +173,14 @@ hr {
  .item-inner-line {
     border-top: 1px solid white;
     margin-left: 3%;
-    width: 90%;
+    width: 61%;
  }
 
  h4 {
     color:  rgba(230, 230, 230, 1);    
     font-size: 25px;
     line-height: 50pd;
-    margin-bottom: 40px;
+    margin-bottom: 1em;
     font-weight: 900;
  }
    .year {
