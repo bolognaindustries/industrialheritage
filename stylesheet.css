@@ -157,10 +157,6 @@
   /*title and subtitle*/
   /*"see more" btn*/
 
- .button-container {
-    cursor: pointer;
-  }
-
   .btn a {
     color: #fff;
     text-decoration: none;
@@ -652,5 +648,212 @@ footer {
     border: none; /* Remove default styling */
     border-top: 2px solid white; /* Custom separator line */
     margin: 0 auto; /* Center the hr */
+  }
+}
+
+
+/* mobile responsiveness */
+
+@media (max-width: 768px) {
+  /* general adjustments */
+  .navbar-brand span {
+    font-size: 0.8rem;
+    margin-left: 5%;
+  }
+
+  .title-container {
+    padding-top: 80% !important;
+    text-align: center !important;
+    padding-right: 0 !important;
+  }
+
+  .title-container #home-title {
+    font-size: 14vw !important;
+    -webkit-text-stroke: 1px white;
+  }
+
+  .title-container #home-subtitle {
+    font-size: 7vw !important;
+  }
+
+  .section1 .title-container p {
+    font-size: 4vw !important;
+    padding: 0 10%;
+  }
+
+  .section1, .section2, .section3, .section4, .section5 {
+    padding: 0 5%;
+  }
+
+  /* navbar adjustments */
+
+  .navbar-nav {
+    gap: 10px;
+    padding: 10px 0;
+  }
+
+  .dropdown-menu {
+    margin-top: 10px !important;
+    gap: 10px;
+  }
+
+  #thematicalMenu {
+    width: 90% !important;
+    margin-top: 10px;
+    border-left: 2px solid rgba(255,255,255,0.2) !important;
+  }
+
+  .dropdown-item {
+    padding: 12px !important;
+    font-size: 1.1rem !important;
+  }
+
+  .dropdown-toggle,
+  .nav-link {
+    padding: 12px 15px !important;
+  }
+
+
+  /* user selection section */
+  .user-container {
+    flex-direction: column;
+    align-items: center;
+    gap:60px;
+  }
+
+  .users {
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  .user {
+    margin: 0 0 60px 0 !important;;
+    width: 100%;
+  }
+
+  .user:first-child {
+    margin-top: 40px !important;
+  }
+
+  .user:last-child {
+    margin-bottom: 0 !important; 
+  }
+
+  .user-img, .path-img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    margin: 0 auto 30px;
+  }
+
+  .user, .path {
+    text-align: center;
+    flex: 0 0 auto;
+  }
+  
+  /* path sections */
+  .main-images, .hidden-images {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .path-img {
+    width: 60vw !important;
+  }
+
+  /* carousel adjustments */
+
+  .carousel {
+    position: relative;
+    width: 100%;
+    padding: 0 5%;
+  }
+
+  .floor-title {
+    font-size: 1.2rem !important;
+    margin: 20px 0;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+      position: static !important;
+      transform: none !important;
+      background: rgba(0, 0, 0, 0.3);
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      display: flex !important;
+      align-items: center;
+      justify-content: center;
+      margin: 0 20px; 
+  }
+
+  .custom-arrow {
+    font-size: 1.5rem;
+  }
+
+  .carousel-item img {
+    width: 100% !important;
+    max-width: none;
+    margin: 0 auto;
+    object-fit: cover;
+  }
+
+  .carousel-controls-container {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+}
+
+  /* footer adjustments */
+  .rows {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .logo, .affiliations, .contacts {
+    width: 100% !important;
+    transform: none !important;
+    margin: 20px 0;
+  }
+
+  #museum-logo {
+    width: 50vw !important;
+  }
+
+  .affiliations h4,
+  .contacts h4 {
+    font-size: 4vw !important;
+  }
+
+  .affiliations p,
+  .contacts span {
+    font-size: 3.5vw !important;
+  }
+
+  /* button adjustments */
+  .button-container {
+    width: 50% !important;
+  }
+
+  .btn {
+    padding: 8px 15px;
+  }
+}
+
+/* touch-friendly hover states */
+@media (hover: none) {
+  .user:hover, .path-link:hover {
+    transform: none !important;
+  }
+  
+  .nav-item:hover .link-lines {
+    width: 0 !important;
   }
 }

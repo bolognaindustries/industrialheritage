@@ -99,3 +99,26 @@ document.getElementById('toggle-image').addEventListener('click', function (e) {
     hiddenImages.style.display = hiddenImages.style.display === 'flex' ? 'none' : 'flex';
 });
 
+
+// mobile dropdowns
+document.addEventListener('DOMContentLoaded', () => {
+    // Mobile-only dropdown handling
+    if (window.innerWidth <= 768) {
+      document.querySelectorAll('.dropdown-toggle').forEach(toggle => {
+        toggle.addEventListener('click', function(e) {
+          e.preventDefault();
+          const menu = this.nextElementSibling;
+          menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+        });
+      });
+  
+      // Close menus when clicking outside (mobile only)
+      document.addEventListener('click', (e) => {
+        if (!e.target.closest('.dropdown')) {
+          document.querySelectorAll('.dropdown-menu').forEach(menu => {
+            menu.style.display = 'none';
+          });
+        }
+      });
+    }
+  });
