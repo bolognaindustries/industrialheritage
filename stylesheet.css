@@ -168,14 +168,25 @@
   /*"see more" btn*/
 
  .button-container {
-    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    bottom: 0;
+    padding-bottom: 0;
   }
 
   .btn a {
+    position: relative;
     color: #fff;
     text-decoration: none;
     font-family: 'Cooper Hewitt', sans-serif;
     font-weight: bold;
+    white-space: nowrap;
   }
   /*"see more" btn*/
   

@@ -172,34 +172,45 @@ body {
 
     /* Section 1: Introduction */
     .section1 {
-      height: 100vh;
+      height: auto;
+      min-height: 140vh;
       background-color: #0b0b0b;
+      position: relative;
     }
 
     .introduction-container {
       position: relative;
       display: flex;
       flex-direction: column;
-      width: 90%;
-      align-items: center;
-      left: 50%;
-      transform: translateX(-50%);
+      width: 70%;
+      align-items: left;
       font-family: 'Cooper Hewitt', sans-serif; 
-      padding-top: 8%;
+      padding-top: 12.8%;
+      margin-left: 4.2%;
     }
 
     .introduction-container h1 {
       color: white;
+      font-family: 'Cooper Hewitt', sans-serif;
+      text-transform: uppercase;
       font-weight: bold;
-      font-size: 50px;
-      margin-bottom: 3%;
-      text-align: center;
+      line-height: 100%;
+      font-size: 110px;
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke-width: 3px;
+      -webkit-text-stroke-color: #ffffff;
+      margin-bottom: 20px;
     }
 
     .introduction-container p {
       color: white;
-      font-size: 19px;
-      text-align: center;
+      font-size: 20px;
+      max-width: 90%;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      line-height: 1.5;
     }
 
 
@@ -212,10 +223,12 @@ body {
       align-items: center;
       justify-content: center;
       text-align: center;
-      top: 90%;
+      bottom: 0;
+      padding-bottom: 2%;
     }
 
     #btn-target a {
+      position: relative;
       color: #fff;
       text-decoration: none;
       font-family: 'Cooper Hewitt', sans-serif;
@@ -530,22 +543,22 @@ body {
           cursor: pointer;
       }
       #user-btn1 {
-          background-image: url("images/ICONchildren.png");
+          background-image: url("images/MuseumKidInverted.png");
       }
       #user-btn1.active {
-          background-image: url("");
+          background-image: url("images/MuseumKid.png");
       }
       #user-btn2 {
-          background-image: url("images/ICONgeneral.png");
+          background-image: url("images/MuseumGeneralInverted.png");
       }
       #user-btn2.active {
-          background-image: url("");
+          background-image: url("images/MuseumGeneral.png");
       }
       #user-btn3 {
-          background-image: url("images/ICONexpert.png");
+          background-image: url("images/MuseumExpertInverted.png");
       }
       #user-btn3.active {
-          background-image: url("");
+          background-image: url("images/MuseumExpert.png");
       }
   /*user type buttons*/
 /*side tabs*/

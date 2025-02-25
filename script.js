@@ -1,5 +1,13 @@
-// navbar
+// VARIABLES
+// user status
+var defaultUserType = "general";
+let currentUserType = localStorage.getItem("userType") || defaultUserType;
 
+// users buttons
+const userBtns = document.querySelectorAll(".user-img");
+
+
+// navbar
 document.addEventListener('DOMContentLoaded', () => {
     const thematicalTrigger = document.getElementById('thematicalTrigger');
     const thematicalMenu = document.getElementById('thematicalMenu');
@@ -20,27 +28,20 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // user selection
+userBtns.forEach(function (userBtn) {
+    userBtn.addEventListener("pointerdown", function () {
+    
+    userBtns.forEach(function(userBtn){
+        userBtn.src = userBtn.src.replace("Inverted.png", ".png");
+    });
 
-document.addEventListener("DOMContentLoaded", function () {
-    const users = document.querySelectorAll(".user-img");
-    let activeUser = null;
-
-    users.forEach(user => {
-        user.addEventListener("click", function () {
-            if (activeUser && activeUser !== user) {
-                activeUser.src = activeUser.src.replace("Inverted.png", ".png");
-            }
-
-            if (user === activeUser) {
-                user.src = user.src.replace("Inverted.png", ".png");
-                activeUser = null;
-            } else {
-                user.src = user.src.replace(".png", "Inverted.png");
-                activeUser = user;
-            }
-        });
+    this.src = this.src.replace(".png", "Inverted.png");
+            
+    currentUserType = this.getAttribute("data-user");
+    localStorage.setItem("userType", currentUserType);
     });
 });
+
 
 
 //hidden images and dynamic height
@@ -97,5 +98,14 @@ document.getElementById('toggle-image').addEventListener('click', function (e) {
     e.preventDefault();
     const hiddenImages = document.getElementById('hidden-images');
     hiddenImages.style.display = hiddenImages.style.display === 'flex' ? 'none' : 'flex';
+});
+
+
+// INITIALIZE
+localStorage.setItem("userType", currentUserType);
+userBtns.forEach(function(userBtn) {
+    if(userBtn.getAttribute("data-user" === currentUserType)) {
+    userBtn.src = userBtn.src.replace(".png", "Inverted.png");
+    }
 });
 

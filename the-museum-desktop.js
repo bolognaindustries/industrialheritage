@@ -559,7 +559,6 @@ function updateLines(number) {
     userBtns.forEach(function (userBtn) {
         userBtn.addEventListener("pointerdown", function () {
 
-            if(activeNumber) {
                 userBtns.forEach(function (btn) {
                     btn.classList.remove("active");
                 });
@@ -567,17 +566,13 @@ function updateLines(number) {
                 this.classList.add("active");
 
                 currentUserType = this.getAttribute("data-user");
+
+                localStorage.setItem("userType", currentUserType);
+            
+            if(activeNumber) {
                 if(lastTextId) {
                     updateContent(lastTextId);
                 }
-            } else {
-                userBtns.forEach(function (btn) {
-                    btn.classList.remove("active");
-                });
-
-                this.classList.add("active");
-
-                currentUserType = this.getAttribute("data-user");
             }
         });
 
@@ -627,10 +622,18 @@ function updateLines(number) {
 
     // INITIALIZE
     localStorage.setItem("userType", currentUserType);
+    userBtns.forEach(userBtn => {
+        if (userBtn.getAttribute("data-user") === currentUserType) {
+            userBtn.classList.add("active");
+        }
+    });
+
     changeToMap1();
     changeToDescr();
     changeHref();
     window.addEventListener("resize", changeHref);
+
+
 }
 
 
