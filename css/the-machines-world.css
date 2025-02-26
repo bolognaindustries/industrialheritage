@@ -152,7 +152,7 @@ hr {
         padding: 0;
         height: 120vh;
         max-height: 120vh;
-        background: url(images/pink_background.jpg);
+        background: url(../images/pink_background.jpg);
         background-position: bottom;
         background-size: cover;
     }
@@ -658,22 +658,22 @@ hr {
             cursor: pointer;
         }
         #user-btn1 {
-            background-image: url("images/machines/logo/NadiaKidInverted.png");
+            background-image: url("../images/machines/logo/NadiaKidInverted.png");
         }
         #user-btn1.active {
-            background-image: url("images/machines/logo/NadiaKid.png");
+            background-image: url("../images/machines/logo/NadiaKid.png");
         }
         #user-btn2 {
-            background-image: url("images/machines/logo/NadiaGeneralInverted.png");
+            background-image: url("../images/machines/logo/NadiaGeneralInverted.png");
         }
         #user-btn2.active {
-            background-image: url("images/machines/logo/NadiaGeneral.png");
+            background-image: url("../images/machines/logo/NadiaGeneral.png");
         }
         #user-btn3 {
-            background-image: url("images/machines/logo/NadiaExpertInverted.png");
+            background-image: url("../images/machines/logo/NadiaExpertInverted.png");
         }
         #user-btn3.active {
-            background-image: url("images/machines/logo/NadiaExpert.png");
+            background-image: url("../images/machines/logo/NadiaExpert.png");
         }
     /*user type buttons*/
 /*side tabs*/
@@ -729,15 +729,15 @@ hr {
     }
 
     #hidden1 a:hover img {
-        content: url("images/logos/thema1change.png");
+        content: url("../images/logos/thema1change.png");
     }
     
     #hidden2 a:hover img {
-        content: url("images/logos/thema2change.png");
+        content: url("../images/logos/thema2change.png");
     }
     
     #hidden4 a:hover img {
-        content: url("images/logos/thema4change.png");
+        content: url("../images/logos/thema4change.png");
     }
     /* theme section */
 /* Line separator */
