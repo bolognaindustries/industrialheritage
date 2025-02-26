@@ -403,7 +403,8 @@
     left: 50%;
     align-items: center;
     transform: translateX(-50%);
-    margin-bottom: 10%;
+    margin: 0;
+    padding-bottom: 5%;
   }
 
   .carousel-inner a{
@@ -416,7 +417,7 @@
   }
 
   .carousel-item img {
-    width: 35vw; 
+    width: 55vw; 
     height: auto; 
     margin: 0 auto; 
   }
@@ -424,8 +425,11 @@
   .floor-title {
     text-align: center;
     color: white;
-    font-size: 2vw;
-    margin-bottom: 10px;
+    font-size: 2.5vw;
+    padding-bottom: 5%;
+    text-decoration: underline;
+    text-underline-offset: 2vh;
+    text-decoration-thickness: 3px;
   }
 
   .custom-prev,
@@ -433,11 +437,9 @@
     display: flex;
     align-items: center;
     color: white;
+    font-size: 2em;
   }
 
-  .custom-arrow {
-    font-size: 30px;
-  }
 
   .carousel-control-next {
     margin-right: -15%;
