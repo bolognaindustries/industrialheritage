@@ -155,7 +155,7 @@ hr {
     padding: 0;
     height: auto;
     min-height: 140vh;
-    background: url(background.jpg);
+    background: url(images/objects/background.jpg);
     background-position: bottom;
     background-size: cover;
 }

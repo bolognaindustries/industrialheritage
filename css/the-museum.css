@@ -509,22 +509,22 @@ hr {
           cursor: pointer;
       }
       #user-btn1 {
-          background-image: url("images/MuseumKidInverted.png");
+          background-image: url("../images/MuseumKidInverted.png");
       }
       #user-btn1.active {
-          background-image: url("images/MuseumKid.png");
+          background-image: url("../images/MuseumKid.png");
       }
       #user-btn2 {
-          background-image: url("images/MuseumGeneralInverted.png");
+          background-image: url("../images/MuseumGeneralInverted.png");
       }
       #user-btn2.active {
-          background-image: url("images/MuseumGeneral.png");
+          background-image: url("../images/MuseumGeneral.png");
       }
       #user-btn3 {
-          background-image: url("images/MuseumExpertInverted.png");
+          background-image: url("../images/MuseumExpertInverted.png");
       }
       #user-btn3.active {
-          background-image: url("images/MuseumExpert.png");
+          background-image: url("../images/MuseumExpert.png");
       }
   /*user type buttons*/
 /*side tabs*/
