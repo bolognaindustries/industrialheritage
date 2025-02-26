@@ -372,7 +372,7 @@
   padding: 0;
   z-index: 1;
   height: auto;
-  min-height: 140vh;
+  min-height: 100vh;
   background-color: black;
 
   /*title*/
@@ -670,15 +670,20 @@ footer {
     margin-left: 5%;
   }
 
+  .section1 {
+    .title-container{
+      margin-top: 80%;
+    }
+  }
+
   .title-container {
-    padding-top: 80% !important;
     text-align: center !important;
     padding-right: 0 !important;
   }
 
   .title-container #home-title {
     font-size: 14vw !important;
-    -webkit-text-stroke: 1px white;
+    -webkit-text-stroke: 2px white;
   }
 
   .title-container #home-subtitle {
@@ -776,12 +781,12 @@ footer {
     position: relative;
     width: 130%;
     padding: 0 5%;
+    margin: 0;
   }
 
   .floor-title {
-    font-size: 2.2rem !important;
+    font-size: 1.2rem !important;
     margin: 20px 0;
-    padding-top: 10%;
   }
 
   .carousel-control-prev,
@@ -808,10 +813,11 @@ footer {
   }
 
   .carousel-item img {
-    width: 100% !important;
+    width: 50% !important;
     max-width: none;
     margin: 0 auto;
     object-fit: cover;
+    transform: translateX(-25%);
   }
 
   .carousel-controls-container {
@@ -839,6 +845,7 @@ footer {
   
   .footer-content {
     width: 100%;
+    background-color: black;
     flex-direction: column;
     align-items: center;
   }
@@ -848,11 +855,6 @@ footer {
     text-align: center;
   }
   
-  #home-title {
-    font-size: 9vw;
-    font-weight: bold;
-    -webkit-text-stroke: 1px white;
-  }
   
   .rows {
     display: flex;
@@ -917,7 +919,7 @@ footer {
   .btn {
     padding: 8px 15px;
   }
-}
+
 
 /* touch-friendly hover states */
 @media (hover: none) {
@@ -938,4 +940,3 @@ footer {
   }
   
 }
-
