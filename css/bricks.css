@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Golden Brick';
-    src: url(Renaissance.ttf) format('truetype');
+    src: url(../fonts/Renaissance.ttf) format('truetype');
 }
 
 body{
@@ -677,36 +677,36 @@ hr {
     }
 
     #user-btn1 {
-        background-image: url("../../images/bricks/img/KidInverted.png");
+        background-image: url("images/bricks/img/KidInverted.png");
     }
 
     #user-btn1.active {
-        background-image: url("../../images/bricks/img/Kid.png");
+        background-image: url("images/bricks/img/Kid.png");
     }
 
     #user-btn2 {
-        background-image: url("../../images/bricks/img/GeneralInverted.png");
+        background-image: url("images/bricks/img/GeneralInverted.png");
     }
 
     #user-btn2.active {
-        background-image: url("../../images/bricks/img/General.png");
+        background-image: url("images/bricks/img/General.png");
     }
 
     #user-btn3 {
-        background-image: url("../../images/bricks/img/ExpertInverted.png");
+        background-image: url("images/bricks/img/ExpertInverted.png");
     }
 
     #user-btn3.active {
-        background-image: url("../../images/bricks/img/Expert.png");
+        background-image: url("images/bricks/img/Expert.png");
     }
     /*user type buttons*/
 
-       /* theme section */
-.path-container {
+    /* theme section */
+    .path-container {
         background-color: black;
         padding: 20px;
         text-align: center;
-        min-width: 50vh;
+        font-family: 'Cooper Hewitt', sans-serif; 
     }
     
     .title {
@@ -751,19 +751,18 @@ hr {
         text-decoration: none;
         color: white;
     }
-    
-    #hidden2 a:hover img {
-        content: url("../../../images/logos/thema2change.png");
+
+    #hidden1 a:hover img {
+        content: url("images/logos/thema2change.png");
     }
     
-    #hidden3 a:hover img {
-        content: url("../../../images/logos/thema3change.png");
+    #hidden2 a:hover img {
+        content: url("images/logos/thema3change.png");
     }
     
     #hidden4 a:hover img {
-        content: url("../../../images/logos/thema4change.png");
+        content: url("images/logos/thema4change.png");
     }
-
     /* theme section */
   /* Line separator */
   .hr-container {
