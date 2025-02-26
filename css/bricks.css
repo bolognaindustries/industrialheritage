@@ -1180,7 +1180,6 @@ footer {
         letter-spacing: 2px;
         font-weight: 400;
         font-style: normal;
-        overflow-y: scroll;
         z-index: 300;
         max-height: 40vh;
     }
