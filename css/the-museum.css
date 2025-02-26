@@ -148,7 +148,7 @@ hr {
       align-items: left;
       font-family: 'Cooper Hewitt', sans-serif; 
       padding-top: 12.8%;
-      margin-left: 4.2%;
+      padding-left: 5%;
     }
 
     .introduction-container h1 {
@@ -157,11 +157,12 @@ hr {
       text-transform: uppercase;
       font-weight: bold;
       line-height: 100%;
-      font-size: 110px;
+      font-size: 12vh;
       -webkit-text-fill-color: transparent;
-      -webkit-text-stroke-width: 3px;
+      -webkit-text-stroke-width: 2px;
       -webkit-text-stroke-color: #ffffff;
       margin-bottom: 20px;
+      white-space: nowrap;
     }
 
     .introduction-container p {
