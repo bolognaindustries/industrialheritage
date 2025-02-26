@@ -125,7 +125,7 @@ body {
 }
 
 .background-image {
-  background-image: url('galleryimage.jpg');
+  background-image: url("../images/galleryimage.jpg");
   height: 800px;
   background-position: center 45%;
   background-size: 140%;

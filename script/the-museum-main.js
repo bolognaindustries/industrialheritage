@@ -49,10 +49,10 @@ document.addEventListener('DOMContentLoaded', () => {
             desktop.style.display = "none";
 
             // Load the right stylesheet
-            loadCss("the-museum-mobile.css");
+            loadCss("css/the-museum-mobile.css");
 
             // Load the right javascritp
-            loadJs("the-museum-mobile.js");
+            loadJs("script/the-museum-mobile.js");
 
         } else {
             // Show Desktop
@@ -60,10 +60,10 @@ document.addEventListener('DOMContentLoaded', () => {
             desktop.style.display = "block";
 
             // Load the right stylesheet
-            loadCss("the-museum.css");
+            loadCss("css/the-museum.css");
 
             // Load the right javascript
-            loadJs("the-museum-desktop.js");
+            loadJs("script/the-museum-desktop.js");
         }
     }
 
