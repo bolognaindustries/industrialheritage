@@ -126,7 +126,7 @@ hr {
         padding: 0;
         height: 120vh;
         max-height: 120vh;
-        background: url("../../images/silk/img/Italy, 19th century-EmbroideredPanel-1800s.jpg");
+        background: url("../images/silk/img/Italy, 19th century-EmbroideredPanel-1800s.jpg");
         background-position: bottom;
         background-size: cover;
     }
@@ -639,27 +639,27 @@ hr {
     }
 
     #user-btn1 {
-        background-image: url("../../images/silk/logo/AnnaKidInverted.png");
+        background-image: url("../images/silk/logo/AnnaKidInverted.png");
     }
 
     #user-btn1.active {
-        background-image: url("../../images/silk/logo/AnnaKid.png");
+        background-image: url("../images/silk/logo/AnnaKid.png");
     }
 
     #user-btn2 {
-        background-image: url("../../images/silk/logo/AnnaGeneralInverted.png");
+        background-image: url("../images/silk/logo/AnnaGeneralInverted.png");
     }
 
     #user-btn2.active {
-        background-image: url("../../images/silk/logo/AnnaGeneral.png");
+        background-image: url("../images/silk/logo/AnnaGeneral.png");
     }
 
     #user-btn3 {
-        background-image: url("../../images/silk/logo/AnnaExpertInverted.png");
+        background-image: url("../images/silk/logo/AnnaExpertInverted.png");
     }
 
     #user-btn3.active {
-        background-image: url("../../images/silk/logo/AnnaExpert.png");
+        background-image: url("../images/silk/logo/AnnaExpert.png");
     }
     /*user type buttons*/
 
@@ -715,15 +715,15 @@ hr {
     }
 
     #hidden1 a:hover img {
-        content: url("../../images/logos/thema1change.png");
+        content: url("../images/logos/thema1change.png");
     }
     
     #hidden2 a:hover img {
-        content: url("../../images/logos/thema2change.png");
+        content: url("../images/logos/thema2change.png");
     }
     
     #hidden3 a:hover img {
-        content: url("../../images/logos/thema3change.png");
+        content: url("../images/logos/thema3change.png");
     }
     /* theme section */
 
