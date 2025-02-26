@@ -828,32 +828,86 @@ footer {
     font-size: 1.5em;
 }
 
-  /* footer adjustments */
-  .rows {
+ /*Footer*/
+  footer {
+    display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    height: 100vh;
+  
+  
+  .footer-content {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
   }
-
-  .logo, .affiliations, .contacts {
-    width: 100% !important;
-    transform: none !important;
-    margin: 20px 0;
+  
+  .title-container {
+    width: 100%;
+    text-align: center;
   }
-
+  
+  #home-title {
+    font-size: 9vw;
+    font-weight: bold;
+    -webkit-text-stroke: 1px white;
+  }
+  
+  .rows {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem; /* Added spacing between sections */
+  }
+  
+  .logo {
+    text-align: center;
+  }
+  
   #museum-logo {
-    width: 50vw !important;
+    width: 100%;
+    height: auto;
+  }
+  
+  .affiliations, .contacts {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  .affiliations h4, .contacts h4 {
+    font-size: 4vw; /* Increased for readability */
+  }
+  
+  .affiliations p, .contacts span {
+    font-size: 3vw;
+    display: block;
+    cursor: text;
+    line-height: 1.5;
+  }
+  
+  .contacts br {
+    display: none;
+  }
+  .contacts span::after {
+    display: none;
   }
 
-  .affiliations h4,
-  .contacts h4 {
-    font-size: 4vw !important;
+  .social-icons-container {
+    flex-direction: row;
+    justify-content: center;
+    gap: 5%;
+    padding-top: 0;
+    margin: 0;
   }
-
-  .affiliations p,
-  .contacts span {
-    font-size: 3.5vw !important;
+  
+  .social-icons {
+    width: 3em; /* Increased icon size for better touch interaction */
   }
+  }
+  }
+  /*Footer*/
 
   /* button adjustments */
   .button-container {
