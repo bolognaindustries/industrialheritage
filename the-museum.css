@@ -135,7 +135,7 @@ hr {
     /* Section 1: Introduction */
     .section1 {
       height: auto;
-      min-height: 140vh;
+      min-height: 130vh;
       background-color: #0b0b0b;
       position: relative;
     }
@@ -331,6 +331,10 @@ hr {
           cursor: pointer;
           border-radius: 5px;
           letter-spacing: 0.2vh;
+        }
+
+        .gallery-button-container  a {
+          text-decoration: none;
         }
 
         .gallery-button:hover {
@@ -662,4 +666,13 @@ footer {
     border-top: 2px solid white;
     margin: 0 auto;
   }
+}
+
+@media screen and (min-width: 1920px) {
+  body {
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: #2a2928;
+  }
+  
 }

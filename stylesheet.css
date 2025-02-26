@@ -157,6 +157,14 @@
   /*title and subtitle*/
   /*"see more" btn*/
 
+  #see-more-btn-container {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    padding-bottom: 1%;
+  }
+
   .btn a {
     position: relative;
     color: #fff;
@@ -364,7 +372,7 @@
   padding: 0;
   z-index: 1;
   height: auto;
-  min-height: 100vh;
+  min-height: 140vh;
   background-color: black;
 
   /*title*/
@@ -406,7 +414,6 @@
   .carousel-item {
     text-align: center;
   }
-
 
   .carousel-item img {
     width: 35vw; 
@@ -765,15 +772,16 @@ footer {
 
   /* carousel adjustments */
 
-  .carousel {
+  .section4 .carousel {
     position: relative;
-    width: 100%;
+    width: 130%;
     padding: 0 5%;
   }
 
   .floor-title {
-    font-size: 1.2rem !important;
+    font-size: 2.2rem !important;
     margin: 20px 0;
+    padding-top: 10%;
   }
 
   .carousel-control-prev,
@@ -790,6 +798,11 @@ footer {
       margin: 0 20px; 
   }
 
+  .carousel-inner {
+    transform: rotate(90deg);
+    margin-top: 30%;
+  }
+
   .custom-arrow {
     font-size: 1.5rem;
   }
@@ -803,13 +816,16 @@ footer {
 
   .carousel-controls-container {
     position: absolute;
-    top: 50%;
     left: 0;
     right: 0;
-    transform: translateY(-50%);
     display: flex;
-    justify-content: space-between;
     z-index: 2;
+    width: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    gap: 90%;
+    top: 50%;
+    font-size: 1.5em;
 }
 
   /* footer adjustments */
@@ -859,3 +875,13 @@ footer {
     width: 0 !important;
   }
 }
+
+@media screen and (min-width: 1920px) {
+  body {
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: #0b0b0b;
+  }
+  
+}
+

@@ -79,11 +79,16 @@ body {
   
       .introduction-container h1 {
         color: white;
+        font-family: 'Cooper Hewitt', sans-serif;
+        text-transform: uppercase;
         font-weight: bold;
-        font-size: 33px;
-        margin-bottom: 10%;
+        line-height: 1.3em;
+        font-size: 45px;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: #ffffff;
+        margin-bottom: 20px;
         text-align: center;
-        line-height: 1.5em;
       }
   
       .introduction-container p {
@@ -420,6 +425,10 @@ body {
           letter-spacing: 0.2vh;
         }
 
+        .gallery-button-container  a {
+          text-decoration: none;
+        }
+
         .gallery-button:hover {
             opacity: 0.9;
         }
@@ -481,28 +490,23 @@ body {
         }
 
         #user-btn1 {
-            background-image: url("images/ICONroundedSquaredChildren.png");
-        }
-
-        #user-btn1.active {
-            background-image: url("images/machines/logo/NadiaKid.png");
-        }
-
-        #user-btn2-m {
-            background-image: url("images/machines/logo/NadiaGeneralInverted.png");
-        }
-
-        #user-btn2.active {
-            background-image: url("images/machines/logo/NadiaGeneral.png");
-        }
-
-        #user-btn3 {
-            background-image: url("images/machines/logo/NadiaExpertInverted.png");
-        }
-
-        #user-btn3.active {
-            background-image: url("images/machines/logo/NadiaExpert.png");
-        }
+          background-image: url("images/MuseumKidInverted.png");
+      }
+      #user-btn1.active {
+          background-image: url("images/MuseumKid.png");
+      }
+      #user-btn2 {
+          background-image: url("images/MuseumGeneralInverted.png");
+      }
+      #user-btn2.active {
+          background-image: url("images/MuseumGeneral.png");
+      }
+      #user-btn3 {
+          background-image: url("images/MuseumExpertInverted.png");
+      }
+      #user-btn3.active {
+          background-image: url("images/MuseumExpert.png");
+      }
 
       /*user type buttons*/
 
