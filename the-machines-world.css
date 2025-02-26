@@ -264,7 +264,7 @@ hr {
         min-height: 87vh;
         background-color: #FEF7D7;
         overflow: visible;
-        margin-bottom: 10%;
+        padding-bottom: 10%;
     }
 
     /*carousel*/
@@ -390,36 +390,48 @@ hr {
 
     /*lines and dots that change with the carousel*/
         .line-container {
-            position: relative;
-            max-width: 66vh;
+            position: absolute;
+            min-width: 81vh;
+            width: auto;
+            height: 5vh;
             align-items: center;
-            margin-top: 6%;
-            margin-left: 8%;
+            margin-left: 6%;
             cursor: pointer;
+            bottom: 5%;
+            display: flex;
+            align-items: center;
+        }
+        .progress-line {
+            position: relative;
+            min-width: 81vh;
+            width: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         .active-line {
-            position: relative;
             width: 10vh;
             height: 3px;
             background-color: #ac333e;
             z-index: 3;
         }
         .inactive-line {
-            position: relative;
             width: 100%;
             height: 3px;
             background-color: #ac333e;
             opacity: 0.3;
-            top: -2px;
             z-index: 1;
         }
         .dot-container {
-            position: absolute;
+            width: auto;
+            max-width: 80vh;
             display: flex;
             justify-content: space-between;
+            gap: 6vw;
             position: absolute;
-            top: 0;
             z-index: 2;
+            left: 50%;
+            transform: translateX(-50%);
         }
         .dot {
             position: relative;
@@ -427,9 +439,6 @@ hr {
             height: 1.7vh;
             border-radius: 50%;
             background-color: #ac333e;
-            margin-right: 3vh;
-            margin-left: 10vh;
-            top: -3.6px;
             cursor: pointer;
         }
         .inner-dot {
@@ -1017,7 +1026,8 @@ hr {
     /*section1*/
         .section1 {
             padding-top: 10%;
-            margin-bottom: 0;
+            margin: 0;
+            padding-bottom: 0;
         }
         /*titles*/
             .section1 .item-title {
