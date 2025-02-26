@@ -1,3 +1,5 @@
+//Navbar
+
 document.addEventListener('DOMContentLoaded', () => {
     const thematicalTrigger = document.getElementById('thematicalTrigger');
     const thematicalMenu = document.getElementById('thematicalMenu');

@@ -372,7 +372,7 @@
   padding: 0;
   z-index: 1;
   height: auto;
-  min-height: 140vh;
+  min-height: 100vh;
   background-color: black;
 
   /*title*/
@@ -672,15 +672,20 @@ footer {
     margin-left: 5%;
   }
 
+  .section1 {
+    .title-container{
+      margin-top: 80%;
+    }
+  }
+
   .title-container {
-    padding-top: 80% !important;
     text-align: center !important;
     padding-right: 0 !important;
   }
 
   .title-container #home-title {
     font-size: 14vw !important;
-    -webkit-text-stroke: 1px white;
+    -webkit-text-stroke: 2px white;
   }
 
   .title-container #home-subtitle {
@@ -778,12 +783,12 @@ footer {
     position: relative;
     width: 130%;
     padding: 0 5%;
+    margin: 0;
   }
 
   .floor-title {
-    font-size: 2.2rem !important;
+    font-size: 1.2rem !important;
     margin: 20px 0;
-    padding-top: 10%;
   }
 
   .carousel-control-prev,
@@ -810,10 +815,11 @@ footer {
   }
 
   .carousel-item img {
-    width: 100% !important;
+    width: 50% !important;
     max-width: none;
     margin: 0 auto;
     object-fit: cover;
+    transform: translateX(-25%);
   }
 
   .carousel-controls-container {
@@ -830,32 +836,82 @@ footer {
     font-size: 1.5em;
 }
 
-  /* footer adjustments */
-  .rows {
+ /*Footer*/
+  footer {
+    display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    height: 100vh;
+  
+  
+  .footer-content {
+    width: 100%;
+    background-color: black;
+    flex-direction: column;
+    align-items: center;
   }
-
-  .logo, .affiliations, .contacts {
-    width: 100% !important;
-    transform: none !important;
-    margin: 20px 0;
+  
+  .title-container {
+    width: 100%;
+    text-align: center;
   }
-
+  
+  
+  .rows {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem; /* Added spacing between sections */
+  }
+  
+  .logo {
+    text-align: center;
+  }
+  
   #museum-logo {
-    width: 50vw !important;
+    width: 100%;
+    height: auto;
+  }
+  
+  .affiliations, .contacts {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  .affiliations h4, .contacts h4 {
+    font-size: 4vw; /* Increased for readability */
+  }
+  
+  .affiliations p, .contacts span {
+    font-size: 3vw;
+    display: block;
+    cursor: text;
+    line-height: 1.5;
+  }
+  
+  .contacts br {
+    display: none;
+  }
+  .contacts span::after {
+    display: none;
   }
 
-  .affiliations h4,
-  .contacts h4 {
-    font-size: 4vw !important;
+  .social-icons-container {
+    flex-direction: row;
+    justify-content: center;
+    gap: 5%;
+    padding-top: 0;
+    margin: 0;
   }
-
-  .affiliations p,
-  .contacts span {
-    font-size: 3.5vw !important;
+  
+  .social-icons {
+    width: 3em; /* Increased icon size for better touch interaction */
   }
+  }
+  }
+  /*Footer*/
 
   /* button adjustments */
   .button-container {
@@ -865,7 +921,7 @@ footer {
   .btn {
     padding: 8px 15px;
   }
-}
+
 
 /* touch-friendly hover states */
 @media (hover: none) {
@@ -886,4 +942,3 @@ footer {
   }
   
 }
-
