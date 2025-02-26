@@ -211,8 +211,10 @@ hr {
 }
 
 #element1 {
+    align-items: start;
     text-align: left;
 }
+
 
 #element2 {
     align-items: start;
@@ -321,7 +323,7 @@ hr {
         width: 25%;
         height: auto;
         margin-left: 10%;
-        margin-top: -5%;
+        margin-top: 0;
     }
 
     .button-container {
@@ -470,6 +472,7 @@ hr {
     /*lines and dots that change with the carousel*/
 
     /*descriptions*/
+ 
     .item-texts {
         position: absolute;
         top: 17%;
@@ -489,6 +492,16 @@ hr {
         font-family: serif;
         text-align: right;
         margin-bottom: 50%;
+    }
+
+    .text .content {
+        padding-right: 1%;
+        margin-top: 12%;
+        height: 50vh;
+        overflow-x: hidden;
+        scrollbar-width: thin;
+        scrollbar-color: #531f00 #fcf5e9;
+
     }
     /*descriptions*/
 
@@ -715,6 +728,7 @@ hr {
         font-weight: bold;
         text-align: center;
         width: 100%;
+        margin-bottom: 35px;
     }
     
     .main-images {
@@ -886,15 +900,15 @@ footer {
     content: attr(data-email);
     position: absolute;
     right: 0;
-    top: 100%;
+    top: 15%;
     color: white;
     font-size: 0.7vw;
     white-space: nowrap;
     opacity: 0;
     visibility: hidden;
-    transition: opacity 0.3s ease-in-out;
+    background-color: black;
+    transition: opacity 0.3sease-in-out;
   }
-  
   .contacts span:hover::after {
     opacity: 1;
     visibility: visible;
@@ -922,7 +936,7 @@ footer {
   
   
 /*small screens*/
-@media (max-width: 575.98px) {
+@media (max-width: 768px) {
 
 .navbar {
     height: auto;
@@ -941,9 +955,8 @@ footer {
     max-width: 90%;
     width: 90%;
     margin-left: 5%;
-    height: auto;
+    height: 75vh;
     max-height: 80%;
-    justify-content: center;
     align-items: center;
     padding-bottom: 5%;
     padding-top: 5%;
@@ -964,6 +977,10 @@ footer {
     line-height: 1.7em;
     overflow-wrap: break-word;
     word-wrap: break-word;
+}
+
+.ornament, .ornament2 {
+    width: 35%;
 }
 /*introduction section*/    
     
@@ -1039,19 +1056,19 @@ footer {
         transform: translateX(-50%);
     }
     #slide10 {
-        width: 70%;
+        width: 85%;
         height: auto;
         margin-top: -5%;
         margin-left: 0;
     }
     #slide11 {
-        width: 70%;
+        width: 85%;
         height: auto;
         margin-top: -5%;
         margin-left: 0;
     }
     #slide12 {
-        width: 70%;
+        width: 75%;
         height: auto;
         margin-top: -5%;
         margin-left: 0;
@@ -1064,7 +1081,7 @@ footer {
         height: auto;
         display: flex;
         flex-direction: row;
-        top: 52%;
+        top: 15%;
         left: 50%;
         transform: translateX(-50%);
         margin-left: 0;
@@ -1154,10 +1171,9 @@ footer {
         display: none;
         position: absolute;
         font-family: serif;
-        font-weight: bold;
         font-size: 11pt;
         color: #fcf5e9;
-        margin-top: 16%;
+        margin-top: 5%;
         margin-left: 7%;
         margin-right: 7%;
         text-align: center;
@@ -1166,7 +1182,7 @@ footer {
         font-style: normal;
         overflow-y: scroll;
         z-index: 300;
-        max-height: 35vh;
+        max-height: 40vh;
     }
 /*description that pops up*/
 
@@ -1266,7 +1282,8 @@ footer {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    height: 100vh;
+    height: auto;
+    min-height: 100vh;
   
   
   .footer-content {
@@ -1283,7 +1300,7 @@ footer {
   #home-title {
     font-size: 9vw;
     font-weight: bold;
-    -webkit-text-stroke: 1px white;
+    -webkit-text-stroke: 2px white;
   }
   
   .rows {
