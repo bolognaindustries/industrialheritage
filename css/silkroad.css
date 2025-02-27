@@ -124,7 +124,7 @@ hr {
         font-family: "Lora", serif;
         margin: 0;
         padding: 0;
-        height: 120vh;
+        height: 100vh;
         max-height: 120vh;
         background: url("../images/silk/img/Italy, 19th century-EmbroideredPanel-1800s.jpg");
         background-position: bottom;
@@ -1332,5 +1332,34 @@ footer {
   
   /*Footer*/
   /*small screens*/
-}
+
+  /*medium screens*/
+  @media (max-width: 988px) {
+    .container-fluid {
+        padding-top: 0;
+    }
+
+    .introduction-text-container {
+        max-height: fit-content;
+        width: fit-content;
+        margin-left: 30%;
+        margin-right: 5%;
+    }
+
+    .introduction-text {
+        padding-bottom: 7%;
+        font-size: 1em;
+    }
+
+    .line-container {
+        max-width: 40vw;
+    }
+
+    .dot-container {
+        max-width: 40vw;
+        gap: 6vw;
+    }
+
+  }
+  
   /*Media Queries*/
