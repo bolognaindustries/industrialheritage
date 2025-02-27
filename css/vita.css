@@ -21,7 +21,7 @@ body {
     font-weight: bold;
     padding-left: 3%;
     padding-right: 3%;
-    height: 9%;
+    height: 60px;
   }
 
 .navbar-brand img {
@@ -35,8 +35,6 @@ body {
     margin-left: 9%;
 }
 
-
-/* Separator bar between links */
 .vr {
 
     padding-left: 1px;
@@ -51,7 +49,6 @@ hr {
     color: black;
     border-top: 2px solid black;
 }
-
 
 .nav-item {
     line-height: 10px;
@@ -72,6 +69,7 @@ hr {
 
 .nav-item.dropdown:hover .dropdown-menu {
         display: block;
+        border: 0;
 }
     
 .navbar .dropdown-menu {
@@ -86,7 +84,6 @@ hr {
         border-radius: 0;
         background-color: rgb(255, 255, 255);
         min-width: 160px;
-        border: 1 solid rgb(0, 0, 0);
         z-index: 1;
 }
     
@@ -100,29 +97,10 @@ hr {
         text-align: center;
     }
 
-.link-lines-dropdown {
-      background-color: rgb(0, 0, 0);
-      height: 2px;
-      width: 0;
-      transition: width 0.3s ease;
-      opacity: 1;
-}
-
 .dropdown-item {
       background-color: transparent !important; 
       border: none;
       position: relative;
-}
-    
-.dropdown-item:hover::after,
-.dropdown-item:focus::after {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        width: 60%;
-        height: 2px;
-        background-color: #000000;
-        transition: width 0.3s ease !important;
 }
     
 #thematicalTrigger:hover {
@@ -794,102 +772,128 @@ hr {
     margin: 0 auto;
     }
   
-/* footer */
+  
+/* Footer */
 footer {
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: black;
+    min-height: 50vh;
+    margin: 0;
+    background-color: #000000;
+    font-family: 'Cooper Hewitt', sans-serif;
+  
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 5%;
   }
   
-  footer .row {
-    margin-left: -5%;
-    margin-right: -5%;
-    display: flex !important;
-    flex-direction: row !important;
-    flex-wrap: wrap;
-  }
-  
-  .row {
-    display: flex !important;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  footer .title-container {
+  .title-container {
+    width: 100%;
     text-align: left;
-    margin-right: 2%;
-    margin-top: 7%;
-    font-family: 'Cooper Hewitt', sans-serif; 
-    color: white;
+    font-family: 'Cooper Hewitt', sans-serif;
+    color: #ffffff;
+    margin-top: 1%;
   }
-  footer #home-title {
-    position: relative;
+  
+  #home-title {
     font-size: 3vw;
-    z-index: 100;
     font-weight: bold;
-    -webkit-text-stroke: 2px white;
+    -webkit-text-stroke: 2px #ffffff;
     color: transparent;
   }
-  footer #home-subtitle {
-  font-size: 2vw;
+  
+  .rows {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
   }
-  footer h4 {
-  font-size: 24px;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
-  text-align: left;
-  color: white;
+  
+  .logo {
+    width: 30%;
+    text-align: left;
   }
+  
   #museum-logo {
-  position: relative;
-  width: 325px;
-  height: auto;
-  display: block;
-  margin-top: 10%;
-  left: -10%;
-  top: -10%;
-  z-index: 10;
+    width: 100%;
+    width: 12vw;
+    height: auto;
   }
-  .contacts p, footer .affiliations p {
-  line-height: 1.5;
-  margin-bottom: 20px;
-  text-align: left;
-  color: white;
-  font-weight: bold;
+  
+  .affiliations {
+    transform: translateY(-20%);
+    width: 30%;
+    text-align: center;
+    color: #ffffff;
   }
-  footer p {
-  font-size: 17px;
-  font-weight: normal;
-  text-align: left;
-  font-family: 'Cooper Hewitt', sans-serif;
+  
+  .affiliations h4 {
+    font-size: 1vw;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 10px;
   }
-  .contacts, .affiliations {
-  margin-top: 19%;
+  
+  .affiliations p {
+    font-size: 0.8vw;
+  }
+  
+  .social-icons-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    justify-content: center;
+  }
+  
+  .social-icons {
+    width: 30px;
+    height: auto;
   }
   .contacts {
-    margin-left: 7%;
+    transform: translateY(-20%);
+    width: 30%;
+    text-align: right;
+    color: #ffffff;
   }
-  .affiliations {
-    margin-left: 4%;
-  }
+  
   .contacts h4 {
-    margin-bottom: 10%;
-  }
-  .affiliations h4 {
-    margin-bottom: 7%;
-  }
-  .social-icons-container {
-    max-width: 200px;
-    margin-top: 10%;
+    font-size: 1vw;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 10px;
+ }
+  
+  .contacts span {
+    font-size: 0.8vw;
     position: relative;
-    left: 50%;
+    cursor: pointer;
+    display: inline-block;
   }
-  .social-icons {
-    width: 19%;
-    height: auto;
-    margin-left: 5%;
+  
+  .contacts span::after {
+    content: attr(data-email);
+    position: absolute;
+    right: 0;
+    top: 15%;
+    color: white;
+    font-size: 0.7vw;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    background-color: black;
+    transition: opacity 0.3sease-in-out;
   }
+  .contacts span:hover::after {
+    opacity: 1;
+    visibility: visible;
+  }
+  }
+  
+  /* Footer*/  
 
 /* Media Queries */
 @media (max-width: 575.98px) {
@@ -1240,126 +1244,86 @@ footer {
     /*side tabs*/
 /*section1*/
 
-/*footer*/
-    footer {
-        display: flex;
-        text-align: center;
-        flex-direction: column;
-        position: absolute;
-        flex-direction: column;
-        padding-bottom: 10%;
-        z-index: 10;
-        max-width: 100vw;
-    }
+  /*Footer*/
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: auto;
+    min-height: 100vh;
+  
+  
+  .footer-content {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .title-container {
+    width: 100%;
+    text-align: center;
+  }
+  
+  #home-title {
+    font-size: 9vw;
+    font-weight: bold;
+    -webkit-text-stroke: 2px white;
+  }
+  
+  .rows {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem; /* Added spacing between sections */
+  }
+  
+  .logo {
+    text-align: center;
+  }
+  
+  #museum-logo {
+    width: 100%;
+    height: auto;
+  }
+  
+  .affiliations, .contacts {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  .affiliations h4, .contacts h4 {
+    font-size: 4vw; /* Increased for readability */
+  }
+  
+  .affiliations p, .contacts span {
+    font-size: 3vw;
+    display: block;
+    cursor: text;
+    line-height: 1.5;
+  }
+  
+  .contacts br {
+    display: none;
+  }
+  .contacts span::after {
+    display: none;
+  }
 
-    footer .row {
-        position: relative;
-        max-width: 100vw;
-        width: 100vw;
-        display: flex;
-        justify-content: center;
-        margin-left: 0;
-        margin-right: auto;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    footer .title-container {
-        text-align: center;
-        align-items: center;
-        margin-top: 20%;
-        margin-right: 0;
-        padding-left: 0;
-        padding-right: 0;
-    }
-
-    footer #home-title {
-        font-weight: bold;
-        -webkit-text-stroke: 2px white;
-        text-align: center;
-        margin-left: 0;
-        margin-right: auto;
-        font-size: 12vw;
-    } 
-
-    footer .title-container p{
-        font-size: 3vw;
-    }
-
-    footer h4 {
-        margin: 0;
-        font-weight: bold;
-        text-align: center;
-        color: white;
-    }
-
-    #museum-logo {
-        position: relative;
-        width: 50%;
-        height: auto;
-        padding: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        margin-top: 10%;
-    }
-
-    .contacts, .affiliations {
-        margin: 0;
-    }
-
-    .contacts h4 {
-        margin: 2%;
-    }
-
-    .affiliations h4 {
-        margin: 2%;
-        margin-top: 10%;
-    }
-
-    .contacts p, footer .affiliations p {
-        text-align: center;
-        color: white;
-        font-weight: bold;
-    }
-
-    .contacts {
-        margin-top: 7%;
-        margin-bottom: 0;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .affiliations {
-        margin-left: auto;
-        margin-right: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .social-icons-container {
-        justify-content: center;
-        width: auto;
-        display: flex;
-        flex-direction: row;
-        gap: 5%;
-        margin: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        padding-top: 5%;
-    }
-
-    .social-icons {
-        margin: 0;
-        width: 2em;
-        height: auto;
-    }
-
-    .social-icons-container a {
-        margin: 0;
-        width: auto;
-        height: auto;
-    }
-/*footer*/
-    }
+  .social-icons-container {
+    flex-direction: row;
+    justify-content: center;
+    gap: 5%;
+    padding-top: 0;
+    margin: 0;
+  }
+  
+  .social-icons {
+    width: 3em; /* Increased icon size for better touch interaction */
+  }
+  }
+  
+  /*Footer*/
+}
   /*Media Queries*/
