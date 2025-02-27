@@ -135,9 +135,12 @@ hr {
     /* Section 1: Introduction */
     .section1 {
       height: auto;
-      min-height: 130vh;
+      min-height: 100vh;
       background-color: #0b0b0b;
       position: relative;
+      background-size: cover;
+      background-position: center;
+      background-image: url(../images/the-museum-b&w.jpg);
     }
 
     .introduction-container {
@@ -147,7 +150,7 @@ hr {
       width: 70%;
       align-items: left;
       font-family: 'Cooper Hewitt', sans-serif; 
-      padding-top: 12.8%;
+      padding-top: 16%;
       padding-left: 5%;
     }
 
@@ -187,7 +190,7 @@ hr {
       justify-content: center;
       text-align: center;
       bottom: 0;
-      padding-bottom: 2%;
+      padding-bottom: 1vh;
     }
 
     #btn-target a {
