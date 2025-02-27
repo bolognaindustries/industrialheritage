@@ -125,6 +125,10 @@ hr {
 
 .section1 {
   height: auto;
+  background-size: 100vw;
+  background-repeat: no-repeat;
+  background-position: start;
+  background-image: url(../images/back.jpg);
 
   .title-container {
   padding-top: 15vh;
