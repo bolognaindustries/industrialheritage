@@ -402,7 +402,7 @@
     left: 50%;
     align-items: center;
     transform: translateX(-50%);
-    margin-bottom: 10%;
+    padding-bottom: 5vh;
   }
 
   .carousel-inner a{
@@ -807,10 +807,6 @@ footer {
     margin-top: 30%;
   }
 
-  .custom-arrow {
-    font-size: 1.5rem;
-  }
-
   .carousel-item img {
     width: 50% !important;
     max-width: none;
@@ -830,7 +826,6 @@ footer {
     transform: translateX(-50%);
     gap: 90%;
     top: 50%;
-    font-size: 1.5em;
 }
 
  /*Footer*/
