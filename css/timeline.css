@@ -387,5 +387,79 @@ overflow-x: hidden;
 background-repeat: no-repeat;
 background-position-x: left;
 }
+   /*Footer*/
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+  
+  
+  .footer-content {
+    width: 100%;
+    background-color: black;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .title-container {
+    width: 100%;
+    text-align: center;
+  }
+  
+  
+  .rows {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .logo {
+    text-align: center;
+  }
+  
+  #museum-logo {
+    width: 100%;
+    height: auto;
+  }
+  
+  .affiliations, .contacts {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  .affiliations h4, .contacts h4 {
+    font-size: 4vw;
+  }
+  
+  .affiliations p, .contacts span {
+    font-size: 3vw;
+    display: block;
+    cursor: text;
+    line-height: 1.5;
+  }
+  
+  .contacts br {
+    display: none;
+  }
+  .contacts span::after {
+    display: none;
+  }
+
+  .social-icons-container {
+    flex-direction: row;
+    justify-content: center;
+    gap: 5%;
+    padding-top: 0;
+    margin: 0;
+  }
+  
+  .social-icons {
+    width: 3em;
+  }
+  }
 
 }
