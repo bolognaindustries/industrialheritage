@@ -3,7 +3,7 @@
     src: url(fonts/boecklins-universe/Boecklins\ Universe.ttf);
 }
 body{
-    margin: 0px;
+    margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     background-color: #FEF7D7;
 }
@@ -264,7 +264,7 @@ hr {
         min-height: 87vh;
         background-color: #FEF7D7;
         overflow: visible;
-        padding-bottom: 10%;
+        padding-bottom: 15%;
     }
 
     /*carousel*/
@@ -309,7 +309,7 @@ hr {
             margin-left: 12%;
         }
         #slide5 {
-            width: 22%;
+            width: 25%;
             height: auto;
             margin-left: 12%;
         }
@@ -386,37 +386,39 @@ hr {
             line-height: 0.9em;
             z-index: 3;
         }
+
+
     /*titles*/
 
     /*lines and dots that change with the carousel*/
         .line-container {
             position: absolute;
-            min-width: 81vh;
+            max-width: 35vw;
             width: auto;
             height: 5vh;
             align-items: center;
             margin-left: 6%;
             cursor: pointer;
-            bottom: 5%;
+            bottom: 13%;
             display: flex;
             align-items: center;
         }
         .progress-line {
             position: relative;
-            min-width: 81vh;
+            max-width: 35vw;
             width: auto;
             display: flex;
             align-items: center;
             justify-content: center;
         }
         .active-line {
-            width: 10vh;
+            width: 5vw;
             height: 3px;
             background-color: #ac333e;
             z-index: 3;
         }
         .inactive-line {
-            width: 100%;
+            width: 35vw;
             height: 3px;
             background-color: #ac333e;
             opacity: 0.3;
@@ -424,7 +426,7 @@ hr {
         }
         .dot-container {
             width: auto;
-            max-width: 80vh;
+            max-width: 35vw;
             display: flex;
             justify-content: space-between;
             gap: 6vw;
@@ -1079,10 +1081,11 @@ hr {
                 margin-left: 12%;
             }
             #slide5 {
-                width: 22%;
+                width: 25%;
                 height: auto;
                 margin-left: 12%;
             }
+
             .button-container {
                 position: absolute;
                 width: 100vw;

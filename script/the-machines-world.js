@@ -127,7 +127,7 @@ buttons.forEach(function (button, index) {
 });
 
 function updateLine() {
-    var lineSize = dots[currentSlide].getAttribute("data-size") + "%";
+    var lineSize = dots[currentSlide].getAttribute("data-size") + "vw";
     activeLine.style.width = lineSize;
 };
 
