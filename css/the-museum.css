@@ -135,11 +135,11 @@ hr {
     /* Section 1: Introduction */
     .section1 {
       height: auto;
-      min-height: 130vh;
+      min-height: 100vh;
       background-color: #0b0b0b;
       position: relative;
       background-size: cover;
-      background-position-y: 30%;
+      background-position: center;
       background-image: url(../images/the-museum-b&w.jpg);
     }
 
@@ -147,7 +147,7 @@ hr {
       position: relative;
       display: flex;
       flex-direction: column;
-      width: 60%;
+      width: 70%;
       align-items: left;
       font-family: 'Cooper Hewitt', sans-serif; 
       padding-top: 16%;
@@ -176,7 +176,7 @@ hr {
       -webkit-box-orient: vertical;
       overflow: hidden;
       text-overflow: ellipsis;
-      line-height: 1.3;
+      line-height: 1.5;
     }
 
 
@@ -200,7 +200,6 @@ hr {
       font-family: 'Cooper Hewitt', sans-serif;
       font-weight: bold;
       white-space: nowrap;
-      font-size: 20px;
     }
 
     /* Section 2: The Map*/
@@ -224,7 +223,7 @@ hr {
           position: relative;
           width: 35vw;
           height: 100vh;
-          background: #141413;
+          background: #0b0b0b;
           overflow: hidden;
           padding-bottom: 60px;
         }
@@ -492,7 +491,7 @@ hr {
           border-bottom-left-radius: 8px;
           z-index: 100;
           right: -15vw;
-          top: 5.9vh;
+          top: 20vh;
       }
       .user-btn-container:hover {
           background-color: #CD5909;
@@ -533,7 +532,7 @@ hr {
       }
   /*user type buttons*/
 /*side tabs*/
-
+ 
 /* Footer */
 footer {
   width: 100%;
@@ -639,39 +638,39 @@ footer {
   content: attr(data-email);
   position: absolute;
   right: 0;
-  top: 100%;
+  top: 15%;
   color: white;
   font-size: 0.7vw;
   white-space: nowrap;
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.3s ease-in-out;
+  background-color: black;
+  transition: opacity 0.3sease-in-out;
 }
-
 .contacts span:hover::after {
   opacity: 1;
   visibility: visible;
 }
 }
-
-/* Footer*/  
-
-/* Line separator */
-.hr-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: black;
-  padding: 20px 0;
-
-
-  hr {
-    width: 90%;
-    border: none;
-    border-top: 2px solid white;
-    margin: 0 auto;
+  /* Line separator */
+  .hr-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding: 20px 0;
+  
+  
+    hr {
+      width: 90%;
+      border: none;
+      border-top: 2px solid white;
+      margin: 0 auto;
+    }
   }
-}
+  
+  
+/* Footer*/  
 
 @media screen and (min-width: 1920px) {
   body {
