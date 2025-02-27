@@ -171,89 +171,65 @@ hr {
     word-wrap: break-word;
 }
 /*introduction section*/
-
-/*main section*/
-.main-section {
-    background-color: #fcf5e9;
-    height: 120vh;
-}
 .ornament2 {
     width: 25%;
     display: block;
     padding: 2%;
-    margin: 0 auto;
+    margin: 2% auto;
+}
+/*main section*/
+.main-section {
+    background-color: #fcf5e9;
+    height: auto;
 }
 
 .row1 {
     width: 80%;
-    height: 130vh;
     display: flex;
-    flex-direction: row;
-    padding-top: 1%;
-    opacity: 1;
+    justify-content: space-between;
     column-gap: 5%;
     margin: 0 auto;
 }
 
 .element {
-    position: relative;
-    width: 27vw;
-    max-width: 27vw;
     display: flex;
+    flex: 1;
     flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    min-height: 400px;
 }
 
-#element1 p, #element2 p, #element3 p {
+.element p {
     font-family: serif;
     font-size: 17px;
     letter-spacing: 0.7px;
     line-height: 1.9em;
+    width: 100%;
+    margin-bottom: 2rem;
 }
 
-#element1 {
-    align-items: start;
+#element1 p {
     text-align: left;
+    align-self: flex-start;
 }
 
-
-#element2 {
-    align-items: start;
+#element2 p {
     text-align: center;
+    align-self: center;
 }
 
-#element3 {
-    align-items: start;
+#element3 p {
     text-align: right;
+    align-self: flex-end;
 }
 
-#element1 img {
-    position: absolute;
-    height: 50vh;
-    max-height: 400px;
+.element img {
+    height: 25vw;
+    max-height: 350px;
     width: auto;
-    top: 35%;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-#element2 img {
-    position: absolute;
-    height: 50vh;
-    width: auto;
-    max-height: 400px;
-    top: 35%;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-#element3 img {
-    position: absolute;
-    height: 50vh;
-    max-height: 400px;
-    width: auto;
-    top: 35%;
-    left: 50%;
-    transform: translateX(-50%);
+    align-self: center;
 }
 
 .ornament3 {
@@ -263,13 +239,14 @@ hr {
     padding-right: 2%;
     display: block;
     margin: 0 auto;
+    margin-bottom: 2%;
 }
 
 
 /*section1*/
 .section1 {
     position: relative;
-    height: 115vh;
+    height: 100vh;
     max-height: 150vh;
     overflow: hidden;
     background-color: #fcf5e9;
@@ -982,6 +959,9 @@ footer {
 .ornament, .ornament2 {
     width: 35%;
 }
+.ornament3{
+    display: none;
+}
 /*introduction section*/    
     
 /*main section*/
@@ -1007,6 +987,7 @@ footer {
     max-width: 90%;
     height: auto;
     flex-direction: column;
+    justify-content: center;
 }
 #element1 p, #element2 p, #element3 p {
     font-size: 4vw;
@@ -1015,9 +996,7 @@ footer {
 #element1 img, #element2 img, #element3 img {
     height: auto;
     max-height: 40vh;
-    top: 0;
     position: relative;
-    margin-top: 9%;
 }
 /*main section*/
     
