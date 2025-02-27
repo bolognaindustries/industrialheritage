@@ -123,6 +123,10 @@ hr {
 /*title and styles*/
 .section2 {
   margin: 0;
+  background-size: 100vw;
+  background-repeat: no-repeat;
+  background-position: start;
+  background-image: url(../images/back2.jpg);
 
   .title-container {
   padding-top: 15vh;
