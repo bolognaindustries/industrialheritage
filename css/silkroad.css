@@ -872,15 +872,15 @@ footer {
     content: attr(data-email);
     position: absolute;
     right: 0;
-    top: 100%;
+    top: 15%;
     color: white;
     font-size: 0.7vw;
     white-space: nowrap;
     opacity: 0;
     visibility: hidden;
-    transition: opacity 0.3s ease-in-out;
+    background-color: black;
+    transition: opacity 0.3sease-in-out;
   }
-  
   .contacts span:hover::after {
     opacity: 1;
     visibility: visible;
@@ -1250,13 +1250,14 @@ footer {
         /*side tabs*/
     /*section1*/
     
-     /*Footer*/
+  /*Footer*/
   footer {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    height: 100vh;
+    height: auto;
+    min-height: 100vh;
   
   
   .footer-content {
@@ -1273,7 +1274,7 @@ footer {
   #home-title {
     font-size: 9vw;
     font-weight: bold;
-    -webkit-text-stroke: 1px white;
+    -webkit-text-stroke: 2px white;
   }
   
   .rows {
@@ -1328,8 +1329,8 @@ footer {
     width: 3em; /* Increased icon size for better touch interaction */
   }
   }
-  }
+  
   /*Footer*/
   /*small screens*/
-  
+}
   /*Media Queries*/
