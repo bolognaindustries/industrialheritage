@@ -326,31 +326,28 @@ footer {
   #navbarDropdown {
     display: none;
   }
-  /* Hide sub-items by default */
+ 
   #thematicalMenu .nav-item {
       display: none;
   }
 
-  /* Show sub-items when toggled */
   #thematicalMenu .nav-item.show {
       display: block;
   }
 
-  /* Style for the "THEMATICAL PATH" button */
   #thematicalTrigger {
-      pointer-events: auto; /* Enable click events */
-      cursor: default; /* Change cursor to pointer */
-      color: inherit; /* Inherit text color */
-      text-decoration: none; /* Remove underline */
+      pointer-events: auto;
+      cursor: default;
+      color: inherit;
+      text-decoration: none;
   }
 
-  /* Ensure converted nav-link active elements follow the same rules */
   .nav-link.active {
-      padding-left: 30px; /* Match indentation with dropdown items */
+      padding-left: 30px;
   }
 
   .navbar-nav .vr {
-      display: none !important; /* Hide vertical dividers on small screens */
+      display: none !important;
   }
   }
 
@@ -404,7 +401,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2rem; /* Added spacing between sections */
+    gap: 2rem;
   }
   
   .logo {
@@ -423,7 +420,7 @@ footer {
   }
   
   .affiliations h4, .contacts h4 {
-    font-size: 4vw; /* Increased for readability */
+    font-size: 4vw;
   }
   
   .affiliations p, .contacts span {
@@ -449,7 +446,7 @@ footer {
   }
   
   .social-icons {
-    width: 3em; /* Increased icon size for better touch interaction */
+    width: 3em;
   }
   }
   }

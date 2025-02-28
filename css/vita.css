@@ -896,7 +896,48 @@ footer {
   /* Footer*/  
 
 /* Media Queries */
-@media (max-width: 575.98px) {
+@media (max-width: 768px) {
+    /* Navbar*/
+  .navbar {
+    height: auto;
+
+    .navbar-brand img { 
+        height: 5vh;
+    }
+  
+  .link-lines {
+    display: none;
+  }
+
+  #navbarDropdown {
+    display: none;
+  }
+ 
+  #thematicalMenu .nav-item {
+      display: none;
+  }
+
+  #thematicalMenu .nav-item.show {
+      display: block;
+  }
+
+  #thematicalTrigger {
+      pointer-events: auto;
+      cursor: default;
+      color: inherit;
+      text-decoration: none;
+  }
+
+  .nav-link.active {
+      padding-left: 30px;
+  }
+
+  .navbar-nav .vr {
+      display: none !important;
+  }
+  }
+  
+  /*Navbar end*/
     /* Introduction Section */
     .introduction {
         max-height: 100vh;
