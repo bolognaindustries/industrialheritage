@@ -605,7 +605,6 @@ function updateLines(number) {
                 this.classList.add("active");
 
                 currentUserType = this.getAttribute("data-user");
-
                 localStorage.setItem("userType", currentUserType);
             
             if(activeNumber) {

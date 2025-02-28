@@ -25,20 +25,36 @@ document.addEventListener('DOMContentLoaded', () => {
             thematicalMenu.classList.remove('show');
         }
     });
+
+
+
+    
 });
 
 // user selection
-userBtns.forEach(function (userBtn) {
-    userBtn.addEventListener("pointerdown", function () {
-    
-    userBtns.forEach(function(userBtn){
-        userBtn.src = userBtn.src.replace("Inverted.png", ".png");
+document.addEventListener("DOMContentLoaded", function () {
+    let storedUserType = localStorage.getItem("userType") || defaultUserType;
+
+    userBtns.forEach(function (userBtn) {
+        let userType = userBtn.getAttribute("data-user");
+
+        if (userType === storedUserType) {
+            userBtn.src = userBtn.src.replace(".png", "Inverted.png");
+        } else {
+            userBtn.src = userBtn.src.replace("Inverted.png", ".png"); // Resetta gli altri
+        }
     });
 
-    this.src = this.src.replace(".png", "Inverted.png");
-            
-    currentUserType = this.getAttribute("data-user");
-    localStorage.setItem("userType", currentUserType);
+    userBtns.forEach(function (userBtn) {
+        userBtn.addEventListener("pointerdown", function () {
+            userBtns.forEach(function (btn) {
+                btn.src = btn.src.replace("Inverted.png", ".png");
+            });
+    
+            this.src = this.src.replace(".png", "Inverted.png");
+            currentUserType = this.getAttribute("data-user");
+            localStorage.setItem("userType", currentUserType);
+        });
     });
 });
 
@@ -112,8 +128,8 @@ document.getElementById('toggle-image').addEventListener('click', function (e) {
 // INITIALIZE
 localStorage.setItem("userType", currentUserType);
 userBtns.forEach(function(userBtn) {
-    if(userBtn.getAttribute("data-user" === currentUserType)) {
-    userBtn.src = userBtn.src.replace(".png", "Inverted.png");
+    if(userBtn.getAttribute("data-user") === currentUserType) {
+        userBtn.src = userBtn.src.replace(".png", "Inverted.png");
     }
 });
 
