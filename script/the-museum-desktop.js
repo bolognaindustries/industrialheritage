@@ -1,35 +1,74 @@
 // Only operate on desktop devices
-var desktop = document.getElementById("desktop");
-
 document.addEventListener('DOMContentLoaded', () => {
-        const thematicalTrigger = document.getElementById('thematicalTrigger');
-        const thematicalMenu = document.getElementById('thematicalMenu');
+    const thematicalTrigger = document.getElementById('thematicalTrigger');
+    const thematicalMenu = document.getElementById('thematicalMenu');
+    const navbarToggler = document.querySelector('.navbar-toggler');
+    const navbarCollapse = document.getElementById('navbarSupportedContent');
 
-        console.log('thematicalTrigger:', thematicalTrigger);
-        console.log('thematicalMenu:', thematicalMenu);
+    function isMobileView() {
+        return window.innerWidth <= 768;
+    }
+    function moveDropdownItemsToNav() {
+        if (isMobileView()) {
+            const dropdownMenus = document.querySelectorAll('.dropdown-menu');
+            const navbarNav = document.querySelector('.navbar-nav');
 
-        if (!thematicalTrigger) {
-            console.error('Elemento con ID "thematicalTrigger" non trovato!');
+            dropdownMenus.forEach(menu => {
+                const dropdownItems = menu.querySelectorAll('.dropdown-item');
+                dropdownItems.forEach(item => {
+
+                    item.classList.remove('dropdown-item');
+                    item.classList.add('nav-link', 'active');
+
+                    const newNavItem = document.createElement('li');
+                    newNavItem.classList.add('nav-item');
+                    newNavItem.appendChild(item);
+
+                    navbarNav.appendChild(newNavItem);
+                });
+                menu.remove();
+            });
         }
-        if (!thematicalMenu) {
-            console.error('Elemento con ID "thematicalMenu" non trovato!');
-        }
-    
-        thematicalTrigger.addEventListener('click', (e) => {
-            console.log("thematical button triggered");
+    }
 
-            e.preventDefault(); 
+    navbarCollapse.classList.remove('show');
+    navbarToggler.addEventListener('click', (e) => {
+        e.stopPropagation();
+        navbarCollapse.classList.toggle('show');
+    });
+
+    moveDropdownItemsToNav();
+    window.addEventListener('resize', () => {
+        moveDropdownItemsToNav();
+    });
+
+    // Thematical Path Dropdown Behavior (for larger screens)
+    thematicalTrigger.addEventListener('click', (e) => {
+        if (!isMobileView()) {
+
+            e.preventDefault();
             e.stopPropagation();
             const isExpanded = thematicalMenu.classList.contains('show');
             thematicalMenu.classList.toggle('show', !isExpanded);
-        });
-    
-        document.addEventListener('click', (e) => {
+        }
+    });
+
+    thematicalMenu.addEventListener('click', (e) => {
+        e.stopPropagation();
+    });
+
+    document.addEventListener('click', (e) => {
+        if (isMobileView()) {
+            if (!navbarToggler.contains(e.target) && !navbarCollapse.contains(e.target)) {
+                navbarCollapse.classList.remove('show');
+            }
+        } else {
             if (!thematicalTrigger.contains(e.target) && !thematicalMenu.contains(e.target)) {
                 thematicalMenu.classList.remove('show');
             }
-        });
+        }
     });
+});
 
 
 if (desktop) {
