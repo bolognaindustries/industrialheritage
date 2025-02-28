@@ -124,7 +124,7 @@ hr {
         font-family: "Lora", serif;
         margin: 0;
         padding: 0;
-        height: 120vh;
+        height: 100vh;
         max-height: 120vh;
         background: url("../images/silk/img/Italy, 19th century-EmbroideredPanel-1800s.jpg");
         background-position: bottom;
@@ -279,9 +279,29 @@ hr {
 
     .carousel-images img {
         position: absolute;
+        width: 30vw; 
         display: block;
-        margin-left: 16%;
         z-index: 100;
+    }
+
+    #slide8 {
+        margin-left: 12vw;
+        width: 22vw; 
+        height: auto;
+    }
+
+    #slide7 {
+        padding-top: 5%;
+        margin-left: 12vw;
+        width: 22vw; 
+        height: auto;
+    }
+
+    #slide9 {
+        padding-top: 7%;
+        margin-left: 12vw;
+        width: 22vw;
+        height: auto;
     }
 
     .button-container {
@@ -450,7 +470,10 @@ hr {
 
     .content{ 
     height: 60vh; 
+    padding-right: 1%;
     overflow-y: auto; 
+    scrollbar-width: thin;
+    scrollbar-color: #6D1B3F #FEF7D7;
     overflow-x: hidden;
 }
 
@@ -849,15 +872,15 @@ footer {
     content: attr(data-email);
     position: absolute;
     right: 0;
-    top: 100%;
+    top: 15%;
     color: white;
     font-size: 0.7vw;
     white-space: nowrap;
     opacity: 0;
     visibility: hidden;
-    transition: opacity 0.3s ease-in-out;
+    background-color: black;
+    transition: opacity 0.3sease-in-out;
   }
-  
   .contacts span:hover::after {
     opacity: 1;
     visibility: visible;
@@ -886,7 +909,7 @@ footer {
 
 
   /*Media Queries*/
-  @media (max-width: 575.98px) {
+  @media (max-width: 768px) {
 
     /*introduction section*/
         .introduction {
@@ -1003,26 +1026,26 @@ footer {
                 margin-top: 17%;
             }
             .carousel-images img {
-                position: absolute;          
+                position: absolute;
+                width: 30vw;          
                 z-index: 100;
-                margin-left: 0;
-                left: 50%;
-                transform: translateX(-50%);
             }
             #slide8 {
-                max-width: 50%;
-                height: auto;
+                width: 60vw;
+                top: 10%;
+                left: 22%;
                 margin-left: 0;
             }
             #slide7 {
-                width: 25%;
-                height: auto;
+                width: 60vw;
+                top: 10%;
+                left: 20%;
                 margin-left: 0;
-                top: -1%;
             }
             #slide9 {
-                width: 13%;
-                height: auto;
+                width: 60vw;
+                top: 10%;
+                left: 22%;
                 transform: scaleX(-1);
                 margin-left: 0;
             }
@@ -1034,14 +1057,13 @@ footer {
                 height: auto;
                 display: flex;
                 flex-direction: row;
-                top: 52%;
-                left: 50%;
+                top: 40%;
+                left: 52%;
                 transform: translateX(-50%);
                 margin-left: 0;
-                margin-right: auto;
-                gap: 77%;
-                padding-left: 4%;
-                padding-right: 4%;
+                gap: 75%;
+                padding-left: 5%;
+                padding-right: 5%;
             }
             button {
                 background-color: #6D1B3F;
@@ -1228,13 +1250,14 @@ footer {
         /*side tabs*/
     /*section1*/
     
-     /*Footer*/
+  /*Footer*/
   footer {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    height: 100vh;
+    height: auto;
+    min-height: 100vh;
   
   
   .footer-content {
@@ -1251,7 +1274,7 @@ footer {
   #home-title {
     font-size: 9vw;
     font-weight: bold;
-    -webkit-text-stroke: 1px white;
+    -webkit-text-stroke: 2px white;
   }
   
   .rows {
@@ -1306,8 +1329,38 @@ footer {
     width: 3em; /* Increased icon size for better touch interaction */
   }
   }
-  }
+}
+  
   /*Footer*/
   /*small screens*/
+
+  /*medium screens*/
+  @media (max-width: 988px) {
+    .container-fluid {
+        padding-top: 0;
+    }
+
+    .introduction-text-container {
+        max-height: fit-content;
+        width: fit-content;
+        margin-left: 30%;
+        margin-right: 5%;
+    }
+
+    .introduction-text {
+        padding-bottom: 7%;
+        font-size: 1em;
+    }
+
+    .line-container {
+        max-width: 40vw;
+    }
+
+    .dot-container {
+        max-width: 40vw;
+        gap: 6vw;
+    }
+
+  }
   
   /*Media Queries*/

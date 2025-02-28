@@ -512,103 +512,84 @@ body {
 
     
 
-/*Footer*/
-footer {
+  /*Footer*/
+  footer {
     display: flex;
-    text-align: center;
     flex-direction: column;
-    position: absolute;
-    flex-direction: column;
-    padding-bottom: 10%;
-    z-index: 10;
-  }
-
-  footer .title-container {
-    text-align: center;
     align-items: center;
-    margin-top: 20%;
+    text-align: center;
+    height: auto;
+    min-height: 100vh;
+  
+  
+  .footer-content {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
   }
-
-  footer #home-title-m {
+  
+  .title-container {
+    width: 100%;
+    text-align: center;
+  }
+  
+  #home-title {
+    font-size: 9vw;
     font-weight: bold;
     -webkit-text-stroke: 2px white;
-    font-size: 12vw;
-    text-align: center;
-    margin-left: 0;
-    margin-right: 0;
-  } 
-
-  footer .title-container p{
-    font-size: 3vw;
   }
-
-  footer h4 {
-    margin: 0;
-    font-weight: bold;
-    text-align: center;
-    color: white;
+  
+  .rows {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
   }
-
-  #museum-logo-m {
-    position: sticky;
-    width: 50%;
+  
+  .logo {
+    text-align: center;
+  }
+  
+  #museum-logo {
+    width: 100%;
     height: auto;
-    padding: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-top: 10%;
   }
-
-  .contacts, .affiliations {
-    margin: 0;
-  }
-
-  .contacts h4 {
-    margin: 2%;
-  }
-
-  .affiliations h4 {
-    margin: 2%;
-    margin-top: 10%;
-  }
-
-  .contacts p, footer .affiliations p {
+  
+  .affiliations, .contacts {
+    width: 100%;
     text-align: center;
-    color: white;
-    font-weight: bold;
+    margin: 0 auto;
   }
-
-  .contacts {
-    margin-top: 7%;
-    margin-bottom: 0;
-    margin-left: auto;
-    margin-right: auto;
+  
+  .affiliations h4, .contacts h4 {
+    font-size: 4vw;
   }
-
-  .affiliations {
-    margin-left: auto;
-    margin-right: auto;
+  
+  .affiliations p, .contacts span {
+    font-size: 3vw;
+    display: block;
+    cursor: text;
+    line-height: 1.5;
+  }
+  
+  .contacts br {
+    display: none;
+  }
+  .contacts span::after {
+    display: none;
   }
 
   .social-icons-container {
-    justify-content: center;
-    width: auto;
-    display: flex;
     flex-direction: row;
+    justify-content: center;
     gap: 5%;
-    margin: 0 auto;
-    margin-bottom: 25%;
-    margin-top: 10%;
+    padding-top: 0;
+    margin: 0;
   }
-
+  
   .social-icons {
-    margin: 0;
-    width: 2em;
-    height: auto;
+    width: 3em;
   }
-
-  .social-icons-container a {
-    margin: 0;
-    width: auto;
-    height: auto;
   }
+  
+  /*Footer*/

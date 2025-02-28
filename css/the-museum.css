@@ -532,7 +532,7 @@ hr {
       }
   /*user type buttons*/
 /*side tabs*/
-
+ 
 /* Footer */
 footer {
   width: 100%;
@@ -638,39 +638,39 @@ footer {
   content: attr(data-email);
   position: absolute;
   right: 0;
-  top: 100%;
+  top: 15%;
   color: white;
   font-size: 0.7vw;
   white-space: nowrap;
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.3s ease-in-out;
+  background-color: black;
+  transition: opacity 0.3sease-in-out;
 }
-
 .contacts span:hover::after {
   opacity: 1;
   visibility: visible;
 }
 }
-
-/* Footer*/  
-
-/* Line separator */
-.hr-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: black;
-  padding: 20px 0;
-
-
-  hr {
-    width: 90%;
-    border: none;
-    border-top: 2px solid white;
-    margin: 0 auto;
+  /* Line separator */
+  .hr-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding: 20px 0;
+  
+  
+    hr {
+      width: 90%;
+      border: none;
+      border-top: 2px solid white;
+      margin: 0 auto;
+    }
   }
-}
+  
+  
+/* Footer*/  
 
 @media screen and (min-width: 1920px) {
   body {
