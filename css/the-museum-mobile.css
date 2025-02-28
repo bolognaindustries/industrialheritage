@@ -3,12 +3,14 @@ body {
     margin: 0;
     box-sizing: border-box;
     background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /*Section 1: Introduction*/
    /* Navbar*/
   .navbar {
     height: auto;
+    font-family: 'Cooper Hewitt', sans-serif;
 
     .navbar-brand img { 
         height: 5vh;
@@ -45,8 +47,8 @@ body {
       display: none !important;
   }
   }
-  
   /*Navbar end*/
+
     /*Section 1: Introduction*/
     .section1 {
         height: 100vh;
