@@ -402,7 +402,7 @@
     left: 50%;
     align-items: center;
     transform: translateX(-50%);
-    padding-bottom: 5vh;
+    padding-bottom: 2vh;
   }
 
   .carousel-inner a{
@@ -424,7 +424,9 @@
     text-align: center;
     color: white;
     font-size: 2vw;
-    margin-bottom: 10px;
+    padding-bottom: 5vh;
+    text-decoration: underline;
+    text-underline-offset: 1.5vh;
   }
 
   .custom-prev,
@@ -432,20 +434,19 @@
     display: flex;
     align-items: center;
     color: white;
+    font-size: 19px;
+    white-space: nowrap;
   }
 
-  .custom-arrow {
-    font-size: 30px;
-  }
 
   .carousel-control-next {
-    margin-right: -15%;
+    margin-right: -10%;
     background-color: transparent;
     border: none;
   }
 
   .carousel-control-prev {
-    margin-left: -15%;
+    margin-left: -10%;
     background-color: transparent;
     border: none;
   }

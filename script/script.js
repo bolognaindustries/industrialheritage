@@ -77,15 +77,23 @@ var title2 = document.getElementById("floor-title2");
 
 function updateTitle() {
     var activeItem = document.querySelector(".carousel-item.active img")
+    var prev = document.querySelector(".carousel-control-prev");
+    var next = document.querySelector(".carousel-control-next");
 
     if(activeItem) {
         title1.style.display = "none";
         title2.style.display = "none";
+        prev.style.display = "none";
+        next.style.display = "none";
 
         if(activeItem.id === "img1") {
             title1.style.display = "block";
+
+            next.style.display = "block";
         } else if(activeItem.id === "img2") {
             title2.style.display = "block";
+
+            prev.style.display = "block";
         }
     }
 }
