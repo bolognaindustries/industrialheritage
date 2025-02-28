@@ -318,6 +318,40 @@ footer {
     .navbar-brand img { 
         height: 5vh;
     }
+  
+  .link-lines {
+    display: none;
+  }
+
+  #navbarDropdown {
+    display: none;
+  }
+  /* Hide sub-items by default */
+  #thematicalMenu .nav-item {
+      display: none;
+  }
+
+  /* Show sub-items when toggled */
+  #thematicalMenu .nav-item.show {
+      display: block;
+  }
+
+  /* Style for the "THEMATICAL PATH" button */
+  #thematicalTrigger {
+      pointer-events: auto; /* Enable click events */
+      cursor: default; /* Change cursor to pointer */
+      color: inherit; /* Inherit text color */
+      text-decoration: none; /* Remove underline */
+  }
+
+  /* Ensure converted nav-link active elements follow the same rules */
+  .nav-link.active {
+      padding-left: 30px; /* Match indentation with dropdown items */
+  }
+
+  .navbar-nav .vr {
+      display: none !important; /* Hide vertical dividers on small screens */
+  }
   }
 
   .title-container {
@@ -338,9 +372,7 @@ footer {
       font-size: 6vw;
     }
   }
-
-
-
+  
    /*Footer*/
    footer {
     display: flex;
