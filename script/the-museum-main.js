@@ -96,9 +96,6 @@ document.addEventListener('DOMContentLoaded', () => {
             mobile.style.display = "block";
             desktop.style.display = "none";
 
-            // Load the right stylesheet
-            loadCss("css/the-museum-mobile.css");
-
             // Load the right javascritp
             loadJs("script/the-museum-mobile.js");
 
@@ -106,9 +103,6 @@ document.addEventListener('DOMContentLoaded', () => {
             // Show Desktop
             mobile.style.display = "none";
             desktop.style.display = "block";
-
-            // Load the right stylesheet
-            loadCss("css/the-museum.css");
 
             // Load the right javascript
             loadJs("script/the-museum-desktop.js");
