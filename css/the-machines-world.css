@@ -303,12 +303,13 @@ hr {
             padding-left: 3%;
             padding-right: 3%;
         }
-        button {
+        button:not(.custom-nav-toggler) {
             background-color: #ac333e;
             border: none;
             padding: 0;
             cursor: pointer;
             width: 8vh;
+            height: auto;
             aspect-ratio: 1 / 1;
             border-radius: 50%;
             display: flex;
@@ -316,7 +317,7 @@ hr {
             justify-content: center;
             font-size: 4vh;
         }
-        button:hover {
+        button:not(.custom-nav-toggler):hover {
             background-color: #ac333e;
             opacity: 0.9;
         }
@@ -945,44 +946,58 @@ footer {
     /*small screens*/
     @media (max-width: 575.98px) {
         /* Navbar*/
-  .navbar {
-    height: auto;
-
-    .navbar-brand img { 
-        height: 5vh;
-    }
-  
-  .link-lines {
-    display: none;
-  }
-
-  #navbarDropdown {
-    display: none;
-  }
- 
-  #thematicalMenu .nav-item {
-      display: none;
-  }
-
-  #thematicalMenu .nav-item.show {
-      display: block;
-  }
-
-  #thematicalTrigger {
-      pointer-events: auto;
-      cursor: default;
-      color: inherit;
-      text-decoration: none;
-  }
-
-  .nav-link.active {
-      padding-left: 30px;
-  }
-
-  .navbar-nav .vr {
-      display: none !important;
-  }
-  }
+        .navbar {
+            position: relative;
+        
+            .navbar-brand img { 
+                height: 5vh;
+            }
+            .navbar-collapse.collapse.show {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background-color: white;
+                z-index: 1000;
+                margin-bottom: 10%;
+        
+            }
+          
+          .link-lines {
+            display: none;
+          }
+        
+          #navbarDropdown {
+            display: none;
+          }
+         
+          #thematicalMenu .nav-item {
+              display: none;
+          }
+        
+          #thematicalMenu .nav-item.show {
+              display: block;
+          }
+        
+          #thematicalTrigger {
+              pointer-events: auto;
+              cursor: default;
+              color: inherit;
+              text-decoration: none;
+          }
+        
+          .nav-item {
+            line-height: 100%;
+            max-height: 60%;
+          }
+          .nav-link.active {
+              padding-left: 0;
+          }
+        
+          .navbar-nav .vr {
+              display: none !important;
+          }
+          }
   
   /*Navbar end*/
 
