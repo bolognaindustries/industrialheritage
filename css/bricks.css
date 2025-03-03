@@ -1199,7 +1199,7 @@ footer {
     }
 
     .text .content {
-        overflow-y: hidden;
+        overflow-y: auto;
     }
 
     .text .content p {
