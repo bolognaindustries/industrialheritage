@@ -320,12 +320,13 @@ hr {
         padding-right: 3%;
     }
 
-    button {
+    button:not(.custom-nav-toggler) {
         background-color: #531f00;
         border: none;
         padding: 0;
         cursor: pointer;
         width: 8vh;
+        height: auto;
         aspect-ratio: 1 / 1;
         border-radius: 50%;
         display: flex;
@@ -334,7 +335,7 @@ hr {
         font-size: 4vh;
     }
 
-    button:hover {
+    button:not(.custom-nav-toggler):hover {
         background-color: #531f00;
         opacity: 0.9;
     }
@@ -917,11 +918,21 @@ footer {
 @media (max-width: 768px) {
 
 /* Navbar*/
-  .navbar {
-    height: auto;
+    .navbar {
+    position: relative;
 
     .navbar-brand img { 
         height: 5vh;
+    }
+    .navbar-collapse.collapse.show {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        z-index: 1000;
+        margin-bottom: 10%;
+
     }
   
   .link-lines {
@@ -947,8 +958,12 @@ footer {
       text-decoration: none;
   }
 
+  .nav-item {
+    line-height: 100%;
+    max-height: 60%;
+  }
   .nav-link.active {
-      padding-left: 30px;
+      padding-left: 0;
   }
 
   .navbar-nav .vr {
