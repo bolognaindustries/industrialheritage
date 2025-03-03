@@ -1,5 +1,4 @@
 // 0 FUNCTION Navbar
-
 document.addEventListener('DOMContentLoaded', () => {
     const thematicalTrigger = document.getElementById('thematicalTrigger');
     const thematicalMenu = document.getElementById('thematicalMenu');
@@ -9,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function isMobileView() {
         return window.innerWidth <= 768;
     }
+
     function moveDropdownItemsToNav() {
         if (isMobileView()) {
             const dropdownMenus = document.querySelectorAll('.dropdown-menu');
@@ -17,7 +17,6 @@ document.addEventListener('DOMContentLoaded', () => {
             dropdownMenus.forEach(menu => {
                 const dropdownItems = menu.querySelectorAll('.dropdown-item');
                 dropdownItems.forEach(item => {
-
                     item.classList.remove('dropdown-item');
                     item.classList.add('nav-link', 'active');
 
@@ -32,12 +31,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    navbarCollapse.classList.remove('show');
-    navbarToggler.addEventListener('click', (e) => {
-        e.stopPropagation();
-        navbarCollapse.classList.toggle('show');
-    });
-
     moveDropdownItemsToNav();
     window.addEventListener('resize', () => {
         moveDropdownItemsToNav();
@@ -46,7 +39,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // Thematical Path Dropdown Behavior (for larger screens)
     thematicalTrigger.addEventListener('click', (e) => {
         if (!isMobileView()) {
-
             e.preventDefault();
             e.stopPropagation();
             const isExpanded = thematicalMenu.classList.contains('show');
