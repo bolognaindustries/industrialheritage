@@ -1144,7 +1144,7 @@ footer {
     }
     .item-texts {
         height: 45vh;
-        width: auto;
+        width: 100vw;
         max-width: 100vw;
         background: #531f00;
         border-top-left-radius: 45px;
@@ -1193,6 +1193,15 @@ footer {
         font-style: normal;
         z-index: 300;
         max-height: 40vh;
+    }
+
+    .text .content {
+        overflow-y: hidden;
+    }
+
+    .text .content p {
+        margin-top: 10%;
+        margin-bottom: 10%;
     }
 /*description that pops up*/
 
