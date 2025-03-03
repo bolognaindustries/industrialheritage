@@ -226,6 +226,9 @@ hr {
           background: #0b0b0b;
           overflow: hidden;
           padding-bottom: 60px;
+          font-size: 19px;
+          color: white;
+          letter-spacing: 0.7px;
         }
 
         .scroll-container::-webkit-scrollbar {
@@ -245,13 +248,6 @@ hr {
           line-height: 38px;
         }
 
-        .left-container p {
-          font-size: 19px;
-          color: white;
-          margin-right: 10%;
-          margin-left: 10%;
-          letter-spacing: 0.7px;
-        }
 
         .left-container p span {
           display: block;
@@ -312,6 +308,8 @@ hr {
           overflow-y: scroll;
           max-height: 65vh;
           scrollbar-width: none;
+          padding-right: 10%;
+          padding-left: 10%;
         }
 
         .gallery-button-container {

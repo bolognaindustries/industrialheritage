@@ -25,20 +25,36 @@ document.addEventListener('DOMContentLoaded', () => {
             thematicalMenu.classList.remove('show');
         }
     });
+
+
+
+    
 });
 
 // user selection
-userBtns.forEach(function (userBtn) {
-    userBtn.addEventListener("pointerdown", function () {
-    
-    userBtns.forEach(function(userBtn){
-        userBtn.src = userBtn.src.replace("Inverted.png", ".png");
+document.addEventListener("DOMContentLoaded", function () {
+    let storedUserType = localStorage.getItem("userType") || defaultUserType;
+
+    userBtns.forEach(function (userBtn) {
+        let userType = userBtn.getAttribute("data-user");
+
+        if (userType === storedUserType) {
+            userBtn.src = userBtn.src.replace(".png", "Inverted.png");
+        } else {
+            userBtn.src = userBtn.src.replace("Inverted.png", ".png"); // Resetta gli altri
+        }
     });
 
-    this.src = this.src.replace(".png", "Inverted.png");
-            
-    currentUserType = this.getAttribute("data-user");
-    localStorage.setItem("userType", currentUserType);
+    userBtns.forEach(function (userBtn) {
+        userBtn.addEventListener("pointerdown", function () {
+            userBtns.forEach(function (btn) {
+                btn.src = btn.src.replace("Inverted.png", ".png");
+            });
+    
+            this.src = this.src.replace(".png", "Inverted.png");
+            currentUserType = this.getAttribute("data-user");
+            localStorage.setItem("userType", currentUserType);
+        });
     });
 });
 
@@ -77,15 +93,23 @@ var title2 = document.getElementById("floor-title2");
 
 function updateTitle() {
     var activeItem = document.querySelector(".carousel-item.active img")
+    var prev = document.querySelector(".carousel-control-prev");
+    var next = document.querySelector(".carousel-control-next");
 
     if(activeItem) {
         title1.style.display = "none";
         title2.style.display = "none";
+        prev.style.display = "none";
+        next.style.display = "none";
 
         if(activeItem.id === "img1") {
             title1.style.display = "block";
+
+            next.style.display = "block";
         } else if(activeItem.id === "img2") {
             title2.style.display = "block";
+
+            prev.style.display = "block";
         }
     }
 }
@@ -104,8 +128,8 @@ document.getElementById('toggle-image').addEventListener('click', function (e) {
 // INITIALIZE
 localStorage.setItem("userType", currentUserType);
 userBtns.forEach(function(userBtn) {
-    if(userBtn.getAttribute("data-user" === currentUserType)) {
-    userBtn.src = userBtn.src.replace(".png", "Inverted.png");
+    if(userBtn.getAttribute("data-user") === currentUserType) {
+        userBtn.src = userBtn.src.replace(".png", "Inverted.png");
     }
 });
 

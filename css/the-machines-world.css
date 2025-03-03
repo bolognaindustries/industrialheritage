@@ -424,13 +424,13 @@ hr {
             height: 4vh;
             border-radius: 50%;
             background-color: transparent;
-            border: 1px solid transparent;
+            border: 2px solid transparent;
             top: -7.8px;
             left: -7.2px;
             cursor: pointer;
         }
         .dot.active .inner-dot {
-            border: 2px solid #ac333e;
+            border: 3px solid #ac333e;
             cursor: pointer;
         }
     /*lines and dots that change with the carousel*/

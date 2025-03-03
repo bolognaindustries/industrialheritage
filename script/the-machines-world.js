@@ -252,6 +252,7 @@ userBtns.forEach(function (userBtn) {
         this.classList.add("active");
 
         currentUserType = this.getAttribute("data-user");
+        localStorage.setItem("userType", currentUserType);
         updateContent();
     });
 
@@ -323,5 +324,10 @@ function updateContent() {
 
 // INITIALIZE
 localStorage.setItem("userType", currentUserType);
+userBtns.forEach(userBtn => {
+    if (userBtn.getAttribute("data-user") === currentUserType) {
+        userBtn.classList.add("active");
+    }
+});
 updateSlide();
 updateContent();
