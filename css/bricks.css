@@ -1089,18 +1089,21 @@ footer {
         height: auto;
         margin-top: -5%;
         margin-left: 0;
+        z-index: 0;
     }
     #slide11 {
         width: 85%;
         height: auto;
         margin-top: -5%;
         margin-left: 0;
+        z-index: 0;
     }
     #slide12 {
         width: 75%;
         height: auto;
         margin-top: -5%;
         margin-left: 0;
+        z-index: 0;
     }
 
     .button-container {
