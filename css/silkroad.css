@@ -470,7 +470,7 @@ hr {
     }
 
     .content{ 
-    height: 30vh; 
+    height: 60vh; 
     padding-right: 1%;
     overflow-y: auto; 
     scrollbar-width: thin;
@@ -1186,6 +1186,10 @@ footer {
                 opacity: 1;
                 display: block;
             }
+
+            .content {
+                height: 30vh;
+            }
             .item-texts i {
                 display: block;
                 position: absolute;
@@ -1196,6 +1200,8 @@ footer {
                 transform: translateX(-50%);
                 cursor: pointer;
             }
+
+
             .text {
                 display: none;
                 position: absolute;
