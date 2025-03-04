@@ -6,6 +6,7 @@ body{
 
 /* navbar */
 .navbar {
+    z-index: 1000;
     font-family: 'Cooper Hewitt', sans-serif;
     font-weight: bold;
     padding-left: 3%;
@@ -116,9 +117,76 @@ hr {
 /*navbar*/
 /*Documentation*/
 
-.section2 {
-    color: white;
+/*sidebar*/
+.sidebar {
+    z-index: 0;
+    position: fixed;
+    left: -300px; /* Hide initially */
+    top: 0;
+    width: 300px;
+    height: 100vh;
+    background: white;
+    color: black;
+    transition: left 0.3s ease;
+    padding: 2%;
+    padding-top: 10%;
 }
+
+.sidebar.active {
+    left: 0;
+}
+
+#sidebarToggle {
+    position: fixed;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1050;
+    transition: all 0.3s ease-in-out;
+}
+
+#sidebarToggle i {
+    transition: transform 0.3s ease-in-out;
+}
+
+.summary-title {
+    font-weight: bold;
+    text-align: center;
+    color: transparent;
+    font-size: 25px;
+    -webkit-text-stroke: black 1px;
+}
+
+.sm-title {
+    list-style: none; 
+    font-weight: bold; 
+}
+.sm-subtitle {
+    list-style: none;
+    font-weight: normal;
+}
+
+.section3{
+    color: white;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 15vh;
+
+    .page-title {
+        color: transparent;
+        -webkit-text-stroke: 2px white;
+        font-size: 12vh;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 5%;
+    }
+
+    .doc-title h1 {
+        font-size: 3vw;
+    }
+}
+
+/*sidebar*/
 
 /*Documentation*/  
 /* Footer */
