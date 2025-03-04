@@ -1163,6 +1163,7 @@ footer {
         transform: translateX(-50%);
         cursor: pointer;
     }
+
     .item-texts {
         height: 45vh;
         width: 100vw;
@@ -1218,6 +1219,7 @@ footer {
 
     .text .content {
         overflow-y: auto;
+        height: 37vh;
     }
 
     .text .content p {
