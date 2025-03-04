@@ -470,7 +470,7 @@ hr {
     }
 
     .content{ 
-    height: 60vh; 
+    height: 30vh; 
     padding-right: 1%;
     overflow-y: auto; 
     scrollbar-width: thin;
@@ -1210,7 +1210,6 @@ footer {
                 letter-spacing: 2px;
                 font-weight: 400;
                 font-style: normal;
-                overflow-y: scroll;
                 z-index: 300;
                 max-height: 35vh;
             }
