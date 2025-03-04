@@ -143,10 +143,17 @@ hr {
     transform: translateY(-50%);
     z-index: 1050;
     transition: all 0.3s ease-in-out;
+    border-radius: 50px;
+    background-color: #CD5909;
+    border: 0;
 }
 
 #sidebarToggle i {
     transition: transform 0.3s ease-in-out;
+}
+
+.btn:hover {
+    opacity: 0.9;
 }
 
 .summary-title {
