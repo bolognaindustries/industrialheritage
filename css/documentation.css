@@ -191,6 +191,11 @@ hr {
     .doc-title h1 {
         font-size: 3vw;
     }
+
+    img {
+      max-height: 50vh;
+      max-width: 85vw;      
+    }
 }
 
 /*sidebar*/
