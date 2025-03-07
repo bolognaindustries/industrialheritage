@@ -65,12 +65,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // VIEWPORT
 // detecting the viewport and showing the right piece of HTML code
-    function loadCss(filename) {
-        var link = document.createElement("link");
-        link.rel = "stylesheet";
-        link.href = filename;
-        document.head.appendChild(link);
-    }
 
     function loadJs(filename) {
         var script = document.createElement("script");
