@@ -156,6 +156,15 @@ hr {
     opacity: 0.9;
 }
 
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
 .summary-title {
     font-weight: bold;
     text-align: center;
@@ -173,32 +182,37 @@ hr {
     font-weight: normal;
 }
 
-.section3{
-    color: white;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 15vh;
 
-    .page-title {
-        color: transparent;
-        -webkit-text-stroke: 2px white;
-        font-size: 12vh;
-        font-weight: bold;
-        text-transform: uppercase;
-        margin-bottom: 5%;
-    }
-
-    .doc-title h1 {
-        font-size: 3vw;
-    }
-
-    img {
-      max-height: 50vh;
-      max-width: 85vw;      
-    }
-}
 
 /*sidebar*/
+
+/*Documentation*/  
+
+.section3{
+  color: white;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 15vh;
+
+  .page-title {
+      color: transparent;
+      -webkit-text-stroke: 2px white;
+      font-size: 12vh;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 5%;
+  }
+
+  .doc-title h1 {
+      font-size: 3vw;
+  }
+
+  img {
+    max-height: 50vh;
+    max-width: 85vw;      
+  }
+
+}
 
 /*Documentation*/  
 /* Footer */
