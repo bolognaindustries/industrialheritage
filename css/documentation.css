@@ -189,6 +189,11 @@ a:hover {
 /*Documentation*/  
 
 .section3{
+  margin: 0;
+  background-size: 100vw;
+  background-repeat: no-repeat;
+  background-position: start;
+  background-image: url(../images/back3.jpg);
   color: white;
   padding-left: 5%;
   padding-right: 5%;
