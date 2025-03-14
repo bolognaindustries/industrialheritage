@@ -541,7 +541,7 @@ footer {
   opacity: 0;
   visibility: hidden;
   background-color: black;
-  transition: opacity 0.3sease-in-out;
+  transition: opacity 0.3s ease-in-out;
 }
 .contacts span:hover::after {
   opacity: 1;
