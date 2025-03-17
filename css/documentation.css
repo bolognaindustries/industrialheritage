@@ -196,7 +196,7 @@ a:hover {
   background-image: url(../images/back3.jpg);
   color: white;
   padding-left: 5%;
-  padding-right: 5%;
+  padding-right: 10%;
   padding-top: 15vh;
 
   .page-title {
@@ -221,13 +221,17 @@ a:hover {
     text-align: justify;
   }
 
-  .table-img{
+  .titles-list, .titles-list ul {
+    list-style-type: none; /* Remove bullets */
+  }  
+
+  .table-img{     /*item table in "content"*/
     max-height: 8vh;
     margin-top: 1vh;
     margin-bottom: 1vh;
   }
 
-  table {
+  table {         
     margin: auto;
     width: 80%;
     text-align: center;
