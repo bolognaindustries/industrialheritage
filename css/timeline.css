@@ -129,26 +129,26 @@ hr {
   background-position: start;
   background-image: url(../images/back2.jpg);
 
-  .title-container {
-  padding-top: 15vh;
-  padding-left: 5%;
-  padding-right: 5%;
-  color: white;
-  }
-  .page-title {
-  color: transparent;
-  -webkit-text-stroke: 2px white;
-  font-size: 10vw;
-  font-weight: bold;
-  text-transform: uppercase;
-  }
+    .title-container {
+    padding-top: 15vh;
+    padding-left: 5%;
+    padding-right: 5%;
+    color: white;
+    }
 
-  .page-subtitle {
-  margin-top: 5%;
-  margin-bottom: 5%;
-  font-size: 6vw;
-  font-weight: normal;
-  }
+  .page-title {
+    color: transparent;
+    -webkit-text-stroke: 2px white;
+    font-size: 12vh;
+    font-weight: bold;
+    text-transform: uppercase;
+    }
+  
+    .page-subtitle {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-size: 6vh;
+    }
 
 
 /* Timeline */
