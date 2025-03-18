@@ -7,12 +7,12 @@ let currentUserType = localStorage.getItem("userType") || defaultUserType;
 const userBtns = document.querySelectorAll(".user-img");
 
 
+//Navbar
 document.addEventListener('DOMContentLoaded', () => {
     const thematicalTrigger = document.getElementById('thematicalTrigger');
     const thematicalMenu = document.getElementById('thematicalMenu');
     const navbarToggler = document.querySelector('.navbar-toggler');
     const navbarCollapse = document.getElementById('navbarSupportedContent');
-    const navbarNav = document.querySelector('.navbar-nav');
 
     function isMobileView() {
         return window.innerWidth <= 768;
@@ -20,12 +20,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function moveDropdownItemsToNav() {
         if (isMobileView()) {
-            // Clear previously moved items
-            const existingMovedItems = navbarNav.querySelectorAll('.nav-item.moved-item');
-            existingMovedItems.forEach(item => item.remove());
-
-            // Move dropdown items to the main navigation
             const dropdownMenus = document.querySelectorAll('.dropdown-menu');
+            const navbarNav = document.querySelector('.navbar-nav');
+
             dropdownMenus.forEach(menu => {
                 const dropdownItems = menu.querySelectorAll('.dropdown-item');
                 dropdownItems.forEach(item => {
@@ -33,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     item.classList.add('nav-link', 'active');
 
                     const newNavItem = document.createElement('li');
-                    newNavItem.classList.add('nav-item', 'moved-item');
+                    newNavItem.classList.add('nav-item');
                     newNavItem.appendChild(item);
 
                     navbarNav.appendChild(newNavItem);
@@ -44,7 +41,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     moveDropdownItemsToNav();
-    window.addEventListener('resize', moveDropdownItemsToNav);
+    window.addEventListener('resize', () => {
+        moveDropdownItemsToNav();
+    });
 
     // Thematical Path Dropdown Behavior (for larger screens)
     thematicalTrigger.addEventListener('click', (e) => {
@@ -53,7 +52,6 @@ document.addEventListener('DOMContentLoaded', () => {
             e.stopPropagation();
             const isExpanded = thematicalMenu.classList.contains('show');
             thematicalMenu.classList.toggle('show', !isExpanded);
-            thematicalTrigger.setAttribute('aria-expanded', !isExpanded);
         }
     });
 
@@ -69,12 +67,10 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             if (!thematicalTrigger.contains(e.target) && !thematicalMenu.contains(e.target)) {
                 thematicalMenu.classList.remove('show');
-                thematicalTrigger.setAttribute('aria-expanded', 'false');
             }
         }
     });
 });
-
 
 // user selection
 document.addEventListener("DOMContentLoaded", function () {
