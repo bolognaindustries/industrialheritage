@@ -140,15 +140,15 @@ hr {
   .page-title {
   color: transparent;
   -webkit-text-stroke: 2px white;
-  font-size: 12vw;
+  font-size: 12vh;
   font-weight: bold;
   text-transform: uppercase;
   }
 
   .page-subtitle {
-  margin-top: 5%;
-  margin-bottom: 5%;
-  font-size: 6vw;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  font-size: 6vh;
   }
 
   .notereader {
