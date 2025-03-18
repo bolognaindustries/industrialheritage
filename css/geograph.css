@@ -140,14 +140,15 @@ hr {
   .page-title {
   color: transparent;
   -webkit-text-stroke: 2px white;
-  font-size: 12vh;
+  font-size: 12vw;
   font-weight: bold;
   text-transform: uppercase;
   }
 
   .page-subtitle {
   margin-top: 5%;
-  font-size: 3vw;
+  margin-bottom: 5%;
+  font-size: 6vw;
   }
 
   .notereader {
@@ -353,16 +354,13 @@ footer {
 
   .title-container {
     max-width: 100vw;
-    word-wrap: break-word;
-    hyphens: manual;
 
     .page-title {
       color: transparent;
       -webkit-text-stroke: 2px white;
-      font-size: 10vh;
+      font-size: 10vw;
     }
     
-  
     .page-subtitle {
       margin-top: 5%;
       margin-bottom: 5%;
