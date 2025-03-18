@@ -421,6 +421,18 @@ footer {
   max-width: 100vw;
   word-wrap: break-word;
   hyphens: manual;
+
+    .page-title {
+      color: transparent;
+      -webkit-text-stroke: 2px white;
+      font-size: 10vw;
+    }
+    
+    .page-subtitle {
+      margin-top: 5%;
+      margin-bottom: 5%;
+      font-size: 6vw;
+    }
   
 }
 
