@@ -220,8 +220,7 @@ a:hover {
   figure{
     margin: 5vh;
     display: flex;
-    justify-content: center;
-    gap: 10vw;
+    justify-content: space-evenly;
   }
 
   .img-capt {
@@ -240,6 +239,7 @@ a:hover {
 
   .titles-list, .titles-list ul {
     list-style-type: none; /* Remove bullets */
+    margin-top: 3vh;
   }  
 
   .table-img{     /*item table in "content"*/
@@ -249,7 +249,9 @@ a:hover {
   }
 
   table {         
-    margin: auto;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    margin-left: 10%;
     width: 80%;
     text-align: center;
     border-collapse: collapse;
@@ -282,10 +284,6 @@ a:hover {
     margin: 5px 0;
     font-size: 16px;
 }
-.copyright {
-    font-weight: bold;
-}
-
 a {
     color: #0073e6;
     text-decoration: none;
