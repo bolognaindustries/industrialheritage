@@ -326,6 +326,10 @@ function updateLines(number) {
                 floorDescription.style.display = "none"
             });
 
+            btnsLeft.forEach(function(btnLeft) {
+                btnLeft.style.display = "none";
+            });
+
             if(btnMap1.classList.contains("active")) {
                 list2.style.display = "none";
                 list1.style.display = "block";
@@ -347,7 +351,7 @@ function updateLines(number) {
                     return;
             }
             
-            changeToList();
+            btnList.style.display = "block";
         });
 
         number.addEventListener("mouseleave", function() {
@@ -399,6 +403,10 @@ function updateLines(number) {
                 activeNumber = null;
                 isMouseEnterPaused = false;
 
+                btnsLeft.forEach(function(btnLeft) {
+                    btnLeft.style.display = "none";
+                });
+
                 previews.forEach(function(preview) {
                     preview.classList.remove("preview-show")
                 });
@@ -407,9 +415,7 @@ function updateLines(number) {
                     text.style.display = "none";
                 });
 
-                changeToList();
-                
-                
+                btnDescr.style.display = "block";
             } else {
                 
                 // if the active number is another one:
