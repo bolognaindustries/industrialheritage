@@ -505,11 +505,18 @@ footer {
           font-size: 6vw;
           text-transform: uppercase;
       }
-      .titles-list, .title-list ul {
+      .titles-list ul {
         padding-left: 0;
         margin-left: 0;
         list-style-type: none; /* Removes bullet points */
-    }
+      }
+      .title-list li{
+        padding-left: 0;
+        margin-left: 0;
+        list-style-type: none; /* Removes bullet points */
+        display: flex;
+        align-items: left;
+      }
       .figure{
         display: flex;
         flex-direction: column;
