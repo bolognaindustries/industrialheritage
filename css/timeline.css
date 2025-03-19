@@ -129,12 +129,12 @@ hr {
   background-position: start;
   background-image: url(../images/back2.jpg);
 
-    .title-container {
-    padding-top: 15vh;
-    padding-left: 5%;
-    padding-right: 5%;
-    color: white;
-    }
+  .title-container {
+  padding-top: 15vh;
+  padding-left: 5%;
+  padding-right: 5%;
+  color: white;
+  }
 
   .page-title {
     color: transparent;
@@ -144,11 +144,11 @@ hr {
     text-transform: uppercase;
     }
   
-    .page-subtitle {
-    margin-top: 2%;
-    margin-bottom: 2%;
-    font-size: 6vh;
-    }
+  .page-subtitle {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  font-size: 6vh;
+  }
 
 
 /* Timeline */
@@ -164,8 +164,7 @@ hr {
  
 .timeline-carousel__item {
  flex: 0 0 calc((100% - 40px) / 3);
- cursor: pointer;
- 
+ cursor: pointer; 
  }
 
 .timeline-carousel__image {
