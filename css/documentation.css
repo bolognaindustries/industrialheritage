@@ -208,10 +208,6 @@ padding-top: 15vh;
     margin-bottom: 5%;
 }
 
-.doc-title h1 {
-    font-size: 3vw;
-}
-
 img {
   max-height: 50vh;
   max-width: 85vw;      
@@ -233,14 +229,23 @@ figure{
   margin: 0;
 }
 
-.doc-content {
+.doc-content p {
   text-align: justify;
+  line-height: 1.7;
+}
+
+#small-title{
+  text-decoration: underline;
 }
 
 .titles-list, .titles-list ul {
   list-style-type: none; /* Remove bullets */
   margin-top: 3vh;
 }  
+
+.titles-list h1 {
+  font-size: 3vw;
+}
 
 .table-img{     /*item table in "content"*/
   max-height: 8vh;
@@ -280,10 +285,7 @@ h2 {
   margin-bottom: 5px;
   color: white;
 }
-.font-item p {
-  margin: 5px 0;
-  font-size: 16px;
-}
+
 a {
   color: #0073e6;
   text-decoration: none;
