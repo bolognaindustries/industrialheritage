@@ -431,7 +431,7 @@ hr {
             cursor: pointer;
         }
         .dot.active .inner-dot {
-            border: 3px solid #ac333e;
+            border: 2px solid #ac333e;
             cursor: pointer;
         }
     /*lines and dots that change with the carousel*/
