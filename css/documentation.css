@@ -265,6 +265,8 @@ table {
 
 td,th {
   border: 2px solid;
+  border-left: hidden;
+  border-right: hidden;
   border-color: grey;
 }
 
