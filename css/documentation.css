@@ -220,9 +220,17 @@ figure{
   justify-content: space-evenly;
 }
 
+figcaption {
+  display: block;
+  width: fit-content;
+  font-size: 0.9;
+}
+
 .img-capt {
   display: flex;
   flex-direction: column;
+  height:auto;
+  width: auto;
 }
 
 #big-img{
