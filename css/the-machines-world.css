@@ -1082,14 +1082,14 @@ footer {
         }
         #element2 img {
             height: auto;
-            max-height: 85vh;
+            max-height: 50vh;
             top: 0;
             position: relative;
             margin: 0 auto;
         }
         #element3 img {
             height: auto;
-            max-height: 40vh;
+            max-height: 25vh;
             top: 0;
             position: relative;
             margin-top: 9%;
@@ -1135,26 +1135,26 @@ footer {
                 margin-left: 5%;
             }
             #slide2 {
-                width: 25%;
+                width: 80%;
                 height: auto;
-                margin-left: 10%;
-                top: -1%;
+                margin-left: 0;
+                top: 10%;
             }
             #slide3 {
-                width: 13%;
+                width: 50%;
                 height: auto;
                 transform: scaleX(-1);
-                margin-left: 12%;
+                margin-left: -30%;
             }
             #slide4 {
-                width: 22%;
+                width: 80%;
                 height: auto;
-                margin-left: 12%;
+                margin-left: 0;
             }
             #slide5 {
-                width: 25%;
+                width: 80%;
                 height: auto;
-                margin-left: 12%;
+                margin-left: 0;
             }
 
             .button-container {
@@ -1172,6 +1172,7 @@ footer {
                 gap: 77%;
                 padding-left: 4%;
                 padding-right: 4%;
+                z-index: 1000;
             }
             button {
                 background-color: #ac333e;
